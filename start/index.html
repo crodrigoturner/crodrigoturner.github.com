@@ -1,0 +1,329 @@
+<!doctype html>
+
+<html manifest="./offline.appcache">
+
+<head>
+<meta charset="UTF-8">
+<title>Carlos Rodrigo / Startpage</title>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="/favicon.ico" rel="shortcut icon">
+<link rel="apple-touch-icon" href="/img/logo_app.png">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script>
+// main.js
+
+var appendZero = (i) => { if (i < 10) i = "0" + i; return i }
+
+// TODO improve: rewrite this lazily with yield 
+var displayTime = () => {
+var today = new Date();
+var h = today.getHours();
+var m = today.getMinutes();
+var s = today.getSeconds();
+m = appendZero(m);
+s = appendZero(s);
+document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
+var t = setTimeout(displayTime, 500);
+}
+
+function checkDate() {
+var today = new Date();
+var h = today.getHours();
+var weekday = new Array(7);
+weekday[0] =  "Sunday";
+weekday[1] = "Monday";
+weekday[2] = "Tuesday";
+weekday[3] = "Wednesday";
+weekday[4] = "Thursday";
+weekday[5] = "Friday";
+weekday[6] = "Saturday";
+var day = weekday[today.getDay()];
+var month = new Array();
+month[0] = "January";
+month[1] = "February";
+month[2] = "March";
+month[3] = "April";
+month[4] = "May";
+month[5] = "June";
+month[6] = "July";
+month[7] = "August";
+month[8] = "September";
+month[9] = "October";
+month[10] = "November";
+month[11] = "December";
+var mon = month[today.getMonth()];
+var timeOfDayArray = [
+[0, 4, "Good Night"], 
+[5, 13, "Good Morning"],
+[14, 17, "Good Afternoon"],
+[18, 21, "Good Evening"],
+[22, 24, "Good Night"]
+];
+for (var i = 0; i < timeOfDayArray.length; i++){
+if (h >= timeOfDayArray[i][0] && h <= timeOfDayArray[i][1])
+document.getElementById('greeting').innerHTML = timeOfDayArray[i][2];
+}
+document.getElementById('today').innerHTML = day + ', ' + today.getDate() + ' of ' + mon;
+}
+
+window.onload = function() {
+checkDate();
+displayTime();
+}
+
+</script>
+</head>
+
+<body>
+
+<header>
+<h1>Startpage</h1>
+<div class="meta"><div id="today">∞</div>  <div id="time">00:00:00</div> <div id="greeting">Hey, there!</div></div>
+<form method="GET" action="https://www.google.com/search?q=q">
+<input type="text" name="q" placeholder="Search + enter"/>
+</form>
+
+</header>
+
+<div id="content">
+
+<h2>Shortcuts</h2>
+
+<div id="tab2" class="tab">
+
+<div class="item">
+<h3>General</h3>
+<ul>
+<li><a href="/" target="_blank">Homepage</a></li>
+<li><a href="https://carlosrodrigo.com/memex/" target="_blank">Memex</a></li>
+<li><a href="https://www.pinboard.in/u:crodrigoturner/unread/" target="_blank">Readlater</a></li>
+
+
+</ul>
+</div>
+
+<div class="item">
+<h3>Productivity</h3>
+<ul>
+<li><a href="https://gmail.com" target="_blank">Gmail</a></li>
+<li><a href="https://drive.google.com/drive" target="_blank">Drive</a></li>
+<li><a href="https://calendar.google.com/" target="_blank">Calendar</a></li>
+<li><a href="https://keep.google.com" target="_blank">Keep</a></li>
+<li><a href="https://pinboard.in" target="_blank">Pinboard</a></li>
+</ul>
+</div>
+
+<div class="item">
+<h3>Social</h3>
+<ul>
+<li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+<li><a href="https://reddit.com" target="_blank">Reddit</a></li>
+<li><a href="https://whatsapp.com" target="_blank">Whatsapp</a></li>
+<li><a href="https://hangouts.google.com" target="_blank">Hangouts</a></li>
+</ul>
+</div>
+
+<div class="item">
+<h3>Money</h3>
+<ul>
+<li><a href="https://bbva.es" target="_blank">BBVA</a></li>
+<li><a href="https://ing.es" target="_blank">ING</a></li>
+<li><a href="https://www.google.com/finance/" target="_blank">G Finance</a></li>
+<li><a href="https://coinbase.com" target="_blank">Coinbase</a></li>
+</ul>
+</div> 
+
+<div class="item">
+<h3>Audio</h3>
+<ul>
+<li><a href="https://spotify.com" target="_blank">Spotify</a></li>
+<li><a href="https://soundcloud.com" target="_blank">Soundcloud</a></li>
+<li><a href="https://pocketcasts.com" target="_blank">Pocketcasts</a></li>
+<li><a href="https://anchor.fm" target="_blank">Anchor</a></li>
+</ul>
+</div> 
+
+<div class="item">
+<h3>Video</h3>
+<ul>
+<li><a href="https://youtube.com" target="_blank">Youtube</a></li>
+<li><a href="https://vimeo.com" target="_blank">Vimeo</a></li>
+<li><a href="https://netflix.com" target="_blank">Netflix</a></li>
+<li><a href="https://primevideo.com" target="_blank">Prime Video</a></li>
+</ul>
+</div>
+
+<div class="item">
+<h3>Blogs</h3>
+<ul>
+<li><a href="https://gatesnotes.com" target="_blank">Gates Notes</a></li>
+<li><a href="https://waitbutwhy.com" target="_blank">Wait but why</a></li>
+<li><a href="https://marginalrevolution.com" target="_blank">MarginalRevolution</a></li>
+</ul>
+</div>
+
+<div class="item">
+<h3>Code</h3>
+<ul>
+<li><a href="https://codepen.com" target="_blank">Codepen</a></li>
+<li><a href="https://github.com" target="_blank">Github</a></li>
+<li><a href="https://stackoverflow.com" target="_blank">Stack Overflow</a></li>
+<li><a href="https://orion.managewp.com/login" target="_blank">Orion Manager</a></li>
+<li><a href="https://dondominio.com" target="_blank">Dondominio</a></li>
+</ul>
+</div>
+
+</div>
+
+<hr/>		
+<h2>News</h2>
+
+<div id="tab1" class="tab active">
+
+<div class="item noticias es">
+<h3><a href="http://elpais.com">El País</a></h3>
+<script language="JavaScript"
+src="https://carlosrodrigo.com/start/feed/feed2js.php?src=https%3A%2F%2Fep00.epimg.net%2Frss%2Ftags%2Fultimas_noticias.xml&targ=popup&num=5&utf=y"
+charset="UTF-8" type="text/javascript"></script>
+</div>
+
+<div class="item tecnologia en">
+<h3><a href="https://news.ycombinator.com/">Hacker News</a></h3>
+<script language="JavaScript"
+src="https://carlosrodrigo.com/start/feed/feed2js.php?src=https%3A%2F%2Fnews.ycombinator.com%2Frss&num=5&utf=y"
+charset="UTF-8" type="text/javascript"></script>
+</div>
+
+<div class="item tecnologia en">
+<h3><a href="https://pinboard.in/popular">Pinboard</a></h3>
+<script language="JavaScript"
+src="https://carlosrodrigo.com/start/feed//feed2js.php?src=http%3A%2F%2Ffeeds.pinboard.in%2Frss%2Fpopular%2F&num=5&utf=y"
+charset="UTF-8" type="text/javascript"></script>
+</div>
+
+<div class="item noticias  es">
+<h3><a href="http://meneame.net">Menéame</a></h3>
+<script language="JavaScript"
+src="https://carlosrodrigo.com/start/feed//feed2js.php?src=http%3A%2F%2Fwww.meneame.net%2Frss%3Factive&num=5&utf=y"
+charset="UTF-8" type="text/javascript"></script>
+</div>
+
+<div class="item noticias es">
+<h3><a href="http://lavanguardia.com">La Vanguardia</a></h3>
+<script language="JavaScript"
+src="https://carlosrodrigo.com/start/feed//feed2js.php?src=http%3A%2F%2Fwww.lavanguardia.com%2Fmvc%2Ffeed%2Frss%2Fhome&num=5&utf=y"
+charset="UTF-8" type="text/javascript"></script>
+</div>
+
+<div class="item noticias es">
+<h3><a href="http://elmundo.es">El Mundo</a></h3>
+<script language="JavaScript"
+src="https://carlosrodrigo.com/start/feed//feed2js.php?src=http%3A%2F%2Festaticos.elmundo.es%2Felmundo%2Frss%2Fportada.xml&num=5&utf=y"
+charset="UTF-8" type="text/javascript"></script>
+</div>
+
+<div class="item noticias en">
+<h3><a href="http://reuters.com">Reuters</a></h3>
+<script language="JavaScript"
+src="https://carlosrodrigo.com/start/feed//feed2js.php?src=http%3A%2F%2Ffeeds.reuters.com%2Freuters%2FtopNews&num=5&utf=y"
+charset="UTF-8" type="text/javascript"></script>
+</div>
+
+<div class="item noticias en">
+<h3><a href="http://theguardian.com">The Guardian</a></h3>
+<script language="JavaScript"
+src="https://carlosrodrigo.com/start/feed//feed2js.php?src=https%3A%2F%2Fwww.theguardian.com%2Finternational%2Frss&num=5&utf=y"
+charset="UTF-8" type="text/javascript"></script>
+</div>
+
+<div class="item noticias en">
+<h3><a href="http://bbc.co.uk/news">BBC News</a></h3>
+<script language="JavaScript"
+src="https://carlosrodrigo.com/start/feed//feed2js.php?src=http%3A%2F%2Ffeeds.bbci.co.uk%2Fnews%2Frss.xml&num=5&utf=y"
+charset="UTF-8" type="text/javascript"></script>
+</div>
+
+<div class="item noticias en">
+<h3><a href="http://www.aljazeera.com">Al Jazeera</a></h3>
+<script language="JavaScript"
+src="https://carlosrodrigo.com/start/feed//feed2js.php?src=https%3A%2F%2Fwww.aljazeera.com%2Fxml%2Frss%2Fall.xml&num=5&utf=y"
+charset="UTF-8" type="text/javascript"></script>
+</div>
+
+<div class="item noticias en">
+<h3><a href="https://www.nytimes.com/">New York Times</a></h3>
+<script language="JavaScript"
+src="https://carlosrodrigo.com/start/feed//feed2js.php?src=https%3A%2F%2Fcontent.api.nytimes.com%2Fsvc%2Fnews%2Fv3%2Fall%2Frecent.rss&num=5&utf=y"
+charset="UTF-8" type="text/javascript"></script>
+
+</div>
+<div class="item ciencia en">
+<h3><a href="https://www.scientificamerican.com//">Scientific American</a></h3>
+<script language="JavaScript"
+src="https://carlosrodrigo.com/start/feed//feed2js.php?src=http%3A%2F%2Frss.sciam.com%2FScientificAmerican-Global&num=5&utf=y"
+charset="UTF-8" type="text/javascript"></script>
+</div>
+
+<div class="item ciencia es">
+<h3><a href="https://www.agenciasinc.es/">SINC</a></h3>
+<script language="JavaScript"
+src="https://carlosrodrigo.com/start/feed//feed2js.php?src=https%3A%2F%2Fwww.agenciasinc.es%2Ffeed%2Fnoticias&num=5&utf=y"
+charset="UTF-8" type="text/javascript"></script>
+</div>
+
+<div class="item ciencia es">
+<h3><a href="http://elpais.com/elpais/ciencia.html">Materia</a></h3>
+<script language="JavaScript"
+src="https://carlosrodrigo.com/start/feed//feed2js.php?src=http%3A%2F%2Fep00.epimg.net%2Frss%2Felpais%2Fciencia.xml&num=5&utf=y"
+charset="UTF-8" type="text/javascript"></script>
+</div>
+
+<div class="item ciencia en">
+<h3><a href="http://newscientist.com">New Scientist</a></h3>
+<script language="JavaScript"
+src="https://carlosrodrigo.com/start/feed//feed2js.php?src=http%3A%2F%2Ffeeds.newscientist.com%2Fscience-news&num=5&utf=y"
+charset="UTF-8" type="text/javascript"></script>
+</div>
+
+<div class="item ciencia es">
+<h3><a href="http://microsiervos.com">Microsiervos</a></h3>
+<script language="JavaScript"
+src="https://carlosrodrigo.com/start/feed//feed2js.php?src=http%3A%2F%2Fwww.microsiervos.com%2Findex.xml&num=5&utf=y"
+charset="UTF-8" type="text/javascript"></script>
+</div>
+<div class="item ciencia es">
+	<h3><a href="http://qz.com">Quartz</a></h3>
+	<script language="JavaScript" src="https://carlosrodrigo.com/start/feed//feed2js.php?src=https%3A%2F%2Fcms.qz.com%2Ffeed%2F&num=5&utf=y"  charset="UTF-8" type="text/javascript"></script>
+</div>
+<div class="item tecnologia en">
+<h3><a href="http://theverge.com/">The Verge</a></h3>
+<script language="JavaScript"
+src="https://carlosrodrigo.com/start/feed//feed2js.php?src=http%3A%2F%2Fwww.theverge.com%2Frss%2Findex.xml&num=5&utf=y"
+charset="UTF-8" type="text/javascript"></script>
+</div>
+
+<div class="item tecnologia en">
+<h3><a href="http://motherboard.vice.com/">Motherboard</a></h3>
+<script language="JavaScript" src="https://carlosrodrigo.com/start/feed//feed2js.php?src=https%3A%2F%2Fmotherboard.vice.com%2Fen_us%2Frss&num=5&utf=y" charset="UTF-8" type="text/javascript"></script>
+</div>
+
+<div class="item tecnologia en">
+<h3><a href="https://spectrum.ieee.org/">IEEE Spectrum</a></h3>
+<script language="JavaScript" src="https://carlosrodrigo.com/start/feed//feed2js.php?src=https%3A%2F%2Fspectrum.ieee.org%2Frss%2Ffulltext&num=5&utf=y"  charset="UTF-8" type="text/javascript"></script>
+</div>
+
+
+</div>
+
+</div>
+</div>
+</div>
+
+</body>
+
+</html>

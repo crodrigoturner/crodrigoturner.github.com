@@ -1,0 +1,15 @@
+{% include head.html %}
+{% include header.html %}
+
+<section>
+<article class="fullwidth">
+<h2 class="cp">{{page.tag}}</h2>
+<ul class="posts">
+{% for post in site.tags[page.tag] %}
+<li><a href="{{post.url}}">{{post.title}}</a></li>
+{% endfor %}
+</ul>
+</article>
+</section>
+
+{% include footer.html %}

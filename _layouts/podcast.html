@@ -1,0 +1,18 @@
+{% include head.html %}
+{% include header.html %}
+
+<section>
+    <article>
+<h2>{{page.title}}</h2>
+
+{{content}}
+
+<h3>Metadatos</h3>
+<ul class="items">
+    <li><span>Episodio:</span> {{page.episode}}</li>
+    <li><span>Fecha:</span> {{ page.date | date: "%d/%m/%Y" }}</li>
+    <li><span>Enlace:</span><a href=" {{page.link}}"> {{page.link}}</a></li>
+</ul>
+</article>
+</section>
+{% include footer.html %}

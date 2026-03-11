@@ -1,0 +1,446 @@
+O:9:"MagpieRSS":22:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:99:{i:0;a:4:{s:5:"about";s:57:"https://kk.org/thetechnium/68-bits-of-unsolicited-advice/";s:5:"title";s:43:"The Technium: 68 Bits of Unsolicited Advice";s:2:"dc";a:3:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:6:"ablaze";s:10:"identifier";s:43:"http://pinboard.in/u:ablaze/b:1aa3167ab3c0/";}s:4:"link";s:57:"https://kk.org/thetechnium/68-bits-of-unsolicited-advice/";}i:1;a:6:{s:5:"about";s:30:"https://zserge.com/posts/tmux/";s:5:"title";s:21:"Tmux for mere mortals";s:2:"dc";a:5:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:7:"jibcage";s:7:"subject";s:20:"protips productivity";s:6:"source";s:19:"http://pinboard.in/";s:10:"identifier";s:44:"http://pinboard.in/u:jibcage/b:74caccba422a/";}s:4:"link";s:30:"https://zserge.com/posts/tmux/";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:3:"
+	
+";}i:2;a:6:{s:5:"about";s:109:"https://www.newyorker.com/magazine/2020/05/04/seattles-leaders-let-scientists-take-the-lead-new-yorks-did-not";s:5:"title";s:87:"Seattle’s Leaders Let Scientists Take the Lead. New York’s Did Not | The New Yorker";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:13:"spectrevision";s:6:"source";s:19:"http://pinboard.in/";s:10:"identifier";s:50:"http://pinboard.in/u:spectrevision/b:8fcfb77313fb/";}s:4:"link";s:109:"https://www.newyorker.com/magazine/2020/05/04/seattles-leaders-let-scientists-take-the-lead-new-yorks-did-not";s:11:"description";s:891:"For more than a week, Riedo had been e-mailing with a group of colleagues who included Seattle’s top doctor for public health and Washington State’s senior health officer, as well as hundreds of epidemiologists from around the country; many of them, like Riedo, had trained at the Centers for Disease Control and Prevention, in Atlanta, in a program known as the Epidemic Intelligence Service. Alumni of the E.I.S. are considered America’s shock troops in combatting disease outbreaks. The program has more than three thousand graduates, and many now work in state and local governments across the country. “It’s kind of like a secret society, but for saving people,” Riedo told me. “If you have a question, or need to understand the local politics somewhere, or need a hand during an outbreak—if you reach out to the E.I.S. network, they’ll drop everything to help.”
+
+";s:7:"summary";s:891:"For more than a week, Riedo had been e-mailing with a group of colleagues who included Seattle’s top doctor for public health and Washington State’s senior health officer, as well as hundreds of epidemiologists from around the country; many of them, like Riedo, had trained at the Centers for Disease Control and Prevention, in Atlanta, in a program known as the Epidemic Intelligence Service. Alumni of the E.I.S. are considered America’s shock troops in combatting disease outbreaks. The program has more than three thousand graduates, and many now work in state and local governments across the country. “It’s kind of like a secret society, but for saving people,” Riedo told me. “If you have a question, or need to understand the local politics somewhere, or need a hand during an outbreak—if you reach out to the E.I.S. network, they’ll drop everything to help.”
+
+";}i:3;a:8:{s:5:"about";s:89:"https://www.theatlantic.com/health/archive/2020/04/pandemic-confusing-uncertainty/610819/";s:5:"title";s:35:"Why the Coronavirus Is So Confusing";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:5:"dylla";s:7:"subject";s:14:"author:Ed Yong";s:10:"identifier";s:42:"http://pinboard.in/u:dylla/b:c794293e4360/";}s:4:"link";s:89:"https://www.theatlantic.com/health/archive/2020/04/pandemic-confusing-uncertainty/610819/";s:11:"description";s:214:" Joan Wong On March 27, as the U.S. topped 100,000 confirmed cases of COVID-19, Donald Trump stood at the lectern of the White House press-briefing room and was asked what he’d say about the pandemic to a child. ";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:3:"
+	
+";s:7:"summary";s:214:" Joan Wong On March 27, as the U.S. topped 100,000 confirmed cases of COVID-19, Donald Trump stood at the lectern of the White House press-briefing room and was asked what he’d say about the pandemic to a child. ";}i:4;a:6:{s:5:"about";s:31:"https://eloquentjavascript.net/";s:5:"title";s:57:"Eloquent JavaScript: A Modern Introduction to Programming";s:2:"dc";a:5:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:5:"zmoog";s:7:"subject";s:15:"javascript book";s:6:"source";s:19:"http://pinboard.in/";s:10:"identifier";s:42:"http://pinboard.in/u:zmoog/b:e39e6e613a15/";}s:4:"link";s:31:"https://eloquentjavascript.net/";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:3:"
+	
+";}i:5;a:6:{s:5:"about";s:35:"https://hero-generator.netlify.app/";s:5:"title";s:14:"hero-generator";s:2:"dc";a:5:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:8:"iwarshak";s:7:"subject";s:10:"design web";s:6:"source";s:19:"http://pinboard.in/";s:10:"identifier";s:45:"http://pinboard.in/u:iwarshak/b:a24b7248a8ef/";}s:4:"link";s:35:"https://hero-generator.netlify.app/";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:3:"
+	
+";}i:6;a:8:{s:5:"about";s:53:"https://www.jeremiahlee.com/posts/failed-squad-goals/";s:5:"title";s:18:"Failed #SquadGoals";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:9:"mreinbold";s:7:"subject";s:39:"jeremiah_lee spotify organization agile";s:10:"identifier";s:46:"http://pinboard.in/u:mreinbold/b:86f0326f8aa4/";}s:4:"link";s:53:"https://www.jeremiahlee.com/posts/failed-squad-goals/";s:11:"description";s:228:"<blockquote>“The Spotify model” got a bunch of companies talking like Taylor Swift about startup culture, but four former Spotify employees reveal the truth: its eponymous way of working failed before it scaled.</blockquote>";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:7:"
+	
+	
+	
+";s:7:"summary";s:228:"<blockquote>“The Spotify model” got a bunch of companies talking like Taylor Swift about startup culture, but four former Spotify employees reveal the truth: its eponymous way of working failed before it scaled.</blockquote>";}i:7;a:6:{s:5:"about";s:30:"https://github.com/mifi/editly";s:5:"title";s:58:"mifi/editly: Slick, declarative command line video editing";s:2:"dc";a:5:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:7:"tclancy";s:7:"subject";s:28:"js video editing movies gifs";s:6:"source";s:19:"http://pinboard.in/";s:10:"identifier";s:44:"http://pinboard.in/u:tclancy/b:194daafd6c8f/";}s:4:"link";s:30:"https://github.com/mifi/editly";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:9:"
+	
+	
+	
+	
+";}i:8;a:6:{s:5:"about";s:212:"https://www.washingtonpost.com/local/trafficandcommuting/scientists-think-they-know-ways-to-combat-viruses-on-airplanes-theyre-too-late-for-this-pandemic/2020/04/20/83279318-76ab-11ea-87da-77a8136c1a6d_story.html";s:5:"title";s:112:"Science behind sanitizing airplane cabin air has advanced but was too late for coronavirus - The Washington Post";s:2:"dc";a:5:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:11:"nathansmith";s:7:"subject";s:27:"healthcare workflow science";s:6:"source";s:19:"http://pinboard.in/";s:10:"identifier";s:48:"http://pinboard.in/u:nathansmith/b:11d2f5ca003e/";}s:4:"link";s:212:"https://www.washingtonpost.com/local/trafficandcommuting/scientists-think-they-know-ways-to-combat-viruses-on-airplanes-theyre-too-late-for-this-pandemic/2020/04/20/83279318-76ab-11ea-87da-77a8136c1a6d_story.html";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:5:"
+	
+	
+";}i:9;a:6:{s:5:"about";s:118:"https://nyheder.tv2.dk/samfund/2020-04-26-hvor-taet-er-folk-paa-hinanden-disse-billeder-er-taget-samtidig-men-viser-to";s:5:"title";s:108:"Hvor tæt er folk på hinanden? Disse billeder er taget samtidig, men viser to meget forskellige ting - TV 2";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:9:"heejeroen";s:6:"source";s:19:"http://twitter.com/";s:10:"identifier";s:46:"http://pinboard.in/u:heejeroen/b:0f3047901a5b/";}s:4:"link";s:118:"https://nyheder.tv2.dk/samfund/2020-04-26-hvor-taet-er-folk-paa-hinanden-disse-billeder-er-taget-samtidig-men-viser-to";s:11:"description";s:193:"Danish news site reminds people of being skeptical of how news photographers take pictures. Here is the same place, one picture taken with a zoom lense, and the other with a wide-angle lense:  ";s:7:"summary";s:193:"Danish news site reminds people of being skeptical of how news photographers take pictures. Here is the same place, one picture taken with a zoom lense, and the other with a wide-angle lense:  ";}i:10;a:6:{s:5:"about";s:94:"https://www.theatlantic.com/ideas/archive/2020/04/how-pandemic-will-change-face-retail/610738/";s:5:"title";s:61:"How the Pandemic Will Change Americans Streets - The Atlantic";s:2:"dc";a:3:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:8:"edmadrid";s:10:"identifier";s:45:"http://pinboard.in/u:edmadrid/b:bbf7465e0adb/";}s:4:"link";s:94:"https://www.theatlantic.com/ideas/archive/2020/04/how-pandemic-will-change-face-retail/610738/";s:11:"description";s:163:"Joshua Dudley Greer Last weekend, I walked a mile along M Street in Washington, D.C., where I live, from the edge of Georgetown to Connecticut Avenue. The roads…";s:7:"summary";s:163:"Joshua Dudley Greer Last weekend, I walked a mile along M Street in Washington, D.C., where I live, from the edge of Georgetown to Connecticut Avenue. The roads…";}i:11;a:8:{s:5:"about";s:63:"https://www.ft.com/content/68f96d24-02f0-42fd-b132-aba0acba777f";s:5:"title";s:92:"Virtual rate cut forces Nintendo gamers into riskier assets | Free to read | Financial Times";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:8:"chaoxian";s:7:"subject";s:13:"IFTTT Twitter";s:10:"identifier";s:45:"http://pinboard.in/u:chaoxian/b:12e94d5a5dbb/";}s:4:"link";s:63:"https://www.ft.com/content/68f96d24-02f0-42fd-b132-aba0acba777f";s:11:"description";s:227:"Favorite tweet:
+
+I canNOT express how much I love Financial Times covering Animal Crossing https://t.co/8mkq8xCRcI
+
+— Simone de Rochefort (@doomquasar) April 28, 2020
+
+ http://twitter.com/doomquasar/status/1255142906261729285";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:3:"
+	
+";s:7:"summary";s:227:"Favorite tweet:
+
+I canNOT express how much I love Financial Times covering Animal Crossing https://t.co/8mkq8xCRcI
+
+— Simone de Rochefort (@doomquasar) April 28, 2020
+
+ http://twitter.com/doomquasar/status/1255142906261729285";}i:12;a:6:{s:5:"about";s:25:"http://www.textfiles.com/";s:5:"title";s:39:"T E X T F I L E S: Choose a Mirror Site";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:4:"rwhe";s:7:"subject";s:37:"reference text history bbs geek books";s:10:"identifier";s:41:"http://pinboard.in/u:rwhe/b:194631d876b7/";}s:4:"link";s:25:"http://www.textfiles.com/";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:11:"
+	
+	
+	
+	
+	
+";}i:13;a:6:{s:5:"about";s:56:"https://datajournalism.com/read/handbook/verification-3/";s:5:"title";s:42:"Verification Handbook | DataJournalism.com";s:2:"dc";a:5:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:7:"rbuurma";s:7:"subject";s:32:"journalism data_journalism media";s:6:"source";s:19:"http://pinboard.in/";s:10:"identifier";s:44:"http://pinboard.in/u:rbuurma/b:a246f47f9d28/";}s:4:"link";s:56:"https://datajournalism.com/read/handbook/verification-3/";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:5:"
+	
+	
+";}i:14;a:8:{s:5:"about";s:96:"https://imgflip.com/ai-meme?fbclid=IwAR2Z87afCI_yG2HsTyRgoa1yp5MytCPW2OB-X_TkttmJegoHnYp9BGolTg0";s:5:"title";s:34:"This Meme Does Not Exist - Imgflip";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:8:"chaoxian";s:7:"subject";s:16:"IFTTT Instapaper";s:10:"identifier";s:45:"http://pinboard.in/u:chaoxian/b:d5a08c39ff8e/";}s:4:"link";s:96:"https://imgflip.com/ai-meme?fbclid=IwAR2Z87afCI_yG2HsTyRgoa1yp5MytCPW2OB-X_TkttmJegoHnYp9BGolTg0";s:11:"description";s:72:"This Meme Does Not Exist - Imgflip via Instapaper https://ift.tt/3eZXiWS";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:3:"
+	
+";s:7:"summary";s:72:"This Meme Does Not Exist - Imgflip via Instapaper https://ift.tt/3eZXiWS";}i:15;a:6:{s:5:"about";s:40:"https://www.britishmuseum.org/collection";s:5:"title";s:27:"Collection | British Museum";s:2:"dc";a:5:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:8:"iofusion";s:7:"subject";s:25:"images copyrighter museum";s:6:"source";s:19:"http://pinboard.in/";s:10:"identifier";s:45:"http://pinboard.in/u:iofusion/b:7c1b3a103eea/";}s:4:"link";s:40:"https://www.britishmuseum.org/collection";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:5:"
+	
+	
+";}i:16;a:4:{s:5:"about";s:94:"https://nicklafferty.com/blog/i-spent-6-million-on-google-ads-last-year-here-s-what-i-learned/";s:5:"title";s:26:"I spent $6MM on Google Ads";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:9:"madadprof";s:6:"source";s:19:"http://pinboard.in/";s:10:"identifier";s:46:"http://pinboard.in/u:madadprof/b:55c06f1925ad/";}s:4:"link";s:94:"https://nicklafferty.com/blog/i-spent-6-million-on-google-ads-last-year-here-s-what-i-learned/";}i:17;a:4:{s:5:"about";s:44:"https://mkorostoff.github.io/1-pixel-wealth/";s:5:"title";s:22:"Wealth, shown to scale";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:7:"jrowley";s:6:"source";s:19:"http://pinboard.in/";s:10:"identifier";s:44:"http://pinboard.in/u:jrowley/b:f0fed030c69a/";}s:4:"link";s:44:"https://mkorostoff.github.io/1-pixel-wealth/";}i:18;a:8:{s:5:"about";s:27:"https://imgflip.com/ai-meme";s:5:"title";s:34:"This Meme Does Not Exist - Imgflip";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:8:"rlaksana";s:7:"subject";s:13:"saved-twitter";s:10:"identifier";s:45:"http://pinboard.in/u:rlaksana/b:85545b2f5bd8/";}s:4:"link";s:27:"https://imgflip.com/ai-meme";s:11:"description";s:111:"Show HN: This Meme Does Not Exist https://t.co/jp4k6L6ZYM
+
+— Richard Laksana (@RichardLaksana) April 23, 2019";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:1:"
+";s:7:"summary";s:111:"Show HN: This Meme Does Not Exist https://t.co/jp4k6L6ZYM
+
+— Richard Laksana (@RichardLaksana) April 23, 2019";}i:19;a:4:{s:5:"about";s:54:"https://stratechery.com/2020/the-anti-amazon-alliance/";s:5:"title";s:24:"The Anti-Amazon Alliance";s:2:"dc";a:3:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:6:"ablaze";s:10:"identifier";s:43:"http://pinboard.in/u:ablaze/b:f827d325e24c/";}s:4:"link";s:54:"https://stratechery.com/2020/the-anti-amazon-alliance/";}i:20;a:6:{s:5:"about";s:97:"https://nymag.com/intelligencer/2020/04/we-still-dont-know-how-the-coronavirus-is-killing-us.html";s:5:"title";s:55:"We Still Don’t Know How the Coronavirus Is Killing Us";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:10:"tomraftery";s:6:"source";s:19:"http://twitter.com/";s:10:"identifier";s:47:"http://pinboard.in/u:tomraftery/b:0498507d9bd7/";}s:4:"link";s:97:"https://nymag.com/intelligencer/2020/04/we-still-dont-know-how-the-coronavirus-is-killing-us.html";s:11:"description";s:219:""We are now almost six months into this pandemic, which began in November in Wuhan, with 50,000 Americans dead and 200,000 more around the world. And yet we still don't really know how the disease is killing us." (1/x) ";s:7:"summary";s:219:""We are now almost six months into this pandemic, which began in November in Wuhan, with 50,000 Americans dead and 200,000 more around the world. And yet we still don't really know how the disease is killing us." (1/x) ";}i:21;a:8:{s:5:"about";s:175:"https://www.washingtonpost.com/national-security/presidents-intelligence-briefing-book-repeatedly-cited-virus-threat/2020/04/27/ca66949a-8885-11ea-ac8a-fe9b8088e101_story.html";s:5:"title";s:92:"President’s intelligence briefing book repeatedly cited virus threat - The Washington Post";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:4:"rwhe";s:7:"subject";s:5:"IFTTT";s:10:"identifier";s:41:"http://pinboard.in/u:rwhe/b:eab1531bdb80/";}s:4:"link";s:175:"https://www.washingtonpost.com/national-security/presidents-intelligence-briefing-book-repeatedly-cited-virus-threat/2020/04/27/ca66949a-8885-11ea-ac8a-fe9b8088e101_story.html";s:11:"description";s:272:"U.S. intelligence agencies issued warnings about the novel coronavirus in more than a dozen classified briefings prepared for President Trump in January and February, months during which he continued to play down the threat, according to current and former U.S. officials.";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:1:"
+";s:7:"summary";s:272:"U.S. intelligence agencies issued warnings about the novel coronavirus in more than a dozen classified briefings prepared for President Trump in January and February, months during which he continued to play down the threat, according to current and former U.S. officials.";}i:22;a:8:{s:5:"about";s:63:"https://www.ft.com/content/6bd88b7d-3386-4543-b2e9-0d5c6fac846c";s:5:"title";s:81:"Global coronavirus death toll could be 60% higher than reported | Financial Times";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:8:"chaoxian";s:7:"subject";s:13:"IFTTT Twitter";s:10:"identifier";s:45:"http://pinboard.in/u:chaoxian/b:dbfd776fbd8e/";}s:4:"link";s:63:"https://www.ft.com/content/6bd88b7d-3386-4543-b2e9-0d5c6fac846c";s:11:"description";s:437:"Favorite tweet:
+
+The numbers are remarkable, and put to bed the idea that Covid-19 is akin to a bad flu season.
+
+You can clearly see that in almost every country, spikes in mortality are *far* higher than what we see from flu etc (grey lines are historical death numbers) https://t.co/EiE5Q3OSmR pic.twitter.com/h4WIDqkBTD
+
+— John Burn-Murdoch (@jburnmurdoch) April 26, 2020
+
+ http://twitter.com/jburnmurdoch/status/1254461322353393666";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:3:"
+	
+";s:7:"summary";s:437:"Favorite tweet:
+
+The numbers are remarkable, and put to bed the idea that Covid-19 is akin to a bad flu season.
+
+You can clearly see that in almost every country, spikes in mortality are *far* higher than what we see from flu etc (grey lines are historical death numbers) https://t.co/EiE5Q3OSmR pic.twitter.com/h4WIDqkBTD
+
+— John Burn-Murdoch (@jburnmurdoch) April 26, 2020
+
+ http://twitter.com/jburnmurdoch/status/1254461322353393666";}i:23;a:6:{s:5:"about";s:71:"https://www.thecut.com/2020/04/the-biden-trap-woman-vice-president.html";s:5:"title";s:56:"Joe Biden’s Female VP Pick Is Already Caught in a Trap";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:4:"misc";s:6:"source";s:19:"http://twitter.com/";s:10:"identifier";s:41:"http://pinboard.in/u:misc/b:c63909e11173/";}s:4:"link";s:71:"https://www.thecut.com/2020/04/the-biden-trap-woman-vice-president.html";s:11:"description";s:49:"Traister wants a different nominee. We all do. 
+
+";s:7:"summary";s:49:"Traister wants a different nominee. We all do. 
+
+";}i:24;a:4:{s:5:"about";s:39:"http://beza1e1.tuxen.de/lore/index.html";s:5:"title";s:37:"Software Folklore ― Andreas Zwinkau";s:2:"dc";a:3:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:6:"tomash";s:10:"identifier";s:43:"http://pinboard.in/u:tomash/b:c85e24cf8733/";}s:4:"link";s:39:"http://beza1e1.tuxen.de/lore/index.html";}i:25;a:8:{s:5:"about";s:50:"https://wweb.dev/resources/css-separator-generator";s:5:"title";s:42:"CSS Section Separator Generator | wweb.dev";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:3:"fub";s:7:"subject";s:31:"css design background generator";s:10:"identifier";s:40:"http://pinboard.in/u:fub/b:71919beb94e9/";}s:4:"link";s:50:"https://wweb.dev/resources/css-separator-generator";s:11:"description";s:123:"<blockquote>A collection of customizable CSS section separators, with the possibility to easily copy the code.</blockquote>";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:7:"
+	
+	
+	
+";s:7:"summary";s:123:"<blockquote>A collection of customizable CSS section separators, with the possibility to easily copy the code.</blockquote>";}i:26;a:6:{s:5:"about";s:39:"https://github.com/Impedimenta/Suitcase";s:5:"title";s:123:"Impedimenta/Suitcase: A flexible command line tool for instantly deploying user interfaces for simple commands and scripts.";s:2:"dc";a:5:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:7:"whyleyc";s:7:"subject";s:21:"macos osx menu gui ui";s:6:"source";s:19:"http://pinboard.in/";s:10:"identifier";s:44:"http://pinboard.in/u:whyleyc/b:e5d38330e5a7/";}s:4:"link";s:39:"https://github.com/Impedimenta/Suitcase";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:9:"
+	
+	
+	
+	
+";}i:27;a:8:{s:5:"about";s:75:"https://blog.balthazar-rouberol.com/shell-productivity-tips-and-tricks.html";s:5:"title";s:48:"Balthazar – Shell productivity tips and tricks";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:8:"mrseth01";s:7:"subject";s:12:"bash console";s:10:"identifier";s:45:"http://pinboard.in/u:mrseth01/b:8a93fd172a17/";}s:4:"link";s:75:"https://blog.balthazar-rouberol.com/shell-productivity-tips-and-tricks.html";s:11:"description";s:65:"<blockquote>Posts and writings by Balthazar Rouberol</blockquote>";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:3:"
+	
+";s:7:"summary";s:65:"<blockquote>Posts and writings by Balthazar Rouberol</blockquote>";}i:28;a:6:{s:5:"about";s:25:"https://getcleanshot.com/";s:5:"title";s:19:"CleanShot for macOS";s:2:"dc";a:5:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:9:"thulstrup";s:7:"subject";s:14:"screenshot app";s:6:"source";s:19:"http://pinboard.in/";s:10:"identifier";s:46:"http://pinboard.in/u:thulstrup/b:d2a0867b617b/";}s:4:"link";s:25:"https://getcleanshot.com/";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:3:"
+	
+";}i:29;a:6:{s:5:"about";s:86:"https://www.businessinsider.com/former-neighbor-corroborates-joe-bidens-accuser-2020-4";s:5:"title";s:129:"A former neighbor of Joe Biden's accuser Tara Reade has come forward to corroborate her sexual assault account - Business Insider";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:9:"jmartindf";s:7:"subject";s:19:"biden president2020";s:10:"identifier";s:46:"http://pinboard.in/u:jmartindf/b:269b27a11828/";}s:4:"link";s:86:"https://www.businessinsider.com/former-neighbor-corroborates-joe-bidens-accuser-2020-4";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:3:"
+	
+";}i:30;a:6:{s:5:"about";s:29:"https://shachaf.net/w/b-trees";s:5:"title";s:23:"Let's invent B(+)-trees";s:2:"dc";a:5:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:8:"b.singer";s:7:"subject";s:23:"data-structures b-trees";s:6:"source";s:19:"http://pinboard.in/";s:10:"identifier";s:45:"http://pinboard.in/u:b.singer/b:ad45afd6b672/";}s:4:"link";s:29:"https://shachaf.net/w/b-trees";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:3:"
+	
+";}i:31;a:6:{s:5:"about";s:102:"https://www.washingtonpost.com/investigations/2020/04/27/covid-19-death-toll-undercounted/?arc404=true";s:5:"title";s:97:"U.S. coronavirus deaths in early weeks of pandemic exceeded official number - The Washington Post";s:2:"dc";a:5:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:6:"jcberk";s:7:"subject";s:58:"health crisismanagement statistics analytics datadecisions";s:6:"source";s:19:"http://pinboard.in/";s:10:"identifier";s:43:"http://pinboard.in/u:jcberk/b:38e1e2ea03c9/";}s:4:"link";s:102:"https://www.washingtonpost.com/investigations/2020/04/27/covid-19-death-toll-undercounted/?arc404=true";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:9:"
+	
+	
+	
+	
+";}i:32;a:6:{s:5:"about";s:74:"https://waxy.org/2020/04/jay-z-orders-deepfake-audio-parodies-off-youtube/";s:5:"title";s:96:"With questionable copyright claim, Jay-Z orders deepfake audio parodies off YouTube – Waxy.org";s:2:"dc";a:5:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:5:"roger";s:7:"subject";s:5:"audio";s:6:"source";s:19:"http://pinboard.in/";s:10:"identifier";s:42:"http://pinboard.in/u:roger/b:91b76ae712c0/";}s:4:"link";s:74:"https://waxy.org/2020/04/jay-z-orders-deepfake-audio-parodies-off-youtube/";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:1:"
+";}i:33;a:6:{s:5:"about";s:125:"https://www.vox.com/coronavirus-covid19/2020/4/27/21236270/bill-gates-coronavirus-covid-19-plan-vaccines-conspiracies-podcast";s:5:"title";s:53:"Bill Gates’s vision for life beyond the coronavirus";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:11:"sillygwailo";s:7:"subject";s:10:"Reading.am";s:10:"identifier";s:48:"http://pinboard.in/u:sillygwailo/b:078b6b265e89/";}s:4:"link";s:125:"https://www.vox.com/coronavirus-covid19/2020/4/27/21236270/bill-gates-coronavirus-covid-19-plan-vaccines-conspiracies-podcast";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:1:"
+";}i:34;a:6:{s:5:"about";s:76:"https://kieranhealy.org/blog/archives/2020/04/23/apples-covid-mobility-data/";s:5:"title";s:45:"Apple's COVID Mobility Data - kieranhealy.org";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:10:"briantrice";s:6:"source";s:19:"http://twitter.com/";s:10:"identifier";s:47:"http://pinboard.in/u:briantrice/b:5c0e1b5f37ba/";}s:4:"link";s:76:"https://kieranhealy.org/blog/archives/2020/04/23/apples-covid-mobility-data/";s:11:"description";s:79:"What's the spike in Apple's COVID-10 Mobility Data? A little detective story:  ";s:7:"summary";s:79:"What's the spike in Apple's COVID-10 Mobility Data? A little detective story:  ";}i:35;a:6:{s:5:"about";s:60:"https://letsencrypt.org/docs/a-warm-welcome-to-asn1-and-der/";s:5:"title";s:75:"A Warm Welcome to ASN.1 and DER - Let's Encrypt - Free SSL/TLS Certificates";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:7:"dadrian";s:6:"source";s:19:"http://pinboard.in/";s:10:"identifier";s:44:"http://pinboard.in/u:dadrian/b:4e10c857d483/";}s:4:"link";s:60:"https://letsencrypt.org/docs/a-warm-welcome-to-asn1-and-der/";s:11:"description";s:227:"RT @j4cob: Underneath HTTPS certificates, there's a pair of technologies called ASN.1 and DER that define how the certificates are encoded. It's pretty hard to learn how these work, so I wrote "A Warm Welcome to ASN.1 and DER"
+";s:7:"summary";s:227:"RT @j4cob: Underneath HTTPS certificates, there's a pair of technologies called ASN.1 and DER that define how the certificates are encoded. It's pretty hard to learn how these work, so I wrote "A Warm Welcome to ASN.1 and DER"
+";}i:36;a:6:{s:5:"about";s:18:"https://blurha.sh/";s:5:"title";s:8:"BlurHash";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:10:"muffinista";s:7:"subject";s:38:"image software webdev blur progressive";s:10:"identifier";s:47:"http://pinboard.in/u:muffinista/b:55e6d6cb0ffd/";}s:4:"link";s:18:"https://blurha.sh/";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:9:"
+	
+	
+	
+	
+";}i:37;a:6:{s:5:"about";s:72:"https://www.nytimes.com/2020/04/26/us/ahmed-arbery-shooting-georgia.html";s:5:"title";s:83:"Untitled (https://www.nytimes.com/2020/04/26/us/ahmed-arbery-shooting-georgia.html)";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:11:"shawnfuryan";s:6:"source";s:19:"http://twitter.com/";s:10:"identifier";s:48:"http://pinboard.in/u:shawnfuryan/b:48efe168d414/";}s:4:"link";s:72:"https://www.nytimes.com/2020/04/26/us/ahmed-arbery-shooting-georgia.html";s:11:"description";s:262:"Gregory McMichael and his son Travis saw a 25 year old black man going for a run. 
+
+They grabbed their guns, jumped into their truck, followed him and yelled 
+“Stop, stop — we want to talk to you.”
+
+Then they killed him. 
+
+This was a modern day lynching.  ";s:7:"summary";s:262:"Gregory McMichael and his son Travis saw a 25 year old black man going for a run. 
+
+They grabbed their guns, jumped into their truck, followed him and yelled 
+“Stop, stop — we want to talk to you.”
+
+Then they killed him. 
+
+This was a modern day lynching.  ";}i:38;a:8:{s:5:"about";s:35:"https://github.com/dandavison/delta";s:5:"title";s:62:"GitHub - dandavison/delta: A syntax-highlighting pager for git";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:8:"jaygooby";s:7:"subject";s:23:"github starred favorite";s:10:"identifier";s:45:"http://pinboard.in/u:jaygooby/b:79d15d3d32cf/";}s:4:"link";s:35:"https://github.com/dandavison/delta";s:11:"description";s:33:"jaygooby starred dandavison/delta";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:5:"
+	
+	
+";s:7:"summary";s:33:"jaygooby starred dandavison/delta";}i:39;a:6:{s:5:"about";s:60:"https://www.infoq.com/news/2020/04/microservices-back-again/";s:5:"title";s:69:"To Microservices and Back Again - Why Segment Went Back to a Monolith";s:2:"dc";a:5:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:12:"jimcmcdonald";s:7:"subject";s:13:"microservices";s:6:"source";s:19:"http://pinboard.in/";s:10:"identifier";s:49:"http://pinboard.in/u:jimcmcdonald/b:19a2b04ef568/";}s:4:"link";s:60:"https://www.infoq.com/news/2020/04/microservices-back-again/";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:1:"
+";}i:40;a:6:{s:5:"about";s:36:"https://github.com/mrc-ide/covid-sim";s:5:"title";s:26:"GitHub - mrc-ide/covid-sim";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:9:"aguerrera";s:6:"source";s:19:"http://twitter.com/";s:10:"identifier";s:46:"http://pinboard.in/u:aguerrera/b:aa76122ad211/";}s:4:"link";s:36:"https://github.com/mrc-ide/covid-sim";s:11:"description";s:243:"The Imperial College epidemic simulation code that I helped a little on is now public:   I am a strong proponent of public code for models that may influence policy, and while this is a "release" rather than a "live" depot, it is a Good Thing.";s:7:"summary";s:243:"The Imperial College epidemic simulation code that I helped a little on is now public:   I am a strong proponent of public code for models that may influence policy, and while this is a "release" rather than a "live" depot, it is a Good Thing.";}i:41;a:6:{s:5:"about";s:103:"https://www.ianvisits.co.uk/blog/2020/04/28/british-museum-makes-1-9-million-images-available-for-free/";s:5:"title";s:58:"British Museum makes 1.9 million images available for free";s:2:"dc";a:5:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:6:"mikael";s:7:"subject";s:43:"museum creativecommons resources blog-posts";s:6:"source";s:19:"http://pinboard.in/";s:10:"identifier";s:43:"http://pinboard.in/u:mikael/b:be5593cf1f2d/";}s:4:"link";s:103:"https://www.ianvisits.co.uk/blog/2020/04/28/british-museum-makes-1-9-million-images-available-for-free/";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:7:"
+	
+	
+	
+";}i:42;a:6:{s:5:"about";s:60:"https://healeycodes.com/hacking-together-an-e-ink-dashboard/";s:5:"title";s:35:"Hacking Together an E-ink Dashboard";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:8:"acobster";s:7:"subject";s:18:"maker raspberry-pi";s:10:"identifier";s:45:"http://pinboard.in/u:acobster/b:e506d3dcd3a3/";}s:4:"link";s:60:"https://healeycodes.com/hacking-together-an-e-ink-dashboard/";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:3:"
+	
+";}i:43;a:8:{s:5:"about";s:100:"https://www.nytimes.com/interactive/2020/04/26/us/politics/trump-coronavirus-briefings-analyzed.html";s:5:"title";s:80:"260,000 Words, Full of Self-Praise, From Trump on the Virus - The New York Times";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:9:"morsecode";s:7:"subject";s:12:"IFTTT Pocket";s:10:"identifier";s:46:"http://pinboard.in/u:morsecode/b:284cc6823ed1/";}s:4:"link";s:100:"https://www.nytimes.com/interactive/2020/04/26/us/politics/trump-coronavirus-briefings-analyzed.html";s:11:"description";s:267:"At his White House news briefing on the coronavirus on March 19, President Trump offered high praise for the commissioner of the Food and Drug Administration, Stephen Hahn. “He’s worked, like, probably as hard or harder than anybody,” Mr. Trump said. via Pocket";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:3:"
+	
+";s:7:"summary";s:267:"At his White House news briefing on the coronavirus on March 19, President Trump offered high praise for the commissioner of the Food and Drug Administration, Stephen Hahn. “He’s worked, like, probably as hard or harder than anybody,” Mr. Trump said. via Pocket";}i:44;a:6:{s:5:"about";s:56:"https://wizardforcel.gitbooks.io/sicp-in-python/content/";s:5:"title";s:29:"Introduction | SICP in Python";s:2:"dc";a:5:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:6:"rhaley";s:7:"subject";s:39:"python programming LessonPlan tutorials";s:6:"source";s:19:"http://pinboard.in/";s:10:"identifier";s:43:"http://pinboard.in/u:rhaley/b:73e844b64f33/";}s:4:"link";s:56:"https://wizardforcel.gitbooks.io/sicp-in-python/content/";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:7:"
+	
+	
+	
+";}i:45;a:6:{s:5:"about";s:39:"https://holzschu.github.io/a-Shell_iOS/";s:5:"title";s:7:"a-Shell";s:2:"dc";a:5:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:11:"robenkleene";s:7:"subject";s:25:"iOS App Terminal-Emulator";s:6:"source";s:19:"http://pinboard.in/";s:10:"identifier";s:48:"http://pinboard.in/u:robenkleene/b:66ee755ac125/";}s:4:"link";s:39:"https://holzschu.github.io/a-Shell_iOS/";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:5:"
+	
+	
+";}i:46;a:8:{s:5:"about";s:33:"https://adactio.com/journal/16811";s:5:"title";s:44:"Adactio: Journal—Principles and priorities";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:6:"rona25";s:7:"subject";s:88:"business startups usability productivity productmanagement management softwaremanagement";s:10:"identifier";s:43:"http://pinboard.in/u:rona25/b:79d96250087b/";}s:4:"link";s:33:"https://adactio.com/journal/16811";s:11:"description";s:75:"<blockquote>Using design principles to embody your priorities.</blockquote>";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:13:"
+	
+	
+	
+	
+	
+	
+";s:7:"summary";s:75:"<blockquote>Using design principles to embody your priorities.</blockquote>";}i:47;a:4:{s:5:"about";s:29:"https://drawsql.app/templates";s:5:"title";s:36:"Database schema templates by DrawSQL";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:6:"kuiro5";s:6:"source";s:19:"http://pinboard.in/";s:10:"identifier";s:43:"http://pinboard.in/u:kuiro5/b:11005fde0c44/";}s:4:"link";s:29:"https://drawsql.app/templates";}i:48;a:8:{s:5:"about";s:64:"https://blog.halide.cam/iphone-se-the-one-eyed-king-96713d65a3b1";s:5:"title";s:9:"302 Found";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:13:"josephschmitt";s:7:"subject";s:20:"ifttt daringfireball";s:10:"identifier";s:50:"http://pinboard.in/u:josephschmitt/b:33a41fb86057/";}s:4:"link";s:64:"https://blog.halide.cam/iphone-se-the-one-eyed-king-96713d65a3b1";s:11:"description";s:1065:"from Daring Fireball
+
+Ben Sandofsky, writing at the Halide blog:
+
+“Doesn’t the iPhone XR do that? It also only has a single camera!”, you might say. As we covered previously, while the iPhone XR has a single camera, it still obtained depth information through hardware. Its sensor features focus pixels, which you can think of as tiny pairs of “eyes” designed to help with focus. The XR uses the very slight differences seen out of each eye to generate a very rough depth map.
+
+The new iPhone SE doesn’t have focus pixels, or any other starting point for depth. It generates depth entirely through machine learning. It’s easy to test this yourself: take a picture of another picture.
+
+The fact that the new SE apparently has the exact same sensor as the iPhone 8, but is noticeably more capable, exemplifies the potential of computational photography. Remember too, that everything Apple does for the SE can also be applied to iPhones (and iPads) that do have multiple cameras and focus pixels on their sensors. A rising tide lifts all boats.
+
+ ★ ";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:3:"
+	
+";s:7:"summary";s:1065:"from Daring Fireball
+
+Ben Sandofsky, writing at the Halide blog:
+
+“Doesn’t the iPhone XR do that? It also only has a single camera!”, you might say. As we covered previously, while the iPhone XR has a single camera, it still obtained depth information through hardware. Its sensor features focus pixels, which you can think of as tiny pairs of “eyes” designed to help with focus. The XR uses the very slight differences seen out of each eye to generate a very rough depth map.
+
+The new iPhone SE doesn’t have focus pixels, or any other starting point for depth. It generates depth entirely through machine learning. It’s easy to test this yourself: take a picture of another picture.
+
+The fact that the new SE apparently has the exact same sensor as the iPhone 8, but is noticeably more capable, exemplifies the potential of computational photography. Remember too, that everything Apple does for the SE can also be applied to iPhones (and iPads) that do have multiple cameras and focus pixels on their sensors. A rising tide lifts all boats.
+
+ ★ ";}i:49;a:8:{s:5:"about";s:121:"https://www.nationalgeographic.com/science/2020/04/coronavirus-zoom-fatigue-is-taxing-the-brain-here-is-why-that-happens/";s:5:"title";s:64:"‘Zoom fatigue’ is taxing the brain. Here's why that happens.";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:15:"jerrythepunkrat";s:7:"subject";s:12:"IFTTT Pocket";s:10:"identifier";s:52:"http://pinboard.in/u:jerrythepunkrat/b:65a00c3107fb/";}s:4:"link";s:121:"https://www.nationalgeographic.com/science/2020/04/coronavirus-zoom-fatigue-is-taxing-the-brain-here-is-why-that-happens/";s:11:"description";s:156:"Jodi Eichler-Levine finished teaching a class over Zoom on April 15, and she immediately fell asleep in the guest bedroom doubling as her office. via Pocket";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:3:"
+	
+";s:7:"summary";s:156:"Jodi Eichler-Levine finished teaching a class over Zoom on April 15, and she immediately fell asleep in the guest bedroom doubling as her office. via Pocket";}i:50;a:6:{s:5:"about";s:23:"https://svgartista.net/";s:5:"title";s:13:"svg animation";s:2:"dc";a:5:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:9:"jimthedev";s:7:"subject";s:13:"svg animation";s:6:"source";s:19:"http://pinboard.in/";s:10:"identifier";s:46:"http://pinboard.in/u:jimthedev/b:2c331f22e608/";}s:4:"link";s:23:"https://svgartista.net/";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:3:"
+	
+";}i:51;a:4:{s:5:"about";s:135:"https://www.theguardian.com/technology/2020/apr/27/how-to-avoid-amazon-the-definitive-guide-to-online-shopping-without-the-retail-titan";s:5:"title";s:117:"How to avoid Amazon: the definitive guide to online shopping – without the retail titan | Technology | The Guardian";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:5:"ralka";s:6:"source";s:19:"http://pinboard.in/";s:10:"identifier";s:42:"http://pinboard.in/u:ralka/b:6173a076f5b0/";}s:4:"link";s:135:"https://www.theguardian.com/technology/2020/apr/27/how-to-avoid-amazon-the-definitive-guide-to-online-shopping-without-the-retail-titan";}i:52;a:8:{s:5:"about";s:76:"https://www.cnn.com/2020/04/27/tech/coronavirus-conspiracy-theory/index.html";s:5:"title";s:106:"Exclusive: She's been falsely accused of starting the pandemic. Her life has been turned upside down - CNN";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:9:"wfreeland";s:7:"subject";s:25:"Archive instapaper tenpla";s:10:"identifier";s:46:"http://pinboard.in/u:wfreeland/b:1c57f2fd0a97/";}s:4:"link";s:76:"https://www.cnn.com/2020/04/27/tech/coronavirus-conspiracy-theory/index.html";s:11:"description";s:209:"Maatje Benassi, a US Army reservist and mother of two, has become the target of conspiracy theorists who falsely place her at the beginning of the coronavirus pandemic, saying she brought the disease to China.";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:5:"
+	
+	
+";s:7:"summary";s:209:"Maatje Benassi, a US Army reservist and mother of two, has become the target of conspiracy theorists who falsely place her at the beginning of the coronavirus pandemic, saying she brought the disease to China.";}i:53;a:6:{s:5:"about";s:60:"https://www.supremecourt.gov/opinions/19pdf/18-1150_7m58.pdf";s:5:"title";s:71:"Untitled (https://www.supremecourt.gov/opinions/19pdf/18-1150_7m58.pdf)";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:6:"joseph";s:6:"source";s:19:"http://twitter.com/";s:10:"identifier";s:43:"http://pinboard.in/u:joseph/b:39a78f467759/";}s:4:"link";s:60:"https://www.supremecourt.gov/opinions/19pdf/18-1150_7m58.pdf";s:11:"description";s:193:"Whoa! Georgia v. Public Resource Org, 5-4 decision against the Georgia annotations being copyrightable. The Chief Justice has the majority, joined by Sotomayor, Kagan, Gorsuch, and Kavanaugh:  ";s:7:"summary";s:193:"Whoa! Georgia v. Public Resource Org, 5-4 decision against the Georgia annotations being copyrightable. The Chief Justice has the majority, joined by Sotomayor, Kagan, Gorsuch, and Kavanaugh:  ";}i:54;a:6:{s:5:"about";s:75:"https://adaged.blogspot.com/2020/04/good-writing-is-business-advantage.html";s:5:"title";s:77:"Ad Aged: Good writing is a business advantage. (An advertisement for myself.)";s:2:"dc";a:5:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:5:"1rick";s:7:"subject";s:7:"writing";s:6:"source";s:19:"http://pinboard.in/";s:10:"identifier";s:42:"http://pinboard.in/u:1rick/b:f28eed3c5a7f/";}s:4:"link";s:75:"https://adaged.blogspot.com/2020/04/good-writing-is-business-advantage.html";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:1:"
+";}i:55;a:6:{s:5:"about";s:91:"https://www.tylermw.com/a-step-by-step-guide-to-making-3d-maps-with-satellite-imagery-in-r/";s:5:"title";s:86:"A Step-by-Step Guide to Making 3D Maps with Satellite Imagery in R – Data Junk[i.e.]";s:2:"dc";a:5:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:8:"sailfast";s:7:"subject";s:40:"R Imagery 3d Tutorial Mapping Geospatial";s:6:"source";s:19:"http://pinboard.in/";s:10:"identifier";s:45:"http://pinboard.in/u:sailfast/b:d589c342922e/";}s:4:"link";s:91:"https://www.tylermw.com/a-step-by-step-guide-to-making-3d-maps-with-satellite-imagery-in-r/";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:11:"
+	
+	
+	
+	
+	
+";}i:56;a:6:{s:5:"about";s:54:"https://timr.co/server-side-rendering-is-a-thiel-truth";s:5:"title";s:38:"Server-Side Rendering is a Thiel Truth";s:2:"dc";a:5:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:11:"nicolashery";s:7:"subject";s:11:"server-side";s:6:"source";s:19:"http://pinboard.in/";s:10:"identifier";s:48:"http://pinboard.in/u:nicolashery/b:a2196d716a50/";}s:4:"link";s:54:"https://timr.co/server-side-rendering-is-a-thiel-truth";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:1:"
+";}i:57;a:6:{s:5:"about";s:39:"http://www.sizecoding.org/wiki/Memories";s:5:"title";s:21:"Memories - SizeCoding";s:2:"dc";a:5:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:5:"9diov";s:7:"subject";s:13:"demo assembly";s:6:"source";s:19:"http://pinboard.in/";s:10:"identifier";s:42:"http://pinboard.in/u:9diov/b:b627dfa780a5/";}s:4:"link";s:39:"http://www.sizecoding.org/wiki/Memories";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:3:"
+	
+";}i:58;a:6:{s:5:"about";s:34:"https://v8.dev/blog/wasm-decompile";s:5:"title";s:57:"What’s in that .wasm? Introducing: wasm-decompile · V8";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:8:"jvoorhis";s:6:"source";s:19:"http://twitter.com/";s:10:"identifier";s:45:"http://pinboard.in/u:jvoorhis/b:694c2ea63b8a/";}s:4:"link";s:34:"https://v8.dev/blog/wasm-decompile";s:11:"description";s:139:"What’s in that .wasm? 🔍 
+
+Introducing: wasm-decompile! 
+
+Read the contents of WebAssembly modules in a more friendly and familiar way.";s:7:"summary";s:139:"What’s in that .wasm? 🔍 
+
+Introducing: wasm-decompile! 
+
+Read the contents of WebAssembly modules in a more friendly and familiar way.";}i:59;a:6:{s:5:"about";s:85:"https://www.nytimes.com/2020/04/28/world/europe/sweden-coronavirus-herd-immunity.html";s:5:"title";s:95:"‘Life Has to Go On’: How Sweden Has Faced the Virus Without a Lockdown - The New York Times";s:2:"dc";a:5:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:3:"dpb";s:7:"subject";s:13:"corona sweden";s:6:"source";s:19:"http://pinboard.in/";s:10:"identifier";s:40:"http://pinboard.in/u:dpb/b:12eb382f2759/";}s:4:"link";s:85:"https://www.nytimes.com/2020/04/28/world/europe/sweden-coronavirus-herd-immunity.html";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:3:"
+	
+";}i:60;a:6:{s:5:"about";s:23:"https://webwormhole.io/";s:5:"title";s:11:"WEBWORMHOLE";s:2:"dc";a:5:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:8:"kravietz";s:7:"subject";s:5:"linux";s:6:"source";s:19:"http://pinboard.in/";s:10:"identifier";s:45:"http://pinboard.in/u:kravietz/b:7b07046492d5/";}s:4:"link";s:23:"https://webwormhole.io/";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:1:"
+";}i:61;a:6:{s:5:"about";s:92:"https://medium.com/@rakyll/things-i-wished-more-developers-knew-about-databases-2d0178464f78";s:5:"title";s:103:"Untitled (https://medium.com/@rakyll/things-i-wished-more-developers-knew-about-databases-2d0178464f78)";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:10:"briantrice";s:6:"source";s:19:"http://twitter.com/";s:10:"identifier";s:47:"http://pinboard.in/u:briantrice/b:a768b6ce113f/";}s:4:"link";s:92:"https://medium.com/@rakyll/things-i-wished-more-developers-knew-about-databases-2d0178464f78";s:11:"description";s:96:"This article is live at . It touches a variety of topics in databases developers get to know… ";s:7:"summary";s:96:"This article is live at . It touches a variety of topics in databases developers get to know… ";}i:62;a:6:{s:5:"about";s:97:"https://www.lastweekinaws.com/blog/why-zoom-chose-oracle-cloud-over-aws-and-maybe-you-should-too/";s:5:"title";s:80:"Why Zoom Chose Oracle Cloud Over AWS and Maybe You Should Too - Last Week in AWS";s:2:"dc";a:5:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:6:"jabley";s:7:"subject";s:56:"aws oracle zoom video bandwidth costs cloud data network";s:6:"source";s:19:"http://twitter.com/";s:10:"identifier";s:43:"http://pinboard.in/u:jabley/b:61ae3006bc32/";}s:4:"link";s:97:"https://www.lastweekinaws.com/blog/why-zoom-chose-oracle-cloud-over-aws-and-maybe-you-should-too/";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:17:"
+	
+	
+	
+	
+	
+	
+	
+	
+";}i:63;a:6:{s:5:"about";s:108:"https://www.newyorker.com/magazine/2020/05/04/twenty-four-hours-at-the-epicenter-of-the-coronavirus-pandemic";s:5:"title";s:70:"24 Hours at the Epicenter of the Coronavirus Pandemic | The New Yorker";s:2:"dc";a:5:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:12:"simonalibert";s:7:"subject";s:3:"nyc";s:6:"source";s:19:"http://pinboard.in/";s:10:"identifier";s:49:"http://pinboard.in/u:simonalibert/b:b157272837a6/";}s:4:"link";s:108:"https://www.newyorker.com/magazine/2020/05/04/twenty-four-hours-at-the-epicenter-of-the-coronavirus-pandemic";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:1:"
+";}i:64;a:6:{s:5:"about";s:51:"https://www.starwars.com/news/star-wars-backgrounds";s:5:"title";s:63:"Star Wars Backgrounds for Video Calls & Meetings | StarWars.com";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:8:"richardy";s:6:"source";s:19:"http://twitter.com/";s:10:"identifier";s:45:"http://pinboard.in/u:richardy/b:9271866d858c/";}s:4:"link";s:51:"https://www.starwars.com/news/star-wars-backgrounds";s:11:"description";s:34:"View more backgrounds on :  (2/2) ";s:7:"summary";s:34:"View more backgrounds on :  (2/2) ";}i:65;a:6:{s:5:"about";s:100:"https://www.citylab.com/life/2020/04/neighborhood-maps-coronavirus-lockdown-stay-at-home-art/610018/";s:5:"title";s:58:"Colorful Maps of a World in Coronavirus Lockdown - CityLab";s:2:"dc";a:3:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:3:"bix";s:10:"identifier";s:40:"http://pinboard.in/u:bix/b:e9fb5bf434d3/";}s:4:"link";s:100:"https://www.citylab.com/life/2020/04/neighborhood-maps-coronavirus-lockdown-stay-at-home-art/610018/";s:11:"description";s:255:"<blockquote>CityLab recently invited readers to draw maps of their worlds in the time of coronavirus. Already, more than 100 of you have responded to our call with an incredible range of interpretative maps, submitted from all over the world.</blockquote>";s:7:"summary";s:255:"<blockquote>CityLab recently invited readers to draw maps of their worlds in the time of coronavirus. Already, more than 100 of you have responded to our call with an incredible range of interpretative maps, submitted from all over the world.</blockquote>";}i:66;a:8:{s:5:"about";s:44:"https://www.bbc.com/news/technology-52441428";s:5:"title";s:56:"NHS rejects Apple-Google coronavirus app plan - BBC News";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:6:"chetan";s:7:"subject";s:13:"IFTTT Twitter";s:10:"identifier";s:43:"http://pinboard.in/u:chetan/b:97cf6bc1b78a/";}s:4:"link";s:44:"https://www.bbc.com/news/technology-52441428";s:11:"description";s:160:"Favorite tweet:
+
+Reminder: no-one cared about Cambridge Analytica. Until they didhttps://t.co/TuAimQnj87
+
+— Carole Cadwalladr (@carolecadwalla) April 27, 2020";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:3:"
+	
+";s:7:"summary";s:160:"Favorite tweet:
+
+Reminder: no-one cared about Cambridge Analytica. Until they didhttps://t.co/TuAimQnj87
+
+— Carole Cadwalladr (@carolecadwalla) April 27, 2020";}i:67;a:8:{s:5:"about";s:39:"https://github.com/aristocratos/bashtop";s:5:"title";s:44:"aristocratos/bashtop: Linux resource monitor";s:2:"dc";a:5:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:4:"dano";s:7:"subject";s:12:"top sysadmin";s:6:"source";s:19:"http://pinboard.in/";s:10:"identifier";s:41:"http://pinboard.in/u:dano/b:4a595035e41e/";}s:4:"link";s:39:"https://github.com/aristocratos/bashtop";s:11:"description";s:41:"Easy switching between sorting options.
+";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:3:"
+	
+";s:7:"summary";s:41:"Easy switching between sorting options.
+";}i:68;a:6:{s:5:"about";s:75:"https://www.nytimes.com/2020/04/29/sunday-review/zoom-video-conference.html";s:5:"title";s:41:"Why Zoom Is Terrible - The New York Times";s:2:"dc";a:5:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:9:"cmirabile";s:7:"subject";s:76:"health psychology currentevents internet relationships communication society";s:6:"source";s:19:"http://pinboard.in/";s:10:"identifier";s:46:"http://pinboard.in/u:cmirabile/b:1cd09de743df/";}s:4:"link";s:75:"https://www.nytimes.com/2020/04/29/sunday-review/zoom-video-conference.html";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:13:"
+	
+	
+	
+	
+	
+	
+";}i:69;a:8:{s:5:"about";s:109:"https://towardsdatascience.com/springer-has-released-65-machine-learning-and-data-books-for-free-961f8181f189";s:5:"title";s:120:"Untitled (https://towardsdatascience.com/springer-has-released-65-machine-learning-and-data-books-for-free-961f8181f189)";s:2:"dc";a:5:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:6:"cdrago";s:7:"subject";s:184:"JavaScript AI CloudComputing IIoT IoT Serverless DataScience BigData Python Analytics Coding Statistics RStats 100DaysofCode MachineLearning Mathematics ReactJS Linux Programming Books";s:6:"source";s:19:"http://twitter.com/";s:10:"identifier";s:43:"http://pinboard.in/u:cdrago/b:10f0873a11f5/";}s:4:"link";s:109:"https://towardsdatascience.com/springer-has-released-65-machine-learning-and-data-books-for-free-961f8181f189";s:11:"description";s:250:"Springer has Released 65 #MachineLearning and Data books for Free. #BigData #Analytics #DataScience #AI #IoT #IIoT #Python #RStats #JavaScript #ReactJS #CloudComputing #Serverless #Linux #Mathematics #Statistics #Programming #Coding #100DaysofCode 
+ ";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:39:"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+";s:7:"summary";s:250:"Springer has Released 65 #MachineLearning and Data books for Free. #BigData #Analytics #DataScience #AI #IoT #IIoT #Python #RStats #JavaScript #ReactJS #CloudComputing #Serverless #Linux #Mathematics #Statistics #Programming #Coding #100DaysofCode 
+ ";}i:70;a:8:{s:5:"about";s:68:"https://m.signalvnoise.com/hiring-programmers-with-a-take-home-test/";s:5:"title";s:58:"Hiring programmers with a take-home test - Signal v. Noise";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:7:"slogger";s:7:"subject";s:23:"signalvnoise technology";s:10:"identifier";s:44:"http://pinboard.in/u:slogger/b:8822be0d6645/";}s:4:"link";s:68:"https://m.signalvnoise.com/hiring-programmers-with-a-take-home-test/";s:11:"description";s:40:"Hiring programmers with a take-home test";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:3:"
+	
+";s:7:"summary";s:40:"Hiring programmers with a take-home test";}i:71;a:6:{s:5:"about";s:189:"https://www.washingtonpost.com/politics/13-hours-of-trump-the-president-fills-briefings-with-attacks-and-boasts-but-little-empathy/2020/04/25/7eec5ab0-8590-11ea-a3eb-e9fc93160703_story.html";s:5:"title";s:195:"(500) https://www.washingtonpost.com/politics/13-hours-of-trump-the-president-fills-briefings-with-attacks-and-boasts-but-little-empathy/2020/04/25/7eec5ab0-8590-11ea-a3eb-e9fc93160703_story.html";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:7:"sogrady";s:6:"source";s:19:"http://twitter.com/";s:10:"identifier";s:44:"http://pinboard.in/u:sogrady/b:40bab9d0e17b/";}s:4:"link";s:189:"https://www.washingtonpost.com/politics/13-hours-of-trump-the-president-fills-briefings-with-attacks-and-boasts-but-little-empathy/2020/04/25/7eec5ab0-8590-11ea-a3eb-e9fc93160703_story.html";s:11:"description";s:226:"During his briefings, Trump spent 10 minutes praising himself for every 1 minute he spent expressing condolences for the 50,000 Americans who died. In total, only 4.5 minutes out of 13 hours were spent on expressing sympathy. ";s:7:"summary";s:226:"During his briefings, Trump spent 10 minutes praising himself for every 1 minute he spent expressing condolences for the 50,000 Americans who died. In total, only 4.5 minutes out of 13 hours were spent on expressing sympathy. ";}i:72;a:4:{s:5:"about";s:46:"https://www.bbc.co.uk/news/technology-52441428";s:5:"title";s:56:"NHS rejects Apple-Google coronavirus app plan - BBC News";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:6:"danhon";s:6:"source";s:19:"http://pinboard.in/";s:10:"identifier";s:43:"http://pinboard.in/u:danhon/b:d8d83077246a/";}s:4:"link";s:46:"https://www.bbc.co.uk/news/technology-52441428";}i:73;a:6:{s:5:"about";s:94:"https://www.cbsnews.com/news/women-minority-business-owners-paycheck-protection-program-loans/";s:5:"title";s:105:"Untitled (https://www.cbsnews.com/news/women-minority-business-owners-paycheck-protection-program-loans/)";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:6:"docdre";s:6:"source";s:19:"http://twitter.com/";s:10:"identifier";s:43:"http://pinboard.in/u:docdre/b:224d77347731/";}s:4:"link";s:94:"https://www.cbsnews.com/news/women-minority-business-owners-paycheck-protection-program-loans/";s:11:"description";s:259:""Roughly 95% of Black-owned businesses,91% of Latino-owned businesses,91% of Native Hawaiian or Pacific Islander-owned businesses,& 75% of Asian-owned businesses stand close to no chance of receiving a PPP loan through a mainstream bank or credit union,..” ";s:7:"summary";s:259:""Roughly 95% of Black-owned businesses,91% of Latino-owned businesses,91% of Native Hawaiian or Pacific Islander-owned businesses,& 75% of Asian-owned businesses stand close to no chance of receiving a PPP loan through a mainstream bank or credit union,..” ";}i:74;a:8:{s:5:"about";s:101:"https://grist.org/climate/the-world-is-on-lockdown-so-where-are-all-the-carbon-emissions-coming-from/";s:5:"title";s:84:"The world is on lockdown. So where are all the carbon emissions coming from? | Grist";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:7:"slogger";s:7:"subject";s:12:"grist coding";s:10:"identifier";s:44:"http://pinboard.in/u:slogger/b:a9d5e31b90ed/";}s:4:"link";s:101:"https://grist.org/climate/the-world-is-on-lockdown-so-where-are-all-the-carbon-emissions-coming-from/";s:11:"description";s:76:"The world is on lockdown. So where are all the carbon emissions coming from?";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:3:"
+	
+";s:7:"summary";s:76:"The world is on lockdown. So where are all the carbon emissions coming from?";}i:75;a:8:{s:5:"about";s:30:"https://nostyle.herokuapp.com/";s:5:"title";s:22:"No Style Design System";s:2:"dc";a:5:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:12:"janvereecken";s:7:"subject";s:42:"html css forms design webdesign components";s:6:"source";s:19:"http://pinboard.in/";s:10:"identifier";s:49:"http://pinboard.in/u:janvereecken/b:76ad64d71af3/";}s:4:"link";s:30:"https://nostyle.herokuapp.com/";s:11:"description";s:88:"A set of components that can be used in web applications to solve common input problems.";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:11:"
+	
+	
+	
+	
+	
+";s:7:"summary";s:88:"A set of components that can be used in web applications to solve common input problems.";}i:76;a:8:{s:5:"about";s:89:"https://www.nytimes.com/2020/04/27/nyregion/new-york-city-doctor-suicide-coronavirus.html";s:5:"title";s:85:"Top E.R. Doctor Who Treated Coronavirus Patients Dies by Suicide - The New York Times";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:6:"jellis";s:7:"subject";s:6:"health";s:10:"identifier";s:43:"http://pinboard.in/u:jellis/b:0fd75e4adc7c/";}s:4:"link";s:89:"https://www.nytimes.com/2020/04/27/nyregion/new-york-city-doctor-suicide-coronavirus.html";s:11:"description";s:161:"“She tried to do her job, and it killed her,” said the father of Dr. Lorna M. Breen, who worked at a Manhattan hospital hit hard by the coronavirus outbreak.";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:1:"
+";s:7:"summary";s:161:"“She tried to do her job, and it killed her,” said the father of Dr. Lorna M. Breen, who worked at a Manhattan hospital hit hard by the coronavirus outbreak.";}i:77;a:4:{s:5:"about";s:109:"https://www.buzzfeednews.com/article/rosalindadams/after-one-tweet-to-president-trump-this-man-got-69-million";s:5:"title";s:62:"Coronavirus: A Tweet At Trump Landed Him Money For Ventilators";s:2:"dc";a:3:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:10:"geetarista";s:10:"identifier";s:47:"http://pinboard.in/u:geetarista/b:ad1f48499fc4/";}s:4:"link";s:109:"https://www.buzzfeednews.com/article/rosalindadams/after-one-tweet-to-president-trump-this-man-got-69-million";}i:78;a:6:{s:5:"about";s:45:"https://www.castlegardencenter.com/index.html";s:5:"title";s:33:"Castle's Garden, Lawn & Landscape";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:8:"amerberg";s:6:"source";s:19:"http://twitter.com/";s:10:"identifier";s:45:"http://pinboard.in/u:amerberg/b:0a7ea761cb5e/";}s:4:"link";s:45:"https://www.castlegardencenter.com/index.html";s:11:"description";s:128:"If you have gardening needs in Lower Bucks County, PA, here you go. This is a small local business and they are AMAZING PEOPLE: ";s:7:"summary";s:128:"If you have gardening needs in Lower Bucks County, PA, here you go. This is a small local business and they are AMAZING PEOPLE: ";}i:79;a:6:{s:5:"about";s:39:"https://simonsarris.com/art-collections";s:5:"title";s:75:"High Quality Collections of Digitized Art and Archival Finds | simon sarris";s:2:"dc";a:5:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:11:"nicknikolov";s:7:"subject";s:3:"art";s:6:"source";s:19:"http://pinboard.in/";s:10:"identifier";s:48:"http://pinboard.in/u:nicknikolov/b:1ae630c0a4d5/";}s:4:"link";s:39:"https://simonsarris.com/art-collections";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:1:"
+";}i:80;a:4:{s:5:"about";s:47:"https://smallstep.com/blog/ssh-tricks-and-tips/";s:5:"title";s:17:"SSH Tips & Tricks";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:12:"joshairborne";s:6:"source";s:19:"http://pinboard.in/";s:10:"identifier";s:49:"http://pinboard.in/u:joshairborne/b:27b9a5278498/";}s:4:"link";s:47:"https://smallstep.com/blog/ssh-tricks-and-tips/";}i:81;a:6:{s:5:"about";s:82:"https://techcrunch.com/2020/04/28/shopify-launches-shop-a-new-mobile-shopping-app/";s:5:"title";s:93:"Untitled (https://techcrunch.com/2020/04/28/shopify-launches-shop-a-new-mobile-shopping-app/)";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:6:"genmon";s:6:"source";s:19:"http://twitter.com/";s:10:"identifier";s:43:"http://pinboard.in/u:genmon/b:5bac7c2711fe/";}s:4:"link";s:82:"https://techcrunch.com/2020/04/28/shopify-launches-shop-a-new-mobile-shopping-app/";s:11:"description";s:144:"Today @shop has arrived. Our trusty package tracker has lead a double life in our labs over the past year and has grown far far more ambitious. ";s:7:"summary";s:144:"Today @shop has arrived. Our trusty package tracker has lead a double life in our labs over the past year and has grown far far more ambitious. ";}i:82;a:6:{s:5:"about";s:75:"https://blog.levine.sh/14058/wireguard-on-k8s-road-warrior-style-vpn-server";s:5:"title";s:48:"WireGuard on K8s (road-warrior-style VPN server)";s:2:"dc";a:5:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:5:"mahdi";s:7:"subject";s:10:"Kubernetes";s:6:"source";s:19:"http://pinboard.in/";s:10:"identifier";s:42:"http://pinboard.in/u:mahdi/b:eff90ea6df36/";}s:4:"link";s:75:"https://blog.levine.sh/14058/wireguard-on-k8s-road-warrior-style-vpn-server";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:1:"
+";}i:83;a:6:{s:5:"about";s:154:"https://mavenroundtable.io/theintellectualist/news/states-warn-that-workers-will-lose-unemployment-if-they-refuse-to-return-to-jobs-vbq1clsQ6USCAmgeoeym4w";s:5:"title";s:80:"States Warn That Workers Will Lose Unemployment If They Refuse To Return To Jobs";s:2:"dc";a:5:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:7:"jwmason";s:7:"subject";s:34:"coronavirus corona_labordiscipline";s:6:"source";s:19:"http://pinboard.in/";s:10:"identifier";s:44:"http://pinboard.in/u:jwmason/b:1f70a79c8177/";}s:4:"link";s:154:"https://mavenroundtable.io/theintellectualist/news/states-warn-that-workers-will-lose-unemployment-if-they-refuse-to-return-to-jobs-vbq1clsQ6USCAmgeoeym4w";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:3:"
+	
+";}i:84;a:4:{s:5:"about";s:81:"https://thume.ca/2020/04/18/telefork-forking-a-process-onto-a-different-computer/";s:5:"title";s:48:"Teleforking a process onto a different computer!";s:2:"dc";a:3:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:8:"mschrage";s:10:"identifier";s:45:"http://pinboard.in/u:mschrage/b:a9cb8519d2d1/";}s:4:"link";s:81:"https://thume.ca/2020/04/18/telefork-forking-a-process-onto-a-different-computer/";}i:85;a:6:{s:5:"about";s:23:"https://streamyard.com/";s:5:"title";s:10:"StreamYard";s:2:"dc";a:5:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:7:"sridhar";s:7:"subject";s:28:"streaming live screensharing";s:6:"source";s:19:"http://pinboard.in/";s:10:"identifier";s:44:"http://pinboard.in/u:sridhar/b:bac282512516/";}s:4:"link";s:23:"https://streamyard.com/";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:5:"
+	
+	
+";}i:86;a:6:{s:5:"about";s:20:"https://dashdash.io/";s:5:"title";s:28:"Linux Man Pages -- Dash Dash";s:2:"dc";a:5:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:6:"scuddr";s:7:"subject";s:47:"linux cli commands reference computers software";s:6:"source";s:19:"http://pinboard.in/";s:10:"identifier";s:43:"http://pinboard.in/u:scuddr/b:3bbad9b2e431/";}s:4:"link";s:20:"https://dashdash.io/";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:11:"
+	
+	
+	
+	
+	
+";}i:87;a:8:{s:5:"about";s:68:"https://www.statnews.com/feature/coronavirus/drugs-vaccines-tracker/";s:5:"title";s:42:"STAT's Covid-19 Drugs and Vaccines Tracker";s:2:"dc";a:5:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:14:"rebeccarobbins";s:7:"subject";s:7:"COVID19";s:6:"source";s:19:"http://twitter.com/";s:10:"identifier";s:51:"http://pinboard.in/u:rebeccarobbins/b:4a1df120ddee/";}s:4:"link";s:68:"https://www.statnews.com/feature/coronavirus/drugs-vaccines-tracker/";s:11:"description";s:138:"having a hard time keeping track of all the #COVID19 drugs and vaccines under development? @damiangarde has put together a handy tracker: ";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:1:"
+";s:7:"summary";s:138:"having a hard time keeping track of all the #COVID19 drugs and vaccines under development? @damiangarde has put together a handy tracker: ";}i:88;a:6:{s:5:"about";s:55:"https://datajournalism.com/read/handbook/verification-3";s:5:"title";s:42:"Verification Handbook | DataJournalism.com";s:2:"dc";a:5:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:9:"jccalhoun";s:7:"subject";s:34:"researching medialiteracy readthis";s:6:"source";s:19:"http://pinboard.in/";s:10:"identifier";s:46:"http://pinboard.in/u:jccalhoun/b:07de56284954/";}s:4:"link";s:55:"https://datajournalism.com/read/handbook/verification-3";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:5:"
+	
+	
+";}i:89;a:8:{s:5:"about";s:45:"https://news.ycombinator.com/item?id=22998129";s:5:"title";s:97:"The thing that confuses me about "modern", JavaScript-everything web development... | Hacker News";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:8:"chaoxian";s:7:"subject";s:13:"IFTTT Twitter";s:10:"identifier";s:45:"http://pinboard.in/u:chaoxian/b:3c5e50751566/";}s:4:"link";s:45:"https://news.ycombinator.com/item?id=22998129";s:11:"description";s:372:"Favorite tweet:
+
+If you're in the mood for 🍿🍿🍿 I just posted a comment on Hacker News suggesting that "modern" JavaScript actively harms developer efficiency compared to forms-and-HTML-with-a-tiny-bit-of-JavaScript-enhancement /cc @adactio https://t.co/YdKM2sOOkZ
+
+— Simon Willison (@simonw) April 27, 2020
+
+ http://twitter.com/simonw/status/1254833262112854016";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:3:"
+	
+";s:7:"summary";s:372:"Favorite tweet:
+
+If you're in the mood for 🍿🍿🍿 I just posted a comment on Hacker News suggesting that "modern" JavaScript actively harms developer efficiency compared to forms-and-HTML-with-a-tiny-bit-of-JavaScript-enhancement /cc @adactio https://t.co/YdKM2sOOkZ
+
+— Simon Willison (@simonw) April 27, 2020
+
+ http://twitter.com/simonw/status/1254833262112854016";}i:90;a:8:{s:5:"about";s:30:"https://jdan.github.io/98.css/";s:5:"title";s:6:"98.css";s:2:"dc";a:5:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:15:"matthewmcvickar";s:7:"subject";s:3:"css";s:6:"source";s:19:"http://pinboard.in/";s:10:"identifier";s:52:"http://pinboard.in/u:matthewmcvickar/b:ec46074cf9de/";}s:4:"link";s:30:"https://jdan.github.io/98.css/";s:11:"description";s:99:"<blockquote>98.css is a CSS library for building interfaces that look like Windows 98.</blockquote>";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:1:"
+";s:7:"summary";s:99:"<blockquote>98.css is a CSS library for building interfaces that look like Windows 98.</blockquote>";}i:91;a:6:{s:5:"about";s:82:"https://www.nytimes.com/2020/04/26/us/politics/trump-disinfectant-coronavirus.html";s:5:"title";s:93:"Untitled (https://www.nytimes.com/2020/04/26/us/politics/trump-disinfectant-coronavirus.html)";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:5:"tbony";s:6:"source";s:19:"http://twitter.com/";s:10:"identifier";s:42:"http://pinboard.in/u:tbony/b:909b9451140a/";}s:4:"link";s:82:"https://www.nytimes.com/2020/04/26/us/politics/trump-disinfectant-coronavirus.html";s:11:"description";s:262:"“I’m, like, a person that has a good you-know-what,” Trump said, pointing at his skull.
+
+He did not sound like a person with a good you-know-what.
+
+On an emerging 2020 theme -- basic intelligence -- and how it might affect a president long consumed w/ it:
+";s:7:"summary";s:262:"“I’m, like, a person that has a good you-know-what,” Trump said, pointing at his skull.
+
+He did not sound like a person with a good you-know-what.
+
+On an emerging 2020 theme -- basic intelligence -- and how it might affect a president long consumed w/ it:
+";}i:92;a:6:{s:5:"about";s:17:"https://keys.pub/";s:5:"title";s:34:"Keys.pub Keybase Without the Cruft";s:2:"dc";a:5:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:5:"adamo";s:7:"subject";s:22:"key keybase encryption";s:6:"source";s:19:"http://pinboard.in/";s:10:"identifier";s:42:"http://pinboard.in/u:adamo/b:2e0d3bdbe23d/";}s:4:"link";s:17:"https://keys.pub/";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:5:"
+	
+	
+";}i:93;a:8:{s:5:"about";s:132:"https://www.theguardian.com/world/2020/apr/28/lithuanian-capital-to-be-turned-into-vast-open-air-cafe-vilnius?CMP=Share_iOSApp_Other";s:5:"title";s:83:"Lithuanian capital to be turned into vast open-air cafe | World news | The Guardian";s:2:"dc";a:5:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:7:"bdarcus";s:7:"subject";s:52:"COVID-19 lithuania europe public_space geo211 geo462";s:6:"source";s:19:"http://pinboard.in/";s:10:"identifier";s:44:"http://pinboard.in/u:bdarcus/b:e3060e6be799/";}s:4:"link";s:132:"https://www.theguardian.com/world/2020/apr/28/lithuanian-capital-to-be-turned-into-vast-open-air-cafe-vilnius?CMP=Share_iOSApp_Other";s:11:"description";s:255:"Lithuania’s capital, Vilnius, has announced plans to turn the city into a vast open-air cafe by giving over much of its public space to hard-hit bar and restaurant owners so they can put their tables outdoors and still observe physical distancing rules.";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:11:"
+	
+	
+	
+	
+	
+";s:7:"summary";s:255:"Lithuania’s capital, Vilnius, has announced plans to turn the city into a vast open-air cafe by giving over much of its public space to hard-hit bar and restaurant owners so they can put their tables outdoors and still observe physical distancing rules.";}i:94;a:8:{s:5:"about";s:46:"https://a16z.com/2020/04/18/its-time-to-build/";s:5:"title";s:40:"IT'S TIME TO BUILD - Andreessen Horowitz";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:9:"wfreeland";s:7:"subject";s:25:"Archive instapaper tenpla";s:10:"identifier";s:46:"http://pinboard.in/u:wfreeland/b:2ae2cd34354e/";}s:4:"link";s:46:"https://a16z.com/2020/04/18/its-time-to-build/";s:11:"description";s:269:"Every Western institution was unprepared for the coronavirus pandemic, despite many prior warnings. This monumental failure of institutional effectiveness will reverberate for the rest of the decade, but it’s not too early to ask why, and what we need to do about it.";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:5:"
+	
+	
+";s:7:"summary";s:269:"Every Western institution was unprepared for the coronavirus pandemic, despite many prior warnings. This monumental failure of institutional effectiveness will reverberate for the rest of the decade, but it’s not too early to ask why, and what we need to do about it.";}i:95;a:8:{s:5:"about";s:109:"https://www.theguardian.com/world/2020/apr/28/lithuanian-capital-to-be-turned-into-vast-open-air-cafe-vilnius";s:5:"title";s:83:"Lithuanian capital to be turned into vast open-air cafe | World news | The Guardian";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:8:"chaoxian";s:7:"subject";s:13:"IFTTT Twitter";s:10:"identifier";s:45:"http://pinboard.in/u:chaoxian/b:491250541c13/";}s:4:"link";s:109:"https://www.theguardian.com/world/2020/apr/28/lithuanian-capital-to-be-turned-into-vast-open-air-cafe-vilnius";s:11:"description";s:268:"Favorite tweet:
+
+Vilnius follows Milan in opening up street space for restaurants and cafes to operate while people socially distance 👏https://t.co/Atxc40tbvh
+
+— Laura Laker (@laura_laker) April 28, 2020
+
+ http://twitter.com/laura_laker/status/1255147557056942083";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:3:"
+	
+";s:7:"summary";s:268:"Favorite tweet:
+
+Vilnius follows Milan in opening up street space for restaurants and cafes to operate while people socially distance 👏https://t.co/Atxc40tbvh
+
+— Laura Laker (@laura_laker) April 28, 2020
+
+ http://twitter.com/laura_laker/status/1255147557056942083";}i:96;a:6:{s:5:"about";s:22:"https://liftbridge.io/";s:5:"title";s:57:"LIFTBRIDGE · Lightweight, fault-tolerant message streams";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:8:"christos";s:7:"subject";s:37:"pubsub message-broker messaging radar";s:10:"identifier";s:45:"http://pinboard.in/u:christos/b:b83305ae3c09/";}s:4:"link";s:22:"https://liftbridge.io/";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:7:"
+	
+	
+	
+";}i:97;a:6:{s:5:"about";s:44:"https://github.com/TaraHoleInIt/minivmac-3ds";s:5:"title";s:73:"GitHub - TaraHoleInIt/minivmac-3ds: Port of Mini vMac to the Nintendo 3DS";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:7:"bobdawg";s:6:"source";s:19:"http://twitter.com/";s:10:"identifier";s:44:"http://pinboard.in/u:bobdawg/b:e3d85a74849d/";}s:4:"link";s:44:"https://github.com/TaraHoleInIt/minivmac-3ds";s:11:"description";s:75:"Hypercard running on the Nintendo 3DS.
+
+
+— Picture by our friend @nomand ";s:7:"summary";s:75:"Hypercard running on the Nintendo 3DS.
+
+
+— Picture by our friend @nomand ";}i:98;a:8:{s:5:"about";s:105:"https://www.newyorker.com/magazine/2020/05/04/what-the-coronavirus-crisis-reveals-about-american-medicine";s:5:"title";s:61:"What the Coronavirus Crisis Reveals About American Medicine.";s:2:"dc";a:4:{s:4:"date";s:25:"2020-04-30T05:47:01+00:00";s:7:"creator";s:7:"jgordon";s:7:"subject";s:1:"s";s:10:"identifier";s:44:"http://pinboard.in/u:jgordon/b:92e381458e47/";}s:4:"link";s:105:"https://www.newyorker.com/magazine/2020/05/04/what-the-coronavirus-crisis-reveals-about-american-medicine";s:11:"description";s:67:"Supply chain, research, public health, communication. All troubled.";s:4:"taxo";a:1:{s:10:"topics_bag";s:1:"	";}s:10:"topics_bag";s:1:"
+";s:7:"summary";s:67:"Supply chain, research, public health, communication. All troubled.";}}s:7:"channel";a:6:{s:5:"title";s:28:"Pinboard (popular bookmarks)";s:4:"link";s:28:"https://pinboard.in/popular/";s:11:"description";s:27:"popular items from Pinboard";s:5:"items";s:12:"
+      
+    ";s:9:"items_seq";s:204:"	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+      ";s:7:"tagline";s:27:"popular items from Pinboard";}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:3:"RSS";s:12:"feed_version";s:3:"1.0";s:8:"encoding";s:5:"UTF-8";s:16:"_source_encoding";s:0:"";s:5:"ERROR";s:0:"";s:7:"WARNING";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}s:16:"_KNOWN_ENCODINGS";a:3:{i:0;s:5:"UTF-8";i:1;s:8:"US-ASCII";i:2;s:10:"ISO-8859-1";}s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:17:"current_namespace";b:0;s:15:"source_encoding";s:5:"UTF-8";}

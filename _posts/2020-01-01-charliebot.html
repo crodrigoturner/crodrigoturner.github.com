@@ -1,0 +1,73 @@
+---
+layout: post
+title: Charliebot
+tags: project
+category: project
+---
+
+A chatbot based on Eliza.
+
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript" SRC="/js/charliebot.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript" SRC="/js/charliebotdata.js"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+
+
+var charliebot = new charliebotBot();
+var charliebotLines = new Array();
+
+var displayCols = 60;
+var displayRows = 10;
+
+function charliebotReset() {
+	charliebot.reset();
+	charliebotLines.length = 0;
+	charliebotStep();
+}
+
+function charliebotStep() {
+	var f = document.forms.e_form;
+	var userinput = f.e_input.value;
+	if (charliebot.quit) {
+		f.e_input.value = '';
+		if (confirm("This session is over.\nStart over?")) charliebotReset();
+		f.e_input.focus();
+		return;
+	}
+	else if (userinput != '') {
+		var usr = 'You:   ' + userinput;
+		var rpl ='Charlie Bot: ' + charliebot.transform(userinput);
+		charliebotLines.push(usr);
+		charliebotLines.push(rpl);
+		// display nicely
+		// (fit to textarea with last line free - reserved for extra line caused by word wrap)
+		var temp  = new Array();
+		var l = 0;
+		for (var i=charliebotLines.length-1; i>=0; i--) {
+			l += 1 + Math.floor(charliebotLines[i].length/displayCols);
+			if (l >= displayRows) break
+			else temp.push(charliebotLines[i]);
+		}
+		charliebotLines = temp.reverse();
+		f.e_display.value = charliebotLines.join('\n');
+	}
+	else if (charliebotLines.length == 0) {
+		// no input and no saved lines -> output initial
+		var initial = 'Charlie Bot: ' + charliebot.getInitial();
+		charliebotLines.push(initial);
+		f.e_display.value = initial + '\n';
+	}
+	f.e_input.value = '';
+	f.e_input.focus();
+}
+
+
+</SCRIPT>
+
+<BODY  onload="window.setTimeout('charliebotReset()',100)">
+
+<FORM NAME="e_form" onsubmit="charliebotStep();return false">
+<TEXTAREA NAME="e_display" COLS="60" ROWS="10"></TEXTAREA>
+<INPUT TYPE="text" NAME="e_input" SIZE="30" placeholder="Please type and hit Enter">
+<INPUT TYPE="reset" VALUE="Reset" onClick="window.setTimeout('charliebotReset()',100)">
+</FORM>

@@ -1,0 +1,9 @@
+---
+layout: page
+title: Projects
+id: projects
+---
+{% assign projects = site.projects | sort: 'date' | reverse %}
+{% for project in projects %}
+<a href="{{project.url}}" class="post {{ project.tags | sort | join: " " }}">{{project.title}}<span class="excerpt">{{project.excerpt}}</span></a>
+{% endfor %}

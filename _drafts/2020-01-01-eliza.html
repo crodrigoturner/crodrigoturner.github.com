@@ -1,0 +1,80 @@
+---
+layout: project
+title: Elizabot
+excerpt: A psyco-analyst chatbot.
+tags: projects
+---
+
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript" SRC="/js/elizabot.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript" SRC="/js/elizadata.js"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+<!--
+
+var eliza = new ElizaBot();
+var elizaLines = new Array();
+
+var displayCols = 60;
+var displayRows = 15;
+
+function elizaReset() {
+	eliza.reset();
+	elizaLines.length = 0;
+	elizaStep();
+}
+
+function elizaStep() {
+	var f = document.forms.e_form;
+	var userinput = f.e_input.value;
+	if (eliza.quit) {
+		f.e_input.value = '';
+		if (confirm("This session is over.\nStart over?")) elizaReset();
+		f.e_input.focus();
+		return;
+	}
+	else if (userinput != '') {
+		var usr = 'YOU:   ' + userinput;
+		var rpl ='ELIZA: ' + eliza.transform(userinput);
+		elizaLines.push(usr);
+		elizaLines.push(rpl);
+		// display nicely
+		// (fit to textarea with last line free - reserved for extra line caused by word wrap)
+		var temp  = new Array();
+		var l = 0;
+		for (var i=elizaLines.length-1; i>=0; i--) {
+			l += 1 + Math.floor(elizaLines[i].length/displayCols);
+			if (l >= displayRows) break
+			else temp.push(elizaLines[i]);
+		}
+		elizaLines = temp.reverse();
+		f.e_display.value = elizaLines.join('\n');
+	}
+	else if (elizaLines.length == 0) {
+		// no input and no saved lines -> output initial
+		var initial = 'ELIZA: ' + eliza.getInitial();
+		elizaLines.push(initial);
+		f.e_display.value = initial + '\n';
+	}
+	f.e_input.value = '';
+	f.e_input.focus();
+}
+
+//-->
+</SCRIPT>
+
+<BODY  onload="window.setTimeout('elizaReset()',100)">
+
+<FORM NAME="e_form" onsubmit="elizaStep();return false">
+<TEXTAREA NAME="e_display" COLS="60" ROWS="15"></TEXTAREA>
+<INPUT TYPE="text" NAME="e_input" SIZE="50" placeholder="Please type and hit Enter">
+<INPUT TYPE="reset" VALUE="Reset" onClick="window.setTimeout('elizaReset()',100)">
+</FORM>
+
+<h3>About Eliza</h3>
+<p>ELIZA is an early natural language processing computer program created from 1964 to 1966 at the MIT Artificial Intelligence Laboratory by Joseph Weizenbaum.</p>
+
+<a href="https://en.wikipedia.org/wiki/ELIZA">More info</a>
+
+
+
+
