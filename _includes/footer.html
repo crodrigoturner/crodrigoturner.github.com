@@ -1,8 +1,15 @@
 <footer class="site-footer">
-  <ul class="footer-nav">
-    <li><a href="/archive/">Archive</a></li>
-    <li><a href="/feed.xml">RSS</a></li>
-    <li><a href="/info/">About</a></li>
-  </ul>
+
+  <span id="quote"></span> · <a href="/archive">Archive</a> · <a href="/rss">RSS</a> · <a href="/colophon">Colophon</a> · <a href="/uses">Uses</a> · <a href="/blogroll">Blogroll</a>
+<script>
+	const quotes = [
+		"Live well, tell no one",
+		"Per aspera, ad astra",
+		"This too shall pass"
+	];
+	document.getElementById("quote").textContent = quotes[Math.floor(Math.random() * quotes.length)];
+</script>
+
+
 </footer>
 </body>
