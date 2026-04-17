@@ -5,36 +5,29 @@ id: info
 ref: about
 lang: es
 ---
+<img src="/images/profile-250.jpg"  class="profile" width="250" height="250" alt=" A person wearing a white collared shirt stands outdoors with trees and greenery in the background.">
 
-### Bio
+I'm Carlos Roberto Rodrigo Turner. I was born when atmospheric CO₂ was 344.92 ppm — it's about 425 now, which tells you something about the pace of the world I'm trying to make sense of.
 
-I live in Madrid with my wife Mar.<br/>
-I work at Técnica y Avance.
+Husband to Mar. Father to Lucas and Nico. Friend to Pancho, our Spanish Water Dog, who is smarter than all of us.
+What I do
 
-### Interests
-3D printing, AI, <acronym title="Augmented Reality">AR</acronym>, augmented intelligence, automatization, <acronym title="autonomous vehicles">AVs</acronym>, big data, biomimetics, blockchain, cryptocurrenty, climate change, <acronym title="Electric Vehicles">EV</acronym>, energy, internet, <acronym title="Internet of things">IoT</acronym>, future, fiction, fintech, mental models, money, <acronym title="Universal Basic Income">UBI</acronym>, <acronym title="Virtual Reality">VR</acronym>, web design and developement
+I work with data. Currently at Tecnica y Avance, where I run a department of one, managing customers and suppliers across multiple countries, building tools, and turning messy inputs into decisions people can actually act on.
 
-### Colophon
-<ul class="items">
-<li>Developed with <a href="https://jekyllrb.com/">Jekyll</a>.</li>
-<li>The fonts are Circular and Inter.</li>
-</ul>
+Over ten years, I've worked across architecture, energy, luxury brands, and startups. The throughline isn't an industry; it's a habit of looking at a tangled process and asking, "What's actually going on here?" My favourite project so far: a forecasting tool that modelled how movements in oil indices would ripple through downstream derivative prices. I like problems where the answer matters and nobody's quite sure where to start.
 
 
-### Elsewhere
-  <ul class="contact">
-            <li>Email <span><a href="mailto:rodrigoturner.carlos@gmail.com"
-                        target="_blank">rodrigoturner.carlos@gmail.com</a></span> </li>
-            <li>Pinboard <span><a href="https://www.pinboard.in/u:crodrigoturner/"
-                        target="_blank">crodrigoturner</a></span></li>
-            <li>Twitter <span><a href="https://twitter.com/crodrigoturner" target="_blank">@crodrigoturner</a></span>
-            </li>
-            <li>RSS <span><a href="/feed.xml">/feed.xml</a></span></li>
-        </ul>
+### What I care about
+Data and AI. Design and the web. Science and space. Books — fiction especially. Long bike rides. Films. The slow craft of raising two small humans without losing your sense of humour.
 
-### Geekcode
 
-In a series of letters and symbols, the [geek code](https://en.wikipedia.org/wiki/Geek_Code) informs fellow geeks about my personality, appearance, interests, skills, and opinions.
+### A few things about me
+The hardest thing I've done is parent two toddlers and a dog at the same time. Nothing else is close.
+What I'm proud of is the life I've built with Mar — the boys, the home, the ordinary days.
+What I changed my mind about recently: that the right way to look at life is as a realist. Not optimist, not pessimist. Just see things as they are, then decide what to do.
+Books that stuck with me this year: Matt Haig's The Midnight Library and The Humans. Both shifted something.
+People I admire, in no particular order and for very different reasons: Feynman (for the range — physics, bongos, lock-picking), Marie Curie (two Nobels in two fields, still unmatched), Carl Sagan (made science feel like wonder), Jane Austen (sharper than anyone gives her credit for), and Elon Musk — though less and less.
+
 
 <code>
 \-----BEGIN GEEK CODE BLOCK----- <br/> 
