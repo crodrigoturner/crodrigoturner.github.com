@@ -38,3 +38,7 @@ GB/CS/E d--(--) s():() a C++ U@ P? L E? W+++ N? o? K--? w+ O? M+ V? PS++ PE+ Y? 
 
 Follow [this link](https://mj.ucw.cz/geek/?code=GB%2fCS%2fE+d--(--)+s()%3a()+a+C%2b%2b+U%40+P%3f+L+E%3f+W%2b%2b%2b+N%3f+o%3f+K--%3f+w%2b+O%3f+M%2b+V%3f+PS%2b%2b+PE%2b+Y%3f+!PGP+t%2b+5+X%2b%2b+!R+tv%2b+b%2b%2b+DI%2b%2b+D%2b+G+e%2b%2b+h---+r%2b%2b%2b+y%2b%2b%2b) to learn what it means.
 
+### About this blog 
+
+Built with Jekyll with Github Pages.   
+The fonts Schibsted Grotesk and Inter are served via Google Fonts.    
