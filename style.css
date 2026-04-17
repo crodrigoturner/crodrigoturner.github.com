@@ -287,14 +287,14 @@ article ul li, ul li {
   margin: 0 0 16px;
 }
 
-.posts li a {
+.posts li  {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   border-bottom: 1px solid var(--color-border);
   padding: 6px 0;
   color: var(--color-text);
-  font-size: 0.95em;
+ 
 }
 
 .posts li a:hover {
@@ -303,8 +303,9 @@ article ul li, ul li {
 }
 
 .posts li a:hover::after {
-  content: '→';
+  content: '->';
   color: var(--color-muted);
+  font-family:"Inter";
 }
 
 .post-date a {
