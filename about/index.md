@@ -5,7 +5,7 @@ id: info
 ref: about
 lang: es
 ---
-<img src="/profile-250.jpg"  class="profile" width="250" height="250" alt=" A person wearing a white collared shirt stands outdoors with trees and greenery in the background.">
+<img src="about/profile-250.jpg"  class="profile" width="250" height="250" alt=" A person wearing a white collared shirt stands outdoors with trees and greenery in the background.">
 
 I'm Carlos Roberto Rodrigo Turner. I was born when atmospheric CO₂ was 344.92 ppm — it's about 425 now, which tells you something about the pace of the world I'm trying to make sense of.
 
