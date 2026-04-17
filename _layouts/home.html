@@ -39,7 +39,7 @@ document.write(
         <ul class="posts">
             {% for post in site.posts limit:15 %}
             {% if post.category == "post"  %}
-            <li><a href="{{ post.url }}">{{ post.title }}</a><br />
+            <li><h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
                 {{post.content}}
             </li>
             {% endif %}
