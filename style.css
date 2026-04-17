@@ -591,36 +591,7 @@ td, th {
 .m      { background: #FFF !important; text-align: center; }
 .alive  { background-color: #a5d6a7; color: #444; }
 
-/* NEWS / RSS */
 
-.rss-box { width: 100%; }
-
-.rss-items {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.rss-item {
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-}
-
-a.rss-item {
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  text-decoration: none;
-  color: #404040;
-  border-bottom: 1px solid var(--color-border);
-  width: 100%;
-  padding: 6px 0 5px;
-  font-size: 0.9em;
-}
-
-.rss-item a:hover { text-decoration: none; color: #291919; }
 
 iframe { max-width: 100%; display: block; }
 

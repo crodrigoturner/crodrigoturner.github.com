@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Information
+title: About me
 id: info
 ref: about
 lang: es
