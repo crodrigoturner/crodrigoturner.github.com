@@ -542,7 +542,7 @@ td, th {
 
 /* FOOTER */
 
-.site-footer {
+footer {
   max-width: var(--site-width);
   margin: 0 auto;
   padding: 20px 20px 40px;
