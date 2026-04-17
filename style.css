@@ -288,7 +288,7 @@ article ul li, ul li {
 }
 
 .posts li  {
-  display: flex;
+float:left;
   justify-content: space-between;
   align-items: baseline;
   border-bottom: 1px solid var(--color-border);
