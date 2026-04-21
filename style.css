@@ -169,7 +169,7 @@ h1 {
   margin-bottom: 20px;
 }
 
-h1 a {
+.site-logo a {
 color: var(--color-muted);
   text-decoration: none;
 }

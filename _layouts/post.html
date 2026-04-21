@@ -3,8 +3,27 @@
 
 <section>
 <article>
-<h2>{{page.title}}</h2>
-{{content}}
+  <h2>{{page.title}}</h2>
+
+  <p class="meta">
+    {{ page.date | date_to_string }}
+    {% assign words = content | number_of_words %}
+    {% if words > 200 %}
+      · {{ words | divided_by: 200 | plus: 1 }} min read
+    {% endif %}
+  </p>
+
+  {{content}}
+</article>
+
+<article>
+  <h2>More notes</h2>
+  <ul class="posts">
+    {% assign other_posts = site.posts | where_exp: "p", "p.url != page.url" %}
+    {% for p in other_posts limit: 5 %}
+      <li><a href="{{ p.url }}">{{ p.title }} <span class="meta">{{ p.date | date: '%b %Y' }}</span></a></li>
+    {% endfor %}
+  </ul>
 </article>
 
 </section>

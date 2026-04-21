@@ -29,6 +29,7 @@ Books that stuck with me this year: Matt Haig's The Midnight Library and The Hum
 People I admire, in no particular order and for very different reasons: Feynman (for the range — physics, bongos, lock-picking), Marie Curie (two Nobels in two fields, still unmatched), Carl Sagan (made science feel like wonder), Jane Austen (sharper than anyone gives her credit for), and Elon Musk — though less and less.
 
 
+### Geek code
 <code>
 \-----BEGIN GEEK CODE BLOCK----- <br/> 
 Version: 3.1    <br/> 
@@ -40,5 +41,12 @@ Follow [this link](https://mj.ucw.cz/geek/?code=GB%2fCS%2fE+d--(--)+s()%3a()+a+C
 
 ### About this blog 
 
-Built with Jekyll with Github Pages.   
-The fonts Schibsted Grotesk and Inter are served via Google Fonts.    
+Built with Jekyll    
+Hosted in Github Pages   
+The fonts are Schibsted Grotesk and Inter, which are served via Google Fonts.    
+
+### More
+
+- [Blogroll](/blogroll)
+- [Uses](/uses/)
+- [Now](/tags/now/)
