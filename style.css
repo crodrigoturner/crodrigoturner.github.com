@@ -131,7 +131,7 @@ article:last-child {
 
 }
 
-.bluesky img {opacity:.3; width:25px; height:25px;}
+.bluesky img {opacity:.3; width:25px; height:25px; float:right;}
 
 /* HERO */
 
