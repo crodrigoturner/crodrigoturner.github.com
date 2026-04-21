@@ -71,6 +71,107 @@ I work at Técnica y Avance in Madrid, mostly turning data into decisions and sa
     </article>
 
 
+<div id="lastfm-nowplaying-widget" style="font-family:Arial,sans-serif; background:#111; color:#fff; padding:10px; border-radius:8px; max-width:400px;">
+
+<a href="https://www.last.fm/user/crodrigoturner" target="_blank" style="text-decoration:none; color:inherit;">
+
+<div style="display:flex; align-items:center; gap:10px; margin-bottom:10p;">
+
+<img id="lastfm-album-art" src="" alt="Album Art" style="width:60px; height:60px; border-radius:4px;">
+
+<div>
+
+<div id="lastfm-status" style="font-weight:bold; font-size:0.9em; opacity:0.8;"></div>
+
+<div id="lastfm-track" style="font-weight:bold;"></div>
+
+<div id="lastfm-artist" style="font-size:0.9em; opacity:0.8;"></div>
+
+</div>
+
+</div>
+
+<div id="lastfm-recent" style="font-size:0.85em; opacity:0.8;">
+
+<strong>Recently Played:</strong>
+
+<div id="lastfm-recent-list" style="margin-top:5px;"></div>
+
+</div>
+
+</a>
+
+</div>
+
+<script type="text/javascript">
+
+(function(){
+
+var username = "crodrigoturner"; // Replace with your Last.fm username
+
+var apiKey = "4db438d2534f2f81e0eb6462217347f2"; // Replace with your Last.fm API key
+
+function fetchNowPlaying() {
+
+var xhr = new XMLHttpRequest();
+
+xhr.open("GET", "https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=" + username + "&api_key=" + apiKey + "&format=json&limit=5", true);
+
+xhr.onreadystatechange = function() {
+
+if(xhr.readyState === 4 && xhr.status === 200) {
+
+try {
+
+var data = JSON.parse(xhr.responseText);
+
+var tracks = data.recenttracks.track;
+
+if(!tracks || tracks.length === 0) return;
+
+var nowPlayingTrack = tracks[0];
+
+var isPlaying = nowPlayingTrack["@attr"] && nowPlayingTrack["@attr"].nowplaying;
+
+document.getElementById("lastfm-status").textContent = isPlaying ? "Now Playing:" : "Last Played:";
+
+document.getElementById("lastfm-track").textContent = nowPlayingTrack.name;
+
+document.getElementById("lastfm-artist").textContent = nowPlayingTrack.artist["#text"];
+
+document.getElementById("lastfm-album-art").src = (nowPlayingTrack.image[2] && nowPlayingTrack.image[2]["#text"]) || "";
+
+// Recent tracks as a single string
+
+var recentStr = tracks.slice(1).map(function(t){
+
+return t.name + " - " + t.artist["#text"];
+
+}).join(" | ");
+
+document.getElementById("lastfm-recent-list").textContent = recentStr;
+
+} catch(e) {
+
+console.error("Last.fm parse error:", e);
+
+}
+
+}
+
+};
+
+xhr.send();
+
+}
+
+fetchNowPlaying();
+
+setInterval(fetchNowPlaying, 30000);
+
+})();
+
+</script>
 
 </section>
 
