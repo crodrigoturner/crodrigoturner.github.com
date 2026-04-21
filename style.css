@@ -379,6 +379,8 @@ blockquote {
   font-style: italic;
 }
 
+.quotes h3{display:none;}
+
 footer blockquote {
   border: none;
 }
