@@ -49,14 +49,35 @@ I work at Técnica y Avance in Madrid, mostly turning data into decisions and sa
               <a href="https://bsky.app/profile/crodrigoturner.bsky.social">More on bluesky <span class="arrow">-></span></a>
             </article>
             <script>
+            function bskyEsc(s) {
+              return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+            }
+            function bskyRender(text, facets) {
+              const enc = new TextEncoder(), dec = new TextDecoder();
+              const bytes = enc.encode(text);
+              const links = (facets || [])
+                .filter(f => f.features.some(ft => ft.$type === 'app.bsky.richtext.facet#link'))
+                .sort((a, b) => a.index.byteStart - b.index.byteStart);
+              if (!links.length) {
+                return bskyEsc(text).replace(/https?:\/\/[^\s]+/g, u => `<a href="${u}" target="_blank">${u}</a>`);
+              }
+              let html = '', cursor = 0;
+              for (const f of links) {
+                const uri = f.features.find(ft => ft.$type === 'app.bsky.richtext.facet#link').uri;
+                html += bskyEsc(dec.decode(bytes.slice(cursor, f.index.byteStart)));
+                html += `<a href="${bskyEsc(uri)}" target="_blank">${bskyEsc(dec.decode(bytes.slice(f.index.byteStart, f.index.byteEnd)))}</a>`;
+                cursor = f.index.byteEnd;
+              }
+              html += bskyEsc(dec.decode(bytes.slice(cursor)));
+              return html;
+            }
             fetch('https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=crodrigoturner.bsky.social&limit=1')
               .then(r => r.json())
               .then(data => {
                 const item = data.feed && data.feed[0];
                 if (!item) return;
                 const post = item.post;
-                const text = post.record.text;
-                document.getElementById('bsky-text').textContent = text;
+                document.getElementById('bsky-text').innerHTML = bskyRender(post.record.text, post.record.facets);
               })
               .catch(() => {});
             </script>

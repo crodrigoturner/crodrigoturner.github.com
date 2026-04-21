@@ -147,7 +147,7 @@ article:last-child {
 }
 
 .hero-greeting {
-  font-size: clamp(1.4rem, 4vw, 1.9rem);
+  font-size: 1.4em;
   font-weight: 700;
   line-height: 1.25;
   color: var(--color-text);
