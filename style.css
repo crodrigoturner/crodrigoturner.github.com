@@ -126,6 +126,10 @@ article:last-child {
   border-bottom: none;
 }
 
+.bluesky{
+  padding:20px; border-radius:10px; background:var(--color-muted);
+}
+
 /* HERO */
 
 .hero {
