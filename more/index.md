@@ -5,7 +5,7 @@ lang: en
 ---
 
 <ul class="posts">
-{% assign pages = site.pages | sort: 'title' %}
+{% assign pages = site.pages | sort: 'url' %}
 {% for p in pages %}
   {% if p.title and p.url != page.url %}
     {% unless p.url contains '_drafts' or p.url contains 'feed' or p.url contains '404' or p.url contains 'README' %}
