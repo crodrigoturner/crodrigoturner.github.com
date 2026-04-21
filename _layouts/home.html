@@ -34,7 +34,7 @@ I work at Técnica y Avance in Madrid, mostly turning data into decisions and sa
 
 </article>
 
-            <article class="post bluesky" id="bsky-post" style="display:none">
+            <article class="post bluesky" id="bsky-post">
               <img src="/images/Bluesky_Logo.svg">
               <p id="bsky-text"></p>
              <a href="https://bsky.app/profile/crodrigoturner.bsky.social">More on bluesky <span class="arrow">-></span></a>
@@ -53,7 +53,6 @@ I work at Técnica y Avance in Madrid, mostly turning data into decisions and sa
                 document.getElementById('bsky-link').href = url;
                 document.getElementById('bsky-text').textContent = text;
               
-                document.getElementById('bsky-post').style.display = '';
               })
               .catch(() => {});
             </script>
