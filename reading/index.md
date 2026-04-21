@@ -10,6 +10,7 @@ lang: en
     <tr>
       <th>Title</th>
       <th>Author</th>
+      <th>Recommended by</th>
       <th>Type</th>
       <th>Status</th>
     </tr>
@@ -21,7 +22,6 @@ lang: en
 (function () {
   const SHEET_ID = '1Jtd3gT4gG6PQZb37tgnpJ4kcDENaWyuZjo0YFuAgbxU';
   const URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv&gid=0`;
-
   const STATUS_ORDER = { 'Reading': 0, 'Have read': 1, 'To read': 2 };
 
   function parseCSV(text) {
@@ -51,27 +51,37 @@ lang: en
   fetch(URL)
     .then(r => r.text())
     .then(text => {
-      const [header, ...data] = parseCSV(text);
-      // Columns: Title(0) Author(1) RecommendedBy(2) Type(3) Status(4)
+      const [headers, ...data] = parseCSV(text);
+
+      // Map column names to indices from the actual sheet headers
+      const col = {};
+      headers.forEach((h, i) => { col[h.trim()] = i; });
+
       const books = data
-        .filter(r => r[0] && r[4])
-        .sort((a, b) => (STATUS_ORDER[a[4]] ?? 3) - (STATUS_ORDER[b[4]] ?? 3));
+        .filter(r => r[col['Title']] && r[col['Status']])
+        .sort((a, b) =>
+          (STATUS_ORDER[a[col['Status']]] ?? 3) - (STATUS_ORDER[b[col['Status']]] ?? 3)
+        );
 
       const tbody = document.getElementById('reading-body');
       tbody.innerHTML = books.map(r => {
-        const status = r[4] || '';
-        const cls = status === 'Reading' ? 'reading' : status === 'Have read' ? 'have-read' : '';
-        const type = r[3] === 'NF' ? 'Non-fiction' : r[3] === 'F' ? 'Fiction' : r[3];
+        const status = r[col['Status']] || '';
+        const type   = r[col['Type']] === 'NF' ? 'Non-fiction'
+                     : r[col['Type']] === 'F'  ? 'Fiction'
+                     : r[col['Type']] || '';
+        const cls    = status === 'Reading'   ? 'reading'
+                     : status === 'Have read' ? 'have-read' : '';
         return `<tr class="${cls}">
-          <td>${r[0]}</td>
-          <td>${r[1] || ''}</td>
+          <td>${r[col['Title']] || ''}</td>
+          <td>${r[col['Author']] || ''}</td>
+          <td>${r[col['Recommended by']] || ''}</td>
           <td>${type}</td>
           <td>${status}</td>
         </tr>`;
       }).join('');
 
       document.getElementById('reading-status').textContent =
-        `${books.length} books · updated live from Google Sheets`;
+        `${books.length} books · synced from Google Sheets`;
       document.getElementById('reading-table').style.display = '';
     })
     .catch(() => {
