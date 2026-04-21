@@ -8,4 +8,4 @@ tags: quotes
 
 > Nothing makes us safer and happier than ensuring the well-being of everyone.
 
-— From Jens Oliver Meiert
+— From [Jens Oliver Meiert](https://meiert.com/)
