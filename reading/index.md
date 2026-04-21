@@ -78,7 +78,7 @@ lang: en
         </tr>`;
       }).join('');
 
-      document.getElementById('reading-status').innerHTML =
+    document.getElementById('reading-status').textContent =
         `${books.length} books · synced from Google Sheets`;
       document.getElementById('reading-table').style.display = '';
     })
