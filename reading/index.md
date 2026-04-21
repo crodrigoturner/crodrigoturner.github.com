@@ -74,8 +74,7 @@ lang: en
         return `<tr class="${cls}">
           <td>${r[col['Title']] || ''}</td>
           <td>${r[col['Author']] || ''}</td>
-          <td>${r[col['Recommended by']] || ''}</td>
-          <td>${type}</td>
+       
           <td>${status}</td>
         </tr>`;
       }).join('');
