@@ -79,7 +79,7 @@ lang: en
       }).join('');
 
       document.getElementById('reading-status').innerHTML =
-        `${books.length} books · synced from <a href="https://docs.google.com/spreadsheets/d/1Jtd3gT4gG6PQZb37tgnpJ4kcDENaWyuZjo0YFuAgbxU/edit?gid=0">Google Sheets</a>`;
+        `${books.length} books · synced from Google Sheets`;
       document.getElementById('reading-table').style.display = '';
     })
     .catch(() => {
