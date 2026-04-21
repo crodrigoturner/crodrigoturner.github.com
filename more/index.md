@@ -4,7 +4,7 @@ title: More
 lang: en
 ---
 
-<ul class="posts">
+<ul>
 {% assign pages = site.pages | sort: 'url' %}
 {% for p in pages %}
   {% if p.title and p.url != page.url %}
