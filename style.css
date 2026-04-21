@@ -350,7 +350,7 @@ figcaption {
 /* MISC COMPONENTS */
 
 .meta, small {
-  font-size: 0.8em !important;
+  font-size: 0.9em !important;
   color: var(--color-muted);
 }
 

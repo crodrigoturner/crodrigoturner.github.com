@@ -38,7 +38,7 @@ I'm Carlos Rodrigo. I work at Técnica y Avance in Madrid, mostly turning tangle
             {% if post.category == "post"  %}
            <article class="post {{ post.tags }}"><h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
                 {{post.content}}
-                <span class="meta">{{post.tags}} · {{ post.date | date: '%y%m%d' }}</span>
+                <span class="meta">{{post.tags}} · {{ post.date | date: '%Y%m%d' }}</span>
            </article>
             {% endif %}
             {% endfor %}
