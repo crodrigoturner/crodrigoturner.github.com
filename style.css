@@ -163,21 +163,20 @@ article:last-child {
 /* TYPOGRAPHY */
 
 h1 {
-  font-size: 1.3em;
-  font-weight: 700;
+  font: 400 16px/1.7 "Schibsted Grotesk", sans-serif;
   
   margin-bottom: 20px;
 }
 
-.site-logo a {
+h1 a {
 color: var(--color-muted);
   text-decoration: none;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 1.6em;
   font-weight: 700;
-  letter-spacing: -0.01em;
+  
   color: var(--color-text);
   margin: 0 0 16px;
 
