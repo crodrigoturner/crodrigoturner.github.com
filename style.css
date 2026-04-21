@@ -552,8 +552,7 @@ th {
   letter-spacing: 0.05em;
 }
 
-tr.reading td { font-weight: 600; }
-tr.have-read td { color: var(--color-muted); }
+
 
 /* FOOTER */
 
