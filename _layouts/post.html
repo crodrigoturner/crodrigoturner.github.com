@@ -18,10 +18,10 @@
 
 <article>
   <h2>More notes</h2>
-  <ul class="posts">
+  <ul>
     {% assign other_posts = site.posts | where_exp: "p", "p.url != page.url" %}
     {% for p in other_posts limit: 5 %}
-      <li><a href="{{ p.url }}">{{ p.title }} <span class="meta">{{ p.date | date: '%b %Y' }}</span></a></li>
+      <li><a href="{{ p.url }}">{{ p.title }} <span class="meta">{{ p.date | date: '%Y%m%d' }}</span></a></li>
     {% endfor %}
   </ul>
 </article>
