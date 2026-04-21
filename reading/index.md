@@ -10,8 +10,7 @@ lang: en
     <tr>
       <th>Title</th>
       <th>Author</th>
-      <th>Recommended by</th>
-      <th>Type</th>
+   
       <th>Status</th>
     </tr>
   </thead>
