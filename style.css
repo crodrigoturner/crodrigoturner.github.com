@@ -83,6 +83,9 @@ body::after {
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--color-border);
+  border-radius:10px;
+  width:var(--site-width);
+  padding:0 20px;
 }
 
 .site-header-inner {
@@ -95,7 +98,7 @@ body::after {
 }
 
 h1.site-wordmark {
-  font: italic 400 1em/1 Georgia, "Times New Roman", serif;
+  font: 400 16px/1 "Schibsted Grotesk", sans-serif;
   letter-spacing: 0;
 }
 
@@ -118,7 +121,7 @@ h1.site-wordmark img {
 }
 
 .site-nav li a {
-  font-size: 0.8em;
+  font-size: 1em;
   color: var(--color-muted);
   text-decoration: none;
   letter-spacing: 0.01em;
