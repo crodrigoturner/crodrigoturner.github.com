@@ -3,7 +3,7 @@ layout: post
 title: Well-being
 category: post
 lang: en
-tags: quotes
+tags: clippings
 ---
 
 > Nothing makes us safer and happier than ensuring the well-being of everyone.
