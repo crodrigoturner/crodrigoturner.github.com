@@ -21,10 +21,10 @@
   <ul>
     {% assign other_posts = site.posts | where_exp: "p", "p.url != page.url" %}
     {% for p in other_posts limit: 5 %}
-      <li><a href="{{ p.url }}">{{ p.title }} <span class="meta">{{ p.date | date: '%Y%m%d' }}</span></a></li>
+      <li><span class="meta">{{ p.date | date: '%Y%m%d' }}</span> · <a href="{{ p.url }}">{{ p.title }} </a></li>
     {% endfor %}
   </ul>
 </article>
 
 </section>
-{% include footer.html %}
+
