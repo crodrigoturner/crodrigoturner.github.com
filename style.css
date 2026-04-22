@@ -80,7 +80,9 @@ body::after {
   max-width: var(--site-width);
   margin: 0 auto;
   padding: 20px 20px;
-  border-bottom: 1px solid var(--color-border);
+
+          --tw-shadow: 0 2px 6px 0 var(--tw-shadow-color, #00000026);
+        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
 }
 
 h1.site-wordmark {
