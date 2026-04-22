@@ -74,18 +74,19 @@ body::after {
 /* HEADER */
 
 .site-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
-  background: rgba(255, 255, 255, 0.82);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border-bottom: 1px solid var(--color-border);
-  border-radius:10px;
-  width:var(--site-width);
-  padding:0 20px;
+ position: fixed;
+    top: 0;
+    /* left: 0; */
+    /* right: 0; */
+    z-index: 100;
+    background: rgb(158 158 158 / 2%);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid #e8e8e440;
+    border-radius: 10px;
+    width: calc(var(--site-width) - 40px);
+    /* padding: 0 20px; */
+    margin: 20px calc(50% - (var(--site-width) - 40px) / 2);
 }
 
 .site-header-inner {
@@ -141,7 +142,7 @@ h1.site-wordmark img {
 section {
   max-width: var(--site-width);
   margin: 0 auto;
-  padding: 80px 20px 80px;
+  padding: 120px 20px 80px;
 }
 
 article {
