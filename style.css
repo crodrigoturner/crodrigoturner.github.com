@@ -650,20 +650,26 @@ iframe { max-width: 100%; display: block; }
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 768px) {
-  .site-header, .site-nav { background: none; }
-
   .tags { column-count: 2; }
   #columnlist { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media only screen and (max-width: 480px) {
-  .site-header {
+  .site-header-inner {
     flex-direction: column;
     align-items: flex-start;
-    gap: 12px;
+    gap: 10px;
+    padding: 12px 16px;
   }
 
-  .site-nav ul { gap: 16px; }
+  .site-nav ul {
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  .site-nav li a { font-size: 0.75em; }
+
+  section { padding: 72px 16px 60px; }
 
   .tags { column-count: 1; }
   #columnlist { grid-template-columns: 1fr; }
