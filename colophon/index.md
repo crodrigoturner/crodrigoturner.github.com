@@ -1,7 +1,15 @@
 ---
 layout: page
-title: Design system
+title: Colophon
 ---
+
+### TL;DR
+
+- Built with Jekyll    
+- Hosted in Github Pages   
+- This website emits just [0.12g of CO2](https://www.websitecarbon.com/website/carlosrodrigo-com/) every time someone visits this web page.
+
+
 
 
 ## Overview
@@ -18,17 +26,15 @@ title: Design system
 | Role | Name | Hex |
 |---|---|---|
 | Background | Off-white | `#F7F5F2` |
-| Surface | White | `#FFFFFF` |
-| Primary text | Charcoal | `#1C1C1C` |
-| Secondary text | Warm grey | `#6B6B6B` |
-| Accent | Slate blue | `#3D5A80` |
-| Accent hover | Deep navy | `#2B3F5C` |
-| Border / divider | Light grey | `#E4E4E0` |
+| Primary text | Near-black | `#1a1b1e` |
+| Secondary text | Blue-grey | `#607d8b` |
+| Accent / links | Cornflower blue | `#4385BE` |
+| Border / divider | Light grey | `#e8e8e4` |
 
 **Principles:**
-- No pure white backgrounds — use off-white to avoid harshness
-- Accent colour used sparingly: links, CTAs, hover states only
-- No gradients; flat, intentional use of colour
+- Background is off-white to avoid harshness; no pure white page backgrounds
+- Accent used for links and interactive elements only
+- Subtle ambient gradient blobs in the background (radial, low opacity) add depth without distracting
 
 ---
 
@@ -40,40 +46,45 @@ title: Design system
 |---|---|---|
 | Headings | **Schibsted Grotesk** | Google Fonts |
 | Body | **Schibsted Grotesk** | Google Fonts |
-| Mono / labels | **JetBrains Mono** | Google Fonts |
+| Code | **Courier** | System |
 
 ### Type Scale
 
 | Element | Size | Weight | Line height |
 |---|---|---|---|
-| H1 | 48px / 3rem | 700 | 1.15 |
-| H2 | 32px / 2rem | 600 | 1.2 |
-| H3 | 22px / 1.375rem | 600 | 1.3 |
-| Body | 17px / 1.0625rem | 400 | 1.7 |
-| Small / caption | 13px / 0.8125rem | 400 | 1.5 |
-| Label / tag | 11px / 0.6875rem | 600 | 1.4 |
+| Wordmark (H1) | 16px / 1rem | 400 | 1 |
+| H2 | 1.6em (~25.6px) | 700 | — |
+| H3 | 1.1em (~17.6px) | 600 | — |
+| H4 | 1em (16px) | 600 | — |
+| H5 | 0.9em (~14.4px) | 600 | — |
+| H6 | 0.8em (~12.8px) | 400 | — |
+| Body | 16px / 1rem | 400 | 1.7 |
+| Small / caption | 0.9em (~14.4px) | 400 | — |
+| Figcaption | 0.75rem (12px) | 400 | 1.5rem |
 
 **Principles:**
-- Body text always in Inter; never use Playfair for long-form reading
-- Labels and tags in uppercase + letter-spacing: `0.08em`
-- Maximum line length: 65–70 characters (prose sections)
+- Body and headings both use Schibsted Grotesk
+- H4 is uppercase; used for section meta labels
+- Table headers: uppercase, 0.75em, letter-spacing `0.05em`, muted colour
+- Maximum content width: 680px
 
 ---
 
 ## Heading Hierarchy
 
 ```
-H1 — Page title / hero statement (one per page)
-  H2 — Section title (About, Work, Contact…)
-    H3 — Project or item title
-      Body — Description, paragraph text
-        Small — Meta info, dates, tags
+Wordmark (H1) — Site name in nav (16px body-weight)
+  H2 — Section title / page heading
+    H3 — Sub-section or item title
+      H4 — Label / meta category (uppercase)
+        Body — Description, paragraph text
+          Small / H6 — Meta info, dates, captions
 ```
 
 **Usage rules:**
-- H1 is the loudest element on the page — only one per view
-- H2 sections are separated by generous whitespace (80–120px)
-- Never skip levels (H1 → H3)
+- H1 is reserved for the site wordmark in the nav — one per page
+- H2 is the loudest content heading; use once per major section
+- Never skip levels (H2 → H4)
 
 ---
 
@@ -81,41 +92,45 @@ H1 — Page title / hero statement (one per page)
 
 | Token | Value |
 |---|---|
-| Base unit | 8px |
-| Section padding (vertical) | 96px |
-| Container max-width | 720px (content) / 1080px (full) |
-| Grid | 12-column, 24px gutter |
-| Card padding | 32px |
-| Border radius | 6px (cards, inputs) |
+| Site max-width | 680px |
+| Section padding (top) | 120px |
+| Section padding (bottom) | 80px |
+| Section side padding | 40px |
+| Article bottom padding | 40px |
+| Article bottom margin | 40px |
+| Header border-radius | 10px |
+| Hero border-radius | 14px |
+| Card / tag border-radius | 4px |
+| Image border-radius | 10px |
 
 ---
 
 ## Components
 
 ### Navigation
-- Fixed top bar, transparent background, blurs on scroll
+- Fixed top bar, always blurred (`backdrop-filter: blur(14px)`), near-transparent white background
 - Logo / name left-aligned; nav links right-aligned
-- No hamburger on desktop; minimal mobile drawer
+- On mobile (≤480px): stacks vertically, links wrap
 
 ### Hero
-- Full viewport height
-- H1 name + one-line descriptor
-- Subtle fade-in animation on load (300ms ease-out)
+- Compact card with `32px 28px` padding and 14px border-radius
+- Amber-tinted glassmorphism background (`rgb(255 193 7 / 9%)`) with blur
+- `.hero-greeting` (1.4em, 700) + `.hero-name` (0.95em, muted)
+- Not full viewport height
 
-### Project Cards
-- White surface on off-white background
-- Thin `1px` border in `#E4E4E0`
-- On hover: slight `box-shadow` lift, no colour change
-- Always include: title, year, 1–2 tags, short description
+### Articles / Cards
+- Separated by `1px` bottom border in `var(--color-border)`
+- No explicit card background — inherits page off-white
+- Last article has no bottom border
 
 ### Buttons / CTAs
-- Primary: filled accent `#3D5A80`, white text, 6px radius
-- Secondary: outlined, accent border, transparent fill
-- No rounded-pill buttons
+- Minimal: no background, no border, link colour text, inherits font
+- Hover: `opacity: 0.7`
+- No filled or outlined button variants in use
 
 ### Footer
-- Minimal: name + year + social links
-- No heavy footer with multiple columns
+- Centred, very large text (`3em`), muted blue-grey at low opacity (`#607d8b2e`)
+- Back-to-top link: `0.5em`, regular weight, muted colour
 
 ---
 
@@ -124,15 +139,17 @@ H1 — Page title / hero statement (one per page)
 - Photography: black & white or desaturated preferred
 - Icons: [Lucide](https://lucide.dev) — stroke weight `1.5px`, size `20px`
 - No stock photography; use project screenshots or original work only
+- Images: `border-radius: 10px` inside articles; profile image uses organic radius
 
 ---
 
 ## Animation & Interaction
 
-- Keep motion subtle and purposeful
-- Default transition: `200–300ms ease-out`
+- Hover states use `opacity: 0.7` — no colour transitions
+- Background ambient blobs animate on a slow drift (`14s` / `18s` ease-in-out loop)
+- No explicit transition durations defined; keep interactions instant or under 200ms
 - No parallax, no scroll-triggered explosions
-- Hover states on all interactive elements (links, cards, buttons)
+- `em` text highlighted in soft yellow (`#ffff6687`), pill-shaped radius
 
 ---
 
@@ -141,9 +158,9 @@ H1 — Page title / hero statement (one per page)
 | ✅ Do | ❌ Don't |
 |---|---|
 | Generous whitespace | Crowded layouts |
-| Consistent type scale | Mix more than 2 typefaces |
-| Subtle hover feedback | Flashy animations |
-| Off-white backgrounds | Pure `#FFFFFF` or `#000000` |
+| Single typeface (Schibsted Grotesk) | Mix typefaces |
+| Subtle opacity hover feedback | Colour-shift animations |
+| Off-white backgrounds | Pure `#FFFFFF` or `#000000` page backgrounds |
 | One clear CTA per section | Multiple competing CTAs |
 | Real project work | Filler placeholder content |
 
