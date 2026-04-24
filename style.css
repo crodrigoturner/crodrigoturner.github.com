@@ -6,7 +6,7 @@
   --color-muted: #607d8b;
   --color-link: #4385BE;
   --color-border: #e8e8e4;
-  --color-bg: #fff;
+  --color-bg: #F7F5F2;
 }
 
 *,
@@ -79,10 +79,10 @@ body::after {
     /* left: 0; */
     /* right: 0; */
     z-index: 100;
-    background: rgb(158 158 158 / 2%);
+    background: rgb(255 255 255 / 2%);
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
-    border: 1px solid #e8e8e440;
+   
     border-radius: 10px;
     width: calc(var(--site-width) - 40px);
     /* padding: 0 20px; */
@@ -594,10 +594,8 @@ footer {
   text-align: center;
   color: #607d8b2e;
   font-weight: 700;
-  font-size: 2em;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  font-size: 3em;
+
 }
 
 .back-to-top {
