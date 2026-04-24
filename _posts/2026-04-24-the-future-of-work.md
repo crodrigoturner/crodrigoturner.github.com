@@ -1,5 +1,6 @@
 ---
 layout: post
+category: post
 title: The future of work
 tags: ai, work, future
 ---
