@@ -3,7 +3,7 @@ layout: page
 title: Colophon
 ---
 
-### TL;DR
+## TL;DR
 
 - Built with Jekyll    
 - Hosted in Github Pages   
@@ -34,7 +34,7 @@ title: Colophon
 **Principles:**
 - Background is off-white to avoid harshness; no pure white page backgrounds
 - Accent used for links and interactive elements only
-- Subtle ambient gradient blobs in the background (radial, low opacity) add depth without distracting
+
 
 ---
 
@@ -136,9 +136,6 @@ Wordmark (H1) — Site name in nav (16px body-weight)
 
 ## Imagery & Icons
 
-- Photography: black & white or desaturated preferred
-- Icons: [Lucide](https://lucide.dev) — stroke weight `1.5px`, size `20px`
-- No stock photography; use project screenshots or original work only
 - Images: `border-radius: 10px` inside articles; profile image uses organic radius
 
 ---
@@ -168,7 +165,6 @@ Wordmark (H1) — Site name in nav (16px body-weight)
 
 ## File & Asset Notes
 
-- Favicon: monogram "CR" in Schibsted Grotesk, charcoal on off-white
 - OG image: 1200×630px, name + title on off-white background
 - Fonts loaded via Google Fonts with `display=swap`
 - All images: WebP format, lazy-loaded
