@@ -201,11 +201,11 @@ h1 {
 
 
 h2 {
-  font-size: 1.6em;
+  font-size: 3em;
   font-weight: 700;
   width:100%; float:left;
   color: var(--color-text);
-  margin: 0 0 16px;
+  margin: 0 0 20px;
 
  
 }
@@ -213,7 +213,7 @@ h2 {
 h3 {
   font-size: 1.1em;
   font-weight: 600;
-  margin: 20px 0 8px;
+  margin: 20px 0 10px;
   width:100%;
   float:left;
 }

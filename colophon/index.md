@@ -3,16 +3,15 @@ layout: page
 title: Colophon
 ---
 
-## TL;DR
+### TL;DR
 
 - Built with Jekyll    
 - Hosted in Github Pages   
 - This website emits just [0.12g of CO2](https://www.websitecarbon.com/website/carlosrodrigo-com/) every time someone visits this web page.
 
+---
 
-
-
-## Overview
+### Overview
 
 **Site type:** Personal portfolio  
 **Aesthetic:** Minimal & clean  
@@ -21,7 +20,7 @@ title: Colophon
 
 ---
 
-## Colour Palette
+### Colour Palette
 
 | Role | Name | Hex |
 |---|---|---|
@@ -38,9 +37,9 @@ title: Colophon
 
 ---
 
-## Typography
+### Typography
 
-### Typefaces
+#### Typefaces
 
 | Role | Font | Source |
 |---|---|---|
@@ -48,7 +47,7 @@ title: Colophon
 | Body | **Schibsted Grotesk** | Google Fonts |
 | Code | **Courier** | System |
 
-### Type Scale
+#### Type Scale
 
 | Element | Size | Weight | Line height |
 |---|---|---|---|
@@ -70,7 +69,7 @@ title: Colophon
 
 ---
 
-## Heading Hierarchy
+### Heading Hierarchy
 
 ```
 Wordmark (H1) — Site name in nav (16px body-weight)
@@ -88,7 +87,7 @@ Wordmark (H1) — Site name in nav (16px body-weight)
 
 ---
 
-## Spacing & Layout
+### Spacing & Layout
 
 | Token | Value |
 |---|---|
@@ -105,42 +104,42 @@ Wordmark (H1) — Site name in nav (16px body-weight)
 
 ---
 
-## Components
+### Components
 
-### Navigation
+#### Navigation
 - Fixed top bar, always blurred (`backdrop-filter: blur(14px)`), near-transparent white background
 - Logo / name left-aligned; nav links right-aligned
 - On mobile (≤480px): stacks vertically, links wrap
 
-### Hero
+#### Hero
 - Compact card with `32px 28px` padding and 14px border-radius
 - Amber-tinted glassmorphism background (`rgb(255 193 7 / 9%)`) with blur
 - `.hero-greeting` (1.4em, 700) + `.hero-name` (0.95em, muted)
 - Not full viewport height
 
-### Articles / Cards
+#### Articles / Cards
 - Separated by `1px` bottom border in `var(--color-border)`
 - No explicit card background — inherits page off-white
 - Last article has no bottom border
 
-### Buttons / CTAs
+#### Buttons / CTAs
 - Minimal: no background, no border, link colour text, inherits font
 - Hover: `opacity: 0.7`
 - No filled or outlined button variants in use
 
-### Footer
+#### Footer
 - Centred, very large text (`3em`), muted blue-grey at low opacity (`#607d8b2e`)
 - Back-to-top link: `0.5em`, regular weight, muted colour
 
 ---
 
-## Imagery & Icons
+### Imagery & Icons
 
 - Images: `border-radius: 10px` inside articles; profile image uses organic radius
 
 ---
 
-## Animation & Interaction
+### Animation & Interaction
 
 - Hover states use `opacity: 0.7` — no colour transitions
 - Background ambient blobs animate on a slow drift (`14s` / `18s` ease-in-out loop)
@@ -150,7 +149,7 @@ Wordmark (H1) — Site name in nav (16px body-weight)
 
 ---
 
-## Do / Don't
+### Do / Don't
 
 | ✅ Do | ❌ Don't |
 |---|---|
@@ -163,7 +162,7 @@ Wordmark (H1) — Site name in nav (16px body-weight)
 
 ---
 
-## File & Asset Notes
+### File & Asset Notes
 
 - OG image: 1200×630px, name + title on off-white background
 - Fonts loaded via Google Fonts with `display=swap`

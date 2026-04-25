@@ -3,7 +3,7 @@ layout: page
 title: More
 lang: en
 ---
-
+<h3>Index</h3>
  <ul id="columnlist">
 {% assign pages = site.pages | sort: 'url' %}
 {% for p in pages %}
@@ -18,7 +18,7 @@ lang: en
 
 
 
-<h2>Notes</h2>
+<h3>Archive</h3>
 <ul>
 {% for post in site.posts %}
 {% if post.category == "post" %}
