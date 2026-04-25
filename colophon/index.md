@@ -7,7 +7,7 @@ title: Colophon
 
 - Built with Jekyll    
 - Hosted in Github Pages   
-- This website emits just [0.12g of CO2](https://www.websitecarbon.com/website/carlosrodrigo-com/) every time someone visits this web page.
+- This website emits just [0.12g of CO<sub>2</sub>](https://www.websitecarbon.com/website/carlosrodrigo-com/) every time someone visits this web page.
 
 ---
 
