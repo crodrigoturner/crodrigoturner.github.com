@@ -51,8 +51,3 @@ Follow [this link](https://mj.ucw.cz/geek/?code=GB%2fCS%2fE+d--(--)+s()%3a()+a+C
 
    
 
-### More
-
-- [Blogroll](/blogroll)
-- [Uses](/uses/)
-- [Now](/tags/now/)
