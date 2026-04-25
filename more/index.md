@@ -26,10 +26,10 @@ lang: en
         </li>
         {% endfor %}
     </ul>
-</article>
+
 
 <h2>Notes</h2>
-<ul id="columnlist">
+<ul>
 {% for post in site.posts %}
 {% if post.category == "post" %}
 <li><a href="{{ post.url }}">{{ post.title }}</a></li>
