@@ -199,7 +199,7 @@ h1 {
 }
 
 h1::before{content:'';
-  background:yellow;
+  background:#FFB511;
   width:16px; border-radius:16px; float:left; height:16px;
 
 h2 {
