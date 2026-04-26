@@ -198,7 +198,9 @@ h1 {
 
 }
 
-
+h1::before{content:'';
+  background:yellow;
+  width:16px; border-radius:16px; float:left; height:16px;
 
 h2 {
   font-size: 3em;
