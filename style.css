@@ -200,7 +200,7 @@ h1 {
 
 h1::before{content:'';
   background:#FFB511;
-  width:16px; border-radius:16px; float:left; height:16px;}
+  width:16px; border-radius:16px; float:left; height:16px; margin-right:10px;}
 
 h2 {
   font-size: 3em;
