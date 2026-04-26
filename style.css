@@ -441,6 +441,31 @@ pre code {
 .disabled { visibility: hidden; }
 .arrow { font: 400 16px/1.6 "Inter", sans-serif !important; }
 
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--color-link);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.cta::after {
+  content: '->';
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.cta:hover {
+  opacity: 1;
+}
+
+.cta:hover::after {
+  transform: translateX(4px);
+}
+
 .alignright { float: right; }
 .alignleft { float: left; }
 
