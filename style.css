@@ -198,7 +198,7 @@ h1 {
 
 }
 
-h1::before{content:'';
+h1 a::before{content:'';
   background:#FFB511;
   width:16px; border-radius:16px; float:left; height:16px; margin-right:10px;}
 
