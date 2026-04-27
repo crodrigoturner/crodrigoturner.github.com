@@ -317,6 +317,7 @@ article ul li, ul li {
 
 .posts {
   margin: 0 0 20px;
+  float:left;
 }
 
 .posts li  {
