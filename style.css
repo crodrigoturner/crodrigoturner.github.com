@@ -316,7 +316,7 @@ article ul li, ul li {
 /* POSTS LIST */
 
 .posts {
-  margin: 0 0 16px;
+  margin: 0 0 20px;
 }
 
 .posts li  {
@@ -335,16 +335,7 @@ float:left;
   opacity: 1;
 }
 
-.posts li a:hover::after {
-  content: '->';
-  color: var(--color-muted);
-  font-family:"Inter";
-}
 
-.post-date a {
-  font-size: 0.9em;
-  color: #CCC;
-}
 
 .posts li .tag{
   float:right;
