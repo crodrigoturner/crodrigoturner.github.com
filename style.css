@@ -346,6 +346,11 @@ float:left;
   color: #CCC;
 }
 
+.post .tag{
+  float:right;
+  color:var(--color-muted);
+}
+
 /* IMAGES */
 
 img {
