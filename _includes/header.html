@@ -3,11 +3,12 @@
     <h1 class="site-wordmark"><a href="/" class="site-logo">Carlos Rodrigo</a></h1>
     <nav class="site-nav">
       <ul>
+        <li><a href="/"{% if page.url == '/' %} class="current"{% endif %}>Home</a></li>
         <li><a href="/about/"{% if page.url == '/about/' %} class="current"{% endif %}>About</a></li>
         <li><a href="/work/"{% if page.url == '/work/' %} class="current"{% endif %}>Work</a></li>
-        <li><a href="/"{% if page.url == '/' %} class="current"{% endif %}>Blog</a></li>
+        <li><a href="/blog/"{% if page.url == '/' %} class="current"{% endif %}>Blog</a></li>
         <li><a href="/contact/"{% if page.url == '/contact/' %} class="current"{% endif %}>Contact</a></li>
-        <li><a href="/more/"{% if page.url == '/more/' %} class="current"{% endif %}>More</a></li>
+        
       </ul>
     </nav>
   </div>
