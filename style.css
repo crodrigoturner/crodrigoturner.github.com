@@ -701,7 +701,7 @@ iframe { max-width: 100%; display: block; }
 .github-calendar .flex { display: flex; }
 .github-calendar .flex-col { flex-direction: column; }
 .github-calendar .gap-1 { gap: 4px; }
-.github-calendar .overflow-hidden { overflow: hidden; }
+.github-calendar .overflow-hidden { overflow: visible; }
 .github-calendar .flex-shrink-0 { flex-shrink: 0; }
 .github-calendar .absolute { position: absolute; }
 .github-calendar .hidden { display: none !important; }
