@@ -4,8 +4,6 @@ category: post
 title: The future of work
 tags: 
 - AI
-- Work
-- Future
 ---
 
 ![ graph of the labor market impact of ai](/images/labour-market.webp)

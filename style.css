@@ -147,8 +147,7 @@ section {
 
 article {
   width: 100%;
-  border-bottom: 1px solid var(--color-border);
-  padding: 0 0 40px;
+ 
   margin: 0 0 40px;
 }
 
