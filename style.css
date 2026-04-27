@@ -719,12 +719,16 @@ iframe { max-width: 100%; display: block; }
 .github-calendar .mt-2 { margin-top: 0.5rem; }
 .github-calendar .cursor-pointer { cursor: pointer; }
 .github-calendar .transition-colors { transition: background-color 0.15s; }
-.github-calendar .border { border-width: 1px; border-style: solid; }
+.github-calendar .border { border-width: 1px; border-style: solid; border-color: transparent; }
 .github-calendar .rounded-sm { border-radius: 2px; }
+/* Reliable catch-all for every day square (empty cells and day cells alike) */
+.github-calendar .flex-col > div { width: 10px; height: 10px; min-width: 10px; min-height: 10px; }
+/* Escaped-class fallbacks (browsers that support them get double coverage) */
 .github-calendar .w-2\.5 { width: 10px; }
 .github-calendar .h-2\.5 { height: 10px; }
 .github-calendar .border-black\/5 { border-color: rgba(0,0,0,0.05); }
-.github-calendar .bg-black\/5 { background-color: rgba(0,0,0,0.05); }
+/* Empty state: #ebedf0 matches GitHub's own palette and is visible on light backgrounds */
+.github-calendar .bg-black\/5 { background-color: #ebedf0; }
 .github-calendar .bg-emerald-300 { background-color: #6ee7b7; }
 .github-calendar .bg-emerald-500 { background-color: #10b981; }
 .github-calendar .bg-emerald-600 { background-color: #059669; }
