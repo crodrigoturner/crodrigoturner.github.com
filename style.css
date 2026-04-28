@@ -714,45 +714,7 @@ iframe { max-width: 100%; display: block; }
 }
 .social-links a:hover { opacity: 1; }
 .social-links img {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   display: block;
 }
-
-/* GitHub contribution calendar */
-.github-calendar { width: 100%; position: relative; }
-.github-calendar .flex { display: flex; }
-.github-calendar .flex-col { flex-direction: column; }
-.github-calendar .gap-1 { gap: 4px; }
-.github-calendar .overflow-hidden { overflow: visible; }
-.github-calendar .flex-shrink-0 { flex-shrink: 0; }
-.github-calendar .absolute { position: absolute; }
-.github-calendar .hidden { display: none !important; }
-.github-calendar .bg-gray-900 { background-color: #111827; }
-.github-calendar .text-white { color: #fff; }
-.github-calendar .text-xs { font-size: 0.75rem; line-height: 1rem; }
-.github-calendar .font-sans { font-family: ui-sans-serif, system-ui, sans-serif; }
-.github-calendar .px-2 { padding-left: 0.5rem; padding-right: 0.5rem; }
-.github-calendar .py-1 { padding-top: 0.25rem; padding-bottom: 0.25rem; }
-.github-calendar .rounded { border-radius: 0.25rem; }
-.github-calendar .shadow-lg { box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); }
-.github-calendar .pointer-events-none { pointer-events: none; }
-.github-calendar .z-50 { z-index: 50; }
-.github-calendar .whitespace-nowrap { white-space: nowrap; }
-.github-calendar .mt-2 { margin-top: 0.5rem; }
-.github-calendar .cursor-pointer { cursor: pointer; }
-.github-calendar .transition-colors { transition: background-color 0.15s; }
-.github-calendar .border { border-width: 1px; border-style: solid; border-color: transparent; }
-.github-calendar .rounded-sm { border-radius: 2px; }
-/* Reliable catch-all for every day square (empty cells and day cells alike) */
-.github-calendar .flex-col > div { width: 10px; height: 10px; min-width: 10px; min-height: 10px; }
-/* Escaped-class fallbacks (browsers that support them get double coverage) */
-.github-calendar .w-2\.5 { width: 10px; }
-.github-calendar .h-2\.5 { height: 10px; }
-.github-calendar .border-black\/5 { border-color: rgba(0,0,0,0.05); }
-/* Empty state: #ebedf0 matches GitHub's own palette and is visible on light backgrounds */
-.github-calendar .bg-black\/5 { background-color: #ebedf0; }
-.github-calendar .bg-emerald-300 { background-color: #6ee7b7; }
-.github-calendar .bg-emerald-500 { background-color: #10b981; }
-.github-calendar .bg-emerald-600 { background-color: #059669; }
-.github-calendar .bg-emerald-700 { background-color: #047857; }
