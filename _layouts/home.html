@@ -29,22 +29,28 @@ document.write(
 )
 </script>
   </h2>
-  <p class="hero-name">
+  <p class="hero-name"> Husband + Father.
 I work at Técnica y Avance in Madrid, mostly turning data into decisions and sales. This is my website.</p>
+
+  <nav class="social-links">
+    <a href="https://www.linkedin.com/in/crodrigoturner" aria-label="LinkedIn">LinkedIn</a>
+    <a href="https://github.com/crodrigoturner" aria-label="GitHub"><img src="/images/github.svg" alt="GitHub"></a>
+    <a href="mailto:rodrigoturner.carlos@gmail.com" aria-label="Email"><img src="/images/gmail.svg" alt="Email"></a>
+    <a href="https://x.com/crodrigoturner" aria-label="X"><img src="/images/x.svg" alt="X"></a>
+    <a href="https://bsky.app/profile/crodrigoturner.bsky.social" aria-label="Bluesky"><img src="/images/Bluesky_Logo.svg" alt="Bluesky"></a>
+  </nav>
 
 </article>
 
-<div style="display:flex;gap:1rem;align-items:stretch;">
-  <article class="podcast" id="podcast" style="width:50%;">
-    <a href="/podcast/"><img src="/images/aistories_cover.jpg"></a>
-  </article>
+<article class="podcast" id="podcast">
+  <a href="/podcast/"><img src="/images/aistories_cover.jpg"></a>
+</article>
 
-  <article class="post bluesky" id="bsky-post" style="width:50%;">
-    <img src="/images/Bluesky_Logo.svg">
-    <p id="bsky-text"></p>
-    <a class="cta" href="https://bsky.app/profile/crodrigoturner.bsky.social">More on bluesky</a>
-  </article>
-</div>
+<article class="post bluesky" id="bsky-post" style="display:none;">
+  <img src="/images/Bluesky_Logo.svg">
+  <p id="bsky-text"></p>
+  <a class="cta" href="https://bsky.app/profile/crodrigoturner.bsky.social">More on bluesky</a>
+</article>
            
             <script>
             function bskyEsc(s) {

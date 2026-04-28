@@ -697,6 +697,26 @@ iframe { max-width: 100%; display: block; }
   #columnlist { grid-template-columns: 1fr; }
 }
 
+/* Social profile links */
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+.social-links a {
+  display: flex;
+  align-items: center;
+  opacity: 0.7;
+  transition: opacity 0.15s;
+}
+.social-links a:hover { opacity: 1; }
+.social-links img {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
 /* GitHub contribution calendar */
 .github-calendar { width: 100%; position: relative; }
 .github-calendar .flex { display: flex; }
