@@ -701,7 +701,8 @@ iframe { max-width: 100%; display: block; }
 
 /* Projects carousel */
 .carousel-wrap {
-  margin: 0 -40px 40px;
+  position: relative;
+  margin: 0 -40px 40px 0;
   overflow: hidden;
 }
 
@@ -711,11 +712,31 @@ iframe { max-width: 100%; display: block; }
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
-  padding: 0 40px 8px;
+  padding-bottom: 8px;
   scrollbar-width: none;
 }
 
 .carousel::-webkit-scrollbar { display: none; }
+
+.carousel-arrow {
+  position: absolute;
+  right: 48px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s;
+  z-index: 10;
+}
 
 .carousel-card {
   flex: 0 0 220px;
