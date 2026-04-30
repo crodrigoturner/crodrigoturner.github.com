@@ -81,54 +81,7 @@ I work at Técnica y Avance in Madrid, mostly turning data into decisions and sa
     <p>   <a href="/blog/" class="cta"> Keep reading</a></p>
 </article>       
            
-      <article>     
-        <h3>Pages</h3>  
- <ul id="columnlist">
-{% assign pages = site.pages | sort: 'url' %}
-{% for p in pages %}
-  {% if p.title and p.url != page.url %}
-    {% unless p.url contains '_drafts' or p.url contains 'feed' or p.url contains '404' or p.url contains 'README' %}
-  <li><a href="{{ p.url }}">{{ p.title }}</a></li>
-    {% endunless %}
-  {% endif %}
-{% endfor %}
-</ul>
-</article>   
 
-<article>
-  <h3>Elsewhere</h3>
-  <ul class="profile-list">
-    <li>
-      <a href="https://github.com/crodrigoturner">
-        <img src="/images/github.svg" alt="GitHub">
-    
-      </a>
-    </li>
-    <li>
-      <a href="https://www.linkedin.com/in/crodrigoturner">
-        <img src="/images/linkedin.svg" alt="LinkedIn">
-       
-      </a>
-    </li>
-    <li>
-      <a href="https://bsky.app/profile/crodrigoturner.bsky.social">
-        <img src="/images/Bluesky_Logo.svg" alt="Bluesky">
-      
-      </a>
-    </li>
-    <li>
-      <a href="https://x.com/crodrigoturner">
-        <img src="/images/x.svg" alt="X">
-       
-      </a>
-    </li>
-  </ul>
-</article>
-
-    
-
-
- <p>This website was last updated {{ site.time | date: "%b %d, %Y" }}. Thanks for stopping by!</p>
 
 
 
