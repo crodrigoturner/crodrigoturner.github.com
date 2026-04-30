@@ -28,7 +28,7 @@ Over ten years, I've worked across architecture, energy, luxury brands, and star
 <li>Long bike rides.</li>
 <li>Films.</li>
 <li>The slow craft of raising two small humans without losing your sense of humour.</li>
-
+</ul>
 
 ### A few things about me
 <ul class="bulleted">
