@@ -294,6 +294,8 @@ ul.bulleted li::before {
   background-size: contain;
 }
 
+nav ul{margin:0;}
+
 /* POSTS LIST */
 
 .posts {
