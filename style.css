@@ -609,15 +609,15 @@ footer {
       width: 100%;
     margin: 0 auto;
     padding: 40px calc(50% - 340px) 40px;
-    text-align: center;
-    color: #607d8b2e;
-    font-weight: 700;
-    font-size: 3em;
+    
+   
+ 
    
 
 }
 
-
+footer #quote{ color: #607d8b2e; width:100%; text-align:center;
+    font-weight: 700; font-size:3em;}
 
 .back-to-top {
   font-size: 0.5em;
