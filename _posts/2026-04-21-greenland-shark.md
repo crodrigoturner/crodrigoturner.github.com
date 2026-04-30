@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Greenland Shark
-category: post
 lang: en
 tags: clippings
 ---

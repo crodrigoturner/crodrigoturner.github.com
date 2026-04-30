@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Unit of intelligence
-category: post
 lang: en
 tags: clippings
 

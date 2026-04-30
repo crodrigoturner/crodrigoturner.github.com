@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Well-being
-category: post
 lang: en
 tags: clippings
 ---
