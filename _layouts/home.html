@@ -36,30 +36,32 @@ I work at Técnica y Avance in Madrid, mostly turning data into decisions and sa
 
 </article>
 <h3>Projects</h3>
-<div class="carousel-wrap">
-  <div class="carousel" id="projects-carousel">
-    <a class="carousel-card" href="/podcast/">
-      <img src="/images/aistories_cover.jpg" alt="AI Stories podcast">
-      
-    </a>
-   
-  </div>
-  <button class="carousel-arrow" id="carousel-next" aria-label="Scroll right">→</button>
+<div class="projects-grid">
+  <a class="project-card" href="/podcast/">
+    <img src="/images/aistories_cover.jpg" alt="AI Stories podcast">
+    <span>AI Stories</span>
+  </a>
+  <a class="project-card" href="#">
+    <img src="/images/aistories_cover.jpg" alt="">
+    <span>Project 2</span>
+  </a>
+  <a class="project-card" href="#">
+    <img src="/images/aistories_cover.jpg" alt="">
+    <span>Project 3</span>
+  </a>
+  <a class="project-card" href="#">
+    <img src="/images/aistories_cover.jpg" alt="">
+    <span>Project 4</span>
+  </a>
+  <a class="project-card" href="#">
+    <img src="/images/aistories_cover.jpg" alt="">
+    <span>Project 5</span>
+  </a>
+  <a class="project-card" href="#">
+    <img src="/images/aistories_cover.jpg" alt="">
+    <span>Project 6</span>
+  </a>
 </div>
-<script>
-(function () {
-  var carousel = document.getElementById('projects-carousel');
-  var btn = document.getElementById('carousel-next');
-  btn.addEventListener('click', function () {
-    carousel.scrollBy({ left: 240, behavior: 'smooth' });
-  });
-  carousel.addEventListener('scroll', function () {
-    var atEnd = carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 8;
-    btn.style.opacity = atEnd ? '0' : '1';
-    btn.style.pointerEvents = atEnd ? 'none' : 'auto';
-  });
-})();
-</script>
 
 
 

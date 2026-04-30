@@ -102,7 +102,7 @@ section {
     padding: 80px calc(50% - 340px) 80px;
     background: var(--color-bg);
     border-radius: 0 0 20px 20px;
-    min-height:95vh);
+    min-height:95vh;
 
 }
 
@@ -202,9 +202,6 @@ h1 img {
   margin: 0 5px 0 0;
 }
 
-h2, .post-title {
-  margin: 0 0 16px;
-}
 
 p {
   margin: 0 0 12px;
@@ -664,69 +661,35 @@ iframe { max-width: 100%; display: block; }
 .profile-list span,
 .profile-list small { display: none; }
 
-/* Projects carousel */
-.carousel-wrap {
-  position: relative;
-  margin: 0 -40px 40px 0;
-  overflow: hidden;
-}
-
-.carousel {
-  display: flex;
+/* Projects grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  padding-bottom: 8px;
-  scrollbar-width: none;
+  margin-bottom: 40px;
 }
 
-.carousel::-webkit-scrollbar { display: none; }
-
-.carousel-arrow {
-  position: absolute;
-  right: 48px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  border: 1px solid var(--color-border);
-  background: var(--color-bg);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  cursor: pointer;
-  font-size: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: opacity 0.2s;
-  z-index: 10;
-}
-
-.carousel-card {
-  flex: 0 0 220px;
-  scroll-snap-align: start;
+.project-card {
   border-radius: 10px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   text-decoration: none;
   color: var(--color-text);
-  background: var(--color-bg);
   border: 1px solid var(--color-border);
   transition: opacity 0.15s;
 }
 
-.carousel-card:hover { opacity: 0.8; }
+.project-card:hover { opacity: 0.8; }
 
-.carousel-card img {
+.project-card img {
   width: 100%;
-  height: 140px;
+  height: 120px;
   object-fit: cover;
   border-radius: 0;
 }
 
-.carousel-card span {
+.project-card span {
   padding: 8px 12px;
   font-size: 0.9em;
   font-weight: 600;
