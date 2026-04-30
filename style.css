@@ -23,12 +23,14 @@ html {
 }
 
 body {
-  color: var(--color-text);
-  font: 400 16px/1.7 "Schibsted Grotesk", sans-serif;
-  background: var(--color-bg);
-  overflow-x: hidden;
-  -webkit-text-size-adjust: 100%;
-  text-rendering: optimizeLegibility;
+    color: var(--color-text);
+    font: 400 16px / 1.7 "Schibsted Grotesk", sans-serif;
+    /* background: var(--color-bg); */
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    border-right: 20px solid #ff980026;
+    border-left: 20px solid #ff980026;
 }
 
 /* AMBIENT GRADIENT BLOBS */
@@ -140,9 +142,12 @@ h1.site-wordmark img {
 /* MAIN CONTENT */
 
 section {
-  max-width: var(--site-width);
-  margin: 0 auto;
-  padding: 120px 40px 80px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 120px calc(50% - 340px) 80px;
+    background: var(--color-bg);
+    border-radius: 20px;
+
 }
 
 article {
@@ -614,13 +619,14 @@ th {
 /* FOOTER */
 
 footer {
-  max-width: var(--site-width);
-  margin: 0 auto;
-  padding: 20px 20px 40px;
-  text-align: center;
-  color: #607d8b2e;
-  font-weight: 700;
-  font-size: 3em;
+      width: 100%;
+    margin: 0 auto;
+    padding: 40px calc(50% - 340px) 40px;
+    text-align: center;
+    color: #607d8b2e;
+    font-weight: 700;
+    font-size: 3em;
+    background:#ff980026;
 
 }
 
