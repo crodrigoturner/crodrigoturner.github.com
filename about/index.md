@@ -21,13 +21,13 @@ Over ten years, I've worked across architecture, energy, luxury brands, and star
 
 ### What I care about
 <ul class="bulleted">
-- Data and AI. 
-- Design and the web. 
-- Science and space. 
-- Books — fiction especially. 
-- Long bike rides. 
-- Films. 
-- The slow craft of raising two small humans without losing your sense of humour.
+<li>Data and AI.</li>
+<li>Design and the web.</li>
+<li>Science and space.</li>
+<li>Books — fiction especially.</li>
+<li>Long bike rides.</li>
+<li>Films.</li>
+<li>The slow craft of raising two small humans without losing your sense of humour.</li>
 
 
 ### A few things about me
