@@ -687,6 +687,40 @@ iframe { max-width: 100%; display: block; }
   #columnlist { grid-template-columns: 1fr; }
 }
 
+/* Profile list */
+.profile-list { display: flex; flex-direction: column; gap: 4px; }
+
+.profile-list li a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.profile-list li a:hover { opacity: 0.7; }
+
+.profile-list img {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  border-radius: 0;
+}
+
+.profile-list span {
+  font-weight: 600;
+  font-size: 0.95em;
+  flex: 1;
+}
+
+.profile-list small {
+  font-family: "Inter", sans-serif;
+  font-size: 0.8em;
+  color: var(--color-muted);
+}
+
 /* Projects carousel */
 .carousel-wrap {
   position: relative;
