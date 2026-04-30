@@ -667,6 +667,7 @@ iframe { max-width: 100%; display: block; }
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   margin-bottom: 40px;
+  width:100%;
 }
 
 .project-card {
@@ -684,7 +685,7 @@ iframe { max-width: 100%; display: block; }
 
 .project-card img {
   width: 100%;
-  height: 120px;
+  height: auto;
   object-fit: cover;
   border-radius: 0;
 }
