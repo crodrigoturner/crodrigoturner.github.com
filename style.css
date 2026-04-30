@@ -2,7 +2,7 @@
 
 :root {
   --site-width: 680px;
-  --color-text: #1a1b1e;
+  --color-text: #999;
   --color-muted: #607d8b;
   --color-link: #4385BE;
   --color-border: #e8e8e4;
@@ -24,7 +24,7 @@ html {
 
 body {
     color: var(--color-text);
-    font: 400 16px / 1.7 "Schibsted Grotesk", sans-serif;
+    font: 400 15px / 1.7 "Schibsted Grotesk", sans-serif;
 
     overflow-x: hidden;
     -webkit-text-size-adjust: 100%;
@@ -160,8 +160,7 @@ h1 a::before{content:'';
 
 h2 {
    font: 700 3em/1 "Fraunces", sans-serif;
-  font-size: 3em;
-  font-weight: 700;
+
   width:100%; float:left;
   color: var(--color-text);
   margin: 0 0 20px;
@@ -170,8 +169,8 @@ h2 {
 }
 
 h3 {
- font: 700 1.1em/1 "Fraunces", sans-serif;
-  margin: 20px 0 10px;
+ font: 700 1.5em/1 "Fraunces", sans-serif;
+  margin: 20px 0 40px;
   width:100%;
   float:left;
 }
