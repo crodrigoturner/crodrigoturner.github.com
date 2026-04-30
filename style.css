@@ -29,36 +29,20 @@ body {
     overflow-x: hidden;
     -webkit-text-size-adjust: 100%;
     text-rendering: optimizeLegibility;
-background: var(--color-bg);
+
    
 }
 
 
 
-@keyframes drift-a {
-  0%, 100% { transform: translate(0, 0); }
-  33%       { transform: translate(30px, -20px); }
-  66%       { transform: translate(-15px, 12px); }
-}
 
-@keyframes drift-b {
-  0%, 100% { transform: translate(0, 0); }
-  50%       { transform: translate(-25px, 25px); }
-}
 
 /* HEADER */
 
 .site-header {
- position: fixed;
-    top: 0;
-    /* left: 0; */
-    /* right: 0; */
+
     z-index: 100;
-    background: rgb(255 255 255 / 2%);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-   
-    border-radius: 10px;
+
     width: var(--site-width);
   
     margin: 20px calc(50% - (var(--site-width)) / 2);
@@ -117,8 +101,8 @@ h1.site-wordmark img {
 section {
     max-width: 100%;
     margin: 0 20px;
-    padding: 120px calc(50% - 340px) 80px;
-    
+    padding: 80px calc(50% - 340px) 80px;
+    background: var(--color-bg);
     border-radius: 0 0 20px 20px;
 
 }
@@ -305,7 +289,7 @@ ul li::before {
   top: 2px; /* Adjust based on your line-height */
   width: 16px;
   height: 16px;
-  background-image: url("/image/bullet.png");
+  background-image: url("/images/bullet.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
