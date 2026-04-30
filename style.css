@@ -535,16 +535,16 @@ textarea {
 
 #columnlist {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   column-gap: 40px;
 }
 
 #columnlist li a {
   display: block;
-  border-bottom: 1px solid var(--color-border);
   padding: 4px 0;
   text-transform: capitalize;
   color: var(--color-text);
+  font-size:.9em;
 }
 
 /* CLOUD (TAG CLOUD) */
