@@ -7,7 +7,7 @@ lang: en
 ---
 
 
-<ul class="blogroll">
+<ul class="bulleted">
   
       <li><a href="https://maggieappleton.com/">Maggie Appleton</a></li>
     
