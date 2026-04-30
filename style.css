@@ -29,7 +29,8 @@ body {
     overflow-x: hidden;
     -webkit-text-size-adjust: 100%;
     text-rendering: optimizeLegibility;
-
+   background: #ff980026;
+   
 }
 
 
@@ -115,12 +116,11 @@ h1.site-wordmark img {
 
 section {
     max-width: 100%;
-    margin: 0 auto;
+    margin: 0 20px;
     padding: 120px calc(50% - 340px) 80px;
     background: var(--color-bg);
     border-radius: 0 0 20px 20px;
-  border-right: 20px solid #ff980026;
-    border-left: 20px solid #ff980026;
+
 }
 
 article {
@@ -606,7 +606,7 @@ footer {
     color: #607d8b2e;
     font-weight: 700;
     font-size: 3em;
-    background:#ff980026;
+   
 
 }
 
