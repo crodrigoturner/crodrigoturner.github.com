@@ -349,6 +349,14 @@ text-transform: uppercase;
 font-size: .8em;
 }
 
+.posts li .post-date {
+  float: right;
+  clear: right;
+  color: var(--color-muted);
+  font-size: .8em;
+  font-family: "Inter", sans-serif;
+}
+
 /* IMAGES */
 
 img {
