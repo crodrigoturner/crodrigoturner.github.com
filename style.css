@@ -29,8 +29,7 @@ body {
     overflow-x: hidden;
     -webkit-text-size-adjust: 100%;
     text-rendering: optimizeLegibility;
-    border-right: 20px solid #ff980026;
-    border-left: 20px solid #ff980026;
+
 }
 
 
@@ -119,8 +118,9 @@ section {
     margin: 0 auto;
     padding: 120px calc(50% - 340px) 80px;
     background: var(--color-bg);
-    border-radius: 20px;
-
+    border-radius: 0 0 20px 20px;
+  border-right: 20px solid #ff980026;
+    border-left: 20px solid #ff980026;
 }
 
 article {
