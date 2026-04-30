@@ -40,13 +40,10 @@ body {
 /* HEADER */
 
 .site-header {
-
-    z-index: 100;
-
-    width: var(--site-width);
-      background: var(--color-bg);
-    padding: 20px calc(50% - (var(--site-width)) / 2);
-    margin:0 20px;
+width: calc(100% - 40px);
+    background: var(--color-bg);
+    padding: 20px calc(50% - (var(--site-width) - 40px) / 2);
+    margin: 0 20px;
 }
 
 .site-header-inner {
