@@ -72,7 +72,7 @@ My <a href="/blog/">blog</a>is about AI, technology, quotes, clippings, how-to's
 <ul class="posts">
 {% for post in site.posts %}
 {% if post.category == "post" %}
-<li><a href="{{ post.url }}">{{ post.title }}</a><span class="tag">{{ post.tags }}</span><span class="post-date">{{ post.last_modified_at | default: post.date | date: "%b %d, %Y" }}</span></li>
+<li><a href="{{ post.url }}">{{ post.title }}</a><span class="tag">{{ post.tags }}</span></li>
 {% endif %}
 {% endfor %}  
 </ul>

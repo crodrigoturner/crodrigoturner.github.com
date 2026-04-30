@@ -25,7 +25,7 @@ html {
 body {
     color: var(--color-text);
     font: 400 16px / 1.7 "Schibsted Grotesk", sans-serif;
-    /* background: var(--color-bg); */
+background: #ff980026;
     overflow-x: hidden;
     -webkit-text-size-adjust: 100%;
     text-rendering: optimizeLegibility;
