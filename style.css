@@ -637,14 +637,7 @@ footer {
 
 }
 
-.site-updated {
-  display: block;
-  font-family: "Inter", sans-serif;
-  font-size: 0.3em;
-  font-weight: 400;
-  color: var(--color-muted);
-  margin-bottom: 8px;
-}
+
 
 .back-to-top {
   font-size: 0.5em;
