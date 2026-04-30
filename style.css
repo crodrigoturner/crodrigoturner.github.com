@@ -535,8 +535,8 @@ textarea {
 
 #columnlist {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 40px;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 20px;
 }
 
 #columnlist li a {
