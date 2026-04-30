@@ -42,7 +42,7 @@ body {
 .site-header {
 width: calc(100% - 40px);
     background: var(--color-bg);
-    padding: 20px calc(50% - (var(--site-width) - 40px) / 2);
+    padding: 20px calc(50% - (var(--site-width)) / 2);
     margin: 0 20px;
 }
 
