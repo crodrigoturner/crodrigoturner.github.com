@@ -25,7 +25,7 @@ html {
 body {
     color: var(--color-text);
     font: 400 16px / 1.7 "Schibsted Grotesk", sans-serif;
-background: #ff980026;
+
     overflow-x: hidden;
     -webkit-text-size-adjust: 100%;
     text-rendering: optimizeLegibility;
@@ -33,34 +33,7 @@ background: #ff980026;
     border-left: 20px solid #ff980026;
 }
 
-/* AMBIENT GRADIENT BLOBS */
 
-body::before,
-body::after {
-  content: '';
-  position: fixed;
-  border-radius: 50%;
-  z-index: -1;
-  pointer-events: none;
-}
-
-body::before {
-  width: 60vw;
-  height: 60vw;
-  bottom: -15vw;
-  left: -10vw;
-  background: radial-gradient(ellipse, rgba(180, 180, 170, 0.18) 0%, transparent 70%);
-  animation: drift-a 14s ease-in-out infinite;
-}
-
-body::after {
-  width: 50vw;
-  height: 50vw;
-  top: -10vw;
-  right: -10vw;
-  background: radial-gradient(ellipse, rgba(160, 160, 150, 0.12) 0%, transparent 70%);
-  animation: drift-b 18s ease-in-out infinite;
-}
 
 @keyframes drift-a {
   0%, 100% { transform: translate(0, 0); }
