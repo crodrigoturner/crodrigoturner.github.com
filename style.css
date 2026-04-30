@@ -159,7 +159,7 @@ h1 a::before{content:'';
   width:16px; border-radius:16px; float:left; height:16px; margin-right:10px;}
 
 h2 {
-   font: 700 3em/1 "Faunces", sans-serif;
+   font: 700 3em/1 "Fraunces", sans-serif;
   font-size: 3em;
   font-weight: 700;
   width:100%; float:left;
@@ -170,7 +170,7 @@ h2 {
 }
 
 h3 {
- font: 700 1.1em/1 "Faunces", sans-serif;
+ font: 700 1.1em/1 "Fraunces", sans-serif;
   margin: 20px 0 10px;
   width:100%;
   float:left;
