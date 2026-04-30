@@ -544,7 +544,7 @@ textarea {
   padding: 4px 0;
   text-transform: capitalize;
   color: var(--color-text);
-  font-size:.9em;
+  
 }
 
 /* CLOUD (TAG CLOUD) */
@@ -609,7 +609,7 @@ footer {
       width: 100%;
     margin: 0 auto;
     padding: 40px calc(50% - 340px) 40px;
-    
+    font-size:.9em;
    
  
    
