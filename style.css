@@ -44,8 +44,9 @@ body {
     z-index: 100;
 
     width: var(--site-width);
-  
-    margin: 20px calc(50% - (var(--site-width)) / 2);
+      background: var(--color-bg);
+    padding: 20px calc(50% - (var(--site-width)) / 2);
+    margin:0 20px;
 }
 
 .site-header-inner {
@@ -289,8 +290,8 @@ ul.bulleted li::before {
   position: absolute;
   left: -20px;
   top: 2px; /* Adjust based on your line-height */
-  width: 16px;
-  height: 16px;
+  width: 12px;
+  height: 12px;
   background-image: url("/images/bullet.png");
   background-repeat: no-repeat;
   background-size: contain;
