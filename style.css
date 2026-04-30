@@ -59,9 +59,9 @@ body {
     -webkit-backdrop-filter: blur(14px);
    
     border-radius: 10px;
-    width: calc(var(--site-width) - 40px);
-    /* padding: 0 20px; */
-    margin: 20px calc(50% - (var(--site-width) - 40px) / 2);
+    width: var(--site-width);
+  
+    margin: 20px calc(50% - (var(--site-width)) / 2);
 }
 
 .site-header-inner {
