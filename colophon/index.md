@@ -3,6 +3,8 @@ layout: page
 title: Colophon
 ---
 
+ <p>This website was last updated {{ site.time | date: "%b %d, %Y" }}. Thanks for stopping by!</p>
+
 ### TL;DR
 
 - Built with Jekyll    

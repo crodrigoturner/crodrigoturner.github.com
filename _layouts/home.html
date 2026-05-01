@@ -34,43 +34,16 @@ I work at Técnica y Avance in Madrid, mostly turning data into decisions and sa
 
  
 
+
+{% for post in site.posts limit:15 %}
+<article class="post {{ post.tags }}">
+  <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+{{post.content}}
+<span class="meta">{{post.tags}} · {{ post.date | date: '%Y%m%d' }} · <a href="mailto:rodrigoturner.carlos@gmail.com?subject={{ post.title }}">Reply by email</a></span>
 </article>
-<h3>Projects</h3>
-<div class="projects-grid">
-  <a class="project-card" href="/podcast/">
-    <img src="/images/aistories_cover.jpg" alt="AI Stories podcast">
-  
-  </a>
-  <a class="project-card" href="#">
-    <img src="/images/aistories_cover.jpg" alt="">
- 
-  </a>
-  <a class="project-card" href="#">
-    <img src="/images/aistories_cover.jpg" alt="">
-  
-  </a>
+{% endfor %}
 
 
-</div>
-
-
-
-
-
-<article>
-<h3>Blog</h3>
-<p>My <a href="/blog/">blog</a> is about AI, technology, quotes, clippings, how-to's and generally things I find worthwhile sharing. Here are the latest posts:</p>
-
-<ul class="posts">
-{% for post in site.posts %}
-{% if post.category == "post" %}
-<li><a href="{{ post.url }}">{{ post.title }}</a><span class="tag">{{ post.tags }}</span></li>
-{% endif %}
-{% endfor %}  
-</ul>
-
-
-    <p>   <a href="/blog/" class="cta"> Keep reading</a></p>
 </article>       
            
 
@@ -79,4 +52,3 @@ I work at Técnica y Avance in Madrid, mostly turning data into decisions and sa
 
 </section>
 
-{% include footer.html %}
