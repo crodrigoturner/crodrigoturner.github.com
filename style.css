@@ -25,7 +25,7 @@ html {
 body {
     color: var(--color-text);
     font: 400 16px / 1.7 "Schibsted Grotesk", sans-serif;
-
+background: var(--color-bg);
     overflow-x: hidden;
     -webkit-text-size-adjust: 100%;
     text-rendering: optimizeLegibility;
@@ -100,9 +100,7 @@ section {
     max-width: 100%;
     margin: 0 20px;
     padding: 40px calc(50% - 340px);
-    background: var(--color-bg);
-    border-radius: 0 0 20px 20px;
-    min-height:95vh;
+
 
 }
 
@@ -128,7 +126,7 @@ article:last-child {
 .hero {
 
 
-    margin-bottom: 40px;
+    margin-bottom: 80px;
 
 }
 
