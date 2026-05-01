@@ -86,7 +86,7 @@ article {
   margin: 0 0 40px;
 }
 
-.post{border-bottom:1px solid #EEE;padding:0 0 40px 0;}
+.post{padding:0 0 40px 0;}
 
 
 /* HERO */
@@ -374,10 +374,12 @@ small {
 
 
 hr {
-  background: var(--color-border);
   border: none;
-  height: 1px;
+  height: 0;
+  border-top: 1px solid rgba(0,0,0,0.08);
+  border-bottom: 1px solid rgba(255,255,255,0.75);
   margin: 40px 0;
+  background: transparent;
 }
 
 blockquote {
