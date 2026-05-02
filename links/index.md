@@ -25,6 +25,12 @@ This is a little experiment inspired by [linkity link](https://linkitylink.lol/)
       var items = Array.from(doc.querySelectorAll('item'));
       if (!items.length) { container.innerHTML = '<p class="meta">No links yet.</p>'; return; }
 
+      items.sort(function (a, b) {
+        var da = new Date((a.querySelector('pubDate') || {}).textContent || 0);
+        var db = new Date((b.querySelector('pubDate') || {}).textContent || 0);
+        return db - da;
+      });
+
       var html = '<ul class="link-list">';
       items.forEach(function (item) {
         var title = (item.querySelector('title') || {}).textContent || '';
