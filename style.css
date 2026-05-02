@@ -721,6 +721,21 @@ iframe {
 }
 
 
+/* Info callout */
+span.info {
+  display: block;
+  background: #eee;
+  color: var(--color-muted);
+  font-size: 0.9em;
+  padding: 20px 20px 20px 48px;
+  border-radius: 8px;
+  background-image: url('/images/info.svg');
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  background-position: 18px 22px;
+  margin-bottom: 20px;
+}
+
 /* Raindrop link list */
 .link-list { margin: 0; }
 
