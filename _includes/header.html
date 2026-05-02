@@ -4,13 +4,18 @@
     <nav class="site-nav">
       <ul>
         
-        <li><a href="/about/"{% if page.url == '/about/' %} class="current"{% endif %}>About</a></li>
-        <li><a href="/work/"{% if page.url == '/work/' %} class="current"{% endif %}>Work</a></li>
-        <li><a href="/"{% if page.url == '/' %} class="current"{% endif %}>Blog</a></li>
-        <li><a href="/contact/"{% if page.url == '/contact/' %} class="current"{% endif %}>Contact</a></li>
-        <li><a href="/more/"{% if page.url == '/more/' %} class="current"{% endif %}>More</a></li>
+
+{% assign pages = site.pages | sort: 'url' %}
+{% for p in pages %}
+  {% if p.title and p.url != page.url %}
+    {% unless p.url contains '_drafts' or p.url contains 'feed' or p.url contains '404' or p.url contains 'README' %}
+  <li><a href="{{ p.url }}" {% if page.url == '/{{ p.title }}' %} class="current"{% endif %}>{{ p.title }}</a></li>
+    {% endunless %}
+  {% endif %}
+{% endfor %}
+</ul>
         
-      </ul>
+     
     </nav>
   </div>
 </header>
