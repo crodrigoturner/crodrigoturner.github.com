@@ -5,6 +5,10 @@ id: blogroll
 ref: blogroll
 lang: en
 ---
+<span class="info">
+This is a list of the most frequented blogs I visit. They're not all the feeds on my RSS reader, they're the most worthy. If you want to check more blogrolls, check [Miniroll](https://www.miniroll.app/), [Ye Olde Blogroll](https://blogorll.org), [Blogosphere](https://blogosphere.app/) or [Ooh directory](https://ooh.directory/). <a href="mailto:rodrigoturner.carlos@gmail.com">Any recommendations?</a>
+</span>
+
 <ul class="bulleted">
 <li><a href="https://maggieappleton.com/">Maggie Appleton</a></li>
 <li><a href="https://interconnected.org/">Matt Webb</a></li>
