@@ -752,4 +752,4 @@ iframe {
   color: var(--color-muted);
 }
 
-.link-list img{display:none;}
+.link-list img { display: none !important; }
