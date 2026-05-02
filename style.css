@@ -751,3 +751,5 @@ iframe {
   font-size: 0.78em;
   color: var(--color-muted);
 }
+
+.link-list img{display:none;}
