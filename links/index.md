@@ -6,10 +6,7 @@ lang: en
 
 The best of the internet — saved to [Raindrop](https://app.raindrop.io/my/62384300).
 
-This is a little experiment inspired by [linkity link](https://linkitylink.lol/) and [clone.fyi](https://clone.fyi/).
-
-> [!NOTE]
-> This website was made with Claude Code and the Raindrop API.
+This is a little experiment inspired by [linkity link](https://linkitylink.lol/) and [clone.fyi](https://clone.fyi/). It was made with the help of Claude Code and the Raindrop API.
 
 <div id="raindrop-list"><p class="meta">Loading…</p></div>
 
