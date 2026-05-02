@@ -69,7 +69,7 @@ h1.site-wordmark {
 nav ul {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+
   margin: 0;
 }
 
@@ -720,3 +720,34 @@ iframe {
   }
 }
 
+
+/* Raindrop link list */
+.link-list { margin: 0; }
+
+.link-list li {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--color-border);
+  float: left;
+  width: 100%;
+}
+
+.link-list a {
+  font-weight: 600;
+  display: block;
+  color: var(--color-text);
+  margin-bottom: 2px;
+}
+
+.link-list a:hover { color: var(--color-link); opacity: 1; }
+
+.link-list p {
+  margin: 0 0 4px;
+  font-size: 0.9em;
+  color: var(--color-muted);
+}
+
+.link-list small {
+  font-family: "Inter", sans-serif;
+  font-size: 0.78em;
+  color: var(--color-muted);
+}
