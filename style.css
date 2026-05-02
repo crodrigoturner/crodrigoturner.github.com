@@ -33,52 +33,64 @@ body {
 
 }
 
-/* HEADER */
+/* LAYOUT */
+
+.site-layout {
+  display: grid;
+  grid-template-columns: 1fr 160px;
+  grid-template-areas: "main sidebar";
+  gap: 60px;
+  max-width: 860px;
+  margin: 0 auto;
+  align-items: start;
+  padding: 0 20px;
+}
+
+/* HEADER / SIDEBAR */
 
 header {
-  width: var(--site-width);
-  background: var(--color-bg);
-  padding: 20px 0;
-  margin: 0 auto;
+  grid-area: sidebar;
+  position: sticky;
+  top: 40px;
+  padding: 40px 0;
 }
 
 .site-header-inner {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: var(--site-width);
-  margin: 0 auto;
-  padding: 16px 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
 }
 
+h1.site-wordmark {
+  font: 600 1em/1.3 "Schibsted Grotesk", sans-serif;
+}
 
 nav ul {
   display: flex;
-  gap: 20px;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
 }
 
 nav li a {
-  font-size: 1em;
+  font-size: 0.95em;
   color: var(--color-muted);
   text-decoration: none;
-  letter-spacing: 0.01em;
 }
 
-nav li a:hover {
-  color: var(--color-text);
-  opacity: 1;
-}
-
+nav li a:hover,
 nav li a.current {
   color: var(--color-text);
+  opacity: 1;
 }
 
 /* MAIN CONTENT */
 
 section {
-  width: var(--site-width);
-  margin: 0 auto;
+  grid-area: main;
   padding: 40px 0;
+  min-width: 0;
 }
 
 article {
