@@ -198,9 +198,6 @@ a {
   text-decoration: none;
 }
 
-a:visited {
-  color: var(--color-link);
-}
 
 a:hover {
   opacity: 0.7;
@@ -722,7 +719,7 @@ iframe {
 
 
 /* Info callout */
-span.info {
+.info {
     background: #eee;
     color: var(--color-muted);
     font-size: 0.9em;
