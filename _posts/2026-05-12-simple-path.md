@@ -3,10 +3,8 @@ layout: post
 title: A simple path to a good life
 lang: en
 tags: clippings
-category: post
----
 
-## A simple path to a good life:
+---
 
 1. Stay in great shape
 2. Build a family you love
