@@ -131,7 +131,7 @@ article {
 /* TYPOGRAPHY */
 
 h1 {
-  font: 400 16px/1.7 "Schibsted Grotesk", sans-serif;
+  font: 400 2em/1.7 "Schibsted Grotesk", sans-serif;
 
 }
 
@@ -188,6 +188,8 @@ h6 {
 h1 img {
   display: block;
   width: 50px;
+  align-self: center;
+  cursor:pointer;
 }
 
 h1 img:hover {
