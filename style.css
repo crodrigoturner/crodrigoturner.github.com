@@ -64,6 +64,10 @@ header {
 
 h1.site-wordmark {
   font: 400 1em/1 "Schibsted Grotesk", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
 }
 
 nav ul {
@@ -131,17 +135,6 @@ h1 {
 
 }
 
-h1 a::before {
-  content: '';
-  background: #FFB511;
-  width: 16px;
-  border-radius: 16px;
-  float: left;
-  height: 16px;
-  margin-right: 10px;
-      position: relative;
-    top: 0px;
-}
 
 h2 {
   font: 700 3em/1 "Fraunces", sans-serif;
@@ -183,9 +176,7 @@ h6 {
 }
 
 h1 img {
-  position: relative;
-  top: 2px;
-  margin: 0 5px 0 0;
+  display: block;
 }
 
 
