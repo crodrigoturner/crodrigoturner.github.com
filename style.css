@@ -130,7 +130,7 @@ h1 {
 }
 
 h1::before{content:'';
-float:left; margin:0 10px 0 0; background:var(--color-link); height:16px; width:16px; border-radius: 50%; }
+float:left; margin:0 10px 0 0; background:#FFB511; height:16px; width:16px; border-radius: 50%; }
 
 
 h2 {
