@@ -22,7 +22,7 @@
       {% assign all_tags = site.posts | map: 'tags' | join: ',' | split: ',' | compact | uniq | sort %}
       {% for tag in all_tags %}
         {% unless tag == '' %}
-        <a href=" <a href="{{ '/tags' | absolute_url }}#{{ tag }}" class="tag-cloud-tag">{{ tag }}</a>
+        <a href="{{ '/tags/' | absolute_url }}{{ tag }}" class="tag-cloud-tag">{{ tag }}</a>
         {% endunless %}
       {% endfor %}
     </div>
