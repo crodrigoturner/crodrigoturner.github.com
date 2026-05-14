@@ -117,7 +117,7 @@ article {
 }
 
 .hero-name {
-  color: #999;
+  color: var(--color-muted);
   font-size: 0.95em;
   margin: 0;
 }
@@ -400,8 +400,8 @@ figcaption {
 .meta,
 small {
   font-size: 0.8em !important;
-  color: var(--color-muted);
-  padding:20px 0;
+  color: var(--color-text);
+  margin:20px 0;
 }
 
 
