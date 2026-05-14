@@ -4,21 +4,17 @@
 
 <section>
 <article>
-  <h2>{{page.title}}</h2>
+  <h3>{{page.title}}</h3>
 
-  <p class="meta">
-    {{ page.date | date_to_string }}
-    {% assign words = content | number_of_words %}
-    {% if words > 200 %}
-      · {{ words | divided_by: 200 | plus: 1 }} min read
-    {% endif %}
-  </p>
+  
 
   {{content}}
+  <span class="meta">{{post.tags}} · {{ post.date | date: '%Y%m%d' }} · <a href="mailto:rodrigoturner.carlos@gmail.com?subject={{ post.title }}">Reply by email</a></span>
+<hr/>
 </article>
 
 <article>
-  <h2>More notes</h2>
+  <h4>More notes</h4>
   <ul>
     {% assign other_posts = site.posts | where_exp: "p", "p.url != page.url" %}
     {% for p in other_posts limit: 5 %}
