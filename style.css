@@ -401,7 +401,8 @@ figcaption {
 small {
   font-size: 0.8em !important;
   color: var(--color-text);
-  margin:20px 0;
+  margin:20px 0 0;
+  float:left; width:100%;
 }
 
 
@@ -412,13 +413,14 @@ hr {
   border-bottom: 1px solid rgba(255,255,255,0.75);
   margin: 40px 0;
   background: transparent;
+  float:left; width:100%;
 }
 
 blockquote {
   padding: 0 0 0 20px;
   border-left: 2px solid var(--color-border);
   color: var(--color-muted);
-  font-style: italic;
+  font-style: italic;float:left; 
 }
 
 .quotes h3,
