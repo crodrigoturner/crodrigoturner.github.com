@@ -1,6 +1,6 @@
 ---
 layout: art
-title: Art
+title: (AI) Art
 lang: en
 ---
 
