@@ -1,4 +1,7 @@
 <header class="site-header">
+  <button class="hamburger" aria-label="Open menu" onclick="var h=this.closest('.site-header');h.classList.toggle('open');this.setAttribute('aria-label',h.classList.contains('open')?'Close menu':'Open menu')">
+    <span></span><span></span><span></span>
+  </button>
   <div class="site-header-inner">
     <img class="logo" src="/images/logo.png">
     <h1><a href="/" class="site-logo">Carlos Rodrigo</a></h1>
