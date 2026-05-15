@@ -41,9 +41,9 @@
       {% for file in site.static_files %}
         {% if file.path contains 'art_images' and image_exts contains file.extname %}
           {% assign found = true %}
-          <div class="masonry-item">
+         
             <img src="{{ file.path }}" alt="{{ file.basename | replace: '-', ' ' | replace: '_', ' ' }}" loading="lazy">
-          </div>
+         
         {% endif %}
       {% endfor %}
       {% unless found %}
