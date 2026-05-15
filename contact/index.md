@@ -1,9 +1,7 @@
 ---
 layout: page
 title: Contact
-id: contact
-ref: contact
-lang: en
+
 ---
 
 <ul class="bulleted">
