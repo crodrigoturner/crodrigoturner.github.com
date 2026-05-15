@@ -35,20 +35,19 @@
   <article>
     <h2>{{ page.title }}</h2>
     {{ content }}
+    {% assign image_exts = ".jpg,.jpeg,.png,.gif,.webp" | split: "," %}
+    {% assign found = false %}
     <div class="masonry">
-      {% assign art_images = site.static_files | where_exp: "file", "file.path contains '/art_images/'" %}
-      {% assign image_exts = ".jpg,.jpeg,.png,.gif,.webp" | split: "," %}
-      {% assign found = false %}
-      {% for image in art_images %}
-        {% if image_exts contains image.extname %}
+      {% for file in site.static_files %}
+        {% if file.path contains 'art_images' and image_exts contains file.extname %}
           {% assign found = true %}
           <div class="masonry-item">
-            <img src="{{ image.path }}" alt="{{ image.basename | replace: '-', ' ' | replace: '_', ' ' }}" loading="lazy">
+            <img src="{{ file.path }}" alt="{{ file.basename | replace: '-', ' ' | replace: '_', ' ' }}" loading="lazy">
           </div>
         {% endif %}
       {% endfor %}
       {% unless found %}
-        <p class="masonry-empty">No images yet — add them to the <code>art/</code> folder.</p>
+        <p class="masonry-empty">No images yet — add them to the <code>art_images/</code> folder.</p>
       {% endunless %}
     </div>
   </article>
