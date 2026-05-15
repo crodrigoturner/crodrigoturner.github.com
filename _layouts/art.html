@@ -32,24 +32,24 @@
 <div class="site-layout">
 {% include header.html %}
 <section>
-  <article>
+  
     <h2>{{ page.title }}</h2>
     {{ content }}
     {% assign image_exts = ".jpg,.jpeg,.png,.gif,.webp" | split: "," %}
     {% assign found = false %}
-    <div class="masonry">
+   
       {% for file in site.static_files %}
         {% if file.path contains 'art_images' and image_exts contains file.extname %}
           {% assign found = true %}
-         
+         <article>
             <img src="{{ file.path }}" alt="{{ file.basename | replace: '-', ' ' | replace: '_', ' ' }}" loading="lazy">
-         
+           </article>
         {% endif %}
       {% endfor %}
       {% unless found %}
         <p class="masonry-empty">No images yet — add them to the <code>art_images/</code> folder.</p>
       {% endunless %}
-    </div>
-  </article>
+ 
+
 </section>
 </div>
