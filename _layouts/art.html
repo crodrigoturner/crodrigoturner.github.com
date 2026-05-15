@@ -36,7 +36,7 @@
     <h2>{{ page.title }}</h2>
     {{ content }}
     <div class="masonry">
-      {% assign art_images = site.static_files | where_exp: "file", "file.path contains '/art/'" %}
+      {% assign art_images = site.static_files | where_exp: "file", "file.path contains '/art_images/'" %}
       {% assign image_exts = ".jpg,.jpeg,.png,.gif,.webp" | split: "," %}
       {% assign found = false %}
       {% for image in art_images %}
