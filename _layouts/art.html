@@ -1,0 +1,56 @@
+{% include head.html %}
+<style>
+.masonry {
+  column-count: 3;
+  column-gap: 10px;
+  margin-top: 24px;
+}
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 10px;
+}
+.masonry-item img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+  transition: opacity 0.2s ease;
+}
+.masonry-item img:hover {
+  opacity: 0.85;
+}
+.masonry-empty {
+  color: var(--color-muted);
+  font-size: 0.9em;
+}
+@media (max-width: 600px) {
+  .masonry { column-count: 2; }
+}
+@media (max-width: 380px) {
+  .masonry { column-count: 1; }
+}
+</style>
+<div class="site-layout">
+{% include header.html %}
+<section>
+  <article>
+    <h2>{{ page.title }}</h2>
+    {{ content }}
+    <div class="masonry">
+      {% assign art_images = site.static_files | where_exp: "file", "file.path contains '/art/'" %}
+      {% assign image_exts = ".jpg,.jpeg,.png,.gif,.webp" | split: "," %}
+      {% assign found = false %}
+      {% for image in art_images %}
+        {% if image_exts contains image.extname %}
+          {% assign found = true %}
+          <div class="masonry-item">
+            <img src="{{ image.path }}" alt="{{ image.basename | replace: '-', ' ' | replace: '_', ' ' }}" loading="lazy">
+          </div>
+        {% endif %}
+      {% endfor %}
+      {% unless found %}
+        <p class="masonry-empty">No images yet — add them to the <code>art/</code> folder.</p>
+      {% endunless %}
+    </div>
+  </article>
+</section>
+</div>
