@@ -35,6 +35,8 @@ As of May 2026.
 - ✈️ VPN: Windscribe
 - 🧠 AI: Claude
 - 📝 Blog: Jekyll + github pages
+- 🎤 Speech to text: Vowen
+- 🎧 Text to speech: Elevenlabs
 
 
 ### Obsidian Plugins (community)
