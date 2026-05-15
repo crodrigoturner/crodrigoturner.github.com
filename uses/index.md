@@ -6,17 +6,16 @@ ref: uses
 lang: en
 ---
 
+As of May 2026.
 
-These are my default apps as of April 2026. 
-
-- 📨 Mail Client: Gmail.com / Gmail app  
+- 📨 Mail Client: Gmail.com / Gmail app + EM client for work
 - 📮 Mail Server: Google  
 - 📝 Notes: Keep + Obsidian 
 - ✅ To-Do: Todoist
 - 📷 Photo Shooting: Android phone  
 - 🎨 Photo Editing: Google Gemini / Nano Banana
 - 📆 Calendar: Google Calendar  
-- 📁 Cloud File Storage: DRIVE  
+- 📁 Cloud File Storage: Google Drive  
 - 📖 RSS: Feedly  
 - 🙍🏻‍♂️ Contacts: Google Contacts  
 - 🌐 Browser: Chrome   
@@ -35,4 +34,35 @@ These are my default apps as of April 2026.
 - 🧑‍💻 Code Editor: VS Code  
 - ✈️ VPN: Windscribe
 - 🧠 AI: Claude
-- 📝 Blog: Micro.blog
+- 📝 Blog: Jekyll + github pages
+
+
+### Obsidian Plugins (community)
+
+- Hider
+- Multiproperties
+- Unread Dot
+- Table of Contents
+
+
+### VS extensions
+
+- Claude Code for VS
+- Rainbow CSV
+- Night Owl (theme)
+- Code spell Checker
+- Harper Grammar
+
+### Chrome extensions
+
+- Bitwarden
+- Feedly
+- Grammarly
+- Windscribe
+- Raindrop
+- Todoist
+- Obsidian web clipper
+- Clear cache
+- What font
+- Claude
+- Google Keep
