@@ -1,15 +1,13 @@
 {% include head.html %}<div class="site-layout">
 {% include header.html %}
 <section>
-    <article>
+    
 <h2>Posts tagged {{ page.tag }}</h2>
 
-<ul class="bulleted">
-{% for post in site.tags[page.tag] %}
-  <li>
-    {{ post.date | date: "%B %d, %Y" }}: <a href="{{ post.url }}">{{ post.title }}</a>
-  </li>
-{% endfor %}
-</ul>
+<article class="post {{ post.tags }}">
+  <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+{{post.content}}
+<span class="meta">{{post.tags}} · {{ post.date | date: '%Y%m%d' }} · <a href="mailto:rodrigoturner.carlos@gmail.com?subject={{ post.title }}">Reply by email</a></span>
+<hr/>
 </article></section>
 </div>

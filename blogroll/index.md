@@ -24,10 +24,10 @@ This is a list of the most frequented blogs I visit. They're not all the feeds o
 <li><a href="https://spasic.me">A Room of My Own</a></li>
 <li><a href="https://stephango.com/">Steph Ango</a></li>
 <li><a href="https://metatrends.substack.com">Metatrends</a></li>
-<li><a href="https://www.traumatologageek.es">La traumatóloga geek</a></li>
 <li><a href="https://vhbelvadi.com">V.H. Belvadi</a></li>
 <li><a href="https://huntergatherer21c.com/">Hunter Gatherer 21C (Nicholas Bate)</a></li>
 <li><a href="https://notetoself.studio/">Note to Self by Gina Trapani</a></li>
 <li><a href="https://bradbarrish.com/">Brad Barrish</a></li>
 <li><a href="https://colossus.com/">Colossus</a></li>
+<li><a href="https://tracydurnell.com/">Tracy Durnell</a></li>
 </ul>
