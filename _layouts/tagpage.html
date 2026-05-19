@@ -38,12 +38,11 @@ document.write(
       {% assign all_tags = site.posts | map: 'tags' | join: ',' | split: ',' | compact | uniq | sort %}
       {% for tag in all_tags %}
         {% unless tag == '' %}
-        <li><a href="{{ '/tags/' | absolute_url }}{{ tag }}" class="tag-cloud-tag">{{ tag }}</a></li>
+        <li><a href="{{ '/tags/' | absolute_url }}{{ tag }}" {% if page.url == p.url %} class="current"{% endif %} class="tag-cloud-tag">{{ tag }}</a></li>
         {% endunless %}
       {% endfor %}
   </ul>
 
-<h2>Posts tagged {{ page.tag }}</h2>
 
 
 {% for post in site.tags[page.tag] %}
