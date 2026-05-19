@@ -9,7 +9,7 @@
   
 
   {{content}}
-  <span class="meta">{{post.tags}} · {{ post.date | date: '%Y%m%d' }} · <a href="mailto:rodrigoturner.carlos@gmail.com?subject={{ post.title }}">Reply by email</a></span>
+  <span class="meta">{{p.tags}} · {{ p.date | date: '%Y%m%d' }} · <a href="mailto:rodrigoturner.carlos@gmail.com?subject={{ post.title }}">Reply by email</a></span>
 <hr/>
 </article>
 
@@ -18,7 +18,7 @@
   <ul>
     {% assign other_posts = site.posts | where_exp: "p", "p.url != page.url" %}
     {% for p in other_posts limit: 5 %}
-      <li><span class="meta">{{ p.date | date: '%Y%m%d' }}</span> · <a href="{{ p.url }}">{{ p.title }} </a></li>
+      <li>{{ p.date | date: '%Y%m%d' }} · <a href="{{ p.url }}">{{ p.title }} </a></li>
     {% endfor %}
   </ul>
 </article>
