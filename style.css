@@ -103,7 +103,7 @@ article {
 .hero {
 
 
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 
 }
 
@@ -292,24 +292,11 @@ nav ul {
 .tag-cloud {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
+  gap: 10px;
 }
 
-.tag-cloud-tag {
-  font-size: 0.78em;
-  color: var(--color-muted);
-  text-decoration: none;
-  border: 1px solid var(--color-border);
-  border-radius: 100px;
-  padding: 2px 8px;
-  white-space: nowrap;
-}
 
-.tag-cloud-tag:hover {
-  color: var(--color-text);
-  border-color: var(--color-text);
-  opacity: 1;
-}
+
 
 /* POSTS LIST */
 
