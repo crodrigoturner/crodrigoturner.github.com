@@ -126,11 +126,11 @@ article {
 
 h1 {
   font: 400 1em/1.7 "Schibsted Grotesk", sans-serif;
-
+margin:10px 0px 0 0;
 }
 
 h1::before{content:'';
-float:left; margin:10px 10px 0 0; background:#FFB511; height:16px; width:16px; border-radius: 50%; top:5px; position:relative;}
+float:left; margin:0px 10px 0 0; background:#FFB511; height:16px; width:16px; border-radius: 50%; top:5px; position:relative;}
 
 
 h2 {
