@@ -73,7 +73,7 @@ body {
 
 .site-layout {
   display: grid;
-  grid-template-columns: 1fr 160px;
+  grid-template-columns: 1fr 200px;
   grid-template-areas: "main sidebar";
   gap: 60px;
   max-width: 860px;
