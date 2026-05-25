@@ -32,11 +32,10 @@ document.write(
   <p class="hero-name">I'm Carlos Rodrigo Turner — a husband and father of 2 boys. I work at Técnica y Avance in Madrid, mostly turning data into decisions and sales. This is my website.</p>
 
  </article>   
-
+<article>
 
  {% for essay in essays %}
 
-<article>
 <ul>
   <li>{{page.title}}
   {% if page.date %}<span class="meta">{{ page.date | date: '%Y%m%d' }}</span>{% endif %}</li>
