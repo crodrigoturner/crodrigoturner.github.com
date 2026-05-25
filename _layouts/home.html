@@ -32,7 +32,7 @@ document.write(
   <p class="hero-name">I'm Carlos Rodrigo Turner — a husband and father of 2 boys. I work at Técnica y Avance in Madrid, mostly turning data into decisions and sales. This is my website.</p>
 
  </article>   
-
+<hr/>
   <ul class="tag-cloud">
      <li><a href="/" class="tag-cloud-tag">All</a></li>
       {% assign all_tags = site.posts | map: 'tags' | join: ',' | split: ',' | compact | uniq | sort %}
@@ -42,6 +42,8 @@ document.write(
         {% endunless %}
       {% endfor %}
   </ul>
+
+<hr/>
 
 {% for post in site.posts limit:15 %}
 <article class="post {{ post.tags }}">
