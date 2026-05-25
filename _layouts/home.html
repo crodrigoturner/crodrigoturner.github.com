@@ -34,14 +34,29 @@ document.write(
  </article>   
 
 
-{% for post in site.posts limit:15 %}
+{% for post in paginator.posts %}
 <article class="post {{ post.tags }}">
   <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
 {{post.content}}
 <span class="meta">{{post.tags}} · {{ post.date | date: '%Y%m%d' }} · <a href="mailto:rodrigoturner.carlos@gmail.com?subject={{ post.title }}">Reply by email</a></span>
 <hr/>
+
+
 </article>
 {% endfor %}
+
+{% if paginator.total_pages > 1 %}
+<nav class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="pagination-prev">← Newer</a>
+  {% endif %}
+  <span class="pagination-info">{{ paginator.page }} / {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="pagination-next">Older →</a>
+  {% endif %}
+</nav>
+{% endif %}
+
   <ul class="tag-cloud">
      <li><a href="/" class="tag-cloud-tag">All</a></li>
       {% assign all_tags = site.posts | map: 'tags' | join: ',' | split: ',' | compact | uniq | sort %}
