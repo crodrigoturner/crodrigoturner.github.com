@@ -7,16 +7,15 @@
     <h1>Carlos Rodrigo</h1></a>
     <nav class="site-nav">
       <ul>
-        
+      
+<li><a href="/information"{% if page.url == p.url %} class="current"{% endif %}>Information</a></li>
+<li><a href="/essays"{% if page.url == p.url %} class="current"{% endif %}>Essays</a></li>
+<li><a href="/"{% if page.url == p.url %} class="current"{% endif %}>Notes</a></li>
+<li><a href="/work"{% if page.url == p.url %} class="current"{% endif %}>Work</a></li>
+<li><a href="/tags/projects"{% if page.url == p.url %} class="current"{% endif %}>Projects</a></li>
+<li><a href="/contact"{% if page.url == p.url %} class="current"{% endif %}>Contact</a></li>
+<li><a href="/more"{% if page.url == p.url %} class="current"{% endif %}>More</a></li>
 
-{% assign pages = site.pages | sort: 'url' %}
-{% for p in pages %}
- 
-    {% unless p.url contains '_drafts' or p.url contains 'feed' or p.url contains '404' or p.url contains 'README' %}
-  <li><a href="{{ p.url }}"{% if page.url == p.url %} class="current"{% endif %}>{{ p.title }}</a></li>
-    {% endunless %}
-
-{% endfor %}
 </ul>
         
      

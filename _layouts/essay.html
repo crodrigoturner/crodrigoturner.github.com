@@ -1,0 +1,15 @@
+{% include head.html %}<div class="site-layout">
+{% include header.html %}
+
+<section>
+<article>
+  <h3>{{page.title}}</h3>
+  {% if page.date %}<span class="meta">{{ page.date | date: '%Y%m%d' }}</span>{% endif %}
+
+  {{content}}
+
+  <span class="meta"><a href="mailto:rodrigoturner.carlos@gmail.com?subject={{ page.title }}">Reply by email</a></span>
+<hr/>
+</article>
+</section>
+</div>

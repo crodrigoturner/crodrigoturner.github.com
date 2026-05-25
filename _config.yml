@@ -38,6 +38,11 @@ paginate_path: "/page/:num/"
 
 permalink: pretty
 
+collections:
+  essays:
+    output: true
+    permalink: /essays/:name/
+
 tag_page_layout: tag_page
 tag_page_dir: tag
 
