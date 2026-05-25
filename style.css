@@ -1,36 +1,36 @@
 @charset "UTF-8";
 
 @font-face {
-  font-family: "Fira Sans";
-  src: url("/fonts/FiraSans-Regular.woff2") format("woff2"),
-       url("/fonts/FiraSans-Regular.ttf") format("truetype");
+  font-family: "Fira Code";
+  src: url("/fonts/FiraCode-Regular.woff2") format("woff2"),
+       url("/fonts/FiraCode-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Fira Sans";
-  src: url("/fonts/FiraSans-Italic.woff2") format("woff2"),
-       url("/fonts/FiraSans-Italic.ttf") format("truetype");
+  font-family: "Fira Code";
+  src: url("/fonts/FiraCode-Italic.woff2") format("woff2"),
+       url("/fonts/FiraCode-Italic.ttf") format("truetype");
   font-weight: 400;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Fira Sans";
-  src: url("/fonts/FiraSans-SemiBold.woff2") format("woff2"),
-       url("/fonts/FiraSans-SemiBold.ttf") format("truetype");
+  font-family: "Fira Code";
+  src: url("/fonts/FiraCode-SemiBold.woff2") format("woff2"),
+       url("/fonts/FiraCode-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Fira Sans";
-  src: url("/fonts/FiraSans-Bold.woff2") format("woff2"),
-       url("/fonts/FiraSans-Bold.ttf") format("truetype");
+  font-family: "Fira Code";
+  src: url("/fonts/FiraCode-Bold.woff2") format("woff2"),
+       url("/fonts/FiraCode-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -60,7 +60,7 @@ html {
 
 body {
   color: var(--color-text);
-  font: 400 16px / 1.7 "Fira Sans", sans-serif;
+  font: 400 16px / 1.7 "Fira Code", sans-serif;
   background: var(--color-bg);
   overflow-x: hidden;
   -webkit-text-size-adjust: 100%;
@@ -161,7 +161,7 @@ article {
 /* TYPOGRAPHY */
 
 h1 {
-  font: 400 1em/1.7 "Fira Sans", sans-serif;
+  font: 400 1em/1.7 "Fira Code", sans-serif;
 margin:10px 0px 0 0;
 }
 
@@ -170,7 +170,7 @@ float:left; margin:0px 10px 0 0; background:#FFB511; height:16px; width:16px; bo
 
 
 h2 {
-  font: 700 3em/1 "Fira Sans", sans-serif;
+  font: 700 3em/1 "Fira Code", sans-serif;
 
   width: 100%;
   float: left;
@@ -181,7 +181,7 @@ h2 {
 }
 
 h3 {
-  font: 700 1.3em/1 "Fira Sans", sans-serif;
+  font: 700 1.3em/1 "Fira Code", sans-serif;
   margin: 20px 0;
   width: 100%;
   float: left;
@@ -364,7 +364,7 @@ nav ul {
   clear: right;
   color: var(--color-muted);
   font-size: .8em;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Fira Code", sans-serif;
 }
 
 /* IMAGES */
@@ -487,7 +487,7 @@ pre code {
 }
 
 .arrow {
-  font: 400 16px/1.6 "Fira Sans", sans-serif !important;
+  font: 400 16px/1.6 "Fira Code", sans-serif !important;
 }
 
 .cta {
@@ -501,7 +501,7 @@ pre code {
 
 .cta::after {
   content: '->';
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Fira Code", sans-serif;
   font-weight: 400;
   display: inline-block;
   transition: transform 0.2s ease;
@@ -870,7 +870,7 @@ iframe {
 }
 
 .link-list small {
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Fira Code", sans-serif;
   font-size: 0.78em;
   color: var(--color-muted);
 }
