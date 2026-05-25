@@ -33,6 +33,7 @@ document.write(
 
  </article>   
 <article>
+  <h4>Stock</h4>
   <ul class="posts">
     {% for essay in site.essays %}
     <li>
@@ -41,8 +42,12 @@ document.write(
     </li>
     {% endfor %}
   </ul>
-  <hr/>
+ 
 </article>
+ <hr/>
+
+
+  <h4>Flow</h4>
 
 {% for post in site.posts limit:7 %}
 <article class="post {{ post.tags }}">
