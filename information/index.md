@@ -35,7 +35,7 @@ Over ten years, I've worked across architecture, energy, luxury brands, and star
 <li>The hardest thing I've done is parent two toddlers and a dog at the same time. Nothing else is close.</li>
 <li>What I'm proud of is the life I've built with Mar — the boys, the home, the ordinary days.</li>
 <li>What I changed my mind about recently: that the right way to look at life is as a realist. Not optimist, not pessimist. Just see things as they are, then decide what to do.</li>
-<li>Books that stuck with me this year: Matt Haig's <em>The Midnight Library</em> and <em>The Humans</em>. Both shifted something.</li>
+<li>Books that stuck with me this year: Matt Haig's The Midnight Library and The Humans. Both shifted something.</li>
 <li>People I admire, in no particular order and for very different reasons: Feynman (for the range — physics, bongos, lock-picking), Marie Curie (two Nobels in two fields, still unmatched), Carl Sagan (made science feel like wonder), Jane Austen (sharper than anyone gives her credit for), and Elon Musk — though less and less.</li>
 </ul>
 
