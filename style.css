@@ -435,7 +435,7 @@ blockquote {
   padding: 0 0 0 20px;
   border-left: 2px solid var(--color-border);
   color: var(--color-muted);
-  font-style: italic;float:left; 
+float:left; 
 }
 
 .quotes h3,
