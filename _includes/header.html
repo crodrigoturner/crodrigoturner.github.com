@@ -8,9 +8,10 @@
     <nav class="site-nav">
       <ul>
       
+        <li><a href="/"{% if page.url contains '/' %} class="current"{% endif %}>Home</a></li>
 <li><a href="/information/"{% if page.url contains '/information/' %} class="current"{% endif %}>Information</a></li>
 <li><a href="/essays/"{% if page.url contains '/essays/' %} class="current"{% endif %}>Essays</a></li>
-<li><a href="/"{% if page.url == '/' %} class="current"{% endif %}>Posts</a></li>
+<li><a href="/posts/"{% if page.url == '/posts' %} class="current"{% endif %}>Posts</a></li>
 <li><a href="/work"{% if page.url contains '/work' %} class="current"{% endif %}>Work</a></li>
 <li><a href="/tags/projects"{% if page.url contains '/projects' %} class="current"{% endif %}>Projects</a></li>
 <li><a href="/contact"{% if page.url contains '/contact' %} class="current"{% endif %}>Contact</a></li>
