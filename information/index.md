@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Information
 lang: en
 ---
 <img src="/images/profile_250.jpg"  class="profile" width="250" height="250" alt=" A person wearing a white collared shirt stands outdoors with trees and greenery in the background.">
