@@ -34,6 +34,21 @@ document.write(
  </article>   
 
 
+ {% for essay in essays %}
+
+<article>
+<ul>
+  <li>{{page.title}}
+  {% if page.date %}<span class="meta">{{ page.date | date: '%Y%m%d' }}</span>{% endif %}</li>
+  </ul>
+
+{% endfor %}
+  
+<hr/>
+
+
+</article>
+
 {% for post in paginator.posts %}
 <article class="post {{ post.tags }}">
   <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
