@@ -3,13 +3,14 @@
 
 <section>
 <article>
-  <h3>{{page.title}}</h3>
-  {% if page.date %}<span class="meta">{{ page.date | date: '%Y%m%d' }}</span>{% endif %}
-
-  {{content}}
-
-  <span class="meta"><a href="mailto:rodrigoturner.carlos@gmail.com?subject={{ page.title }}">Reply by email</a></span>
-<hr/>
+ <ul class="posts">
+    {% for essay in site.essays %}
+    <li>
+      <a href="{{ essay.url }}">{{ essay.title }}</a>
+      {% if essay.date %}<span class="post-date">{{ essay.date | date: '%Y%m%d' }}</span>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
 </article>
 </section>
 </div>
