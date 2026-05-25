@@ -14,7 +14,7 @@ lang: en
 <li><p><b>2011-2011 › JMJ</b >:   Lodging manager during the Pope's visit in 2011.</p>
 </li>
 </ul>
-
+<hr/>
 <h3>Work values</h3>
 <ol>
 <li><b>Win/win/win</b >:  I always aim to find a win for the customer, a win for the company, and a win for myself.   </li>
@@ -23,7 +23,7 @@ lang: en
 <li><b>Nothing is “not my job”</b >:   If I see a pressing problem, I gather context and fix it.   </li>
 </ol>
 
-
+<hr/>
 <h3>Skills & capabilities</h3>
 
 <ul class="cloud">
@@ -55,7 +55,7 @@ lang: en
 <li>Web development</li>
 <li>Web standards</li>
 </ul>
-
+<hr/>
 <h3>Tools</h3>
 <ul class="cloud">
 <li>English · Spanish · French</li>
@@ -68,7 +68,7 @@ lang: en
 <li>Wordpress</li>
 </ul>
 
-
+<hr/>
 <h3>How I work</h3>
 <p>
 Clear communication and transparency are key to how I work. Here’s what you can expect:
@@ -81,6 +81,6 @@ Clear communication and transparency are key to how I work. Here’s what you ca
 </ol>
 </p>
 
-
+<hr/>
 <p>* Resume and references available on request.</p>
 
