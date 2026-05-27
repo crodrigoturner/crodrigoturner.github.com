@@ -369,6 +369,36 @@ figcaption {
   color: var(--color-muted);
 }
 
+/* LAST.FM */
+
+.lastfm-track {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 8px 0 20px;
+}
+
+.lastfm-art {
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.lastfm-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  line-height: 1.4;
+}
+
+.lastfm-status {
+  font-size: 0.75em;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
 /* MISC COMPONENTS */
 
 .meta,
