@@ -73,6 +73,22 @@ nav li a.current {
   opacity: 1;
 }
 
+.more-links {
+  display: none;
+  background: none;
+  border-radius: 0;
+  padding: 0;
+  margin: 4px 0 0 8px;
+}
+
+.more-links.open {
+  display: block;
+}
+
+.more-toggle {
+  cursor: pointer;
+}
+
 /* MAIN CONTENT */
 
 section {

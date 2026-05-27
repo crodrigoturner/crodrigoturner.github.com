@@ -13,7 +13,15 @@
 <li><a href="/posts/"{% if page.url contains '/posts/' %} class="current"{% endif %}>Posts</a></li>
 <li><a href="/work"{% if page.url contains '/work' %} class="current"{% endif %}>Work</a></li>
 <li><a href="/tags/projects"{% if page.url contains '/projects' %} class="current"{% endif %}>Projects</a></li>
-<li><a href="/more"{% if page.url contains '/more' %} class="current"{% endif %}>More</a></li>
+<li><a href="#" class="more-toggle" onclick="this.closest('ul').querySelector('.more-links').classList.toggle('open');return false;">More ›</a>
+  <ul class="more-links">
+    <li><a href="/">Uses</a></li>
+    <li><a href="/information/">Now</a></li>
+    <li><a href="/essays/">Blogroll</a></li>
+    <li><a href="/posts/">Colophon</a></li>
+    <li><a href="/work">AI art</a></li>
+  </ul>
+</li>
 </ul>
 
 <ul>
