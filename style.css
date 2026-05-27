@@ -136,7 +136,7 @@ article {
 
 h1 {
   font: 400 1em/1.7 "Monaspace Neon", monospace;
-margin:10px 0px 0 0;
+margin:10px 0px 20px 0;
 }
 
 h1::before{content:'';
@@ -163,21 +163,13 @@ h3 {
 h4 {
     font-size: 2em;
     font-weight: 900;
-    margin: 20px 0 40px;
+    margin: 0px 0 40px;
     text-transform: uppercase;
     color: #607d8b1c;
-    display: flex;
-    align-items: center;
-    gap: 0.5em;
+text-shadow: #444;
 }
 
-h4::before,
-h4::after {
-    content: '';
-    flex: 1;
-    height: 1px;
-    background: #607d8b1c;
-}
+
 
 h5 {
   font-size: 0.9em;
