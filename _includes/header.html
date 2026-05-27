@@ -1,14 +1,13 @@
 <header class="site-header">
-  <button class="hamburger" aria-label="Open menu" onclick="var h=this.closest('.site-header');h.classList.toggle('open');this.setAttribute('aria-label',h.classList.contains('open')?'Close menu':'Open menu')">
-    <span></span><span></span><span></span>
-  </button>
-  <div class="site-header-inner">
-    <a href="/" class="site-logo">
-    <h1>Carlos Rodrigo</h1></a>
-    <nav class="site-nav">
-      <ul>
-      
-        <li><a href="/"{% if page.url == '/' %} class="current"{% endif %}>Home</a></li>
+<button class="hamburger" aria-label="Open menu" onclick="var h=this.closest('.site-header');h.classList.toggle('open');this.setAttribute('aria-label',h.classList.contains('open')?'Close menu':'Open menu')">
+<span></span><span></span><span></span>
+</button>
+
+<a href="/">
+<h1>Carlos Rodrigo</h1></a>
+<nav class="site-nav">
+<ul>
+<li><a href="/"{% if page.url == '/' %} class="current"{% endif %}>Home</a></li>
 <li><a href="/information/"{% if page.url contains '/information/' %} class="current"{% endif %}>Information</a></li>
 <li><a href="/essays/"{% if page.url contains '/essays/' %} class="current"{% endif %}>Essays</a></li>
 <li><a href="/posts/"{% if page.url contains '/posts/' %} class="current"{% endif %}>Posts</a></li>
@@ -16,13 +15,12 @@
 <li><a href="/tags/projects"{% if page.url contains '/projects' %} class="current"{% endif %}>Projects</a></li>
 <li><a href="/contact"{% if page.url contains '/contact' %} class="current"{% endif %}>Contact</a></li>
 <li><a href="/more"{% if page.url contains '/more' %} class="current"{% endif %}>More</a></li>
-
 </ul>
-        
-     
-    </nav>
 
-  
-
-  </div>
+<ul>
+<li><a href="/">email</a></li>
+<li><a href="/information/">Github</a></li>
+<li><a href="/essays/"{% if page.url contains '/essays/' %} class="current"{% endif %}>Linkedin</a></li>
+</ul>
+</nav>
 </header>
