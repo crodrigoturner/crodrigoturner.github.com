@@ -29,10 +29,10 @@
   .masonry { column-count: 1; }
 }
 </style>
-<div class="site-layout">
+
 {% include header.html %}
 <section>
-  
+  <article>
     <h2>{{ page.title }}</h2>
     {{ content }}
     {% assign image_exts = ".jpg,.jpeg,.png,.gif,.webp" | split: "," %}
@@ -50,6 +50,6 @@
         <p class="masonry-empty">No images yet — add them to the <code>art_images/</code> folder.</p>
       {% endunless %}
  
-
+</article>
 </section>
-</div>
+
