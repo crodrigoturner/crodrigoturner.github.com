@@ -60,15 +60,12 @@ body {
 /* HEADER / SIDEBAR */
 
 header {
-    width: 200px;
-    float: left;
-    position: fixed;
-    top: 20px;
-    right: calc(30% - 260px);
-    padding: 40px 0;
+    width: calc(35% - 20px);
+    float: right;
+     
     background: #f4efe8;
-    padding: 20px;
-    border-radius: 4px;
+    padding: 20px 0px 20px 20px;
+   border-left:1px solid #CFD8DC;
 }
 
 
@@ -97,7 +94,7 @@ nav li a.current {
 /* MAIN CONTENT */
 
 section {
-float:left; width:100%;
+float:left; width:65%;
   padding: 40px 0 0;
   min-width: 0;
 }
