@@ -369,6 +369,48 @@ figcaption {
   color: var(--color-muted);
 }
 
+/* TMDB */
+
+#tmdb-watching {
+  width: 100%;
+  float: left;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 8px 0 20px;
+}
+
+.tmdb-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  width: calc(50% - 7px);
+}
+
+.tmdb-poster {
+  width: 46px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.tmdb-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  line-height: 1.4;
+}
+
+.tmdb-year {
+  color: var(--color-muted);
+  font-size: 0.85em;
+}
+
+.tmdb-rating {
+  font-size: 0.75em;
+  color: var(--color-muted);
+  letter-spacing: 0.02em;
+}
+
 /* LAST.FM */
 
 #lastfm-now {
