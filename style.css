@@ -1,25 +1,6 @@
 @charset "UTF-8";
 
-@font-face {
-  font-family: "Monaspace Neon";
-  src: url("/fonts/MonaspaceNeonNF-Regular.otf") format("opentype");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Monaspace Neon";
-  src: url("/fonts/MonaspaceNeonNF-Bold.otf") format("opentype");
-  font-weight: 700 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Monaspace Neon";
-  src: url("/fonts/MonaspaceNeonNF-Italic.otf") format("opentype");
-  font-weight: 400;
-  font-style: italic;
-}
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400;0,700;0,900;1,400&display=swap');
 
 :root {
   --site-width: 680px;
@@ -45,7 +26,7 @@ html {
 
 body {
   color: var(--color-text);
-  font: 400 15px / 1.7 "Monaspace Neon", monospace;
+  font: 400 15px / 1.7 "Schibsted Grotesk", sans-serif;
   background: var(--color-bg);
   overflow-x: hidden;
   -webkit-text-size-adjust: 100%;
@@ -136,7 +117,7 @@ article {
 /* TYPOGRAPHY */
 
 h1 {
-  font: 400 1em/1.7 "Monaspace Neon", monospace;
+  font: 400 1em/1.7 "Schibsted Grotesk", sans-serif;
 margin:10px 0px 20px 0;
 }
 
@@ -145,7 +126,7 @@ float:left; margin:0px 10px 0 0; background:#FFB511; height:16px; width:16px; bo
 
 
 h2 {
-  font: 700 3em/1 "Monaspace Neon", monospace;
+  font: 700 3em/1 "Schibsted Grotesk", sans-serif;
   width: 100%;
   float: left;
   color: var(--color-text);
@@ -155,7 +136,7 @@ h2 {
 }
 
 h3 {
-  font: 700 1.3em/1 "Monaspace Neon", monospace;
+  font: 700 1.3em/1 "Schibsted Grotesk", sans-serif;
   margin: 20px 0;
   width: 100%;
   float: left;
@@ -338,7 +319,7 @@ ul.bulleted li::before {
   clear: right;
   color: var(--color-muted);
   font-size: .8em;
-  font-family: "Monaspace Neon", monospace;
+  font-family: "Schibsted Grotesk", sans-serif;
 }
 
 /* IMAGES */
@@ -463,7 +444,7 @@ pre code {
 }
 
 .arrow {
-  font: 400 16px/1.6 "Monaspace Neon", monospace !important;
+  font: 400 16px/1.6 "Schibsted Grotesk", sans-serif !important;
 }
 
 .cta {
@@ -477,7 +458,7 @@ pre code {
 
 .cta::after {
   content: '->';
-  font-family: "Monaspace Neon", monospace;
+  font-family: "Schibsted Grotesk", sans-serif;
   font-weight: 400;
   display: inline-block;
   transition: transform 0.2s ease;
@@ -846,7 +827,7 @@ iframe {
 }
 
 .link-list small {
-  font-family: "Monaspace Neon", monospace;
+  font-family: "Schibsted Grotesk", sans-serif;
   font-size: 0.78em;
   color: var(--color-muted);
 }
