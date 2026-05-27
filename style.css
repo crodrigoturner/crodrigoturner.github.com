@@ -397,6 +397,7 @@ blockquote {
   border-left: 2px solid var(--color-border);
   color: var(--color-muted);
 float:left; 
+width:100%;
 }
 
 .quotes h3,
