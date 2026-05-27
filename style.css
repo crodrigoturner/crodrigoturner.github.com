@@ -91,6 +91,14 @@ section {
   padding: 40px 0;
   min-width: 0;
 }
+section::after {
+  float:left; width:100%;
+  margin:20px 0;
+ border-top: 1px solid rgba(0,0,0,0.08);
+  border-bottom: 1px solid rgba(255,255,255,0.75);
+  height:0px;
+  border:none;
+}
 
 article {
   width: 100%;
@@ -405,6 +413,8 @@ hr {
   background: transparent;
   float:left; width:100%;
 }
+
+
 
 blockquote {
   padding: 0 0 0 20px;
