@@ -12,8 +12,9 @@
 
 
 </article>
-{% endfor %}
 
+{% endfor %}
+<article>
 {% if paginator.total_pages > 1 %}
 <nav class="pagination">
   {% if paginator.previous_page %}
@@ -34,7 +35,7 @@
         <li><a href="{{ '/tags/' | absolute_url }}{{ tag }}" class="tag-cloud-tag">{{ tag }}</a></li>
         {% endunless %}
       {% endfor %}
-  </ul>
+  </ul></article>
 </section>
 </div>
 
