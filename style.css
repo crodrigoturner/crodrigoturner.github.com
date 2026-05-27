@@ -60,12 +60,11 @@ body {
 /* HEADER / SIDEBAR */
 
 header {
-    width: calc(35% - 20px);
+width: calc(230px);
     float: right;
-     
-    background: #f4efe8;
-    padding: 20px 0px 20px 20px;
-   border-left:1px solid #CFD8DC;
+
+    padding: 20px;
+
 }
 
 
@@ -73,11 +72,12 @@ header {
 
 
 nav ul {
-  display: flex;
-  flex-direction: column;
-background:var(--color-muted);
-border-radius:4px; padding:20px;
-  margin: 0;
+    /* flex-direction: column; */
+    background: #607d8b0a;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 0 20px;
+    font-size: .9em;
 }
 
 nav li a {
@@ -288,9 +288,6 @@ ul.bulleted li::before {
   background-size: contain;
 }
 
-nav ul {
-  margin: 0;
-}
 
 /* TAG CLOUD */
 
