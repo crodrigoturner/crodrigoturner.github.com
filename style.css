@@ -136,7 +136,6 @@ float:left; margin:0px 10px 0 0; background:#FFB511; height:16px; width:16px; bo
 
 h2 {
   font: 700 3em/1 "Fira Code", monospace;
-
   width: 100%;
   float: left;
   color: var(--color-text);
@@ -153,11 +152,22 @@ h3 {
 }
 
 h4 {
-font-size: 2.5em;
+    font-size: 2em;
     font-weight: 900;
     margin: 20px 0 40px;
     text-transform: uppercase;
     color: #607d8b1c;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+h4::before,
+h4::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #607d8b1c;
 }
 
 h5 {
