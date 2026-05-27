@@ -45,7 +45,7 @@ html {
 
 body {
   color: var(--color-text);
-  font: 400 16px / 1.7 "Monaspace Neon", monospace;
+  font: 400 15px / 1.7 "Monaspace Neon", monospace;
   background: var(--color-bg);
   overflow-x: hidden;
   -webkit-text-size-adjust: 100%;
@@ -117,8 +117,9 @@ section::after {
 }
 
 article {
-  width: 40%;
-  padding:0 30%;
+ width: 100%;
+    padding: 0 35%;
+    float: left;
 }
 
 
