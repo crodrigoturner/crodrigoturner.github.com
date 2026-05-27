@@ -81,6 +81,10 @@ float:left; width:65%;
   min-width: 0;
 }
 
+section:last-of-type {
+  padding-bottom: 100px;
+}
+
 
 article {
     width: 100%;
