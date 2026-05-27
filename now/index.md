@@ -23,8 +23,8 @@ if (TMDB_SESSION !== 'YOUR_SESSION_ID') {
     fetch(`https://api.themoviedb.org/3/account/${TMDB_ACCOUNT}/rated/tv?api_key=${TMDB_KEY}&session_id=${TMDB_SESSION}&sort_by=created_at.desc`).then(r => r.json())
   ]).then(([movies, tv]) => {
     const items = [
-      ...(movies.results || []).slice(0, 4).map(m => ({ title: m.title, rating: m.rating, poster: m.poster_path, year: m.release_date?.slice(0, 4) })),
-      ...(tv.results || []).slice(0, 4).map(t => ({ title: t.name, rating: t.rating, poster: t.poster_path, year: t.first_air_date?.slice(0, 4) }))
+      ...(movies.results || []).slice(0, 3).map(m => ({ title: m.title, rating: m.rating, poster: m.poster_path, year: m.release_date?.slice(0, 3) })),
+      ...(tv.results || []).slice(0, 3).map(t => ({ title: t.name, rating: t.rating, poster: t.poster_path, year: t.first_air_date?.slice(0, 3) }))
     ];
     const stars = r => '★'.repeat(Math.round(r / 2)) + '☆'.repeat(5 - Math.round(r / 2));
     document.getElementById('tmdb-watching').innerHTML = items.map(item => `
