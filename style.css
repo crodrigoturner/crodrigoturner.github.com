@@ -73,6 +73,7 @@ header {
   width:200px; float:left;
   position: sticky;
   top: 0px;
+  right:calc(30% - 260px);
   padding: 40px 0;
 }
 
@@ -163,7 +164,7 @@ h2 {
   width: 100%;
   float: left;
   color: var(--color-text);
-  margin: 0 0 20px;
+  margin: 0 0 100px;
 
 
 }
