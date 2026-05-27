@@ -60,11 +60,15 @@ body {
 /* HEADER / SIDEBAR */
 
 header {
-  width:200px; float:left;
-  position: fixed;
-  top: 0px;
-  right:calc(30% - 260px);
-  padding: 40px 0;
+    width: 200px;
+    float: left;
+    position: fixed;
+    top: 20px;
+    right: calc(30% - 260px);
+    padding: 40px 0;
+    background: #f4efe8;
+    padding: 20px;
+    border-radius: 4px;
 }
 
 
@@ -472,7 +476,7 @@ pre code {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  color: var(--color-link);
+  color: var(--color-text);
   text-decoration: none;
   font-weight: 500;
 }
