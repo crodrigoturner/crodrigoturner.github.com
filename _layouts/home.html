@@ -55,7 +55,7 @@ document.write(
 <article class="post {{ post.tags }}">
   <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
 {{post.content}}
-<span class="meta">{{post.tags}} · {{ post.date | date: '%Y%m%d' }} · <a href="mailto:rodrigoturner.carlos@gmail.com?subject={{ post.title }}">Reply by email</a></span>
+<span class="meta">{{post.tags}} · {{ post.date | date: '%Y%m%d' }} · <a href="mailto:rodrigoturner.carlos@gmail.com?subject={{ post.title }}">Reply by email</a> . <a href="{{ post.url }}">permalink</a></span>
 <hr/>
 </article>
 {% endfor %}
