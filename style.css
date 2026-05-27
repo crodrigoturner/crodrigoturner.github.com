@@ -371,6 +371,11 @@ figcaption {
 
 /* LAST.FM */
 
+#lastfm-now {
+  width: 100%;
+  float: left;
+}
+
 .lastfm-track {
   display: flex;
   align-items: center;

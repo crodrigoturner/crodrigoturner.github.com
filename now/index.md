@@ -5,7 +5,7 @@ title: Now
 ---
 
 ### Reading
-<script src=https://bookshop.org/widgets.js data-type="book" data-affiliate-id="124613" data-sku="9780593833377"></script>
+<script src="https://bookshop.org/widgets.js" data-type="book" data-affiliate-id="124613" data-sku="9780593833377"></script>
 
 ### Watching
 
