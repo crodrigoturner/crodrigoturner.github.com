@@ -101,10 +101,9 @@ float:left; width:65%;
 
 
 article {
- width: 100%;
-    padding: 0 35%;
-    float: left;
-}
+    width: 100%;
+    padding: 0 0 0 53.84%;
+    float: left;}
 
 
 .logo{width:100%; height:auto; float:left;}
