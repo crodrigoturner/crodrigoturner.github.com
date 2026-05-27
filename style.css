@@ -384,11 +384,11 @@ figcaption {
   display: flex;
   align-items: flex-start;
   gap: 10px;
-  width: calc(50% - 7px);
+    width: calc(33% - 10.333px);
 }
 
 .tmdb-poster {
-  width: 46px;
+
   border-radius: 4px;
   flex-shrink: 0;
 }
