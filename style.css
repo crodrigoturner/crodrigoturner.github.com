@@ -45,7 +45,7 @@ width: calc(230px);
     float: right;
 position:fixed; 
 top:0; right:0;
-    padding: 20px;
+    margin: 20px 60px;
 
 }
 
@@ -556,8 +556,8 @@ pre code {
 }
 
 .cta::after {
-  content: 'Inter';
-  font-family: "Schibsted Grotesk", sans-serif;
+  content: '->';
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   display: inline-block;
   transition: transform 0.2s ease;
