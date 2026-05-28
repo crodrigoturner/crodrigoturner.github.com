@@ -1,5 +1,5 @@
 ---
-layout: essay
+layout: page
 title: Essays
 lang: en
 ---

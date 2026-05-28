@@ -321,7 +321,7 @@ ul.bulleted li::before {
 }
 
 .posts li a:hover {
-  color: var(--color-link);
+  color: var(--color-text);
   opacity: 1;
 }
 
@@ -338,7 +338,7 @@ ul.bulleted li::before {
 .posts li .post-date {
   float: right;
   clear: right;
-  color: var(--color-muted);
+  color: var(--color-text);
   font-size: .8em;
   font-family: "Schibsted Grotesk", sans-serif;
 }
@@ -900,35 +900,3 @@ iframe {
     float: left;
 }
 
-/* Raindrop link list */
-.link-list { margin: 0; }
-
-.link-list li {
-  padding: 14px 0;
-  border-bottom: 1px solid var(--color-border);
-  float: left;
-  width: 100%;
-}
-
-.link-list a {
-  font-weight: 600;
-  display: block;
-  color: var(--color-text);
-  margin-bottom: 2px;
-}
-
-.link-list a:hover { color: var(--color-link); opacity: 1; }
-
-.link-list p {
-  margin: 0 0 4px;
-  font-size: 0.9em;
-  color: var(--color-muted);
-}
-
-.link-list small {
-  font-family: "Schibsted Grotesk", sans-serif;
-  font-size: 0.78em;
-  color: var(--color-muted);
-}
-
-.link-list img { display: none !important; }
