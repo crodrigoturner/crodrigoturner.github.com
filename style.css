@@ -96,6 +96,7 @@ section {
 float:left; width:65%;
   padding: 40px 0 0;
   min-width: 0;
+
 }
 
 section:last-of-type {
@@ -106,7 +107,9 @@ section:last-of-type {
 article {
     width: 100%;
     padding: 0 0 0 53.84%;
-    float: left;}
+    float: left;
+  max-width:640px;
+  }
 
 
 .logo{width:100%; height:auto; float:left;}
