@@ -96,7 +96,7 @@ section {
 float:left; width:65%;
   padding: 40px 0 0;
   min-width: 0;
-
+max-width:640px;
 }
 
 section:last-of-type {
