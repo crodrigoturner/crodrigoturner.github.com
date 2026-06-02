@@ -93,11 +93,11 @@ nav li a.current {
 /* MAIN CONTENT */
 
 section {
-float:left; 
-  padding: 40px 0 0;
-  min-width: 0;
-width:640px;
-margin: 0 auto;
+    float: left;
+    padding: 40px 0 0;
+   
+    width: 640px;
+    margin: 0 calc(50% - 320px);
 }
 
 section:last-of-type {
@@ -107,7 +107,7 @@ section:last-of-type {
 
 article {
     width: 100%;
-    padding: 0 0 0 53.84%;
+    padding: 0;
     float: left;
  
   }
