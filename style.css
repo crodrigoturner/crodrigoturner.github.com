@@ -93,10 +93,11 @@ nav li a.current {
 /* MAIN CONTENT */
 
 section {
-float:left; width:65%;
+float:left; 
   padding: 40px 0 0;
   min-width: 0;
-max-width:640px;
+width:640px;
+margin: 0 auto;
 }
 
 section:last-of-type {
