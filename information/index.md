@@ -49,5 +49,21 @@ GB/CS/E d--(--) s():() a C++ U@ P? L E? W+++ N? o? K--? w+ O? M+ V? PS++ PE+ Y? 
 
 Follow [this link](https://mj.ucw.cz/geek/?code=GB%2fCS%2fE+d--(--)+s()%3a()+a+C%2b%2b+U%40+P%3f+L+E%3f+W%2b%2b%2b+N%3f+o%3f+K--%3f+w%2b+O%3f+M%2b+V%3f+PS%2b%2b+PE%2b+Y%3f+!PGP+t%2b+5+X%2b%2b+!R+tv%2b+b%2b%2b+DI%2b%2b+D%2b+G+e%2b%2b+h---+r%2b%2b%2b+y%2b%2b%2b) to learn what it means.
 
-   
+### About this site 
+
+- Built with Jekyll
+- Hosted on Github Pages
+- This website emits just [0.12g of CO<sub>2</sub>](https://www.websitecarbon.com/website/carlosrodrigo-com/) every time someone visits this page.
+- The fonts are **Schibsted Grotesk** + **Inter** 
+
+#### Colour Palette
+
+| Role | Hex |
+|---|---|
+| Background | `#F7F5F2` |
+| Primary text | `#111` |
+| Muted / secondary text | `#607d8b` |
+| Accent / links | `#4385BE` |
+| Borders | `#e8e8e4` |
+
 
