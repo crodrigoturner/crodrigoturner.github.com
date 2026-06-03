@@ -412,55 +412,68 @@ figcaption {
 }
 
 .tag-item--links {
-  background: #0D47A1;
-  width: 220px; height: 165px;
-  top: 20px; left: 0;
-  border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
-  font-size: 1.05em;
+background: #0D47A1;
+    width: 220px;
+    height: 165px;
+    top: 20px;
+    left: 0;
+    border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
 }
 
 .tag-item--clippings {
-  background: #1565C0;
-  width: 175px; height: 135px;
-  top: 8px; left: 175px;
-  border-radius: 38% 62% 46% 54% / 61% 44% 56% 39%;
+     background: #1565C0;
+    width: 175px;
+    height: 135px;
+    top: 8px;
+    left: 175px;
+    border-radius: 38% 62% 46% 54% / 61% 44% 56% 39%;
 }
 
 .tag-item--reviews {
-  background: #1976D2;
-  width: 145px; height: 110px;
-  top: 162px; left: 298px;
-  border-radius: 55% 45% 38% 62% / 48% 57% 43% 52%;
+    background: #1976D2;
+    width: 145px;
+    height: 110px;
+    top: 162px;
+    left: 298px;
+    border-radius: 55% 45% 38% 62% / 48% 57% 43% 52%;
 }
 
 .tag-item--projects {
-  background: #1E88E5;
-  width: 145px; height: 110px;
-  top: 168px; left: 95px;
-  border-radius: 47% 53% 63% 37% / 52% 45% 55% 48%;
+    background: #1E88E5;
+    width: 145px;
+    height: 110px;
+    top: 128px;
+    left: 105px;
+    border-radius: 47% 53% 63% 37% / 52% 45% 55% 48%;
+
 }
 
 .tag-item--betterment {
-  background: #42A5F5;
-  width: 118px; height: 90px;
-  top: 18px; left: 398px;
-  border-radius: 72% 28% 45% 55% / 45% 62% 38% 55%;
-  font-size: 0.78em;
+    background: #42A5F5;
+    width: 118px;
+    height: 90px;
+    top: 18px;
+    left: 328px;
+    border-radius: 72% 28% 45% 55% / 45% 62% 38% 55%;
 }
 
 .tag-item--now {
-  background: #64B5F6;
-  width: 112px; height: 85px;
-  top: 200px; left: 428px;
-  border-radius: 44% 56% 55% 45% / 63% 38% 62% 37%;
+background: #64B5F6;
+    width: 112px;
+    height: 85px;
+    top: 150px;
+    left: 228px;
+    border-radius: 44% 56% 55% 45% / 63% 38% 62% 37%;
 }
 
 .tag-item--ai {
-  background: #90CAF9;
-  width: 112px; height: 85px;
-  top: 105px; left: 496px;
-  border-radius: 58% 42% 34% 66% / 53% 68% 32% 47%;
-  color: rgba(13, 71, 161, 0.9);
+    background: #90CAF9;
+    width: 112px;
+    height: 85px;
+    top: 95px;
+    left: 326px;
+    border-radius: 58% 42% 34% 66% / 53% 68% 32% 47%;
+    color: rgba(13, 71, 161, 0.9);
 }
 
 /* BREADCRUMBS */
