@@ -385,6 +385,22 @@ figcaption {
 
 
 
+/* TAG CLOUD ART */
+
+.tag-cloud-art {
+  width: 100%;
+  float: left;
+  margin: 0 0 20px;
+}
+
+.tag-blob path {
+  transition: opacity 0.2s ease;
+}
+
+.tag-blob:hover path {
+  opacity: 0.7;
+}
+
 /* CHILDREN MENU */
 
 .children-menu {

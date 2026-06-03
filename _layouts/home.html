@@ -50,6 +50,11 @@ document.write(
 </section>
 <section>
   <article>
+    {% include tag-cloud-art.html %}
+  </article>
+</section>
+<section>
+  <article>
     <h3>Now</h3>
     {% assign now_page = site.pages | where: "url", "/now/" | first %}
     {% if now_page %}
