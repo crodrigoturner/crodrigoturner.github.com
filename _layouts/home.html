@@ -34,7 +34,7 @@ document.write(
 
  <section>
 <article>
-
+   <h3>Latest posts</h3>
   {% assign latest = site.posts | concat: site.essays | sort: 'date' | reverse | limit: 5 %}
   <ul class="posts">
     {% for item in latest %}
@@ -50,6 +50,7 @@ document.write(
 </section>
 <section>
   <article>
+    <h3>Now</h3>
     {% assign now_page = site.pages | where: "url", "/now/" | first %}
     {% if now_page %}
       {{ now_page.content }}
