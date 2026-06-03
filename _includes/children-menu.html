@@ -9,9 +9,9 @@
   {% endif %}
 {% endfor %}
 {% if children.size > 0 %}
-<nav class="children-menu">
+<ul class="children-menu">
   {% for child in children %}
-  <a href="{{ child.url }}">{{ child.title }}</a>
+  <li><a href="{{ child.url }}">{{ child.title }}</a></li>
   {% endfor %}
-</nav>
+</ul>
 {% endif %}
