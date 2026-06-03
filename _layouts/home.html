@@ -35,15 +35,16 @@ document.write(
  <section>
 <article>
 
+  {% assign latest = site.posts | concat: site.essays | sort: 'date' | reverse | limit: 5 %}
   <ul class="posts">
-    {% for essay in site.essays %}
+    {% for item in latest %}
     <li>
-      <a href="{{ essay.url }}">{{ essay.title }}</a>
-      {% if essay.date %}<span class="post-date">{{ essay.date | date: '%Y%m%d' }}</span>{% endif %}
+      <a href="{{ item.url }}">{{ item.title }}</a>
+      {% if item.date %}<span class="post-date">{{ item.date | date: '%Y%m%d' }}</span>{% endif %}
     </li>
     {% endfor %}
   </ul>
- <a href="/essays/" class="cta">More essays</a>
+  <a href="/posts/" class="cta">More</a>
 </article>
  
 </section>
