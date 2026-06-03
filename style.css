@@ -98,14 +98,13 @@ article {
   }
 
 
-.logo{width:100%; height:auto; float:left;}
 
 /* HERO */
 
 .hero {
 
 
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 
 }
 
@@ -128,7 +127,7 @@ article {
 
 h1 {
   font: 400 1em/1.7 "Schibsted Grotesk", sans-serif;
-margin:10px 0px 20px 0;
+margin:20px 0px;
 }
 
 h1::before{content:'';
@@ -375,82 +374,8 @@ figcaption {
   color: var(--color-muted);
 }
 
-/* TMDB */
 
-#tmdb-watching {
-  width: 100%;
-  float: left;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-  margin: 8px 0 20px;
-}
 
-.tmdb-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-    width: calc(33% - 10.333px);
-}
-
-.tmdb-poster {
-
-  border-radius: 4px;
-  flex-shrink: 0;
-}
-
-.tmdb-info {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  line-height: 1.4;
-}
-
-.tmdb-year {
-  color: var(--color-muted);
-  font-size: 0.85em;
-}
-
-.tmdb-rating {
-  font-size: 0.75em;
-  color: var(--color-muted);
-  letter-spacing: 0.02em;
-}
-
-/* LAST.FM */
-
-#lastfm-now {
-  width: 100%;
-  float: left;
-}
-
-.lastfm-track {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  margin: 8px 0 20px;
-}
-
-.lastfm-art {
-  width: 48px;
-  height: 48px;
-  border-radius: 4px;
-  flex-shrink: 0;
-}
-
-.lastfm-info {
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
-  line-height: 1.4;
-}
-
-.lastfm-status {
-  font-size: 0.75em;
-  color: var(--color-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
 
 /* MISC COMPONENTS */
 
