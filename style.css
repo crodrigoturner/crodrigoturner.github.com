@@ -199,12 +199,13 @@ a:hover {
 }
 
 a[target="_blank"]::after {
-  content: '↗';
+  content: '->';
   font-size: 0.75em;
   margin-left: 2px;
   vertical-align: super;
   opacity: 0.5;
   font-family:"Inter";
+  transform: rotate(45deg);
 }
 
 h1 a,
