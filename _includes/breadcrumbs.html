@@ -1,0 +1,15 @@
+{% assign parts = page.url | split: '/' | compact %}
+{% if parts.size > 0 %}
+<ul class="breadcrumbs" aria-label="Breadcrumb">
+  <li><a href="/">Home</a></li>
+  {% assign path = '' %}
+  {% for part in parts %}
+    {% assign path = path | append: '/' | append: part %}
+    {% if forloop.last %}
+      <li><span>{{ page.title | default: part }}</span></li>
+    {% else %}
+      <li><a href="{{ path }}/">{{ part | replace: '-', ' ' | capitalize }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
+{% endif %}
