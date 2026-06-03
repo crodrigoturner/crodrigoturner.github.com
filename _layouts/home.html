@@ -57,9 +57,9 @@ document.write(
 <section>
   <article>
     <h3>Now</h3>
-    {% assign now_page = site.pages | where: "url", "/now/" | first %}
-    {% if now_page %}
-      <div class="now-embed">{{ now_page.content }}</div>
+    {% assign now_post = site.posts | where_exp: "p", "p.tags contains 'now'" | first %}
+    {% if now_post %}
+      <div class="now-embed">{{ now_post.content }}</div>
     {% endif %}
   </article>
 </section>
