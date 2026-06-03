@@ -2,7 +2,7 @@
 layout: post
 title: Smart people stay broke
 lang: en
-tags: quotes
+tags: clippings
 
 ---
 
