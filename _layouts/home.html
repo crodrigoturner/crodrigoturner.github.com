@@ -35,9 +35,9 @@ document.write(
  <section>
 <article>
    <h3>Latest posts</h3>
-  {% assign latest = site.posts | concat: site.essays | sort: 'date' | reverse | limit: 5 %}
+  {% assign latest = site.posts | concat: site.essays | sort: 'date' | reverse %}
   <ul class="posts">
-    {% for item in latest %}
+    {% for item in latest limit:5 %}
     <li>
       <a href="{{ item.url }}">{{ item.title }}</a>
       {% if item.date %}<span class="post-date">{{ item.date | date: '%Y%m%d' }}</span>{% endif %}
