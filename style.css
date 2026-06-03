@@ -408,6 +408,10 @@ figcaption {
 
 /* BREADCRUMBS */
 
+.breadcrumbs li {
+  display: inline;
+}
+
 .breadcrumbs {
   font-size: 0.8em;
   color: var(--color-muted);
@@ -452,6 +456,11 @@ figcaption {
 .children-menu a:hover {
   color: var(--color-text);
   opacity: 1;
+}
+
+.now-embed {
+  display: flow-root;
+  width: 100%;
 }
 
 /* MISC COMPONENTS */

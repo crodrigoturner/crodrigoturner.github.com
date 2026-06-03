@@ -50,6 +50,7 @@ document.write(
 </section>
 <section>
   <article>
+    <h3>Topics</h3>
     {% include tag-cloud-art.html %}
   </article>
 </section>
@@ -58,7 +59,7 @@ document.write(
     <h3>Now</h3>
     {% assign now_page = site.pages | where: "url", "/now/" | first %}
     {% if now_page %}
-      {{ now_page.content }}
+      <div class="now-embed">{{ now_page.content }}</div>
     {% endif %}
   </article>
 </section>
