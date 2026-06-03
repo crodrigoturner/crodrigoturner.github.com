@@ -198,6 +198,14 @@ a:hover {
   border: none;
 }
 
+a[target="_blank"]::after {
+  content: '↗';
+  font-size: 0.75em;
+  margin-left: 2px;
+  vertical-align: super;
+  opacity: 0.5;
+}
+
 h1 a,
 h1 a:visited {
   color: var(--color-text);
@@ -376,6 +384,28 @@ figcaption {
 
 
 
+
+/* CHILDREN MENU */
+
+.children-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  margin: 0 0 40px;
+  width: 100%;
+  float: left;
+}
+
+.children-menu a {
+  font-size: 0.9em;
+  color: var(--color-muted);
+  text-decoration: none;
+}
+
+.children-menu a:hover {
+  color: var(--color-text);
+  opacity: 1;
+}
 
 /* MISC COMPONENTS */
 
