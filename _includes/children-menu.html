@@ -1,9 +1,10 @@
 {% assign current_parts = page.url | split: '/' | compact %}
+{% assign expected_depth = current_parts.size | plus: 1 %}
 {% assign children = '' | split: '' %}
 {% for p in site.pages %}
   {% if p.url != page.url and p.url contains page.url and p.title %}
     {% assign p_parts = p.url | split: '/' | compact %}
-    {% if p_parts.size == current_parts.size | plus: 1 %}
+    {% if p_parts.size == expected_depth %}
       {% assign children = children | push: p %}
     {% endif %}
   {% endif %}
