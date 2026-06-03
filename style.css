@@ -204,6 +204,7 @@ a[target="_blank"]::after {
   margin-left: 2px;
   vertical-align: super;
   opacity: 0.5;
+  font-family:"Inter";
 }
 
 h1 a,
@@ -393,12 +394,16 @@ figcaption {
   margin: 0 0 20px;
 }
 
-.tag-blob path {
-  transition: opacity 0.2s ease;
+.tag-cloud-art a {
+  text-decoration: none;
 }
 
-.tag-blob:hover path {
-  opacity: 0.7;
+.tag-blob circle {
+  transition: fill-opacity 0.2s ease;
+}
+
+.tag-blob:hover circle {
+  fill-opacity: 0.75;
 }
 
 /* BREADCRUMBS */
