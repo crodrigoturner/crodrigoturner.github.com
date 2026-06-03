@@ -344,7 +344,7 @@ ul.bulleted li::before {
   clear: right;
   color: var(--color-text);
   font-size: .8em;
-  font-family: "Fira Code", monospace;
+  font-family: "Roboto Mono", monospace;
 }
 
 /* IMAGES */
@@ -493,7 +493,7 @@ background: #64B5F6;
 
 .breadcrumbs {
   font-size: 0.8em;
-  font-family: "Fira Code", monospace;
+  font-family: "Roboto Mono", monospace;
   color: var(--color-muted);
   margin-bottom: 40px;
   width: 100%;
@@ -548,7 +548,7 @@ background: #64B5F6;
 .meta,
 small {
   font-size: 0.8em !important;
-  font-family: "Fira Code", monospace;
+  font-family: "Roboto Mono", monospace;
   color: var(--color-text);
   margin:20px 0 0;
   float:left; width:100%;
