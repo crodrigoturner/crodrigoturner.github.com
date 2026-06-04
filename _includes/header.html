@@ -8,9 +8,9 @@
 </button>
 <ul>
 <li><a href="/about/"{% if page.url contains '/about/' %} class="current"{% endif %}>About</a></li>
-<li><a href="/posts/"{% if page.url contains '/posts/' %} class="current"{% endif %}>Content</a></li>
+<li><a href="/content/"{% if page.url contains '/posts/' %} class="current"{% endif %}>Content</a></li>
 <li><a href="/work/"{% if page.url contains '/work/' %} class="current"{% endif %}>Work & Projects</a></li>
 <li><a href="/contact/"{% if page.url contains '/contact/' %} class="current"{% endif %} >Contact</a></li>
 </ul>
-{% include children-menu.html %}
+
 </nav>

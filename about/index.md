@@ -16,7 +16,7 @@ Now
 {{ now_post.content }}
     {% endif %}
 
-
+{% include children-menu.html %}
 
 ### What I do
 
