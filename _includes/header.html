@@ -1,6 +1,31 @@
 <header>
 
 <a href="/"><h1>Carlos Rodrigo</h1></a>
+<p class="hero-name">
+ <script>
+currentTime=new Date();
+//getHour() function will retrieve the hour from current time
+if(currentTime.getHours()<13)
+document.write("Good morning!");
+else if(currentTime.getHours()<17)
+document.write("Good afternoon!");
+else
+document.write("Good evening!");
+var weekday = new Array(7)
+weekday[0] = " Sunday"
+weekday[1] = " Monday"
+weekday[2] = " Tuesday"
+weekday[3] = " Wednesday"
+weekday[4] = " Thursday"
+weekday[5] = " Friday"
+weekday[6] = " Saturday"
+var currentDate = new Date()
+weekdayValue = currentDate.getDay()
+document.write(
+" Happy " + weekday[weekdayValue] + "!"
+)
+</script>
+  <p class="hero-name">I'm a husband and father of 2 boys. I work at Técnica y Avance in Madrid. This is my website.</p>
 </header>
 
 <nav><button class="hamburger" aria-label="Open menu" onclick="var h=this.closest('.site-header');h.classList.toggle('open');this.setAttribute('aria-label',h.classList.contains('open')?'Close menu':'Open menu')">

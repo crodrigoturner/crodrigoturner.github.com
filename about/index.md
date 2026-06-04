@@ -11,8 +11,6 @@ I was born when atmospheric CO₂ was 344.92 ppm — it's [about 425 now](https:
 
 Husband to Mar. Father to Lucas and Nico. Friend to Pancho, our Spanish Water Dog, who is smarter than all of us.
 
-
-
 {% include children-menu.html %}
 
 ### What I do

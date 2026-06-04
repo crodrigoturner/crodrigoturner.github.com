@@ -48,7 +48,7 @@ body {
 /* HEADER / SIDEBAR */
 
 header {
-width: 150px;
+width: 30%;
     float: left;
 position:fixed; 
 top:0; left:0;
@@ -57,7 +57,7 @@ top:0; left:0;
 }
 
 
-nav{width: 150px;
+nav{width: 30%;
     float: left;
 position:fixed; 
 top:0; right:0;
@@ -75,8 +75,10 @@ nav ul {
  
 }
 
+nav ul li{float:left;}
+
 nav li a {
-  font-size: 0.95em;
+  
   color: var(--color-muted);
   text-decoration: none;
 }

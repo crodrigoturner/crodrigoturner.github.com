@@ -13,17 +13,7 @@
 </article>
 {% endfor %}
 
-<article>
-  <ul class="tag-cloud">
-    <li><a href="/" class="tag-cloud-tag">All</a></li>
-    {% assign all_tags = site.posts | concat: site.essays | concat: site.photos | map: 'tags' | join: ',' | split: ',' | compact | uniq | sort %}
-    {% for tag in all_tags %}
-      {% unless tag == '' %}
-      <li><a href="{{ '/tags/' | absolute_url }}{{ tag }}" class="tag-cloud-tag">{{ tag }}</a></li>
-      {% endunless %}
-    {% endfor %}
-  </ul>
-</article>
+
 
 </section>
 </div>
