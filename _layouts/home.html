@@ -15,17 +15,15 @@
   </ul>
 
 <article>
-   <h3>Latest posts</h3>
-  {% assign latest = site.posts | concat: site.essays | sort: 'date' | reverse %}
-  <ul class="posts">
-    {% for item in latest %}
-    <li>
-      <a href="{{ item.url }}">{{ item.title }}</a>
-      {% if item.date %}<span class="post-date">{{ item.date | date: '%Y%m%d' }}</span>{% endif %}
-    </li>
-    {% endfor %}
-  </ul>
-  <a href="/posts/" class="cta">More</a>
+ {% assign all_items = site.posts | concat: site.essays | concat: site.photos | sort: 'date' | reverse %}
+{% for post in all_items %}
+<article class="post {{ post.tags | join: ' ' }}">
+  <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+  {{post.content}}
+  <span class="meta">{{ post.tags | join: ' · ' }}{% if post.tags != empty %} · {% endif %}{{ post.date | date: '%Y%m%d' }} · <a href="mailto:rodrigoturner.carlos@gmail.com?subject={{ post.title }}">Reply by email</a></span>
+  <hr/>
+</article>
+{% endfor %}
 </article>
  
 </section>
