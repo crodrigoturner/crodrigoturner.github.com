@@ -97,7 +97,7 @@ nav li a.current {
 section {
     display: block;
     width: 100%;
-    max-width: 640px;
+    max-width: 740px;
     padding: 40px;
     margin: 0 auto;
     border-left:1px solid #EEE;
@@ -140,6 +140,9 @@ article {
   color: var(--color-muted);
   font-size: 0.95em;
   margin: 0;
+  position:fixed;
+  top:60px; left:60px; 
+  width:30%;
 }
 
 /* TYPOGRAPHY */
