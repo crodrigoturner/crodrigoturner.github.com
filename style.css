@@ -49,15 +49,22 @@ body {
 
 header {
 width: 150px;
-    float: right;
+    float: left;
 position:fixed; 
-top:0; right:0;
+top:0; left:0;
     margin: 20px 60px;
 
 }
 
 
-
+nav{width: 150px;
+    float: left;
+position:fixed; 
+top:0; right:0;
+    margin: 20px 60px;
+    text-align:right;
+  
+  }
 
 
 nav ul {
