@@ -48,20 +48,12 @@ document.write(
 </article>
  
 </section>
-<section>
+<!--<section>
   <article>
     <h3>Topics</h3>
     {% include tag-cloud-art.html %}
   </article>
-</section>
-<section>
-  <article>
-    <h3>Now</h3>
-    {% assign now_post = site.posts | where_exp: "p", "p.tags contains 'now'" | first %}
-    {% if now_post %}
-      <div class="now-embed">{{ now_post.content }}</div>
-    {% endif %}
-  </article>
-</section>
+</section>-->
+
 
 
