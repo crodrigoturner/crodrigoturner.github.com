@@ -10,6 +10,12 @@ I'm Carlos Roberto Rodrigo Turner.
 I was born when atmospheric CO₂ was 344.92 ppm — it's [about 425 now](https://gml.noaa.gov/ccgg/trends/), which tells you something about the pace of the world I'm trying to make sense of.
 
 Husband to Mar. Father to Lucas and Nico. Friend to Pancho, our Spanish Water Dog, who is smarter than all of us.
+Now
+    {% assign now_post = site.posts | where_exp: "p", "p.tags contains 'now'" | first %}
+    {% if now_post %}
+{{ now_post.content }}
+    {% endif %}
+
 
 
 ### What I do
