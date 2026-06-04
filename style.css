@@ -48,11 +48,12 @@ body {
 /* HEADER / SIDEBAR */
 
 header {
-width: 30%;
+width: 100%;
     float: left;
 position:fixed; 
 top:0; left:0;
     margin: 0px 60px;
+    border-bottom:1px solid #EEE;
 
 }
 
@@ -75,7 +76,7 @@ nav ul {
  
 }
 
-nav ul li{float:left;}
+nav ul li{float:left; margin:0 40px 0 0;}
 
 nav li a {
   
@@ -97,8 +98,10 @@ section {
     display: block;
     width: 100%;
     max-width: 640px;
-    padding: 40px 0 0;
+    padding: 40px;
     margin: 0 auto;
+    border-left:1px solid #EEE;
+    border-right:1px solid #EEE;
 }
 
 section:last-of-type {
