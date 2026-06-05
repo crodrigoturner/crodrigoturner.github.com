@@ -100,10 +100,10 @@ article {
 }
 /* TYPOGRAPHY */
 h1 {
-  font: 400 .1em/1.7 "PP Museum", sans-serif;
+  font: 400 .0001em/1.7 "PP Museum", sans-serif;
   margin: 20px 0px;
   float: left;
-  opacity: .1;
+  opacity: 1;
 }
 h1::before {
   content: '';
