@@ -124,7 +124,7 @@ article {
 
 .hero-name {
   color: var(--color-text);
-
+font-size:2em; font-weight:600;
   margin: 0;
 
   width:100%;
