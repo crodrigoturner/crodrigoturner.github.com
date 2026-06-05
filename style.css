@@ -54,7 +54,7 @@ position:fixed;
 top:0; left:0;
     margin: 0px;
     
-padding:0 60px;
+padding:0 20px;
 
 }
 
@@ -62,9 +62,9 @@ padding:0 60px;
 nav{width: 100px;
     float: right;
 position:fixed; 
-top:10vh; right:5%;
+top:10vh; right:20%;
     margin: 20px 60px;
-    font-size:1.1em;
+    font-size:1.3em;
   
   }
 
@@ -136,7 +136,8 @@ article {
 h1 {
   font: 400 1em/1.7 "Schibsted Grotesk", sans-serif;
 margin:20px 0px;
-float:left; width:calc(50% - 370px);
+float:left; 
+opacity:.4;
 }
 
 h1::before{content:'';
