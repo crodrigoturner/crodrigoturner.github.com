@@ -1,1 +1,0 @@
-Our internet algorythims shape our view of the world.

@@ -5,7 +5,7 @@
 <button class="hamburger" aria-label="Open menu" onclick="var h=this.closest('.site-header');h.classList.toggle('open');this.setAttribute('aria-label',h.classList.contains('open')?'Close menu':'Open menu')">
 <span></span><span></span><span></span>
 </button>
-<ol>
+<ul>
     
 <li><a href="/"{% if page.url=='/' %} class="current"{% endif %}>Home</a></li>
 
@@ -14,5 +14,5 @@
 <li><a href="/contact/"{% if page.url contains '/contact/' %} class="current"{% endif %} >Contact</a></li>
 <li><a href="/notes"{% if page.url contains '/notes/' %}  class="current"{% endif %}>Notes</a></li>
 <li><a href="/"{% if page.url == "/" %} class="current"{% endif %}>Search</a></li>
-</ol>
+</ul>
 </nav>

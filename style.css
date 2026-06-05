@@ -1,14 +1,18 @@
 @charset "UTF-8";
-
-@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400;0,700;0,900;1,400&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
 @font-face {
-  font-family: "Tipique";
-  src: url("/fonts/tipique-regular.otf") format("opentype");
+  font-family: "PP Neue Montreal";
+  src: url("/fonts/PPNeueMontreal-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
-
+@font-face {
+  font-family: "PP Neue Montreal";
+  src: url("/fonts/PPNeueMontreal-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 :root {
   --site-width: 680px;
   --color-text: #111;
@@ -17,7 +21,6 @@
   --color-border: #e8e8e4;
   --color-bg: #fdfcfc;
 }
-
 *,
 *::before,
 *::after {
@@ -26,264 +29,196 @@
   box-sizing: border-box;
   list-style: none;
 }
-
 html {
   min-height: 101%;
 }
-
 body {
   color: var(--color-text);
-  font: 400 16px / 1.7 "Schibsted Grotesk", sans-serif;
+  font: 400 16px / 1.7 "PP Neue Montreal", sans-serif;
   background: var(--color-bg);
   overflow-x: hidden;
   -webkit-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
-
-
 }
-
-
-
-
 /* HEADER / SIDEBAR */
-
 header {
-
-    float: left;
-position:fixed;
-top:0; left:0;
-    margin: 0px;
-    
-padding:0 20px;
-
+  float: left;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0px;
+  padding: 0 20px;
 }
-
-
-nav{width: 100px;
-    float: right;
-position:fixed; 
-top:10vh; right:20%;
-    margin: 20px 60px;
-    font-size:1.3em;
-  
-  }
-
-
+nav {
+  width: 150px;
+  float: right;
+  position: fixed;
+  top: 10vh;
+  right: 20%;
+  margin: 20px 60px;
+  font-size: 1.3em;
+}
 nav ul {
-  
-   
-    padding: 0 0 10px;
-    margin: 0 0 20px;
- 
+  padding: 0 0 10px;
+  margin: 0 0 20px;
 }
-
-nav ul li{float:left; width:100%;}
-
+nav ul li {
+  float: left;
+  width: 100%;
+}
 nav li a {
-  
   color: var(--color-muted);
   text-decoration: none;
 }
-
 nav li a:hover,
 nav li a.current {
   color: var(--color-text);
   opacity: 1;
 }
-
-
-
 /* MAIN CONTENT */
-
 section {
-    display: block;
-    width: 100%;
-    max-width: 740px;
-    padding: 40px;
-    margin: 0 auto;
-
+  display: block;
+  width: 100%;
+  max-width: 740px;
+  padding: 40px;
+  margin: 0 auto;
 }
-
 section:last-of-type {
   padding-bottom: 100px;
 }
-
-
 article {
-    width: 100%;
-    padding: 0;
- 
- 
-  }
-
-
-
+  width: 100%;
+  padding: 0;
+}
 /* HERO */
-
-
-
 .hero-name {
   color: var(--color-text);
-font-size:2em; font-weight:600;
+  font-size: 2em;
+  font-weight: 600;
   margin: 0;
-
-  width:100%;
-
+  width: 100%;
 }
-
 /* TYPOGRAPHY */
-
 h1 {
-  font: 400 1em/1.7 "Schibsted Grotesk", sans-serif;
-margin:20px 0px;
-float:left; 
-opacity:.4;
+  font: 400 .1em/1.7 "PP Neue Montreal", sans-serif;
+  margin: 20px 0px;
+  float: left;
+  opacity: 0;
 }
-
-h1::before{content:'';
-float:left; margin:0px 10px 0 0; background:#FFB511; height:16px; width:16px; border-radius: 50%; top:5px; position:relative;}
-
-
+h1::before {
+  content: '';
+  float: left;
+  margin: 0px 10px 0 0;
+  background: #FFB511;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  top: 5px;
+  position: relative;
+}
 h2 {
-  font: 700 3em/1 "Schibsted Grotesk", sans-serif;
+  font: 700 3em/1 "PP Neue Montreal", sans-serif;
   width: 100%;
   float: left;
   color: var(--color-text);
   margin: 0 0 40px;
-
-
 }
-
 h3 {
-  font: 700 1.3em/1 "Schibsted Grotesk", sans-serif;
+  font: 700 1.3em/1 "PP Neue Montreal", sans-serif;
   margin: 20px 0;
   width: 100%;
   float: left;
 }
-
 h4 {
-    font-size: 2em;
-    font-weight: 900;
-    margin: 0px 0 40px;
-    text-transform: uppercase;
-    color: #607d8b1c;
-text-shadow: #444;
+  font-size: 2em;
+  font-weight: 900;
+  margin: 0px 0 40px;
+  text-transform: uppercase;
+  color: #607d8b1c;
+  text-shadow: #444;
 }
-
-
-
 h5 {
   font-size: 0.9em;
   font-weight: 600;
   margin: 16px 0 8px;
 }
-
 h6 {
   font-size: 0.8em;
   font-weight: 400;
   color: var(--color-muted);
   margin: 16px 0 8px;
 }
-
-
-
-
-
-header a{text-decoration: none;}
-
-
+header a {
+  text-decoration: none;
+}
 p {
   margin: 0 0 12px;
 }
-
 a {
   color: var(--color-text);
   text-decoration: underline;
 }
-
-
 a:hover {
   opacity: 0.7;
   text-decoration: none;
   border: none;
 }
-
 a[target="_blank"]::after {
   content: '->';
-
   margin-left: 2px;
-  
-  font-family:"Inter";
-
+  font-family: "PP Neue Montreal";
 }
-
 h1 a,
 h1 a:visited {
   color: var(--color-text);
   text-decoration: none;
-  width:100%;
+  width: 100%;
 }
-
 b,
 strong {
   font-weight: 700;
 }
-
 em {
   background-color: #ffff6687;
   border-radius: 100px;
 }
-
 sup {
   font-size: 0.8em;
 }
-
 i {
   border: none;
 }
-
 /* LISTS */
-
 ul {
   width: 100%;
   margin-bottom: 20px;
 }
-
 ol {
   padding-left: 20px;
   width: 100%;
 }
-
 ol>li {
   list-style: decimal;
   padding: 3px 0;
 }
-
 article ul li,
 ul li {
   list-style-type: none;
   padding-left: 0;
   margin-left: 0;
 }
-
-
 ul {
   list-style: none;
 }
-
 ul.bulleted {
   padding: 0 0 0 20px;
 }
-
-
 ul.bulleted li {
   position: relative;
   margin-bottom: 8px;
   float: left;
   width: 100%;
-
 }
-
 ul.bulleted li::before {
   content: "";
   position: absolute;
@@ -296,26 +231,22 @@ ul.bulleted li::before {
   background-repeat: no-repeat;
   background-size: contain;
 }
-
-
 /* TAG CLOUD */
-
 .tag-cloud {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
-
-
-.tag-cloud a{font-size:.9em; color:var(--color-muted); text-decoration:none;}
-
+.tag-cloud a {
+  font-size: .9em;
+  color: var(--color-muted);
+  text-decoration: none;
+}
 /* POSTS LIST */
-
 .posts {
   margin: 0 0 20px;
   float: left;
 }
-
 .posts li {
   float: left;
   justify-content: space-between;
@@ -324,16 +255,11 @@ ul.bulleted li::before {
   padding: 6px 0;
   color: var(--color-text);
   width: 100%;
-
 }
-
 .posts li a:hover {
   color: var(--color-text);
   opacity: 1;
 }
-
-
-
 .posts li .tag {
   float: right;
   color: var(--color-muted);
@@ -341,37 +267,30 @@ ul.bulleted li::before {
   font-size: .8em;
   line-height: 2.125;
 }
-
 .posts li .post-date {
   float: right;
   clear: right;
   color: var(--color-text);
   font-size: .8em;
-  font-family: "Roboto Mono", monospace;
+  font-family: "PP Neue Montreal", sans-serif;
 }
-
 /* IMAGES */
-
 img {
   border-style: none;
   height: auto;
   max-width: 100%;
 }
-
 article img {
   border-radius: 10px;
 }
-
 img.alignright {
   float: right;
   margin: 0 0 20px 20px;
 }
-
 img.alignleft {
   float: left;
   margin: 0 20px 20px 0;
 }
-
 .profile {
   height: 180px;
   width: 180px;
@@ -380,33 +299,25 @@ img.alignleft {
   border-radius: 87% 67% 87% 75%;
   box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.07), 0 1.5px 4px 0 rgba(0, 0, 0, 0.04);
 }
-
 .thumbnail {
   max-width: 300px;
   margin: 0 0 10px;
   float: left;
 }
-
 figcaption {
   font-size: 0.75rem;
   line-height: 1.5rem;
   color: var(--color-muted);
 }
-
-
-
-
 /* TAG CLOUD ART */
-
 .tag-cloud-art {
   position: relative;
   width: 100%;
   height: 250px;
   margin: 40px 0;
-  float:left;
-  font-family:"Tipique";
+  float: left;
+  font-family: "PP Neue Montreal", sans-serif;
 }
-
 .tag-item {
   position: absolute;
   display: flex;
@@ -418,109 +329,92 @@ figcaption {
   font-size: 0.9em;
   transition: opacity 0.2s ease;
 }
-
 .tag-item:hover {
   opacity: 0.8;
 }
-
 .tag-item--links {
-background: #0D47A1;
-    width: 220px;
-    height: 165px;
-    top: 20px;
-    left: 0;
-    border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+  background: #0D47A1;
+  width: 220px;
+  height: 165px;
+  top: 20px;
+  left: 0;
+  border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
 }
-
 .tag-item--clippings {
-     background: #1565C0;
-    width: 175px;
-    height: 135px;
-    top: 8px;
-    left: 175px;
-    border-radius: 38% 62% 46% 54% / 61% 44% 56% 39%;
+  background: #1565C0;
+  width: 175px;
+  height: 135px;
+  top: 8px;
+  left: 175px;
+  border-radius: 38% 62% 46% 54% / 61% 44% 56% 39%;
 }
-
 .tag-item--reviews {
-    background: #1976D2;
-    width: 145px;
-    height: 110px;
-    top: 162px;
-    left: 298px;
-    border-radius: 55% 45% 38% 62% / 48% 57% 43% 52%;
+  background: #1976D2;
+  width: 145px;
+  height: 110px;
+  top: 162px;
+  left: 298px;
+  border-radius: 55% 45% 38% 62% / 48% 57% 43% 52%;
 }
-
 .tag-item--projects {
-    background: #1E88E5;
-    width: 145px;
-    height: 110px;
-    top: 128px;
-    left: 105px;
-    border-radius: 47% 53% 63% 37% / 52% 45% 55% 48%;
-
+  background: #1E88E5;
+  width: 145px;
+  height: 110px;
+  top: 128px;
+  left: 105px;
+  border-radius: 47% 53% 63% 37% / 52% 45% 55% 48%;
 }
-
 .tag-item--betterment {
-    background: #42A5F5;
-    width: 118px;
-    height: 90px;
-    top: 18px;
-    left: 328px;
-    border-radius: 72% 28% 45% 55% / 45% 62% 38% 55%;
+  background: #42A5F5;
+  width: 118px;
+  height: 90px;
+  top: 18px;
+  left: 328px;
+  border-radius: 72% 28% 45% 55% / 45% 62% 38% 55%;
 }
-
 .tag-item--now {
-background: #64B5F6;
-    width: 112px;
-    height: 85px;
-    top: 150px;
-    left: 228px;
-    border-radius: 44% 56% 55% 45% / 63% 38% 62% 37%;
+  background: #64B5F6;
+  width: 112px;
+  height: 85px;
+  top: 150px;
+  left: 228px;
+  border-radius: 44% 56% 55% 45% / 63% 38% 62% 37%;
 }
-
 .tag-item--ai {
-    background: #90CAF9;
-    width: 112px;
-    height: 85px;
-    top: 95px;
-    left: 326px;
-    border-radius: 58% 42% 34% 66% / 53% 68% 32% 47%;
-    color: rgba(13, 71, 161, 0.9);
+  background: #90CAF9;
+  width: 112px;
+  height: 85px;
+  top: 95px;
+  left: 326px;
+  border-radius: 58% 42% 34% 66% / 53% 68% 32% 47%;
+  color: rgba(13, 71, 161, 0.9);
 }
-
 /* BREADCRUMBS */
-
 .breadcrumbs li {
   display: inline;
 }
-
 .breadcrumbs {
   font-size: 0.8em;
-  font-family: "Roboto Mono", monospace;
+  font-family: "PP Neue Montreal", sans-serif;
   color: var(--color-muted);
   margin-bottom: 40px;
   width: 100%;
   float: left;
 }
-
 .breadcrumbs a {
   color: var(--color-muted);
   text-decoration: none;
 }
-
 .breadcrumbs a:hover {
   color: var(--color-text);
   opacity: 1;
 }
-
 .breadcrumbs a::after,
 .breadcrumbs span::before {
   content: ' / ';
   opacity: 0.4;
 }
-
 /* CHILDREN MENU */
-
 .children-menu {
   display: flex;
   flex-wrap: wrap;
@@ -529,107 +423,87 @@ background: #64B5F6;
   width: 100%;
   float: left;
 }
-
 .children-menu a {
   font-size: 0.9em;
   color: var(--color-muted);
   text-decoration: none;
 }
-
 .children-menu a:hover {
   color: var(--color-text);
   opacity: 1;
 }
-
 .now-embed {
   display: flow-root;
   width: 100%;
 }
-
 /* MISC COMPONENTS */
-
 .meta,
 small {
   font-size: 0.8em !important;
-  font-family: "Roboto Mono", monospace;
+  font-family: "PP Neue Montreal", sans-serif;
   color: var(--color-text);
-  margin:20px 0 0;
-  float:left; width:100%;
+  margin: 20px 0 0;
+  float: left;
+  width: 100%;
 }
-
-
 hr {
   border: none;
   height: 0;
-  border-top: 1px solid rgba(0,0,0,0.08);
-  border-bottom: 1px solid rgba(255,255,255,0.75);
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.75);
   margin: 40px 0;
   background: transparent;
-  float:left; width:100%;
+  float: left;
+  width: 100%;
 }
-
-
-
 blockquote {
   padding: 0 0 0 20px;
   border-left: 2px solid var(--color-border);
   color: var(--color-muted);
-float:left; 
-width:100%;
+  float: left;
+  width: 100%;
 }
-
 .quotes h3,
 .clippings h3 {
   display: none;
 }
-
 footer blockquote {
   border: none;
 }
-
 code {
   background-color: #f4f4f2;
-  font-family: Courier, monospace;
+  font-family: "PP Neue Montreal", sans-serif;
   font-size: 0.85em;
   padding: 2px 6px;
   border-radius: 4px;
 }
-
 pre code {
   display: block;
   padding: 16px 20px;
   overflow-x: auto;
   white-space: pre;
 }
-
 .text {
   width: 100%;
 }
-
 .dn {
   display: none;
 }
-
 .cp {
   text-transform: capitalize;
 }
-
 .hidden {
   display: none;
 }
-
 .visible {
   display: block;
 }
-
 .disabled {
   visibility: hidden;
 }
-
 .arrow {
-  font: 400 16px/1.6 "Schibsted Grotesk", sans-serif !important;
+  font: 400 16px/1.6 "PP Neue Montreal", sans-serif !important;
 }
-
 .cta {
   display: inline-flex;
   align-items: center;
@@ -638,66 +512,48 @@ pre code {
   text-decoration: none;
   font-weight: 500;
 }
-
 .cta::after {
   content: '->';
-  font-family: "Inter", sans-serif;
+  font-family: "PP Neue Montreal", sans-serif;
   font-weight: 400;
   display: inline-block;
   transition: transform 0.2s ease;
 }
-
 .cta:hover {
   opacity: 1;
 }
-
 .cta:hover::after {
   transform: translateX(4px);
 }
-
 .alignright {
   float: right;
 }
-
 .alignleft {
   float: left;
 }
-
 ::-moz-selection {
   background: #fef4ad;
 }
-
 ::selection {
   background: #fef4ad;
 }
-
-
-
-
-
 /* TAGS / COLUMN LISTS */
-
 .tags {
   column-count: 3;
   column-gap: 40px;
 }
-
 #columnlist {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   column-gap: 20px;
 }
-
 #columnlist li a {
   display: block;
   padding: 4px 0;
   text-transform: capitalize;
   color: var(--color-text);
-
 }
-
 /* CLOUD (TAG CLOUD) */
-
 .cloud {
   width: 100%;
   margin: 0 0 20px;
@@ -706,7 +562,6 @@ pre code {
   flex-wrap: wrap;
   gap: 6px;
 }
-
 .cloud li {
   width: auto;
   padding: 3px 10px;
@@ -716,26 +571,20 @@ pre code {
   font-size: 0.9em;
   text-align: center;
 }
-
 /* BOOKSHELF */
-
 .bookshelf_book {
   margin: 0 0 20px;
   min-height: 70px;
 }
-
 .bookshelf_book img {
   margin: 0;
 }
-
 /* TABLE */
-
 table {
   width: 100%;
   border-top: 2px solid var(--color-border);
   padding: 15px 0;
 }
-
 td,
 th {
   text-align: left;
@@ -744,7 +593,6 @@ th {
   border-bottom: 1px solid var(--color-border);
   vertical-align: top;
 }
-
 th {
   font-weight: 600;
   color: var(--color-muted);
@@ -752,22 +600,13 @@ th {
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
-
-
-
 /* FOOTER */
-
 footer {
   width: 100%;
   margin: 0 auto;
   padding: 40px calc(50% - 340px) 40px;
   font-size: .9em;
-
-
-
-
 }
-
 footer #quote {
   color: #607d8b2e;
   width: 100%;
@@ -775,27 +614,20 @@ footer #quote {
   font-weight: 700;
   font-size: 3em;
 }
-
 .back-to-top {
   font-size: 0.5em;
   font-weight: 400;
   color: var(--color-muted);
   text-decoration: none;
 }
-
 .back-to-top:hover {
   color: var(--color-text);
   opacity: 1;
 }
-
-
-
 /* VIDA EN MESES */
-
 .vidagrid {
   margin: 20px 0;
 }
-
 .sq {
   float: left;
   line-height: 20px;
@@ -808,56 +640,42 @@ footer #quote {
   padding: 5px;
   border-radius: 4px;
 }
-
 .sq:nth-child(1) {
   background: #ef5350;
   color: #FFF;
 }
-
 .casa {
   background: #D7CCC8 !important;
 }
-
 .mar {
   background: #ffcdd2 !important;
 }
-
 .familia {
   background: #FFECB3 !important;
   color: #444;
 }
-
 .trabajo {
   background: #CFD8DC !important;
 }
-
 .viaje {
   background: #BBDEFB !important;
 }
-
 .muerte {
   background: #444 !important;
 }
-
 .m {
   background: #FFF !important;
   text-align: center;
 }
-
 .alive {
   background-color: #a5d6a7;
   color: #444;
 }
-
-
-
 iframe {
   max-width: 100%;
   display: block;
 }
-
 /* HAMBURGER BUTTON */
-
 .hamburger {
   display: none;
   flex-direction: column;
@@ -874,7 +692,6 @@ iframe {
   right: 12px;
   z-index: 200;
 }
-
 .hamburger span {
   display: block;
   width: 22px;
@@ -883,7 +700,6 @@ iframe {
   border-radius: 2px;
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
-
 .site-header.open .hamburger span:nth-child(1) {
   transform: translateY(7px) rotate(45deg);
 }
@@ -893,19 +709,15 @@ iframe {
 .site-header.open .hamburger span:nth-child(3) {
   transform: translateY(-7px) rotate(-45deg);
 }
-
 /* MEDIA QUERIES */
-
 @media only screen and (max-width: 768px) {
   .tags {
     column-count: 2;
   }
-
   #columnlist {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
 @media only screen and (max-width: 640px) {
   header {
     position: fixed;
@@ -924,7 +736,6 @@ iframe {
     background: var(--color-bg);
     border-bottom: 1px solid var(--color-border);
   }
-
   header.open {
     bottom: 0;
     height: auto;
@@ -934,70 +745,57 @@ iframe {
     border-bottom: none;
     padding: 14px 16px 40px;
   }
-
-  header > a {
+  header>a {
     line-height: 56px;
   }
-
-  header.open > a {
+  header.open>a {
     line-height: 1.7;
   }
-
   .hamburger {
     display: flex;
     position: absolute;
     top: 6px;
     right: 8px;
   }
-
   .site-nav {
     display: none;
     width: 100%;
     padding-top: 12px;
   }
-
   header.open .site-nav {
     display: block;
   }
-
   section {
     padding: 72px 16px 60px;
     margin: 0;
     max-width: 100%;
   }
-
   .tags {
     column-count: 1;
   }
-
   #columnlist {
     grid-template-columns: 1fr;
   }
 }
-
 @media only screen and (max-width: 480px) {
   .tags {
     column-count: 1;
   }
-
   #columnlist {
     grid-template-columns: 1fr;
   }
 }
-
-
 /* Info callout */
 .info {
-    background: #eee;
-    color: var(--color-muted);
-    font-size: 0.9em;
-    padding: 20px 20px 20px 48px;
-    border-radius: 8px;
-    background-image: url(/images/info.svg);
-    background-repeat: no-repeat;
-    background-size: 18px 18px;
-    background-position: 18px 25px;
-    margin-bottom: 20px;
-    float: left;
+  background: #eee;
+  color: var(--color-muted);
+  font-size: 0.9em;
+  padding: 20px 20px 20px 48px;
+  border-radius: 8px;
+  background-image: url(/images/info.svg);
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  background-position: 18px 25px;
+  margin-bottom: 20px;
+  float: left;
 }
-
