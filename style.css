@@ -103,7 +103,7 @@ h1 {
   font: 400 .1em/1.7 "PP Museum", sans-serif;
   margin: 20px 0px;
   float: left;
-  opacity: 0;
+  opacity: .1;
 }
 h1::before {
   content: '';
