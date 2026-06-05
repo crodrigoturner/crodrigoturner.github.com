@@ -35,6 +35,20 @@ document.write(
 </h3>
 I'm a husband and father of 2 boys.<br/> I work at Técnica y Avance in Madrid.<br/> This is my website.</span>
 
+<article>
+  <h3>Latest posts</h3>
+
+  </article>
+
+  <article>What I do (currently)</article>
+    {% assign now_post = site.posts | where_exp: "p", "p.tags contains 'now'" | first %}
+    {% if now_post %}
+{{ now_post.content }}
+    {% endif %}
+
+<article>
+  <h3>Get in touch</h3>
+  <article>
 
 
 

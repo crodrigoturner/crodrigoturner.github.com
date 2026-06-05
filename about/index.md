@@ -40,11 +40,6 @@ Over ten years, I've worked across architecture, energy, luxury brands, and star
 <li>People I admire, in no particular order and for very different reasons: Feynman (for the range — physics, bongos, lock-picking), Marie Curie (two Nobels in two fields, still unmatched), Carl Sagan (made science feel like wonder), Jane Austen (sharper than anyone gives her credit for), and Elon Musk — though less and less.</li>
 </ul>
 
-### Now
-    {% assign now_post = site.posts | where_exp: "p", "p.tags contains 'now'" | first %}
-    {% if now_post %}
-{{ now_post.content }}
-    {% endif %}
 
 
 ### Geek code
