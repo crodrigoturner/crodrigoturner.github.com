@@ -30,7 +30,6 @@ github_username:  crodrigoturner
 # Build settings
 theme: minima
 plugins:
-  - jekyll-feed
   - jekyll-paginate
 
 paginate: 7

@@ -10,5 +10,4 @@ title: Contact
 <li><a href="https://github.com/crodrigoturner" target="_blank">Github</a></li>
 </ul>
 
-<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Kofgumg4R_CV01idDKUWtpb93M_h00Q&ehbc=2E312F&noprof=1" width="100
-%" height="100vh"></iframe>
+<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Kofgumg4R_CV01idDKUWtpb93M_h00Q&ehbc=2E312F&noprof=1" width="100%" height="480"></iframe>
