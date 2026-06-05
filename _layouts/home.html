@@ -2,7 +2,12 @@
 
 {% include header.html %}
 
-<span class="hero-name">
+
+
+
+ <section>
+
+  <span class="hero-name">
 <h3>
  <script>
 currentTime=new Date();
@@ -31,27 +36,7 @@ document.write(
 I'm a husband and father of 2 boys.<br/> I work at Técnica y Avance in Madrid.<br/> This is my website.</span>
 
 
- <section>
-  <ul class="tag-cloud">
-    <li><a href="/" class="tag-cloud-tag">All</a></li>
-    {% assign all_tags = site.posts | concat: site.essays | concat: site.photos | map: 'tags' | join: ',' | split: ',' | compact | uniq | sort %}
-    {% for tag in all_tags %}
-      {% unless tag == '' %}
-      <li><a href="{{ '/tags/' | absolute_url }}{{ tag }}" class="tag-cloud-tag">{{ tag }}</a></li>
-      {% endunless %}
-    {% endfor %}
-  </ul>
 
-
- {% assign all_items = site.posts | concat: site.essays | concat: site.photos | sort: 'date' | reverse %}
-{% for post in all_items %}
-<article class="post {{ post.tags | join: ' ' }}">
-  <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-  {{post.content}}
-  <span class="meta">{{ post.tags | join: ' · ' }}{% if post.tags != empty %} · {% endif %}{{ post.date | date: '%Y%m%d' }} · <a href="mailto:rodrigoturner.carlos@gmail.com?subject={{ post.title }}">Reply by email</a></span>
-  <hr/>
-</article>
-{% endfor %}
 
  
 </section>
