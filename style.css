@@ -1,14 +1,14 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "PP Neue Montreal";
-  src: url("/fonts/PPNeueMontreal-Regular.woff2") format("woff2");
+  font-family: "PP Museum";
+  src: url("/fonts/PPMuseum-Light.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "PP Neue Montreal";
-  src: url("/fonts/PPNeueMontreal-Bold.woff2") format("woff2");
+  font-family: "PP Museum";
+  src: url("/fonts/PPMuseum-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -34,7 +34,7 @@ html {
 }
 body {
   color: var(--color-text);
-  font: 400 16px / 1.7 "PP Neue Montreal", sans-serif;
+  font: 400 16px / 1.7 "PP Museum", sans-serif;
   background: var(--color-bg);
   overflow-x: hidden;
   -webkit-text-size-adjust: 100%;
@@ -100,7 +100,7 @@ article {
 }
 /* TYPOGRAPHY */
 h1 {
-  font: 400 .1em/1.7 "PP Neue Montreal", sans-serif;
+  font: 400 .1em/1.7 "PP Museum", sans-serif;
   margin: 20px 0px;
   float: left;
   opacity: 0;
@@ -117,14 +117,14 @@ h1::before {
   position: relative;
 }
 h2 {
-  font: 700 3em/1 "PP Neue Montreal", sans-serif;
+  font: 700 3em/1 "PP Museum", sans-serif;
   width: 100%;
   float: left;
   color: var(--color-text);
   margin: 0 0 40px;
 }
 h3 {
-  font: 700 1.3em/1 "PP Neue Montreal", sans-serif;
+  font: 700 1.3em/1 "PP Museum", sans-serif;
   margin: 20px 0;
   width: 100%;
   float: left;
@@ -166,7 +166,7 @@ a:hover {
 a[target="_blank"]::after {
   content: '->';
   margin-left: 2px;
-  font-family: "PP Neue Montreal";
+  font-family: "PP Museum";
 }
 h1 a,
 h1 a:visited {
@@ -272,7 +272,7 @@ ul.bulleted li::before {
   clear: right;
   color: var(--color-text);
   font-size: .8em;
-  font-family: "PP Neue Montreal", sans-serif;
+  font-family: "PP Museum", sans-serif;
 }
 /* IMAGES */
 img {
@@ -316,7 +316,7 @@ figcaption {
   height: 250px;
   margin: 40px 0;
   float: left;
-  font-family: "PP Neue Montreal", sans-serif;
+  font-family: "PP Museum", sans-serif;
 }
 .tag-item {
   position: absolute;
@@ -395,7 +395,7 @@ figcaption {
 }
 .breadcrumbs {
   font-size: 0.8em;
-  font-family: "PP Neue Montreal", sans-serif;
+  font-family: "PP Museum", sans-serif;
   color: var(--color-muted);
   margin-bottom: 40px;
   width: 100%;
@@ -440,7 +440,7 @@ figcaption {
 .meta,
 small {
   font-size: 0.8em !important;
-  font-family: "PP Neue Montreal", sans-serif;
+  font-family: "PP Museum", sans-serif;
   color: var(--color-text);
   margin: 20px 0 0;
   float: left;
@@ -472,7 +472,7 @@ footer blockquote {
 }
 code {
   background-color: #f4f4f2;
-  font-family: "PP Neue Montreal", sans-serif;
+  font-family: "PP Museum", sans-serif;
   font-size: 0.85em;
   padding: 2px 6px;
   border-radius: 4px;
@@ -502,7 +502,7 @@ pre code {
   visibility: hidden;
 }
 .arrow {
-  font: 400 16px/1.6 "PP Neue Montreal", sans-serif !important;
+  font: 400 16px/1.6 "PP Museum", sans-serif !important;
 }
 .cta {
   display: inline-flex;
@@ -514,7 +514,7 @@ pre code {
 }
 .cta::after {
   content: '->';
-  font-family: "PP Neue Montreal", sans-serif;
+  font-family: "PP Museum", sans-serif;
   font-weight: 400;
   display: inline-block;
   transition: transform 0.2s ease;
