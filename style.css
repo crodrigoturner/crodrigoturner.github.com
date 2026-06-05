@@ -64,7 +64,7 @@ nav{width: 100px;
 position:fixed; 
 top:10vh; right:5%;
     margin: 20px 60px;
-    
+    font-size:1.1em;
   
   }
 
@@ -101,8 +101,7 @@ section {
     max-width: 740px;
     padding: 40px;
     margin: 0 auto;
-    border-left:1px solid #EEE;
-    border-right:1px solid #EEE;
+
 }
 
 section:last-of-type {
@@ -124,13 +123,12 @@ article {
 
 
 .hero-name {
-  color: var(--color-muted);
+  color: var(--color-text);
 
   margin: 0;
 
-  width:30%;
-  position:fixed;
-top:100px; left:60px;
+  width:100%;
+
 }
 
 /* TYPOGRAPHY */
