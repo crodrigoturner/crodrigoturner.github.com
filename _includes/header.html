@@ -5,7 +5,7 @@
 <span></span><span></span><span></span>
 </button>
 <ul>
-<li><a href="/"{% if page.url contains '/' %} class="current"{% endif %}>Blog</a></li>
+<li><a href="/"{% if page.url is="/" %} class="current"{% endif %}>Blog</a></li>
 <li><a href="/about/"{% if page.url contains '/about/' %} class="current"{% endif %}>About</a></li>
 <li><a href="/work/"{% if page.url contains '/work/' %} class="current"{% endif %}>Work</a></li>
 <li><a href="/contact/"{% if page.url contains '/contact/' %} class="current"{% endif %} >Contact</a></li>
