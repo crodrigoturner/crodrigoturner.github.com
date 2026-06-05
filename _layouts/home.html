@@ -42,7 +42,7 @@ I'm a husband and father of 2 boys.<br/> I work at Técnica y Avance in Madrid.<
     {% endfor %}
   </ul>
 
-<article>
+
  {% assign all_items = site.posts | concat: site.essays | concat: site.photos | sort: 'date' | reverse %}
 {% for post in all_items %}
 <article class="post {{ post.tags | join: ' ' }}">
@@ -52,7 +52,7 @@ I'm a husband and father of 2 boys.<br/> I work at Técnica y Avance in Madrid.<
   <hr/>
 </article>
 {% endfor %}
-</article>
+
  
 </section>
 
