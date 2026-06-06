@@ -26,8 +26,48 @@ document.write(
 " and happy " + weekday[weekdayValue] + "!"
 )
 </script>
-I am Carlos Rodrigo, a husband to Mar and father to Lucas and Nico, and Pancho <img src="/images/pancho.png"/>. We live in Madrid. My goal is to live better/nice/right/properly. 
-I am currently reading <i>The midnight train</i>, re-watching <i>The First</i>, obsessing about AI with Claude, re-organizing my Obsidian vault and listening to 
+I am Carlos Rodrigo, a husband to Mar and father to Lucas and Nico, and Pancho <img src="/images/pancho.png"/>. We live in Madrid. My goal is to live <span id="rotating-word">better</span>.
+I am currently reading <i>The midnight train</i>, re-watching <i>The First</i>, obsessing about AI with Claude, re-organizing my Obsidian vault and listening to <span id="lastfm-track">…</span>
 
 </article>
 </section>
+
+<script>
+(function () {
+  var words = ["better", "nice", "right", "properly"];
+  var i = 0;
+  var el = document.getElementById("rotating-word");
+  setInterval(function () {
+    i = (i + 1) % words.length;
+    el.textContent = words[i];
+  }, 2000);
+})();
+
+(function () {
+  var USER    = "crodrigoturner";
+  var API_KEY = "YOUR_LASTFM_API_KEY";
+  var el      = document.getElementById("lastfm-track");
+
+  fetch(
+    "https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks" +
+    "&user=" + USER +
+    "&api_key=" + API_KEY +
+    "&format=json&limit=1"
+  )
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      var tracks = data.recenttracks.track;
+      var track  = Array.isArray(tracks) ? tracks[0] : tracks;
+      var now    = track["@attr"] && track["@attr"].nowplaying === "true";
+      var artist = track.artist["#text"];
+      var name   = track.name;
+      el.innerHTML = (now ? "&#9834; " : "") +
+        "<em>" + name + "</em> by " + artist;
+    })
+    .catch(function () {
+      el.textContent = "music";
+    });
+})();
+</script>
+
+{% include footer.html %}
