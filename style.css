@@ -1,5 +1,19 @@
 @charset "UTF-8";
 @font-face {
+  font-family: "PP Telegraf";
+  src: url("/fonts/PPTelegraf-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PP Telegraf";
+  src: url("/fonts/PPTelegraf-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
   font-family: "PP Museum";
   src: url("/fonts/PPMuseum-Light.woff2") format("woff2");
   font-weight: 400;
@@ -57,6 +71,8 @@ nav {
   right: 20%;
   margin: 20px 60px;
   font-size: 1.3em;
+  font-family: "PP Telegraf", sans-serif;
+  font-weight: 400;
 }
 nav ul {
   padding: 0 0 10px;
@@ -107,7 +123,7 @@ article {
 
 /* TYPOGRAPHY */
 h1 {
-  font: 400 .0001em/1.7 "PP Museum", sans-serif;
+  font: 700 .0001em/1.7 "PP Telegraf", sans-serif;
   margin: 20px 0px;
   float: left;
   opacity: 1;
@@ -124,34 +140,37 @@ h1::before {
   position: relative;
 }
 h2 {
-  font: 700 3em/1 "PP Museum", sans-serif;
+  font: 700 3em/1 "PP Telegraf", sans-serif;
   width: 100%;
   float: left;
   color: var(--color-text);
   margin: 0 0 40px;
 }
 h3 {
-  font: 700 1.3em/1 "PP Museum", sans-serif;
+  font: 700 1.3em/1 "PP Telegraf", sans-serif;
   margin: 20px 0;
   width: 100%;
   float: left;
 }
 h4 {
+  font-family: "PP Telegraf", sans-serif;
   font-size: 2em;
-  font-weight: 900;
+  font-weight: 700;
   margin: 0px 0 40px;
   text-transform: uppercase;
   color: #607d8b1c;
   text-shadow: #444;
 }
 h5 {
+  font-family: "PP Telegraf", sans-serif;
   font-size: 0.9em;
-  font-weight: 600;
+  font-weight: 700;
   margin: 16px 0 8px;
 }
 h6 {
+  font-family: "PP Telegraf", sans-serif;
   font-size: 0.8em;
-  font-weight: 400;
+  font-weight: 700;
   color: var(--color-muted);
   margin: 16px 0 8px;
 }
@@ -792,6 +811,75 @@ iframe {
     grid-template-columns: 1fr;
   }
 }
+/* CONTACT FORM */
+
+.contact-form {
+  margin-top: 32px;
+  float: left;
+  width: 100%;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-field label {
+  font-size: 0.8em;
+  color: var(--color-muted);
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.form-field input,
+.form-field textarea {
+  font: 400 1em/1.6 "PP Museum", sans-serif;
+  color: var(--color-text);
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--color-border);
+  padding: 8px 0;
+  outline: none;
+  width: 100%;
+  resize: vertical;
+  transition: border-color 0.15s ease;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  border-bottom-color: var(--color-text);
+}
+
+.form-submit {
+  font: 400 1em/1 "PP Museum", sans-serif;
+  color: var(--color-bg);
+  background: var(--color-text);
+  border: none;
+  padding: 12px 28px;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: opacity 0.15s ease;
+}
+
+.form-submit:hover {
+  opacity: 0.75;
+}
+
+.form-submit:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.form-status {
+  margin-top: 16px;
+  font-size: 0.85em;
+}
+
+.form-status--ok  { color: #2e7d32; }
+.form-status--err { color: #c62828; }
+
 /* Info callout */
 .info {
   background: #eee;
