@@ -117,7 +117,7 @@ article {
   width: 100%;
 }
 
-hero img{height:48px;}
+.hero img{height:48px;}
 
 .morse{  color: var(--color-text);
   font-size: 4em;
