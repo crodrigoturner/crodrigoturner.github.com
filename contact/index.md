@@ -3,7 +3,7 @@ layout: page
 title: Contact
 ---
 
-Email → <a href="mailto:rodrigoturner.carlos@gmail.com">rodrigoturner.carlos@gmail.com</a>
+<p>Always happy to talk — about work, ideas, or anything in between. — Drop me a line.</p>
 
 <form id="contact-form" class="contact-form" novalidate>
   <input type="hidden" name="access_key" value="41c5a30f-3bc1-4570-a7b9-1cf42bc99c26">
