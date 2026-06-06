@@ -96,7 +96,7 @@ nav li a.current {
 section {
   display: block;
   width: 100%;
-  max-width: 740px;
+  width: 740px;
   padding: 40px;
   margin: 0 auto;
 }
