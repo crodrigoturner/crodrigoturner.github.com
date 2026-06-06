@@ -57,4 +57,4 @@ Follow [this link](https://mj.ucw.cz/geek/?code=GB%2fCS%2fE+d--(--)+s()%3a()+a+C
 - Built with Jekyll
 - Hosted on Github Pages
 - This website emits just [0.12g of CO<sub>2</sub>](https://www.websitecarbon.com/website/carlosrodrigo-com/) every time someone visits this page.
-- The fonts are **Schibsted Grotesk** + **Inter** 
+- The fonts are Museum + Mori from Pangram Pangram.

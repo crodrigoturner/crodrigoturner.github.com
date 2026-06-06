@@ -6,6 +6,8 @@ title: Contact
 Email → <a href="mailto:rodrigoturner.carlos@gmail.com">rodrigoturner.carlos@gmail.com</a>
 
 <form id="contact-form" class="contact-form" novalidate>
+  <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+  <input type="hidden" name="subject" value="Message from carlosrodrigo.com">
   <div class="form-field">
     <label for="cf-name">Name</label>
     <input type="text" id="cf-name" name="name" autocomplete="name" required>
@@ -24,8 +26,6 @@ Email → <a href="mailto:rodrigoturner.carlos@gmail.com">rodrigoturner.carlos@g
 
 <script>
 (function () {
-  var WORKER_URL = "https://YOUR_WORKER.YOUR_SUBDOMAIN.workers.dev";
-
   document.getElementById("contact-form").addEventListener("submit", async function (e) {
     e.preventDefault();
     var form = this;
@@ -36,17 +36,16 @@ Email → <a href="mailto:rodrigoturner.carlos@gmail.com">rodrigoturner.carlos@g
     btn.textContent = "Sending…";
     status.textContent = "";
 
+    var data = Object.fromEntries(new FormData(form));
+
     try {
-      var res = await fetch(WORKER_URL, {
+      var res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name: document.getElementById("cf-name").value,
-          email: document.getElementById("cf-email").value,
-          message: document.getElementById("cf-message").value
-        })
+        body: JSON.stringify(data)
       });
-      if (res.ok) {
+      var json = await res.json();
+      if (json.success) {
         status.textContent = "Message sent — thanks!";
         status.className = "form-status form-status--ok";
         form.reset();
