@@ -1,15 +1,15 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "PP Telegraf";
-  src: url("/fonts/PPTelegraf-Regular.woff2") format("woff2");
+  font-family: "PP Mori";
+  src: url("/fonts/PPMori-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "PP Telegraf";
-  src: url("/fonts/PPTelegraf-Bold.woff2") format("woff2");
-  font-weight: 700;
+  font-family: "PP Mori";
+  src: url("/fonts/PPMori-Extrabold.woff2") format("woff2");
+  font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
@@ -67,12 +67,13 @@ nav {
   width: 150px;
   float: right;
   position: fixed;
-  top: 10vh;
-  right: 20%;
+  top: 20px;
+  right: 0;
   margin: 20px 60px;
   font-size: 1.3em;
-  font-family: "PP Telegraf", sans-serif;
+  font-family: "PP Mori", sans-serif;
   font-weight: 400;
+  text-align:right;
 }
 nav ul {
   padding: 0 0 10px;
@@ -123,7 +124,7 @@ article {
 
 /* TYPOGRAPHY */
 h1 {
-  font: 700 .0001em/1.7 "PP Telegraf", sans-serif;
+  font: 800 .0001em/1.7 "PP Mori", sans-serif;
   margin: 20px 0px;
   float: left;
   opacity: 1;
@@ -140,37 +141,37 @@ h1 {
   position: relative;
 }
 h2 {
-  font: 700 3em/1 "PP Telegraf", sans-serif;
+  font: 800 3em/1 "PP Mori", sans-serif;
   width: 100%;
   float: left;
   color: var(--color-text);
   margin: 0 0 40px;
 }
 h3 {
-  font: 700 1.3em/1 "PP Telegraf", sans-serif;
+  font: 800 1.3em/1 "PP Mori", sans-serif;
   margin: 20px 0;
   width: 100%;
   float: left;
 }
 h4 {
-  font-family: "PP Telegraf", sans-serif;
+  font-family: "PP Mori", sans-serif;
   font-size: 2em;
-  font-weight: 700;
+  font-weight: 800;
   margin: 0px 0 40px;
   text-transform: uppercase;
   color: #607d8b1c;
   text-shadow: #444;
 }
 h5 {
-  font-family: "PP Telegraf", sans-serif;
+  font-family: "PP Mori", sans-serif;
   font-size: 0.9em;
-  font-weight: 700;
+  font-weight: 800;
   margin: 16px 0 8px;
 }
 h6 {
-  font-family: "PP Telegraf", sans-serif;
+  font-family: "PP Mori", sans-serif;
   font-size: 0.8em;
-  font-weight: 700;
+  font-weight: 800;
   color: var(--color-muted);
   margin: 16px 0 8px;
 }
