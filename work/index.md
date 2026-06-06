@@ -1,11 +1,15 @@
 ---
 layout: page
 title: Work
-id: work
-ref: work
 lang: en
 ---
-<h3>Professional Chronology</h3>
+<ul>
+<li><a href="https://www.linkedin.com/in/crodrigoturner/" target="_blank">Linkedin</a></li>
+<li><a href="https://github.com/crodrigoturner" target="_blank">Github</a></li>
+</ul>
+
+
+<h3>Professional Timeline</h3>
 <ul>
 <li><p><b>2015-Now › Técnica y Avance</b >:    Aftersales</p></li>
 <li><p><b>2014-2015 › Repsol</b >:  International lubricant sales department. Backoffice.</p></li>
