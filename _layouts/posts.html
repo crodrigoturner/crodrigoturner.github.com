@@ -3,7 +3,7 @@
 {% include header.html %}
 <section>
 
-{% assign all_items = site.posts | concat: site.essays | concat: site.photos | sort: 'date' | reverse %}
+{% assign all_items = site.posts | concat: site.photos | sort: 'date' | reverse %}
 {% for post in all_items %}
 <article class="post {{ post.tags | join: ' ' }}">
   <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>

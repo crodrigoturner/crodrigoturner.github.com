@@ -38,9 +38,6 @@ paginate_path: "/posts/:num/"
 permalink: pretty
 
 collections:
-  essays:
-    output: true
-    permalink: /essays/:name/
   photos:
     output: true
     permalink: /photos/:name/
