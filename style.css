@@ -133,7 +133,7 @@ h1 {
 .logo {
   content: '';
   float: left;
-  margin: 0px 10px 0 0;
+  margin: 20px 10px 0 0;
   background: #FFB511;
   height: 24px;
   width: 24px;
