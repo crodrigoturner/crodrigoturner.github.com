@@ -89,10 +89,11 @@
 }
 html {
   min-height: 101%;
+  font-size: var(--fluid-0);
 }
 body {
   color: var(--color-text);
-  font: 400 16px / 1.7 "PP Museum", sans-serif;
+  font: 400 1rem / 1.7 "PP Museum", sans-serif;
   background: var(--color-bg);
   overflow-x: hidden;
   -webkit-text-size-adjust: 100%;
