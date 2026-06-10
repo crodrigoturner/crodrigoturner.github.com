@@ -11,8 +11,6 @@ I was born when atmospheric CO₂ was 344.92 ppm — it's [about 425 now](https:
 
 Husband to Mar. Father to Lucas and Nico. Friend to Pancho, our Spanish Water Dog, who is smarter than all of us.
 
-{% include children-menu.html %}
-
 ### What I do
 
 I work with data. Currently at Tecnica y Avance, where I run a department of one, managing customers and suppliers across multiple countries, building tools, and turning messy inputs into decisions people can actually act on.
