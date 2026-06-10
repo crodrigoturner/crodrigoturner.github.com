@@ -112,7 +112,7 @@ nav {
   width: 150px;
   float: right;
   position: fixed;
-  top: 20px;
+  top: 0px;
   right: 0;
   margin: 20px 60px;
   font-size: 1.3em;
