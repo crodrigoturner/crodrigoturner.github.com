@@ -11,7 +11,7 @@ lang: en
 
 <h3>Professional Timeline</h3>
 <ul>
-<li><p><b>2015-Now › Técnica y Avance</b >:    Aftersales</p></li>
+<li><p><b>2015-Now › Técnica y Avance</b >:    Aftersales. Operations. Backoffice.</p></li>
 <li><p><b>2014-2015 › Repsol</b >:  International lubricant sales department. Backoffice.</p></li>
 <li><p><b>2012-2013 › Louis Vuitton</b >:   Warehouse assistant manager.</p></li>
 <li><p><b>2011-2012 › EME Arquitectos</b >:   Quantity surveyor / webdesigner.</p></li>
