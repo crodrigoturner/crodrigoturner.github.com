@@ -116,7 +116,7 @@ nav {
   right: 0;
   margin: 20px 60px;
   font-size: 1.3em;
-  font-family: "PP Mori", sans-serif;
+  font-family: "PP Museum", sans-serif;
   font-weight: 400;
   text-align:right;
 }
@@ -147,6 +147,7 @@ section {
 }
 
 .wide{width:50%;}
+
 section:last-of-type {
   padding-bottom: 100px;
 }
@@ -188,7 +189,7 @@ h1 {
 
 }
 h2 {
-  font: 800 3em/1 "PP Mori", sans-serif;
+  font: 800 3em/1.6 "PP Mori", sans-serif;
   width: 100%;
   float: left;
   color: var(--color-text);
