@@ -23,7 +23,7 @@ Over ten years, I've worked across architecture, energy, luxury brands, and star
 <li>Data and AI.</li>
 <li>Design and the web.</li>
 <li>Science and space.</li>
-<li>Books — fiction especially.</li>
+<li>Books.</li>
 <li>Long bike rides.</li>
 <li>Films.</li>
 <li>The slow craft of raising two small humans without losing your sense of humour.</li>
@@ -43,8 +43,10 @@ Over ten years, I've worked across architecture, energy, luxury brands, and star
 
 
 ### About this site 
-
+<ul class="bulleted">
 - Built with Jekyll
 - Hosted on Github Pages
 - This website emits just [0.12g of CO<sub>2</sub>](https://www.websitecarbon.com/website/carlosrodrigo-com/) every time someone visits this page.
 - The fonts are Museum + Mori from Pangram Pangram.
+- The contact form is made with Web3forms.
+</ul>
