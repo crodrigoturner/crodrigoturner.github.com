@@ -7,7 +7,14 @@
 {% for post in all_items %}
 <article class="post {{ post.tags | join: ' ' }}">
   <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-  {{post.content}}
+  {% capture post_content %}{{ post.content }}{% endcapture %}
+  {% capture post_excerpt %}{{ post.excerpt }}{% endcapture %}
+  {% if post.type == "long" and post_content.size > post_excerpt.size %}
+    {{ post_excerpt }}
+    <p><a href="{{ post.url }}" class="cta">Read more</a></p>
+  {% else %}
+    {{ post_content }}
+  {% endif %}
   <span class="meta">{{ post.tags | join: ' · ' }}{% if post.tags != empty %} · {% endif %}{{ post.date | date: '%Y%m%d' }} · <a href="mailto:rodrigoturner.carlos@gmail.com?subject={{ post.title }}">Reply by email</a></span>
   <hr/>
 </article>
