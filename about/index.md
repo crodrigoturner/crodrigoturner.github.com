@@ -44,9 +44,9 @@ Over ten years, I've worked across architecture, energy, luxury brands, and star
 
 ### About this site 
 <ul class="bulleted">
-- Built with Jekyll
-- Hosted on Github Pages
-- This website emits just [0.12g of CO<sub>2</sub>](https://www.websitecarbon.com/website/carlosrodrigo-com/) every time someone visits this page.
-- The fonts are Museum + Mori from Pangram Pangram.
-- The contact form is made with Web3forms.
+<li>Built with Jekyll</li>
+<li>Hosted on Github Pages</li>
+<li>This website emits just [0.12g of CO<sub>2</sub>](https://www.websitecarbon.com/website/carlosrodrigo-com/) every time someone visits this page.</li>
+<li>The fonts are Museum + Mori from Pangram Pangram.</li>
+<li>The contact form is made with Web3forms.</li>
 </ul>
