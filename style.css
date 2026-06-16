@@ -140,11 +140,12 @@ h1 {
 .logo {
 content: '';
     float: right;
-    margin: 20px 0 6px 20px;
+    margin: 20px 0 8px 20px;
     background: #FFB511;
     height: 24px;
     width: 24px;
     border-radius: 50%;
+    box-shadow: 0 0 0 3px #c9a35c38;
 }
 h2 {
   font: 800 3em/1.6 "PP Mori", sans-serif;
