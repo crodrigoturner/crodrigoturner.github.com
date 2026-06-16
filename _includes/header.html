@@ -1,13 +1,13 @@
 <header class="site-header">
 
-<a href="/"><span class="logo"></span><h1>Carlos Rodrigo</h1></a>
+<a href="/"><h1>Carlos Rodrigo</h1></a>
 <button class="hamburger" aria-label="Open menu" onclick="var h=this.closest('.site-header');h.classList.toggle('open');this.setAttribute('aria-label',h.classList.contains('open')?'Close menu':'Open menu')">
 <span></span><span></span><span></span>
 </button>
 <nav class="site-nav">
 <ul>
 
-<li><a href="/"{% if page.url=='/' %} class="current"{% endif %}>Home</a></li>
+<li><a href="/"{% if page.url=='/' %} class="current"{% endif %}><span class="logo"></span></a></li>
 
 <li><a href="/about/"{% if page.url contains '/about/' %} class="current"{% endif %}>About</a></li>
 <li><a href="/blog"{% if page.url contains '/blog/' %}  class="current"{% endif %}>Blog</a></li>

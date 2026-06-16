@@ -1,6 +1,13 @@
 @charset "UTF-8";
 @font-face {
   font-family: "PP Mori";
+  src: url("/fonts/PPMori-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PP Mori";
   src: url("/fonts/PPMori-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
@@ -8,22 +15,15 @@
 }
 @font-face {
   font-family: "PP Mori";
+  src: url("/fonts/PPMori-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PP Mori";
   src: url("/fonts/PPMori-Extrabold.woff2") format("woff2");
   font-weight: 800;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "PP Museum";
-  src: url("/fonts/PPMuseum-Light.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "PP Museum";
-  src: url("/fonts/PPMuseum-Bold.woff2") format("woff2");
-  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
@@ -36,48 +36,6 @@
   --color-bg: #fdfcfc;
 }
 
-
-:root {
-  --fluid-min-width: 320;
-  --fluid-max-width: 1500;
-  --fluid-min-size: 17;
-  --fluid-max-size: 20;
-  --fluid-min-ratio: 1.2;
-  --fluid-max-ratio: 1.33;
-}
-
-:root {
-  --fluid-screen: 100vw;
-  --fluid-bp: calc((var(--fluid-screen) - ((var(--fluid-min-width) / 16) * 1rem)) / ((var(--fluid-max-width) / 16) - (var(--fluid-min-width) / 16)));
-}
-
-@media screen and (min-width: 1500px) {
-  :root {
-    --fluid-screen: calc(var(--fluid-max-width) * 1px);
-  }
-}
-
-:root {
-  --fluid-min-scale-0: var(--fluid-min-ratio);
-  --fluid-min-scale-1: var(--fluid-min-scale-0) * var(--fluid-min-ratio);
-  --fluid-min-scale-2: var(--fluid-min-scale-1) * var(--fluid-min-ratio);
-
-  --fluid-max-scale-0: var(--fluid-max-ratio);
-  --fluid-max-scale-1: var(--fluid-max-scale-0) * var(--fluid-max-ratio);
-  --fluid-max-scale-2: var(--fluid-max-scale-1) * var(--fluid-max-ratio);
-
-  --fluid-min-size-0: (var(--fluid-min-size)) / 16;
-  --fluid-min-size-1: (var(--fluid-min-size) * var(--fluid-min-scale-0)) / 16;
-  --fluid-min-size-2: (var(--fluid-min-size) * var(--fluid-min-scale-1)) / 16;
-
-  --fluid-max-size-0: (var(--fluid-max-size)) / 16;
-  --fluid-max-size-1: (var(--fluid-max-size) * var(--fluid-max-scale-0)) / 16;
-  --fluid-max-size-2: (var(--fluid-max-size) * var(--fluid-max-scale-1)) / 16;
-
-  --fluid-0: calc(((var(--fluid-min-size-0) * 1rem) + (var(--fluid-max-size-0) - var(--fluid-min-size-0)) * var(--fluid-bp)));
-  --fluid-1: calc(((var(--fluid-min-size-1) * 1rem) + (var(--fluid-max-size-1) - var(--fluid-min-size-1)) * var(--fluid-bp)));
-  --fluid-2: calc(((var(--fluid-min-size-2) * 1rem) + (var(--fluid-max-size-2) - var(--fluid-min-size-2)) * var(--fluid-bp)));
-}
 
 *,
 *::before,
@@ -93,7 +51,7 @@ html {
 }
 body {
   color: var(--color-text);
-  font: 400 1rem / 1.7 "PP Museum", sans-serif;
+  font: 400 1rem / 1.7 "PP Mori", sans-serif;
   background: var(--color-bg);
   overflow-x: hidden;
   -webkit-text-size-adjust: 100%;
@@ -116,7 +74,7 @@ nav {
   right: 0;
   margin: 20px 60px;
   font-size: 1.3em;
-  font-family: "PP Museum", sans-serif;
+  font-family: "PP Mori", sans-serif;
   font-weight: 400;
   text-align:right;
 }
@@ -241,7 +199,7 @@ a:hover {
 a[target="_blank"]::after {
   content: '→';
   margin-left: 2px;
-  font-family: "PP Museum";
+  font-family: "PP Mori";
 }
 h1 a,
 h1 a:visited {
@@ -347,7 +305,7 @@ ul.bulleted li::before {
   clear: right;
   color: var(--color-text);
   font-size: .8em;
-  font-family: "PP Museum", sans-serif;
+  font-family: "PP Mori", sans-serif;
 }
 /* IMAGES */
 img {
@@ -391,7 +349,7 @@ figcaption {
   height: 250px;
   margin: 40px 0;
   float: left;
-  font-family: "PP Museum", sans-serif;
+  font-family: "PP Mori", sans-serif;
 }
 .tag-item {
   position: absolute;
@@ -470,7 +428,7 @@ figcaption {
 }
 .breadcrumbs {
   font-size: 0.8em;
-  font-family: "PP Museum", sans-serif;
+  font-family: "PP Mori", sans-serif;
   color: var(--color-muted);
   margin-bottom: 40px;
   width: 100%;
@@ -515,7 +473,7 @@ figcaption {
 .meta,
 small {
   font-size: 0.8em !important;
-  font-family: "PP Museum", sans-serif;
+  font-family: "PP Mori", sans-serif;
   color: var(--color-text);
   margin: 20px 0 0;
   float: left;
@@ -547,7 +505,7 @@ footer blockquote {
 }
 code {
   background-color: #f4f4f2;
-  font-family: "PP Museum", sans-serif;
+  font-family: "PP Mori", sans-serif;
   font-size: 0.85em;
   padding: 2px 6px;
   border-radius: 4px;
@@ -577,7 +535,7 @@ pre code {
   visibility: hidden;
 }
 .arrow {
-  font: 400 16px/1.6 "PP Museum", sans-serif !important;
+  font: 400 16px/1.6 "PP Mori", sans-serif !important;
 }
 .cta {
   display: inline-flex;
@@ -889,7 +847,7 @@ iframe {
 
 .form-field input,
 .form-field textarea {
-  font: 400 1em/1.6 "PP Museum", sans-serif;
+  font: 400 1em/1.6 "PP Mori", sans-serif;
   color: var(--color-text);
   background: transparent;
   border: none;
@@ -907,7 +865,7 @@ iframe {
 }
 
 .form-submit {
-  font: 400 1em/1 "PP Museum", sans-serif;
+  font: 400 1em/1 "PP Mori", sans-serif;
   color: var(--color-bg);
   background: var(--color-text);
   border: none;
