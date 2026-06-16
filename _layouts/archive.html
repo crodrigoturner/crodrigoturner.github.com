@@ -2,32 +2,25 @@
 {% include header.html %}
 
 <section>
-<article class="fullwidth">
-<h2>{{page.title}}</h2> 
-{{content}}
 
-<h2>Topics</h2>
-    <ul id="columnlist">
-        {% assign tags = site.tags | sort %}
-        {% for tag in tags %}
-        <li>
-            <a href="/tags/{{ tag | first | slugify }}/">
-                {{ tag[0] | replace:'-', ' ' }} <span>{{ tag | last | size }}</span>
-            </a>
-        </li>
-        {% endfor %}
-    </ul>
-</article>
 
-<h2>Notes</h2>
-<ul id="columnlist">
-{% for post in site.posts %}
-{% if post.category == "post" %}
-<li><a href="{{ post.url }}">{{ post.title }}</a></li>
-{% endif %}
-{% endfor %}
+
+{% assign sorted_tags = site.tags | sort %}
+{% for tag in sorted_tags %}
+<article>
+<h3 id="tag-{{ tag[0] | slugify }}">{{ tag[0] | replace: '-', ' ' }}</h3>
+<ul class="posts">
+  {% assign tag_posts = tag[1] | sort: 'date' | reverse %}
+  {% for post in tag_posts %}
+  <li>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+    <span class="post-date">{{ post.date | date: '%Y-%m-%d' }}</span>
+  </li>
+  {% endfor %}
 </ul>
+{% endfor %}
+
+</article>
 </section>
 
 {% include footer.html %}
-

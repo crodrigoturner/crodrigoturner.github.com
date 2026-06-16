@@ -97,11 +97,11 @@ nav li a.current {
 }
 /* MAIN CONTENT */
 section {
-  display: block;
+float:left;
 
   width: 740px;
   padding: 40px;
-  margin: 0 40px 40px 200px;
+  margin: 40px;
 }
 
 .wide{width:80%;}
@@ -112,6 +112,7 @@ section:last-of-type, article:last-of-type {
 article {
   width: 100%;
   padding: 0;
+  float:left;
 }
 
 
