@@ -9,9 +9,9 @@ title: Projects
 
 <h3>Life in months</h3>
 
-[life](/life.md)
+[life](/projects/life/)
 
 <h3>In numbers</h3>
-[numbers](/numbers.md)
+[numbers](/projects/numbers/)
 
 <h3>C-OS</h3>
