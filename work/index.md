@@ -65,11 +65,9 @@ lang: en
 <li>English · Spanish · French</li>
 <li>Windows / MAC OS</li>
 <li>Office</li>
-<li>Filemaker</li>
 <li>HTML</li>
 <li>CSS</li>
 <li>JS</li>
-<li>Wordpress</li>
 </ul>
 
 <hr/>
@@ -77,7 +75,7 @@ lang: en
 <p>
 Clear communication and transparency are key to how I work. Here’s what you can expect:
 <ol>
-<li>Email is my preferred channel—messages in chat or Slack often get lost. I consolidate all requests through my email accounts.</li>
+<li>Email is my preferred channel. I consolidate all requests through my email accounts.</li>
 <li>My working hours are Monday to Friday, 09:30–17:30 (and I’m flexible when needed).</li>
 <li>If you need something from me, please specify exactly what you need and when you need it.</li>
 <li>I’m available for meetings between 10:00 and 16:00.</li>
