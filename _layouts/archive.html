@@ -8,7 +8,7 @@
 {% assign sorted_tags = site.tags | sort %}
 {% for tag in sorted_tags %}
 <article>
-<h3 id="tag-{{ tag[0] | slugify }}">{{ tag[0] | replace: '-', ' ' }}</h3>
+<h4 id="tag-{{ tag[0] | slugify }}">{{ tag[0] | replace: '-', ' ' }}</h4>
 <ul class="posts">
   {% assign tag_posts = tag[1] | sort: 'date' | reverse %}
   {% for post in tag_posts %}
