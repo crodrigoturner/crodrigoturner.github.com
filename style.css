@@ -149,7 +149,7 @@ h2 {
 }
 h3 {
   font: 7001.3em/1.6 "PP Charlevoix", sans-serif;
-  margin: 0px 0 20px;
+  margin: 20px 0;
   width: 100%;
   float: left;
 }
@@ -157,7 +157,7 @@ h4 {
   font-family: "PP Charlevoix", sans-serif;
   font-size: 2em;
   font-weight: 700;
-  margin: 0px 0 40px;
+  margin: 0px 0 20px;
   text-transform: uppercase;
   color: #607d8b1c;
   text-shadow: #444;
