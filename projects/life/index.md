@@ -445,7 +445,7 @@ Inspired by <a href="https://waitbutwhy.com/2014/05/life-weeks.html">Tim Urban</
 <div class="sq alive" title="09/2021"></div>
 <div class="sq alive" title="10/2021"></div>
 <div class="sq alive" title="11/2021"></div>
-<div class="sq alive tooltip" title="12/2021 - Lucas is born"></div>
+<div class="sq alive tooltip" title="12/2021 ">31/12/2021 - Lucas is born</div>
 <div class="sq alive" title="01/2022"></div>
 <div class="sq alive" title="02/2022"></div>
 <div class="sq alive" title="03/2022"></div>
@@ -470,7 +470,7 @@ Inspired by <a href="https://waitbutwhy.com/2014/05/life-weeks.html">Tim Urban</
 <div class="sq alive" title="10/2023"></div>
 <div class="sq alive" title="11/2023"></div>
 <div class="sq alive" title="12/2023"></div>
-<div class="sq alive tooltip" title="01/2024 - Nico is born"></div>
+<div class="sq alive tooltip" title="01/2024">26/01/2024 - Nico is born</div>
 <div class="sq alive" title="02/2024"></div>
 <div class="sq alive" title="03/2024"></div>
 <div class="sq alive" title="04/2024"></div>
