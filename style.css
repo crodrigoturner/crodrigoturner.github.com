@@ -125,7 +125,7 @@ article {
 
 /* TYPOGRAPHY */
 h1 {
-  font: 700.0001em/1.7 "PP Charlevoix", sans-serif;
+  font: 700 .0001em/1.7 "PP Charlevoix", sans-serif;
   margin: 20px 0px;
   float: left;
   opacity: 1;
@@ -141,14 +141,14 @@ content: '';
     box-shadow: 0 0 0 4px #ffc10742;
 }
 h2 {
-  font: 7003em/1.6 "PP Charlevoix", sans-serif;
+  font: 700 3em/1.6 "PP Charlevoix", sans-serif;
   width: 100%;
   float: left;
   color: var(--color-text);
   margin: 0 0 40px;
 }
 h3 {
-  font: 7001.3em/1.6 "PP Charlevoix", sans-serif;
+  font: 700 1.3em/1.6 "PP Charlevoix", sans-serif;
   margin: 20px 0;
   width: 100%;
   float: left;
@@ -160,7 +160,7 @@ h4 {
   margin: 0px 0 20px;
   text-transform: uppercase;
   color: #607d8b1c;
-  text-shadow: #444;
+  text-shadow: #444
 }
 h5 {
   font-family: "PP Charlevoix", sans-serif;
