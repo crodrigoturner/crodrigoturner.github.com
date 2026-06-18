@@ -1,29 +1,22 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "PP Mori";
-  src: url("/fonts/PPMori-Thin.woff2") format("woff2");
+  font-family: "PP Charlevoix";
+  src: url("/fonts/PPCharlevoix-Thin.woff2") format("woff2");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "PP Mori";
-  src: url("/fonts/PPMori-Regular.woff2") format("woff2");
+  font-family: "PP Charlevoix";
+  src: url("/fonts/PPCharlevoix-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "PP Mori";
-  src: url("/fonts/PPMori-Semibold.woff2") format("woff2");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "PP Mori";
-  src: url("/fonts/PPMori-Extrabold.woff2") format("woff2");
-  font-weight: 800;
+  font-family: "PP Charlevoix";
+  src: url("/fonts/PPCharlevoix-Bold.woff2") format("woff2");
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
@@ -51,7 +44,7 @@ html {
 }
 body {
   color: var(--color-text);
-  font: 400 1rem / 1.7 "PP Mori", sans-serif;
+  font: 400 1rem / 1.7 "PP Charlevoix", sans-serif;
   background: var(--color-bg);
   overflow-x: hidden;
   -webkit-text-size-adjust: 100%;
@@ -74,7 +67,7 @@ nav {
   right: 0;
   margin: 20px 40px;
   font-size: 1.3em;
-  font-family: "PP Mori", sans-serif;
+  font-family: "PP Charlevoix", sans-serif;
   font-weight: 400;
   text-align:right;
 }
@@ -132,7 +125,7 @@ article {
 
 /* TYPOGRAPHY */
 h1 {
-  font: 800 .0001em/1.7 "PP Mori", sans-serif;
+  font: 700.0001em/1.7 "PP Charlevoix", sans-serif;
   margin: 20px 0px;
   float: left;
   opacity: 1;
@@ -148,37 +141,37 @@ content: '';
     box-shadow: 0 0 0 4px #ffc10742;
 }
 h2 {
-  font: 800 3em/1.6 "PP Mori", sans-serif;
+  font: 7003em/1.6 "PP Charlevoix", sans-serif;
   width: 100%;
   float: left;
   color: var(--color-text);
   margin: 0 0 40px;
 }
 h3 {
-  font: 800 1.3em/1.6 "PP Mori", sans-serif;
+  font: 7001.3em/1.6 "PP Charlevoix", sans-serif;
   margin: 0px 0 20px;
   width: 100%;
   float: left;
 }
 h4 {
-  font-family: "PP Mori", sans-serif;
+  font-family: "PP Charlevoix", sans-serif;
   font-size: 2em;
-  font-weight: 800;
+  font-weight: 700;
   margin: 0px 0 40px;
   text-transform: uppercase;
   color: #607d8b1c;
   text-shadow: #444;
 }
 h5 {
-  font-family: "PP Mori", sans-serif;
+  font-family: "PP Charlevoix", sans-serif;
   font-size: 0.9em;
-  font-weight: 800;
+  font-weight: 700;
   margin: 16px 0 8px;
 }
 h6 {
-  font-family: "PP Mori", sans-serif;
+  font-family: "PP Charlevoix", sans-serif;
   font-size: 0.8em;
-  font-weight: 800;
+  font-weight: 700;
   color: var(--color-muted);
   margin: 16px 0 8px;
 }
@@ -200,7 +193,7 @@ a:hover {
 a[target="_blank"]::after {
   content: '→';
   margin-left: 2px;
-  font-family: "PP Mori";
+  font-family: "PP Charlevoix";
 }
 h1 a,
 h1 a:visited {
@@ -306,7 +299,7 @@ ul.bulleted li::before {
   clear: right;
   color: var(--color-text);
   font-size: .8em;
-  font-family: "PP Mori", sans-serif;
+  font-family: "PP Charlevoix", sans-serif;
 }
 /* IMAGES */
 img {
@@ -350,7 +343,7 @@ figcaption {
   height: 250px;
   margin: 40px 0;
   float: left;
-  font-family: "PP Mori", sans-serif;
+  font-family: "PP Charlevoix", sans-serif;
 }
 .tag-item {
   position: absolute;
@@ -429,7 +422,7 @@ figcaption {
 }
 .breadcrumbs {
   font-size: 0.8em;
-  font-family: "PP Mori", sans-serif;
+  font-family: "PP Charlevoix", sans-serif;
   color: var(--color-muted);
   margin-bottom: 40px;
   width: 100%;
@@ -474,7 +467,7 @@ figcaption {
 .meta,
 small {
   font-size: 0.8em !important;
-  font-family: "PP Mori", sans-serif;
+  font-family: "PP Charlevoix", sans-serif;
   color: var(--color-text);
   margin: 20px 0 0;
   float: left;
@@ -506,7 +499,7 @@ footer blockquote {
 }
 code {
   background-color: #f4f4f2;
-  font-family: "PP Mori", sans-serif;
+  font-family: "PP Charlevoix", sans-serif;
   font-size: 0.85em;
   padding: 2px 6px;
   border-radius: 4px;
@@ -536,7 +529,7 @@ pre code {
   visibility: hidden;
 }
 .arrow {
-  font: 400 16px/1.6 "PP Mori", sans-serif !important;
+  font: 400 16px/1.6 "PP Charlevoix", sans-serif !important;
 }
 .cta {
   display: inline-flex;
@@ -848,7 +841,7 @@ iframe {
 
 .form-field input,
 .form-field textarea {
-  font: 400 1em/1.6 "PP Mori", sans-serif;
+  font: 400 1em/1.6 "PP Charlevoix", sans-serif;
   color: var(--color-text);
   background: transparent;
   border: none;
@@ -866,7 +859,7 @@ iframe {
 }
 
 .form-submit {
-  font: 400 1em/1 "PP Mori", sans-serif;
+  font: 400 1em/1 "PP Charlevoix", sans-serif;
   color: var(--color-bg);
   background: var(--color-text);
   border: none;
