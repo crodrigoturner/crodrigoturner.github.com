@@ -3,7 +3,7 @@ layout: post
 title: My name in Landsat
 category: post
 lang: en
-tags: links
+tags: misc.
 ---
 
 ![landstat name](/images/name_landsat.jpeg)

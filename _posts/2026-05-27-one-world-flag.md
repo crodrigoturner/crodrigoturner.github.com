@@ -2,7 +2,7 @@
 layout: post
 title: One world flag
 lang: en
-tags: links
+tags: misc.
 ---
 
 In a similar idea or honouring [Sagan's Pale blue dot](https://www.planetary.org/worlds/pale-blue-dot), this flag aims to remind us that we are all together in this spaceship called Earth.
