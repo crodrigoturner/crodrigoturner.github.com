@@ -1,0 +1,13 @@
+---
+layout: post
+title: Colophon
+lang: en
+tags: misc.
+type: long
+excerpt: About this site.
+---
+
+I never thought about it, but there are more than 8 million species share our planet and we (humans) only understand the language of one.
+It seems to me that with AI tools and pattern recognition this should be solved and it would enable us to talk to other animals. Of course the frame of reference would still be unbreachable (an ant doesn't understand taxes, nor do I understand the day to day of an ant…), but at least we would have some common ground.
+
+[Check out the Earth Species Project →](https://earthspecies.org/)
