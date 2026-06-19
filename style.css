@@ -67,6 +67,8 @@ header {
 }
 nav {
   display: flex;
+   max-width: 740px;
+  margin: 0 auto;
   align-items: center;
   font-size: 1em;
   font-family: "PP Charlevoix", sans-serif;
@@ -95,11 +97,11 @@ nav li a.current {
 section {
   max-width: 740px;
   margin: 0 auto;
-  padding: 40px;
+  padding: 40px 0;
   margin-top: 100px;
 }
 
-.wide{width:80%;padding:40px;}
+.wide{width:80%; max-width:1240px;padding:40px 0;}
 
 section:last-of-type, article:last-of-type {
   padding-bottom: 100px;
@@ -136,7 +138,7 @@ h1 {
 .logo {
 content: '';
     float: right;
-    margin: 20px 0 10px 20px;
+    margin: 10px 0 0 0;
     background: #FFB511;
     height: 20px;
     width: 20px;
