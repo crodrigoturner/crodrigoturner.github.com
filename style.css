@@ -102,10 +102,10 @@ section {
   max-width: 740px;
   margin: 100px auto;
   padding: 40px 0;
-  margin-top: 100px;
+
 }
 
-.wide{width:80%; max-width:1240px;padding:40px 0;}
+.wide{width:80%; max-width:1240px;padding:40px 0; margin: 100px auto;}
 
 section:last-of-type, article:last-of-type {
   padding-bottom: 100px;
@@ -279,10 +279,7 @@ ul.bulleted li::before {
   text-decoration: none;
 }
 /* POSTS LIST */
-.posts {
-  margin: 0 0 20px;
-  float: left;
-}
+
 .posts li {
   float: left;
   justify-content: space-between;
