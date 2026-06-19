@@ -1,22 +1,36 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "PP Charlevoix";
-  src: url("/fonts/PPCharlevoix-Thin.woff2") format("woff2");
+  font-family: "PP Neue Montreal";
+  src: url("/fonts/PPNeueMontreal-Thin.woff2") format("woff2");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "PP Charlevoix";
-  src: url("/fonts/PPCharlevoix-Regular.woff2") format("woff2");
+  font-family: "PP Neue Montreal";
+  src: url("/fonts/PPNeueMontreal-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PP Neue Montreal";
+  src: url("/fonts/PPNeueMontreal-Book.woff2") format("woff2");
+  font-weight: 350;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PP Neue Montreal";
+  src: url("/fonts/PPNeueMontreal-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "PP Charlevoix";
-  src: url("/fonts/PPCharlevoix-Bold.woff2") format("woff2");
-  font-weight: 700;
+  font-family: "PP Neue Montreal";
+  src: url("/fonts/PPNeueMontreal-Medium.woff2") format("woff2");
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
@@ -44,7 +58,7 @@ html {
 }
 body {
   color: var(--color-text);
-  font: 400 1rem / 1.7 "PP Charlevoix", sans-serif;
+  font: 400 1rem / 1.7 "PP Neue Montreal", sans-serif;
   background: var(--color-bg);
   overflow-x: hidden;
   -webkit-text-size-adjust: 100%;
@@ -73,7 +87,7 @@ nav {
   margin: 0 auto;
   align-items: center;
   font-size: 1em;
-  font-family: "PP Charlevoix", sans-serif;
+  font-family: "PP Neue Montreal", sans-serif;
   font-weight: 400;
 }
 nav ul {
@@ -134,7 +148,7 @@ article {
 
 /* TYPOGRAPHY */
 h1 {
-  font: 700 .0001em/1.7 "PP Charlevoix", sans-serif;
+  font: 500 .0001em/1.7 "PP Neue Montreal", sans-serif;
   margin: 20px 0px;
   float: left;
   opacity: 1;
@@ -150,37 +164,37 @@ content: '';
     box-shadow: 0 0 0 4px #ffc10742;
 }
 h2 {
-  font: 700 3em/1.6 "PP Charlevoix", sans-serif;
+  font: 500 3em/1.6 "PP Neue Montreal", sans-serif;
   width: 100%;
   float: left;
   color: var(--color-text);
   margin: 0 0 40px;
 }
 h3 {
-  font: 700 1.3em/1.6 "PP Charlevoix", sans-serif;
+  font: 500 1.3em/1.6 "PP Neue Montreal", sans-serif;
   margin: 20px 0;
   width: 100%;
   float: left;
 }
 h4 {
-  font-family: "PP Charlevoix", sans-serif;
+  font-family: "PP Neue Montreal", sans-serif;
   font-size: 2em;
-  font-weight: 700;
+  font-weight: 500;
   margin: 0px 0 20px;
   text-transform: uppercase;
   color: #607d8b1c;
   text-shadow: #444
 }
 h5 {
-  font-family: "PP Charlevoix", sans-serif;
+  font-family: "PP Neue Montreal", sans-serif;
   font-size: 0.9em;
-  font-weight: 700;
+  font-weight: 500;
   margin: 16px 0 8px;
 }
 h6 {
-  font-family: "PP Charlevoix", sans-serif;
+  font-family: "PP Neue Montreal", sans-serif;
   font-size: 0.8em;
-  font-weight: 700;
+  font-weight: 500;
   color: var(--color-muted);
   margin: 16px 0 8px;
 }
@@ -202,7 +216,7 @@ a:hover {
 a[target="_blank"]::after {
   content: '→';
   margin-left: 2px;
-  font-family: "PP Charlevoix";
+  font-family: "PP Neue Montreal";
 }
 h1 a,
 h1 a:visited {
@@ -212,7 +226,7 @@ h1 a:visited {
 }
 b,
 strong {
-  font-weight: 700;
+  font-weight: 500;
 }
 em {
   background-color: #ffff6687;
@@ -305,7 +319,7 @@ ul.bulleted li::before {
   clear: right;
   color: var(--color-text);
   font-size: .8em;
-  font-family: "PP Charlevoix", sans-serif;
+  font-family: "PP Neue Montreal", sans-serif;
 }
 /* IMAGES */
 img {
@@ -349,7 +363,7 @@ figcaption {
   height: 250px;
   margin: 40px 0;
   float: left;
-  font-family: "PP Charlevoix", sans-serif;
+  font-family: "PP Neue Montreal", sans-serif;
 }
 .tag-item {
   position: absolute;
@@ -358,7 +372,7 @@ figcaption {
   justify-content: center;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.92);
-  font-weight: 700;
+  font-weight: 500;
   font-size: 0.9em;
   transition: opacity 0.2s ease;
 }
@@ -428,7 +442,7 @@ figcaption {
 }
 .breadcrumbs {
   font-size: 0.8em;
-  font-family: "PP Charlevoix", sans-serif;
+  font-family: "PP Neue Montreal", sans-serif;
   color: var(--color-muted);
   margin-bottom: 40px;
   width: 100%;
@@ -473,7 +487,7 @@ figcaption {
 .meta,
 small {
   font-size: 0.8em !important;
-  font-family: "PP Charlevoix", sans-serif;
+  font-family: "PP Neue Montreal", sans-serif;
   color: var(--color-text);
   margin: 20px 0 0;
   float: left;
@@ -505,7 +519,7 @@ footer blockquote {
 }
 code {
   background-color: #f4f4f2;
-  font-family: "PP Charlevoix", sans-serif;
+  font-family: "PP Neue Montreal", sans-serif;
   font-size: 0.85em;
   padding: 2px 6px;
   border-radius: 4px;
@@ -535,7 +549,7 @@ pre code {
   visibility: hidden;
 }
 .arrow {
-  font: 400 16px/1.6 "PP Charlevoix", sans-serif !important;
+  font: 400 16px/1.6 "PP Neue Montreal", sans-serif !important;
 }
 .cta {
   display: inline-flex;
@@ -645,7 +659,7 @@ footer #quote {
   color: #607d8b2e;
   width: 100%;
   text-align: center;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 3em;
 }
 .back-to-top {
@@ -822,7 +836,7 @@ iframe {
 
 .form-field input,
 .form-field textarea {
-  font: 400 1em/1.6 "PP Charlevoix", sans-serif;
+  font: 400 1em/1.6 "PP Neue Montreal", sans-serif;
   color: var(--color-text);
   background: transparent;
   border: none;
@@ -840,7 +854,7 @@ iframe {
 }
 
 .form-submit {
-  font: 400 1em/1 "PP Charlevoix", sans-serif;
+  font: 400 1em/1 "PP Neue Montreal", sans-serif;
   color: var(--color-bg);
   background: var(--color-text);
   border: none;
