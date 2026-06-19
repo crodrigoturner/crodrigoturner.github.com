@@ -50,34 +50,37 @@ body {
   -webkit-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
 }
-/* HEADER / SIDEBAR */
+/* HEADER */
 header {
-  float: left;
   position: fixed;
   top: 0;
   left: 0;
-  margin: 0px;
-  padding: 0px;
+  right: 0;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  background: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
+  z-index: 100;
 }
 nav {
-  width: 150px;
-  float: right;
-  position: fixed;
-  top: 0px;
-  right: 0;
-  margin: 20px 40px;
-  font-size: 1.3em;
+  display: flex;
+  align-items: center;
+  font-size: 1em;
   font-family: "PP Charlevoix", sans-serif;
   font-weight: 400;
-  text-align:right;
 }
 nav ul {
-  padding: 0 0 10px;
-  margin: 0 0 20px;
+  display: flex;
+  gap: 24px;
+  padding: 0;
+  margin: 0;
 }
 nav ul li {
-  float: left;
-  width: 100%;
+  float: none;
+  width: auto;
 }
 nav li a {
   color: var(--color-muted);
@@ -90,10 +93,10 @@ nav li a.current {
 }
 /* MAIN CONTENT */
 section {
-float:left;
-
-  width: 740px;
-  margin: 40px;
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 40px;
+  margin-top: 100px;
 }
 
 .wide{width:80%;padding:40px;}
@@ -747,59 +750,34 @@ iframe {
   }
 }
 @media only screen and (max-width: 640px) {
-  .site-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: auto;
-    width: auto;
-    float: none;
-    margin: 0;
+  header {
+    height: 64px;
     padding: 0 16px;
-    height: 56px;
-    display: flex;
-    align-items: center;
-    z-index: 100;
-    background: var(--color-bg);
-    border-bottom: 1px solid var(--color-border);
-  }
-  .site-header.open {
-    bottom: 0;
-    height: auto;
-    align-items: flex-start;
-    flex-direction: column;
-    overflow-y: auto;
-    border-bottom: none;
-    padding: 14px 16px 40px;
-  }
-  .site-header>a {
-    line-height: 56px;
-  }
-  .site-header.open>a {
-    line-height: 1.7;
   }
   .hamburger {
     display: flex;
-    position: absolute;
-    top: 6px;
-    right: 8px;
+    position: static;
   }
   .site-nav {
     display: none;
-    position: static;
-    float: none;
-    width: 100%;
-    margin: 0;
-    padding-top: 12px;
-    text-align: left;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
+    padding: 16px 24px 24px;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 12px;
   }
   .site-header.open .site-nav {
     display: block;
   }
   section {
-    padding: 72px 16px 60px;
-    margin: 0;
+    padding: 24px 16px 60px;
+    margin-top: 64px;
     max-width: 100%;
   }
   .tags {
