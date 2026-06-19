@@ -116,7 +116,7 @@ nav li a {
 }
 nav li a:hover,
 nav li a.current {
-  color: var(--color-text);
+  color: #ffb30087;
   opacity: 1;
 }
 /* MAIN CONTENT */
@@ -174,14 +174,14 @@ content: '';
     box-shadow: 0 0 0 4px #ffc10742;
 }
 h2 {
-  font: 500 3em/1.6 "PP Neue Montreal", sans-serif;
+  font: 600 3em/1.6 "PP Neue Montreal", sans-serif;
   width: 100%;
   float: left;
   color: var(--color-text);
   margin: 0 0 40px;
 }
 h3 {
-  font: 500 1.3em/1.6 "PP Neue Montreal", sans-serif;
+  font: 600 1.3em/1.6 "PP Neue Montreal", sans-serif;
   margin: 20px 0;
   width: 100%;
   float: left;
