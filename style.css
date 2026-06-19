@@ -100,7 +100,7 @@ nav li a.current {
 /* MAIN CONTENT */
 section {
   max-width: 740px;
-  margin: 0 auto;
+  margin: 100px auto;
   padding: 40px 0;
   margin-top: 100px;
 }
