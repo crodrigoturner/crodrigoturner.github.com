@@ -94,9 +94,8 @@ nav {
     align-items: center;
     font-size: 1em;
     font-family: "PP Neue Montreal", sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+    font-weight: 400;
+  
     color: var(--color-text);
 }
 nav ul {
@@ -161,6 +160,8 @@ h1 {
   margin: 20px 0px;
   float: left;
   opacity: 1;
+  position:fixed; 
+  left:40px;
 }
 .logo {
 content: '';
