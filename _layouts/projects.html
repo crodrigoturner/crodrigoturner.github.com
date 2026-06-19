@@ -1,0 +1,21 @@
+{% include head.html %}
+{% include header.html %}
+
+<section>
+<h2>{{ page.title }}</h2>
+
+{% assign project_pages = site.pages | sort: 'title' %}
+<ul class="posts">
+{% for p in project_pages %}
+  {% if p.url contains '/projects/' and p.url != page.url and p.title %}
+  <li>
+    <a href="{{ p.url }}">{{ p.title }}</a>
+    {% if p.description %}<span class="post-date">{{ p.description }}</span>{% endif %}
+  </li>
+  {% endif %}
+{% endfor %}
+</ul>
+
+</section>
+
+{% include footer.html %}

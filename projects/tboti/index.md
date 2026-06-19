@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: The best of the internet [TBOTI]
 lang: en
 tags: projects

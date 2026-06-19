@@ -34,6 +34,14 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "PP Neue Montreal";
+  src: url("/fonts/PPNeueMontreal-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 :root {
   --site-width: 680px;
   --color-text: #111;
@@ -778,25 +786,35 @@ iframe {
   }
   .site-nav {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 64px;
     left: 0;
     right: 0;
+    bottom: 0;
     background: var(--color-bg);
-    border-bottom: 1px solid var(--color-border);
-    padding: 16px 24px 24px;
+    align-items: center;
+    justify-content: center;
   }
   nav ul {
     flex-direction: column;
-    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    font-size: 2em;
+    text-align: center;
   }
   .site-header.open .site-nav {
-    display: block;
+    display: flex;
   }
   section {
     padding: 24px 16px 60px;
     margin-top: 64px;
     max-width: 100%;
+  }
+  .posts article {
+    width: 100%;
+    float: none;
+    padding: 0 0 20px;
   }
   .tags {
     column-count: 1;

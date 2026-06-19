@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Life in months
+description: Every month of my life in a grid.
 ---
 
 
