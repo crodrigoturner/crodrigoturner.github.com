@@ -18,7 +18,7 @@ title: Contact
   </div>
   <div class="form-field">
     <label for="cf-message">Message</label>
-    <textarea id="cf-message" name="message" rows="6" required></textarea>
+    <textarea id="cf-message" name="message" rows="2" required></textarea>
   </div>
   <button type="submit" class="form-submit">Send</button>
   <p id="cf-status" class="form-status" aria-live="polite"></p>
