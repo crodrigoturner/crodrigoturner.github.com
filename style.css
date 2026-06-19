@@ -68,8 +68,8 @@ header {
 nav {
   display: flex;
    width: 740px;
-    justify-content: space-evenly ;
-}
+    justify-content: space-evenly;
+
   margin: 0 auto;
   align-items: center;
   font-size: 1em;
