@@ -58,7 +58,7 @@ html {
 }
 body {
   color: var(--color-text);
-  font: 400 1rem / 1.7 "PP Neue Montreal", sans-serif;
+  font: 400 1.08rem / 1.7 "PP Neue Montreal", sans-serif;
   background: var(--color-bg);
   overflow-x: hidden;
   -webkit-text-size-adjust: 100%;
@@ -80,15 +80,16 @@ header {
   z-index: 100;
 }
 nav {
-  display: flex;
-   width: 740px;
-
-
-  margin: 0 auto;
-  align-items: center;
-  font-size: 1em;
-  font-family: "PP Neue Montreal", sans-serif;
-  font-weight: 400;
+    display: flex;
+    width: 740px;
+    margin: 0 auto;
+    align-items: center;
+    font-size: 1em;
+    font-family: "PP Neue Montreal", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text);
 }
 nav ul {
 display: flex;
