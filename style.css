@@ -117,6 +117,7 @@ nav {
     font-family: "PP Fuji", sans-serif;
     font-weight: 400;
     color: var(--color-text);
+    text-transform: uppercase;
 }
 nav ul {
 display: flex;
@@ -131,7 +132,7 @@ nav ul li {
   width: auto;
 }
 nav li a {
-  color: var(--color-muted);
+ 
   text-decoration: none;
 }
 nav li a:hover,
