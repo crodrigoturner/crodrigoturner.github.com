@@ -42,6 +42,27 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "PP Fuji";
+  src: url("/fonts/PPFuji-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PP Museum";
+  src: url("/fonts/PPMuseum-Light.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PP Museum";
+  src: url("/fonts/PPMuseum-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 :root {
   --site-width: 680px;
   --color-text: #111;
@@ -93,9 +114,8 @@ nav {
     margin: 0 auto;
     align-items: center;
     font-size: 1em;
-    font-family: "PP Neue Montreal", sans-serif;
+    font-family: "PP Fuji", sans-serif;
     font-weight: 400;
-  
     color: var(--color-text);
 }
 nav ul {
@@ -146,6 +166,8 @@ article {
 .hero{
   color: var(--color-text);
   font-size: 2em;
+  font-family: "PP Museum", sans-serif;
+  font-weight: 400;
   margin: 0;
   width: 100%;
 }
@@ -497,7 +519,7 @@ figcaption {
 .meta,
 small {
   font-size: 0.8em !important;
-  font-family: "PP Neue Montreal", sans-serif;
+  font-family: "PP Fuji", sans-serif;
   color: var(--color-text);
   margin: 20px 0 0;
   float: left;
@@ -788,6 +810,7 @@ iframe {
   .site-nav {
     display: none;
     position: fixed;
+    width:430px;
     top: 64px;
     left: 0;
     right: 0;
