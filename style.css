@@ -1,4 +1,18 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "PP Fraktion Mono";
+  src: url("/fonts/PPFraktionMono-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PP Museum";
+  src: url("/fonts/PPMuseum-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 :root {
   --site-width: 680px;
   --color-text: #111;
@@ -108,14 +122,14 @@ content: '';
     box-shadow: 0 0 0 4px #ffc10742;
 }
 h2 {
-  font: 600 3em/1.6 "Schibsted Grotesk", sans-serif;
+  font: 700 3em/1.6 "PP Museum", sans-serif;
   width: 100%;
   float: left;
   color: var(--color-text);
   margin: 0 0 40px;
 }
 h3 {
-  font: 600 1.3em/1.6 "Schibsted Grotesk", sans-serif;
+  font: 700 1.3em/1.6 "PP Museum", sans-serif;
   margin: 20px 0;
   width: 100%;
   float: left;
@@ -242,6 +256,7 @@ ul.bulleted li::before {
 }
 .archive-tag, .archive-date  {
   font-size: 0.9em;
+  font-family: "PP Fraktion Mono", monospace;
   color: var(--color-muted);
   float:left;
  width:20%;
@@ -277,7 +292,7 @@ ul.bulleted li::before {
   clear: right;
   color: var(--color-text);
   font-size: .8em;
-  font-family: "Schibsted Grotesk", sans-serif;
+  font-family: "PP Fraktion Mono", monospace;
 }
 /* IMAGES */
 img {
@@ -445,7 +460,7 @@ figcaption {
 .meta,
 small {
   font-size: 0.8em !important;
-  font-family: "Schibsted Grotesk", sans-serif;
+  font-family: "PP Fraktion Mono", monospace;
   color: var(--color-text);
   margin: 20px 0 0;
   float: left;
