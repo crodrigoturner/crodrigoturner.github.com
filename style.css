@@ -65,12 +65,10 @@ position: fixed;
     background: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
   backdrop-filter: blur(12px);           /* Frosted glass blur effect */
   -webkit-backdrop-filter: blur(12px);   /* Safari support */
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  
-  /* Grainy texture via inline SVG */
-  background-image: 
-    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://w3.org id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E"), 
-    linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+
+  background-image:
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E"),
+    linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5));
 
     margin: 20px 0 0 0;
 }
@@ -126,20 +124,19 @@ article {
 /* TYPOGRAPHY */
 h1 {
   font: 500 .0001em/1.7 "Schibsted Grotesk", sans-serif;
-  margin: 0px 0px 20px;
-  float: left;
-  opacity: 1;
-
+  margin: 0;
+  display: flex;
+  align-items: center;
+  line-height: 1;
 }
 .logo {
-content: '';
-    float: right;
-    margin: 5px 0 0 0;
-    background: #FFB511;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    box-shadow: 0 0 0 4px #ffc10742;
+  display: inline-block;
+  flex-shrink: 0;
+  background: #FFB511;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px #ffc10742;
 }
 h2 {
   font: 700 3em/1.6 "PP Museum", sans-serif;
