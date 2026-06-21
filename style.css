@@ -36,7 +36,7 @@ header {
 float: right;
     width: 160px;
   
-    padding: 40px 20px;
+    padding: 40px 20px 0;
     border-left: 1px solid var(--color-border);
   
     margin: 0;
