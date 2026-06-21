@@ -121,15 +121,7 @@ h3 {
   width: 100%;
   float: left;
 }
-h4 {
-  font-family: "Schibsted Grotesk", sans-serif;
-  font-size: 1.5em;
-  font-weight: 400;
-  margin: 0px 0 20px;
-  text-transform: uppercase;
-  color: #ffb30087;
 
-}
 h5 {
   font-family: "Schibsted Grotesk", sans-serif;
   font-size: 0.9em;
@@ -782,7 +774,7 @@ iframe {
   margin-bottom: 20px;
 }
 
-.form-field label {
+.form-field label, h4 {
   font-size: 0.8em;
   color: var(--color-muted);
   margin-bottom: 6px;
