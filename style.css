@@ -36,7 +36,7 @@ header {
 float: right;
     width: 160px;
     /* height: 80px; */
-    padding: 0 20px;
+    padding: 40px 20px;
     border-left: 1px solid var(--color-border);
     /* background: #e3f2fd00; */
     /* border-radius: 10px; */
@@ -77,7 +77,7 @@ section {
 
 
 section:last-of-type, article:last-of-type {
-  padding:0 20px 100px;
+  padding:40px 20px 100px;
 
 }
 article {
@@ -228,6 +228,35 @@ ul.bulleted li::before {
   font-size: .9em;
   color: var(--color-muted);
   text-decoration: none;
+}
+/* ARCHIVE */
+.archive-row {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--color-border);
+  width: 100%;
+}
+.archive-title {
+  flex: 1;
+  text-decoration: none;
+  color: var(--color-text);
+}
+.archive-title:hover {
+  opacity: 0.7;
+}
+.archive-tag {
+  font-size: 0.75em;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  flex-shrink: 0;
+}
+.archive-date {
+  font-size: 0.75em;
+  color: var(--color-muted);
+  flex-shrink: 0;
 }
 /* POSTS LIST */
 
@@ -585,30 +614,7 @@ th {
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
-/* FOOTER */
-footer {
-  width: 100%;
-  margin: 0 auto;
-  padding: 40px calc(50% - 340px) 40px;
-  font-size: .9em;
-}
-footer #quote {
-  color: #607d8b2e;
-  width: 100%;
-  text-align: center;
-  font-weight: 500;
-  font-size: 3em;
-}
-.back-to-top {
-  font-size: 0.5em;
-  font-weight: 400;
-  color: var(--color-muted);
-  text-decoration: none;
-}
-.back-to-top:hover {
-  color: var(--color-text);
-  opacity: 1;
-}
+
 /* VIDA EN MESES */
 .vidagrid {
   margin: 20px 0;
