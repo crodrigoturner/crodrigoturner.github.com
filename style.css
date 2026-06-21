@@ -34,9 +34,9 @@ body {
 /* HEADER */
 header {
 float: right;
-    width: 160px;
+    width: 140px;
   
-    padding: 40px 20px 0;
+    padding: 40px 0px 0 20px;
     border-left: 1px solid var(--color-border);
   
     margin: 0;
@@ -67,7 +67,7 @@ nav li a.current {
 }
 /* MAIN CONTENT */
 section {
-  max-width: 740px;
+  width: 740px;
   margin:0px auto;
   padding: 40px 0;
   float:left;
@@ -229,6 +229,8 @@ ul.bulleted li::before {
   text-decoration: none;
 }
 /* ARCHIVE */
+
+.archive li{padding:5px 0; border-bottom:1px solid var(--color-border);}
 
 .archive-title {
  float:left;
