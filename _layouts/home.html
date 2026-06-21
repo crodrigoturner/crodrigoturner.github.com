@@ -2,6 +2,18 @@
 {% include header.html %}
 <section class="wide">
 
+<article>
+
+  <img id="art-image" src="" alt="" class="profile-image" />
+<script>
+(function () {
+  var art = ["/images/bg1.png", "/images/bg2.png", "/images/bg3.png"];
+  var pick = art[Math.floor(Math.random() * art.length)];
+  document.getElementById("art-image").src = pick;
+})();
+</script>
+
+</article>
 <article class="hero">
     <h3>
 <script>
@@ -35,15 +47,7 @@ I am currently reading <i>Easy Money</i> and <i>Same as ever</i>, learning Chess
 </section>
 
 <script>
-(function () {
-  var words = ["better", "nice", "right", "properly"];
-  var i = 0;
-  var el = document.getElementById("rotating-word");
-  setInterval(function () {
-    i = (i + 1) % words.length;
-    el.textContent = words[i];
-  }, 2000);
-})();
+
 
 (function () {
   var USER    = "crodrigoturner";
