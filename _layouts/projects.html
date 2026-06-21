@@ -9,8 +9,7 @@
 {% for p in project_pages %}
   {% if p.url contains '/projects/' and p.url != page.url and p.title %}
   <li>
-    <a href="{{ p.url }}">{{ p.title }}</a>
-    {% if p.description %}<span class="post-date">{{ p.description }}</span>{% endif %}
+    <a href="{{ p.url }}">{{ p.title }}</a> →{% if p.description %}{{ p.description }}{% endif %}
   </li>
   {% endif %}
 {% endfor %}
