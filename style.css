@@ -23,7 +23,7 @@ html {
 }
 body {
   color: var(--color-text);
-  font: 400 1.08rem / 1.7 "Schibsted Grotesk", sans-serif;
+  font: 400 1rem / 1.7 "Schibsted Grotesk", sans-serif;
   background: var(--color-bg);
   overflow-x: hidden;
   max-width: 900px;
@@ -33,15 +33,14 @@ body {
 }
 /* HEADER */
 header {
-float:right;
-  width: 160px;
-  
-  height: 80px;
-
-  padding: 0;
-
-  border-left: 1px solid var(--color-border);
-  z-index: 100;
+float: right;
+    width: 160px;
+    /* height: 80px; */
+    padding: 0 20px;
+    border-left: 1px solid var(--color-border);
+    /* background: #e3f2fd00; */
+    /* border-radius: 10px; */
+    margin: 20px 0;
 }
 nav {
   width: 100%;
@@ -70,7 +69,7 @@ nav li a.current {
 /* MAIN CONTENT */
 section {
   max-width: 740px;
-  margin: 100px auto 0;
+  margin:0px auto;
   padding: 40px 0;
   float:left;
 }
@@ -90,19 +89,6 @@ article {
 
 
 
-/* HERO */
-.hero{
-  color: var(--color-text);
-  font-size: 2em;
-  font-family: "PP Museum", sans-serif;
-  font-weight: 400;
-  margin: 0;
-  width: 100%;
-}
-
-.hero img{height:48px;}
-
-
 
 /* TYPOGRAPHY */
 h1 {
@@ -110,8 +96,7 @@ h1 {
   margin: 20px 0px;
   float: left;
   opacity: 1;
-  position:fixed; 
-  left:40px;
+
 }
 .logo {
 content: '';
