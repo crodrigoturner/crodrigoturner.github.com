@@ -1,68 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "PP Neue Montreal";
-  src: url("/fonts/PPNeueMontreal-Thin.woff2") format("woff2");
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "PP Neue Montreal";
-  src: url("/fonts/PPNeueMontreal-Light.woff2") format("woff2");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "PP Neue Montreal";
-  src: url("/fonts/PPNeueMontreal-Book.woff2") format("woff2");
-  font-weight: 350;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "PP Neue Montreal";
-  src: url("/fonts/PPNeueMontreal-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "PP Neue Montreal";
-  src: url("/fonts/PPNeueMontreal-Medium.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "PP Neue Montreal";
-  src: url("/fonts/PPNeueMontreal-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "PP Fuji";
-  src: url("/fonts/PPFuji-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "PP Museum";
-  src: url("/fonts/PPMuseum-Light.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "PP Museum";
-  src: url("/fonts/PPMuseum-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
 :root {
   --site-width: 680px;
   --color-text: #111;
@@ -87,7 +23,7 @@ html {
 }
 body {
   color: var(--color-text);
-  font: 400 1.08rem / 1.7 "PP Neue Montreal", sans-serif;
+  font: 400 1.08rem / 1.7 "Schibsted Grotesk", sans-serif;
   background: var(--color-bg);
   overflow-x: hidden;
   max-width: 900px;
@@ -170,7 +106,7 @@ article {
 
 /* TYPOGRAPHY */
 h1 {
-  font: 500 .0001em/1.7 "PP Neue Montreal", sans-serif;
+  font: 500 .0001em/1.7 "Schibsted Grotesk", sans-serif;
   margin: 20px 0px;
   float: left;
   opacity: 1;
@@ -188,20 +124,20 @@ content: '';
     box-shadow: 0 0 0 4px #ffc10742;
 }
 h2 {
-  font: 600 3em/1.6 "PP Neue Montreal", sans-serif;
+  font: 600 3em/1.6 "Schibsted Grotesk", sans-serif;
   width: 100%;
   float: left;
   color: var(--color-text);
   margin: 0 0 40px;
 }
 h3 {
-  font: 600 1.3em/1.6 "PP Neue Montreal", sans-serif;
+  font: 600 1.3em/1.6 "Schibsted Grotesk", sans-serif;
   margin: 20px 0;
   width: 100%;
   float: left;
 }
 h4 {
-  font-family: "PP Neue Montreal", sans-serif;
+  font-family: "Schibsted Grotesk", sans-serif;
   font-size: 1.5em;
   font-weight: 400;
   margin: 0px 0 20px;
@@ -210,13 +146,13 @@ h4 {
 
 }
 h5 {
-  font-family: "PP Neue Montreal", sans-serif;
+  font-family: "Schibsted Grotesk", sans-serif;
   font-size: 0.9em;
   font-weight: 500;
   margin: 16px 0 8px;
 }
 h6 {
-  font-family: "PP Neue Montreal", sans-serif;
+  font-family: "Schibsted Grotesk", sans-serif;
   font-size: 0.8em;
   font-weight: 500;
   color: var(--color-muted);
@@ -240,7 +176,7 @@ a:hover {
 a[target="_blank"]::after {
   content: '→';
   margin-left: 2px;
-  font-family: "PP Neue Montreal";
+  font-family: "Schibsted Grotesk";
 }
 h1 a,
 h1 a:visited {
@@ -343,7 +279,7 @@ ul.bulleted li::before {
   clear: right;
   color: var(--color-text);
   font-size: .8em;
-  font-family: "PP Neue Montreal", sans-serif;
+  font-family: "Schibsted Grotesk", sans-serif;
 }
 /* IMAGES */
 img {
@@ -387,7 +323,7 @@ figcaption {
   height: 250px;
   margin: 40px 0;
   float: left;
-  font-family: "PP Neue Montreal", sans-serif;
+  font-family: "Schibsted Grotesk", sans-serif;
 }
 .tag-item {
   position: absolute;
@@ -466,7 +402,7 @@ figcaption {
 }
 .breadcrumbs {
   font-size: 0.8em;
-  font-family: "PP Neue Montreal", sans-serif;
+  font-family: "Schibsted Grotesk", sans-serif;
   color: var(--color-muted);
   margin-bottom: 40px;
   width: 100%;
@@ -543,7 +479,7 @@ footer blockquote {
 }
 code {
   background-color: #f4f4f2;
-  font-family: "PP Neue Montreal", sans-serif;
+  font-family: "Schibsted Grotesk", sans-serif;
   font-size: 0.85em;
   padding: 2px 6px;
   border-radius: 4px;
@@ -573,7 +509,7 @@ pre code {
   visibility: hidden;
 }
 .arrow {
-  font: 400 16px/1.6 "PP Neue Montreal", sans-serif !important;
+  font: 400 16px/1.6 "Schibsted Grotesk", sans-serif !important;
 }
 .cta {
   display: inline-flex;
@@ -871,7 +807,7 @@ iframe {
 
 .form-field input,
 .form-field textarea {
-  font: 400 1em/1.6 "PP Neue Montreal", sans-serif;
+  font: 400 1em/1.6 "Schibsted Grotesk", sans-serif;
   color: var(--color-text);
   background: transparent;
   border: none;
@@ -889,7 +825,7 @@ iframe {
 }
 
 .form-submit {
-  font: 400 1em/1 "PP Neue Montreal", sans-serif;
+  font: 400 1em/1 "Schibsted Grotesk", sans-serif;
   color: var(--color-bg);
   background: var(--color-text);
   border: none;
