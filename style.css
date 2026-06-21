@@ -90,6 +90,8 @@ body {
   font: 400 1.08rem / 1.7 "PP Neue Montreal", sans-serif;
   background: var(--color-bg);
   overflow-x: hidden;
+  max-width: 900px;
+  margin: 0 auto;
   -webkit-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
 }
@@ -97,8 +99,10 @@ body {
 header {
   position: fixed;
   top: 0;
-  left: 0;
-  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 900px;
   height: 80px;
   display: flex;
   align-items: center;
@@ -109,30 +113,29 @@ header {
   z-index: 100;
 }
 nav {
-    display: flex;
-    width: 740px;
-    margin: 0 auto;
-    align-items: center;
-    font-size: 1em;
-    font-family: "PP Fuji", sans-serif;
-    font-weight: 400;
-    color: var(--color-text);
-    text-transform: uppercase;
+  width: 160px;
+  flex-shrink: 0;
+  margin-left: auto;
+  font-size: 1em;
+  font-family: "PP Fuji", sans-serif;
+  font-weight: 400;
+  color: var(--color-text);
+  text-transform: uppercase;
+  text-align: right;
 }
 nav ul {
-display: flex;
-
-    padding: 0;
-    margin: 0;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 0;
+  margin: 0;
+  align-items: flex-end;
 }
 nav ul li {
   float: none;
   width: auto;
 }
 nav li a {
- 
   text-decoration: none;
 }
 nav li a:hover,
@@ -143,12 +146,11 @@ nav li a.current {
 /* MAIN CONTENT */
 section {
   max-width: 740px;
-  margin: 100px auto;
+  margin: 100px auto 0;
   padding: 40px 0;
-
 }
 
-.wide{width:80%; max-width:1240px;padding:40px 0; margin: 100px auto;}
+
 
 section:last-of-type, article:last-of-type {
   padding-bottom: 100px;
@@ -160,7 +162,7 @@ article {
   float:left;
 }
 
-.posts article{width:25%;float:left;padding:0 20px 20px 0;}
+
 
 
 /* HERO */
