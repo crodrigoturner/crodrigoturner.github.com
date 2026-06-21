@@ -97,39 +97,27 @@ body {
 }
 /* HEADER */
 header {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  max-width: 900px;
+float:right;
+  width: 160px;
+  
   height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+
   padding: 0 40px;
   background: var(--color-bg);
-  border-bottom: 1px solid var(--color-border);
+  border-left: 1px solid var(--color-border);
   z-index: 100;
 }
 nav {
-  width: 160px;
-  flex-shrink: 0;
-  margin-left: auto;
-  font-size: 1em;
-  font-family: "PP Fuji", sans-serif;
-  font-weight: 400;
-  color: var(--color-text);
-  text-transform: uppercase;
-  text-align: right;
+  width: 100%;
+ float:right;
+
 }
 nav ul {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
+  float:left;
+ 
   padding: 0;
   margin: 0;
-  align-items: flex-end;
+
 }
 nav ul li {
   float: none;
@@ -148,6 +136,7 @@ section {
   max-width: 740px;
   margin: 100px auto 0;
   padding: 40px 0;
+  float:left;
 }
 
 
