@@ -61,7 +61,7 @@ position: fixed;
     border: 1px solid var(--color-border);
     z-index: 100;
     border-radius: 28px;
-    left: calc(50% - 290px);
+    left: calc(50% - 320px);
     background: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
   backdrop-filter: blur(12px);           /* Frosted glass blur effect */
   -webkit-backdrop-filter: blur(12px);   /* Safari support */
@@ -88,7 +88,7 @@ nav ul li {
 }
 nav li a {
   text-decoration: none;
-  font-size: 0.9em;
+  
   color: var(--color-muted);
   letter-spacing: 0.01em;
 }
