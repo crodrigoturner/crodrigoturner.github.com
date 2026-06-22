@@ -15,11 +15,11 @@
 }
 :root {
   --site-width: 680px;
-  --color-text: #545454;
+  --color-text: #555;
   --color-muted: #607d8b;
-  --color-link: #4385BE;
-  --color-border:#9f310945;
-  --color-bg: #ffc1070f;
+
+  --color-border:#EEE;
+
 }
 
 
@@ -59,7 +59,7 @@ header {
     border: 1px solid #EEEEEE;
     z-index: 100;
     border-radius: 20px;
-    left: calc(50% - 320px);
+    left: calc(50% - 305px);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     margin:20px 0 0 0;
@@ -91,7 +91,7 @@ nav li a.current {
 }
 /* MAIN CONTENT */
 section {
-  max-width: 640px;
+  width: var(--site-width);
   margin: 56px auto 0;
   padding: 48px 0;
   float:left;
@@ -175,7 +175,7 @@ a:hover {
 a[target="_blank"]::after {
   content: '→';
   margin-left: 2px;
-  font-family: "Schibsted Grotesk";
+  font-family: "Inter", sans-serif;
 }
 h1 a,
 h1 a:visited {
