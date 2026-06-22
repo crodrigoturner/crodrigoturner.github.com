@@ -93,7 +93,7 @@ nav li a.current {
 }
 /* MAIN CONTENT */
 section {
-  max-width: 740px;
+  max-width: 640px;
   margin: 56px auto 0;
   padding: 48px 0;
   float:left;
