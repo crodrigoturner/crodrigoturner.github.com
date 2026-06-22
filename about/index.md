@@ -15,8 +15,6 @@ Husband to Mar. Father to Lucas and Nico. Friend to Pancho, our Spanish Water Do
 
 I work with data. Currently at Tecnica y Avance, where I run a department of one, managing customers and suppliers across multiple countries, building tools, and turning messy inputs into decisions people can actually act on.
 
-Over ten years, I've worked across architecture, energy, luxury brands, and startups. The throughline isn't an industry; it's a habit of looking at a tangled process and asking, "What's actually going on here?" My favourite project so far: a forecasting tool that modelled how movements in oil indices would ripple through downstream derivative prices. I like problems where the answer matters and nobody's quite sure where to start.
-
 
 ### What I care about
 <ul class="bulleted">
