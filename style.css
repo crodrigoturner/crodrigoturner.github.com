@@ -62,6 +62,7 @@ header {
     left: calc(50% - 320px);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
+    margin:20px 0 0 0;
 }
 nav {
   display: flex;
