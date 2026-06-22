@@ -38,7 +38,7 @@ html {
 body {
   color: var(--color-text);
   font: 400 1rem / 1.7 "Schibsted Grotesk", sans-serif;
-  background: var(--color-bg);
+
   overflow-x: hidden;
   max-width: 900px;
   margin: 0 auto;
@@ -531,7 +531,7 @@ pre code {
   visibility: hidden;
 }
 .arrow {
-  font: 400 16px/1.6 "Schibsted Grotesk", sans-serif !important;
+  font: 400 16px/1.6 "Inter", sans-serif !important;
 }
 .cta {
   display: inline-flex;
