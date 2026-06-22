@@ -3,7 +3,7 @@ layout: page
 title: About
 lang: en
 ---
-<img src="/images/profile.jpg"  class="profile" width="250" height="250" alt=" A person wearing a white collared shirt stands outdoors with trees and greenery in the background.">
+<img src="/images/profile.jpeg"  class="profile" width="250" height="250" alt=" A person wearing a white collared shirt stands outdoors with trees and greenery in the background.">
 
 I'm Carlos Roberto Rodrigo Turner.    
 
