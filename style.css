@@ -19,7 +19,7 @@
   --color-muted: #607d8b;
   --color-link: #4385BE;
   --color-border: #e8e8e4;
-  --color-bg: #fdfcfc;
+  --color-bg: #ffc1070f;
 }
 
 
@@ -47,10 +47,10 @@ body {
 }
 /* HEADER */
 header {
-position: fixed;
+
+    position: fixed;
     top: 0;
-    /* left: 0; */
-    /* right: 0; */
+
     width: 500px;
     height: 40px;
     display: flex;
@@ -58,18 +58,14 @@ position: fixed;
     justify-content: space-between;
     padding: 0 40px;
     background: var(--color-bg);
-    border: 1px solid var(--color-border);
+    border: 1px solid #FFE0B2;
     z-index: 100;
     border-radius: 28px;
     left: calc(50% - 320px);
-    background: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
-  backdrop-filter: blur(12px);           /* Frosted glass blur effect */
-  -webkit-backdrop-filter: blur(12px);   /* Safari support */
-
-  background-image:
-    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E"),
-    linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5));
-
+    background: #ffc10726;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    background-image: url(data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E), linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
     margin: 20px 0 0 0;
 }
 nav {
