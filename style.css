@@ -90,7 +90,7 @@ nav li a.current {
   opacity: .7;
 }
 /* MAIN CONTENT */
-section {
+section, footer {
   width: var(--site-width);
   margin: 56px auto 0;
   padding: 48px 0;
