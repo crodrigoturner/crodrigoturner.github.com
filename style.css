@@ -104,7 +104,7 @@ footer{width: var(--site-width);
 
 
 section:last-of-type, article:last-of-type {
-  padding:40px 0px 100px;
+  padding:40px 0px 60px;
 
 }
 article {
