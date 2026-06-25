@@ -80,7 +80,7 @@ header {
    
 
   
-    margin:20px 0;
+    margin:40px 0;
 }
 nav {
   display: flex;
@@ -290,8 +290,7 @@ p:first-child {
   margin: 0;
 }
 
-
-p{
+p {
   margin: 0 0 12px;
 }
 a {
