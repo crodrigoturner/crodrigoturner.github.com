@@ -133,7 +133,112 @@ article {
 
 footer img{width:150px; display:block; margin: 0 auto;}
 
-hr{float:left; width:100%; border:none; border-top:1px solid var(--color-border); margin: 20px 0;}
+/* MISC COMPONENTS */
+/* MISC COMPONENTS */
+.meta,
+small {
+  font-size: 0.8em !important;
+  font-family: "PP Fraktion Mono", monospace;
+  color: var(--color-text);
+  margin: 20px 0 0;
+  float: left;
+  width: 100%;
+}
+hr, ul.archive li::after{
+  border: none;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.75);
+  margin: 20px 0;
+  background: transparent;
+  float: left;
+  width: 100%;
+}
+
+blockquote {
+  padding: 0 0 0 20px;
+  border-left: 2px solid var(--color-border);
+  color: var(--color-muted);
+  float: left;
+  width: 100%;
+}
+.quotes h3,
+.clippings h3 {
+  display: none;
+}
+footer blockquote {
+  border: none;
+}
+code {
+  background-color: #f4f4f2;
+  font-family: "Schibsted Grotesk", sans-serif;
+  font-size: 0.85em;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+pre code {
+  display: block;
+  padding: 16px 20px;
+  overflow-x: auto;
+  white-space: pre;
+}
+.text {
+  width: 100%;
+}
+.dn {
+  display: none;
+}
+.cp {
+  text-transform: capitalize;
+}
+.hidden {
+  display: none;
+}
+.visible {
+  display: block;
+}
+.disabled {
+  visibility: hidden;
+}
+.arrow {
+  font: 400 16px/1.6 "Inter", sans-serif !important;
+}
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--color-text);
+  text-decoration: none;
+font-weight: 400;
+    margin: 20px 0;
+}
+.cta::after {
+  content: '->';
+  font-family: "Schibsted Grotesk", sans-serif;
+  font-weight: 400;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+.cta:hover {
+  opacity: 1;
+}
+.cta:hover::after {
+  transform: translateX(4px);
+}
+.alignright {
+  float: right;
+}
+.alignleft {
+  float: left;
+}
+::-moz-selection {
+  background: #fef4ad;
+}
+::selection {
+  background: #fef4ad;
+}
+
+
 
 /* TYPOGRAPHY */
 h1 {
