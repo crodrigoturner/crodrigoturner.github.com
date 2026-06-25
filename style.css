@@ -16,8 +16,9 @@
 :root {
   --site-width: 680px;
   --color-text: #555;
+  --color-link: #095c9f;
   --color-muted: #607d8b;
-
+--color-bg: #f9f9f9;
   --color-border:#EEE;
 
 }
@@ -38,27 +39,46 @@ html {
 body {
   color: var(--color-text);
   font: 400 1rem / 1.7 "Schibsted Grotesk", sans-serif;
-
+  background: var(--color-bg);
   overflow-x: hidden;
   max-width: 900px;
   margin: 0 auto;
   -webkit-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
 }
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    z-index: 1;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox=%270 0 200 200%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cfilter id=%27noiseFilter%27%3E%3CfeTurbulence type=%27fractalNoise%27 baseFrequency=%270.9%27 numOctaves=%273%27 stitchTiles=%27stitch%27/%3E%3CfeColorMatrix type=%27saturate%27 values=%270%27/%3E%3C/filter%3E%3Crect width=%27100%25%27 height=%27100%25%27 filter=%27url(%23noiseFilter)%27/%3E%3C/svg%3E");
+    background-size: 200px 200px;
+}
+
+
+
+
 /* HEADER */
 header {
     position: fixed;
     top: 0;
-    /* width: 500px; */
+   width:var(--site-width);
     height: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
     background: #eceff17a;
-    border: 1px solid #EEEEEE;
+    border-bottom: 2px solid #EEEEEE;
     z-index: 100;
-    border-radius: 20px;
+   
     left: calc(50% - 305px);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
@@ -168,8 +188,8 @@ p {
   margin: 0 0 12px;
 }
 a {
-  color: var(--color-text);
-  text-decoration: underline;
+  color: var(--color-link);
+text-decoration: none;
 }
 a:hover {
   opacity: 0.7;
