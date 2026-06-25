@@ -138,7 +138,6 @@ footer img{width:150px; display:block; margin: 0 auto;}
 .meta,
 small {
   font-size: 0.8em !important;
-  font-family: "PP Fraktion Mono", monospace;
   color: var(--color-text);
   margin: 20px 0 0;
   float: left;
