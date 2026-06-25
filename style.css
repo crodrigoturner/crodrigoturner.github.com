@@ -67,20 +67,18 @@ body::before {
 
 /* HEADER */
 header {
-    position: fixed;
-    top: 0;
+
    width:var(--site-width);
     height: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0;
     
     z-index: 100;
    
 
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+  
     margin:20px auto;
 }
 nav {
