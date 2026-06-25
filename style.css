@@ -133,7 +133,7 @@ article {
 
 footer img{width:150px; display:block; margin: 0 auto;}
 
-
+hr{float:left; width:100%; border:none; border-top:1px solid var(--color-border); margin: 40px 0;}
 
 /* TYPOGRAPHY */
 h1 {
