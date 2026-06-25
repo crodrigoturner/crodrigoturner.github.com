@@ -18,7 +18,7 @@
   --color-text: #555;
   --color-link: #095c9f;
   --color-muted: #607d8b;
---color-bg: #f9f9f9;
+--color-bg: #f4f4f4;
   --color-border:#EEE;
 
 }
@@ -49,7 +49,7 @@ body {
 
 body::before {
     content: '';
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -75,14 +75,13 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
-    background: #eceff17a;
-    border-bottom: 2px solid #EEEEEE;
+    
     z-index: 100;
    
-    left: calc(50% - 305px);
+
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    margin:20px 0 0 0;
+    margin:20px auto;
 }
 nav {
   display: flex;
