@@ -284,13 +284,13 @@ ul.bulleted li::before {
 .archive-title:hover {
   opacity: 0.7;
 }
-.archive-tag, .archive-date  {
-  font-size: 0.9em;
-  font-family: "PP Fraktion Mono", monospace;
+.archive-tag {
+
+
   color: var(--color-muted);
   float:left;
- width:20%;
-  letter-spacing: 0.05em;
+ width:40%;
+
   text-align:right;
 
 }
