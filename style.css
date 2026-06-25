@@ -18,7 +18,7 @@
   --color-text: #555;
   --color-link: #095c9f;
   --color-muted: #607d8b;
---color-bg: #f4f4f4;
+--color-bg: #fff;
   --color-border:#EEE;
 
 }
@@ -181,7 +181,7 @@ h6 {
 header a {
   text-decoration: none;
 }
-p {
+p:not(:first-child) {
   margin: 0 0 12px;
 }
 a {
