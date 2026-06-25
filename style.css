@@ -256,7 +256,7 @@ h1 {
   box-shadow: 0 0 0 4px #ffc10742;
 }
 h2 {
-  font: 700 3em/1.6 "PP Museum", sans-serif;
+  font: 700 2em/1.6 "PP Museum", sans-serif;
   width: 100%;
   float: left;
   color: var(--color-text);
