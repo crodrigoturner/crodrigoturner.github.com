@@ -121,8 +121,6 @@ footer{width: var(--site-width);
   float:left;}
 
 
-section:last-of-type, article:last-of-type {
-  padding:0px 0px 60px;
 
 }
 article {
@@ -543,6 +541,9 @@ iframe {
 
 @media only screen and (max-width: 640px) {
  
+header{
+    justify-content: space-evenly;}
+
   nav ul {
  
     font-size: 1.5em;
