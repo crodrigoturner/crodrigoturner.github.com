@@ -540,12 +540,15 @@ iframe {
 }
 
 @media only screen and (max-width: 640px) {
- 
+  body {
+    font-size: 1.15rem;
+  }
+
 header{
     justify-content: space-evenly;}
 
   nav ul {
- 
+
     font-size: 1.5em;
   }
   section {
