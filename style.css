@@ -540,49 +540,21 @@ iframe {
   max-width: 100%;
   display: block;
 }
-/* MEDIA QUERIES */
-@media only screen and (max-width: 768px) {
-  .tags {
-    column-count: 2;
-  }
-  #columnlist {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
+
 @media only screen and (max-width: 640px) {
-  header {
-    height: 64px;
-    padding: 0 16px;
-  }
+ 
   nav ul {
-    gap: 16px;
-    font-size: 1em;
+ 
+    font-size: 1.5em;
   }
   section {
-    padding: 24px 16px 60px;
-    margin-top: 56px;
-    max-width: 100%;
+    padding: 24px 20px 60px;
+     width: var(--site-width);
   }
-  .posts article {
-    width: 100%;
-    float: none;
-    padding: 0 0 20px;
-  }
-  .tags {
-    column-count: 1;
-  }
-  #columnlist {
-    grid-template-columns: 1fr;
-  }
+  
+ 
 }
-@media only screen and (max-width: 480px) {
-  .tags {
-    column-count: 1;
-  }
-  #columnlist {
-    grid-template-columns: 1fr;
-  }
-}
+
 /* CONTACT FORM */
 
 .contact-form {
