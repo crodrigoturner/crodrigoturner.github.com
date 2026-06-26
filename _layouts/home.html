@@ -33,6 +33,8 @@ My name is Carlos Rodrigo, I am a husband to Mar, a father to Lucas and Nico, an
 <hr/>
 <p>Get in touch <span class="arrow">-></span> <a href="mailto:rodrigoturner.carlos@gmail.com">rodrigoturner.carlos@gmail.com</a></p>
 <hr/>
+<p id="bsky-post">…</p>
+<hr/>
 </article>
 <article>
 
@@ -47,6 +49,9 @@ My name is Carlos Rodrigo, I am a husband to Mar, a father to Lucas and Nico, an
 {% endfor %}
 </ul>
 </article>
+
+
+
 </section>
 
 <script>
@@ -75,6 +80,28 @@ My name is Carlos Rodrigo, I am a husband to Mar, a father to Lucas and Nico, an
     })
     .catch(function () {
       el.textContent = "music";
+    });
+})();
+</script>
+
+<script>
+(function () {
+  var el = document.getElementById("bsky-post");
+  fetch(
+    "https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed" +
+    "?actor=crodrigoturner.bsky.social&limit=1&filter=posts_no_replies"
+  )
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      var post = data.feed && data.feed[0] && data.feed[0].post;
+      if (!post) return;
+      var text = post.record.text;
+      var uri  = post.uri.replace("at://", "").replace("app.bsky.feed.post/", "post/");
+      var url  = "https://bsky.app/profile/" + uri;
+      el.innerHTML = "“" + text + "” &mdash; <a href=\"" + url + "\" target=\"_blank\">Bluesky</a>";
+    })
+    .catch(function () {
+      el.textContent = "";
     });
 })();
 </script>
