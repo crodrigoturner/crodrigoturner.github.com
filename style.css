@@ -126,11 +126,11 @@ font-size:.9em;}
 
 #bsky-post{color:var(--color-muted);
   font-size:.9em;
-  
+  padding:10px;
  
   width:100%;
   float:left;
-  background:var(--color-bg); border-radius:4px; margin:20px;
+  background:var(--color-bg); border-radius:4px; margin:50px 0;
 }  
 
 article {
@@ -263,14 +263,14 @@ h1 {
   box-shadow: 0 0 0 4px #ffc10742;
 }
 h2 {
-  font: 700 2em/1.6 "PP Museum", sans-serif;
+  font: 600 2em/1.6 "Schibsted Grotesk", sans-serif;
   width: 100%;
   float: left;
   color: var(--color-text);
   margin: 0 0 40px;
 }
 h3 {
-  font: 700 1.3em/1.6 "PP Museum", sans-serif;
+  font: 600 1.3em/1.6 "Schibsted Grotesk", sans-serif;
   margin: 20px 0;
   width: 100%;
   float: left;
