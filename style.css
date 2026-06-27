@@ -593,9 +593,10 @@ header{
 .form-field label, h4 {
   font-size: 0.8em;
   color: var(--color-muted);
-  margin-bottom: 6px;
+  margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 0.06em;
+  font-weight:400;
 }
 
 .form-field input,
