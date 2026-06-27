@@ -37,7 +37,7 @@ My name is Carlos Rodrigo, I am a husband to Mar, a father to Lucas and Nico, an
 <h4>Recent posts</h4>
 <ul class="archive">
 
-{% assign all_posts = site.posts | sort: 'date' | reverse %}
+{% assign all_posts = site.posts | sort: 'date' | reverse | limit: 5 %}
 {% for post in all_posts %}
 <li>
   <a href="{{ post.url }}" class="archive-title">{{ post.title }}</a>
@@ -56,6 +56,11 @@ My name is Carlos Rodrigo, I am a husband to Mar, a father to Lucas and Nico, an
 <article>
 <h4>Bookmarks</h4>
 <ul id="raindrop-list" class="archive"><li>…</li></ul>
+</article>
+<hr/>
+<article>
+<h4>Currently reading</h4>
+<ul id="books-list" class="archive"><li>…</li></ul>
 </article>
 
 <hr/>
@@ -137,5 +142,26 @@ My name is Carlos Rodrigo, I am a husband to Mar, a father to Lucas and Nico, an
 })();
 </script>
 
+
+<script>
+(function () {
+  var el = document.getElementById("books-list");
+  fetch(
+    "https://hhbahlrngrjzstfaagcy.supabase.co/rest/v1/books?status=eq.reading&select=title",
+    { headers: {
+      "apikey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhoYmFobHJuZ3JqenN0ZmFhZ2N5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODA4Mzg2NzksImV4cCI6MjA5NjQxNDY3OX0.5iNFqEkIVwbI40qoQmtCIBFSrSS8w60S0lUkr_MOvMI",
+      "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhoYmFobHJuZ3JqenN0ZmFhZ2N5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODA4Mzg2NzksImV4cCI6MjA5NjQxNDY3OX0.5iNFqEkIVwbI40qoQmtCIBFSrSS8w60S0lUkr_MOvMI"
+    }}
+  )
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      if (!data || !data.length) return;
+      el.innerHTML = data.map(function (book) {
+        return "<li><span class=\"archive-title\">" + book.title + "</span></li>";
+      }).join("");
+    })
+    .catch(function () { el.innerHTML = ""; });
+})();
+</script>
 
 {% include footer.html %}
