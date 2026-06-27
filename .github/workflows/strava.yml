@@ -1,0 +1,46 @@
+name: Fetch Strava Activity
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+jobs:
+  fetch-strava:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Refresh token and fetch activity
+        env:
+          STRAVA_CLIENT_ID: ${{ secrets.STRAVA_CLIENT_ID }}
+          STRAVA_CLIENT_SECRET: ${{ secrets.STRAVA_CLIENT_SECRET }}
+          STRAVA_REFRESH_TOKEN: ${{ secrets.STRAVA_REFRESH_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          RESPONSE=$(curl -s -X POST https://www.strava.com/oauth/token \
+            -d client_id=$STRAVA_CLIENT_ID \
+            -d client_secret=$STRAVA_CLIENT_SECRET \
+            -d refresh_token=$STRAVA_REFRESH_TOKEN \
+            -d grant_type=refresh_token)
+
+          NEW_REFRESH=$(echo $RESPONSE | jq -r '.refresh_token')
+          ACCESS=$(echo $RESPONSE | jq -r '.access_token')
+
+          gh secret set STRAVA_REFRESH_TOKEN --body "$NEW_REFRESH" --repo ${{ github.repository }}
+
+          curl -s -H "Authorization: Bearer $ACCESS" \
+            "https://www.strava.com/api/v3/athlete/activities?per_page=1" \
+            | jq '.[0] | {name: .name, type: .sport_type, distance: .distance, moving_time: .moving_time, start_date: .start_date_local}' \
+            > _data/strava.json
+
+      - name: Commit data
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add _data/strava.json
+          git diff --staged --quiet || git commit -m "Update Strava data"
+          git push
