@@ -124,7 +124,13 @@ font-size:.9em;}
   footer ul{display:flex; flex-wrap:wrap; gap:20px; justify-content:center; margin-bottom:20px;}
 
 
-
+#bsky-post{color:var(--color-muted);
+  font-size:.8em;
+  margin-top:10px;
+  text-align:center;
+  width:100%;
+  float:left;
+}  
 
 article {
   width: 100%;
