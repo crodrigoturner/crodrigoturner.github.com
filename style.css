@@ -125,11 +125,12 @@ font-size:.9em;}
 
 
 #bsky-post{color:var(--color-muted);
-  font-size:.8em;
-  margin-top:10px;
-  text-align:center;
+  font-size:.9em;
+  
+ 
   width:100%;
   float:left;
+  background:var(--color-bg); border-radius:4px; margin:20px;
 }  
 
 article {
