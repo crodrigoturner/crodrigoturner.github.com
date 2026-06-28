@@ -135,6 +135,12 @@ font-size:.9em;}
 .bsky{background:#e3f2fdb8;}
 .contact{background:#ffc800f8;}
 
+#books-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
 article {
   width: 100%;
   padding: 0;
@@ -153,12 +159,12 @@ svg{margin-right:10px;
 
 footer img{width:150px; display:block; margin: 0 auto;}
 
-/* MISC COMPONENTS */
+
 /* MISC COMPONENTS */
 .meta,
 small {
   font-size: 0.8em !important;
-  color: var(--color-text);
+  color: var(--color-muted);
   margin: 0px 0 0;
   float: left;
   width: 100%;
@@ -413,7 +419,7 @@ ul.bulleted li::before {
   opacity: 0.7;
 }
 .archive-tag {
-
+font-size:.9em;
 
   color: var(--color-muted);
   float:left;

@@ -54,12 +54,12 @@ My name is Carlos Rodrigo, I am a husband to Mar, a father to Lucas and Nico, an
 </article>
 <hr/>
 <article>
-<h4>Bookmarks</h4>
+<h4><a href="http://tboti.link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000" viewBox="0 0 256 256"><path d="M192,24H96A16,16,0,0,0,80,40V56H64A16,16,0,0,0,48,72V224a8,8,0,0,0,12.65,6.51L112,193.83l51.36,36.68A8,8,0,0,0,176,224V184.69l19.35,13.82A8,8,0,0,0,208,192V40A16,16,0,0,0,192,24ZM160,208.46l-43.36-31a8,8,0,0,0-9.3,0L64,208.45V72h96Zm32-32L176,165V72a16,16,0,0,0-16-16H96V40h96Z"></path></svg> Bookmarks</a></h4>
 <ul id="raindrop-list" class="archive"><li>…</li></ul>
 </article>
 <hr/>
 <article>
-<h4>Currently reading</h4>
+<h4><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000" viewBox="0 0 256 256"><path d="M231.65,194.55,198.46,36.75a16,16,0,0,0-19-12.39L132.65,34.42a16.08,16.08,0,0,0-12.3,19l33.19,157.8A16,16,0,0,0,169.16,224a16.25,16.25,0,0,0,3.38-.36l46.81-10.06A16.09,16.09,0,0,0,231.65,194.55ZM136,50.15c0-.06,0-.09,0-.09l46.8-10,3.33,15.87L139.33,66Zm6.62,31.47,46.82-10.05,3.34,15.9L146,97.53Zm6.64,31.57,46.82-10.06,13.3,63.24-46.82,10.06ZM216,197.94l-46.8,1０-3.33-１５．８７L２１２．６７，１８２，２１６，１９７．８５C２１６，１９７．９１，２１６，１９７．９４，２１６，１９７．９４ZM１０４，３２H５６A１６，１６，０，０，０，４０，４８V２０８a１６，１６，０，０，０，１６，１６h４８a１６，１６，０，０，０，１６－１６V４８A１６，１６，０，０，０，１０４，３２ZM５６，４８h４８V６４H５６Zm０，３２h４８v９６H５６Zm４８，１２８H５６V１９２h４８v１６Z"></path></svg> Currently reading</h4>
 <ul id="books-list" class="archive"><li>…</li></ul>
 </article>
 
@@ -160,7 +160,7 @@ My name is Carlos Rodrigo, I am a husband to Mar, a father to Lucas and Nico, an
 (function () {
   var el = document.getElementById("books-list");
   fetch(
-    "https://hhbahlrngrjzstfaagcy.supabase.co/rest/v1/books?status=eq.reading&select=title",
+    "https://hhbahlrngrjzstfaagcy.supabase.co/rest/v1/books?status=eq.reading&select=title,author",
     { headers: {
       "apikey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhoYmFobHJuZ3JqenN0ZmFhZ2N5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODA4Mzg2NzksImV4cCI6MjA5NjQxNDY3OX0.5iNFqEkIVwbI40qoQmtCIBFSrSS8w60S0lUkr_MOvMI",
       "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhoYmFobHJuZ3JqenN0ZmFhZ2N5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODA4Mzg2NzksImV4cCI6MjA5NjQxNDY3OX0.5iNFqEkIVwbI40qoQmtCIBFSrSS8w60S0lUkr_MOvMI"
@@ -170,7 +170,7 @@ My name is Carlos Rodrigo, I am a husband to Mar, a father to Lucas and Nico, an
     .then(function (data) {
       if (!data || !data.length) return;
       el.innerHTML = data.map(function (book) {
-        return "<li><span class=\"archive-title\">" + book.title + "</span></li>";
+        return "<li><span class=\"archive-title\">" + book.title + "</span><span class=\"archive-tag\">" + (book.author || "") + "</span></li>";
       }).join("");
     })
     .catch(function () { el.innerHTML = ""; });
