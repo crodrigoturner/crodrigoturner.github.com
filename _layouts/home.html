@@ -34,7 +34,7 @@ My name is Carlos Rodrigo, I am a husband to Mar, a father to Lucas and Nico, an
 </article>
 <hr/>
 <article>
-<h4>Recent posts</h4>
+<h4><a href="/blog"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000" viewBox="0 0 256 256"><path d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,160H40V56H216V200ZM184,96a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,96Zm0,32a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,128Zm0,32a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,160Z"></path></svg> Recent posts</a></h4>
 <ul class="archive">
 
 {% assign all_posts = site.posts | sort: 'date' | reverse %}
@@ -62,7 +62,7 @@ My name is Carlos Rodrigo, I am a husband to Mar, a father to Lucas and Nico, an
 <h4>Currently reading</h4>
 <ul id="books-list" class="archive"><li>…</li></ul>
 </article>
-<hr/>
+
 {% if site.data.strava.name %}
 <article>
 <h4>Latest activity</h4>
@@ -71,7 +71,7 @@ My name is Carlos Rodrigo, I am a husband to Mar, a father to Lucas and Nico, an
   <span class="archive-title">{{ site.data.strava.name }}</span>
   <span class="archive-tag">{{ site.data.strava.type }} &middot; {% assign km = site.data.strava.distance | divided_by: 1000.0 %}{{ km | round: 1 }}km</span>
 </li>
-</ul>
+</ul><hr/>
 </article>
 
 {% endif %}

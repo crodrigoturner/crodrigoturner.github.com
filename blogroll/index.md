@@ -29,6 +29,8 @@ They're not all the feeds on my RSS reader, they're the most worthy.
 <li><a href="https://bradbarrish.com/">Brad Barrish</a></li>
 <li><a href="https://colossus.com/">Colossus</a></li>
 <li><a href="https://tracydurnell.com/">Tracy Durnell</a></li>
+<li><a href="https://www.emgoto.com/">Emma Goto</a></li>
+<li><a href="https://nikhil.io/">Nikhil Anand</a></li>
 </ul>
 
 <a href="mailto:rodrigoturner.carlos@gmail.com">Any recommendations?</a>
