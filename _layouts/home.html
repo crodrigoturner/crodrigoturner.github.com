@@ -111,7 +111,7 @@ My name is Carlos Rodrigo, I am a husband to Mar, a father to Lucas and Nico, an
       if (!post) return;
       var uri = post.uri.replace(“at://”, “”).replace(“app.bsky.feed.post/”, “post/”);
       document.getElementById(“bsky-post”).innerHTML =
-        ““” + post.record.text + “” &mdash; <a href=\”https://bsky.app/profile/” + uri + “\” target=\”_blank\”>more</a>”;
+        “&ldquo;” + post.record.text + “&rdquo; &mdash; <a href=\”https://bsky.app/profile/” + uri + “\” target=\”_blank\”>more</a>”;
     })
     .catch(function () { document.getElementById(“bsky-post”).textContent = “”; });
 
