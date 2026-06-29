@@ -1,4 +1,4 @@
-{% include head.html %}
+﻿{% include head.html %}
 {% include header.html %}
 <section class="wide">
 
@@ -87,65 +87,65 @@ My name is Carlos Rodrigo, I am a husband to Mar, a father to Lucas and Nico, an
 (function () {
   // Last.fm
   fetch(
-    “https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks” +
-    “&user=crodrigoturner&api_key=3c7221c1a33da2e9e202e546d4fc36f2&format=json&limit=1”
+    "https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks" +
+    "&user=crodrigoturner&api_key=3c7221c1a33da2e9e202e546d4fc36f2&format=json&limit=1"
   )
     .then(function (r) { return r.json(); })
     .then(function (data) {
       var tracks = data.recenttracks.track;
       var track  = Array.isArray(tracks) ? tracks[0] : tracks;
-      var now    = track[“@attr”] && track[“@attr”].nowplaying === “true”;
-      document.getElementById(“lastfm-track”).innerHTML =
-        (now ? “&#9834; “ : “”) + “<i>” + track.name + “</i> by “ + track.artist[“#text”];
+      var now    = track["@attr"] && track["@attr"].nowplaying === "true";
+      document.getElementById("lastfm-track").innerHTML =
+        (now ? "&#9834; " : "") + "<i>" + track.name + "</i> by " + track.artist["#text"];
     })
-    .catch(function () { document.getElementById(“lastfm-track”).textContent = “music”; });
+    .catch(function () { document.getElementById("lastfm-track").textContent = "music"; });
 
   // Bluesky
   fetch(
-    “https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed” +
-    “?actor=crodrigoturner.bsky.social&limit=1&filter=posts_no_replies”
+    "https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed" +
+    "?actor=crodrigoturner.bsky.social&limit=1&filter=posts_no_replies"
   )
     .then(function (r) { return r.json(); })
     .then(function (data) {
       var post = data.feed && data.feed[0] && data.feed[0].post;
       if (!post) return;
-      var uri = post.uri.replace(“at://”, “”).replace(“app.bsky.feed.post/”, “post/”);
-      document.getElementById(“bsky-post”).innerHTML =
-        “&ldquo;” + post.record.text + “&rdquo; &mdash; <a href=\”https://bsky.app/profile/” + uri + “\” target=\”_blank\”>more</a>”;
+      var uri = post.uri.replace("at://", "").replace("app.bsky.feed.post/", "post/");
+      document.getElementById("bsky-post").innerHTML =
+        "&ldquo;" + post.record.text + "&rdquo; &mdash; <a href=\"https://bsky.app/profile/" + uri + "\" target=\"_blank\">more</a>";
     })
-    .catch(function () { document.getElementById(“bsky-post”).textContent = “”; });
+    .catch(function () { document.getElementById("bsky-post").textContent = ""; });
 
   // Raindrop bookmarks
   fetch(
-    “https://api.raindrop.io/rest/v1/raindrops/62384300?sort=-created&perpage=5”,
-    { headers: { “Authorization”: “Bearer 81403014-d179-4842-96f3-a627e746cc14” } }
+    "https://api.raindrop.io/rest/v1/raindrops/62384300?sort=-created&perpage=5",
+    { headers: { "Authorization": "Bearer 81403014-d179-4842-96f3-a627e746cc14" } }
   )
     .then(function (r) { return r.json(); })
     .then(function (data) {
       var items = data.items;
       if (!items || !items.length) return;
-      document.getElementById(“raindrop-list”).innerHTML = items.map(function (item) {
-        return “<li><a href=\”” + item.link + “\” target=\”_blank\” class=\”archive-title\”>” +
-          item.title + “</a><span class=\”archive-tag\”>” + (item.domain || “”) + “</span>” +
-          “<span class=\”meta\”>” + (item.excerpt || “”) + “</span></li>”;
-      }).join(“”);
+      document.getElementById("raindrop-list").innerHTML = items.map(function (item) {
+        return "<li><a href=\"" + item.link + "\" target=\"_blank\" class=\"archive-title\">" +
+          item.title + "</a><span class=\"archive-tag\">" + (item.domain || "") + "</span>" +
+          "<span class=\"meta\">" + (item.excerpt || "") + "</span></li>";
+      }).join("");
     })
-    .catch(function () { document.getElementById(“raindrop-list”).innerHTML = “”; });
+    .catch(function () { document.getElementById("raindrop-list").innerHTML = ""; });
 
   // Supabase books
-  var SUPA_KEY = “eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhoYmFobHJuZ3JqenN0ZmFhZ2N5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODA4Mzg2NzksImV4cCI6MjA5NjQxNDY3OX0.5iNFqEkIVwbI40qoQmtCIBFSrSS8w60S0lUkr_MOvMI”;
+  var SUPA_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhoYmFobHJuZ3JqenN0ZmFhZ2N5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODA4Mzg2NzksImV4cCI6MjA5NjQxNDY3OX0.5iNFqEkIVwbI40qoQmtCIBFSrSS8w60S0lUkr_MOvMI";
   fetch(
-    “https://hhbahlrngrjzstfaagcy.supabase.co/rest/v1/books?status=eq.reading&select=title,author”,
-    { headers: { “apikey”: SUPA_KEY, “Authorization”: “Bearer “ + SUPA_KEY } }
+    "https://hhbahlrngrjzstfaagcy.supabase.co/rest/v1/books?status=eq.reading&select=title,author",
+    { headers: { "apikey": SUPA_KEY, "Authorization": "Bearer " + SUPA_KEY } }
   )
     .then(function (r) { return r.json(); })
     .then(function (data) {
       if (!data || !data.length) return;
-      document.getElementById(“books-list”).innerHTML = data.map(function (book) {
-        return “<li><span class=\”archive-title\”>” + book.title + “</span><span class=\”archive-tag\”>” + (book.author || “”) + “</span></li>”;
-      }).join(“”);
+      document.getElementById("books-list").innerHTML = data.map(function (book) {
+        return "<li><span class=\"archive-title\">" + book.title + "</span><span class=\"archive-tag\">" + (book.author || "") + "</span></li>";
+      }).join("");
     })
-    .catch(function () { document.getElementById(“books-list”).innerHTML = “”; });
+    .catch(function () { document.getElementById("books-list").innerHTML = ""; });
 })();
 </script>
 
