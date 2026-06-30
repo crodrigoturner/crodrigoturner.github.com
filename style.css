@@ -27,8 +27,7 @@ body {
   color: var(--color-text);
   font: 400 1rem / 1.7 "Schibsted Grotesk", sans-serif;
   background: var(--color-bg);
-  overflow-x: hidden;
-  max-width: 900px;
+ 
   margin: 0 auto;
   -webkit-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
@@ -99,6 +98,7 @@ section {
   padding: 0;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
+  grid-auto-rows: 250px;
   gap: 20px 16px;
 }
 
