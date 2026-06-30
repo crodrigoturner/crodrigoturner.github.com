@@ -1,19 +1,10 @@
-{% include head.html %}<div class="site-layout">
+{% include head.html %}
 {% include header.html %}
-
-
 <section>
 <article>
-  <h2>{{page.title}}</h2>
-
-  
-
-  {{content}}
-  <span class="meta"><a href="mailto:rodrigoturner.carlos@gmail.com?subject={{ post.title }}">Reply by email</a></span>
+<h2>{{page.title}}</h2>
+{{content}}
+<span class="meta"><a href="mailto:rodrigoturner.carlos@gmail.com?subject={{ post.title }}">Reply by email</a></span>
 <hr/>
 </article>
-
-
 </section>
-{% include footer.html %}
-</div>
