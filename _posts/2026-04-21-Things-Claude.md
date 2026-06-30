@@ -4,6 +4,7 @@ title: Things I've used Claude for
 category: post
 lang: en
 tags: AI
+excerpt: Some of the experiments I've tried with AI agents.
 ---
 
 
