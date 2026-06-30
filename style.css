@@ -65,9 +65,11 @@ header {
     
     z-index: 100;
    
-
-  
-    margin:60px 0 40px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
 }
 nav {
   display: flex;
@@ -97,13 +99,13 @@ nav li a.current {
 /* MAIN CONTENT */
 section {
   width: var(--site-width);
-  margin: 20px auto 0;
+  margin: 20px 0 0 20px ;
   padding: 0;
   float:left;
 }
 
 footer{width: var(--site-width);
-  margin: 0px auto;
+  margin: 0px 0 0 20px;
   padding:  80px 0px;
   float:left;
 font-size:.9em;}
