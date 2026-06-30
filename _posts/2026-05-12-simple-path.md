@@ -3,7 +3,7 @@ layout: post
 title: A simple path to a good life
 lang: en
 tags: betterment
-
+excerpt: easy steps.
 ---
 
 1. Stay in great shape

@@ -4,6 +4,7 @@ title: My name in Landsat
 category: post
 lang: en
 tags: misc.
+excerpt: Names with natural resources.
 ---
 
 ![landstat name](/images/name_landsat.jpeg)

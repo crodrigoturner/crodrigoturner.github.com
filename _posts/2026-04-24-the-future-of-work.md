@@ -2,8 +2,8 @@
 layout: post
 category: post
 title: The future of work
-tags: 
-- AI
+tags: - AI
+excerpt: What will our children do?
 ---
 
 ![ graph of the labor market impact of ai](/images/labour-market.webp)

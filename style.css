@@ -49,9 +49,6 @@ body::before {
   z-index:-9999;
 }
 
-
-
-
 /* HEADER */
 header {
     display: flex;
