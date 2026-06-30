@@ -94,8 +94,8 @@ nav li a.current {
 /* MAIN CONTENT */
 section {
   width: var(--full-width);
-  margin: 300px 0 0 20px;
-  padding: 0;
+  margin: 150px 0 0 0px;
+  padding: 0 20px;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-auto-rows: 250px;
