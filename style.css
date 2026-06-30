@@ -55,20 +55,16 @@ body::before {
 
 /* HEADER */
 header {
-
-   width:var(--site-width);
-    height: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0;
-    
+    padding: 20px 32px;
     z-index: 100;
-   
-position:fixed; 
-top:20px; left:20px;
-  border:1px solid var(--color-border);
-  border-radius:6px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    border: 1px solid var(--color-border);
+    border-radius: 20px;
 }
    
 nav {
