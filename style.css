@@ -99,7 +99,7 @@ section {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-auto-rows: 250px;
-  gap: 20px 16px;
+  gap: 20px 32px;
 
 }
 
@@ -118,11 +118,7 @@ section > p {
   grid-column: span 8;
 }
 
-.fullwidth{width: var(--full-width);
-  margin: 0px 0 0 20px;
-  padding: 0;
-  float:left;
-}
+.fullwidth{width: var(--full-width);}
 
 footer{width: var(--site-width);
   margin: 0px 0 0 20px;
