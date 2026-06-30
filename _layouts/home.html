@@ -40,7 +40,7 @@ My name is Carlos Rodrigo, I am a husband to Mar, a father to Lucas and Nico, an
 {% for post in all_posts %}
 <a href="{{ post.url }}" class="archive-title"><article>
  <h3>{{ post.title }}</h3>
- <p>{{ post.excerpt }}</p>
+ <p>{{ post.excerpt | truncate: 70 }}</p>
   <span class="meta">{{ post.tags | first }}</span>
 </article></a>
 {% endfor %}
