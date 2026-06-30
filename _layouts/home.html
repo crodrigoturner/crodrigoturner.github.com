@@ -34,7 +34,7 @@ document.write(
 
 <article>
 <h3><a href="{{ post.url }}"></a>{{ post.title }}</a></h3>
-<p>{{ post.excerpt | truncate: 70 }}</p>
+<p>{{ post.excerpt | strip_html | truncate: 70 }}</p>
 <span class="meta">{{ post.tags | first }}</span>
 </article>
 
