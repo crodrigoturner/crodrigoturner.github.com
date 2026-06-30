@@ -124,7 +124,10 @@ section > p {
   padding: 10px 20px;
 }  
 .bsky{background:#e3f2fdb8;}
-.contact{background:#ffc8004f;}
+.contact{background:#ffc8004f; display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;}
 
 #books-list {
   display: grid;
