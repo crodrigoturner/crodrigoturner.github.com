@@ -1,13 +1,13 @@
 @charset "UTF-8";
 
 :root {
-  --site-width: 680px;
-  --color-text: #444;
-  --color-link: #095c9f;
-  --color-muted: #607d8b;
+--site-width: 680px;
+--full-width: 100%;
+--color-text: #444;
+--color-link: #095c9f;
+--color-muted: #607d8b;
 --color-bg: #fff;
-  --color-border:#EEE;
-
+--color-border:#EEE;
 }
 
 
@@ -65,12 +65,12 @@ header {
     
     z-index: 100;
    
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  border: 1px solid var(--color-border);
-  border-radius: 6px;
+position:fixed; 
+top:20px; left:20px;
+  border:1px solid var(--color-border);
+  border-radius:6px;
 }
+   
 nav {
   display: flex;
   align-items: center;
@@ -99,7 +99,30 @@ nav li a.current {
 /* MAIN CONTENT */
 section {
   width: var(--site-width);
-  margin: 20px 0 0 20px ;
+  margin: 20px 0 0 20px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 20px 16px;
+}
+
+/* Grid span utilities */
+.col-1 { grid-column: span 1; }
+.col-2 { grid-column: span 2; }
+.col-3 { grid-column: span 3; }
+.col-4 { grid-column: span 4; }
+.col-5 { grid-column: span 5; }
+.col-6 { grid-column: span 6; }
+.col-7 { grid-column: span 7; }
+.col-8 { grid-column: span 8; }
+
+section > hr,
+section > p {
+  grid-column: span 8;
+}
+
+.fullwidth{width: var(--full-width);
+  margin: 0px 0 0 20px;
   padding: 0;
   float:left;
 }
@@ -113,13 +136,11 @@ font-size:.9em;}
   footer ul{display:flex; flex-wrap:wrap; gap:20px; justify-content:center; margin-bottom:20px;}
 
 
-.bsky, .contact {color:var(--color-text);
-  font-size:.9em;
-  padding:10px 20px;
- 
-  width:100%;
-  float:left;
- margin:10px 0;
+.bsky, .contact {
+  color: var(--color-text);
+  font-size: .9em;
+  padding: 10px 20px;
+  grid-column: span 8;
 }  
 .bsky{background:#e3f2fdb8;}
 .contact{background:#ffc8004f;}
@@ -131,10 +152,10 @@ font-size:.9em;}
 }
 
 article {
+  grid-column: span 8;
   width: 100%;
   padding: 0;
-  float:left;
-  margin:0 0 20px 0;
+  margin: 0;
 }
 
 svg{margin-right:10px; 
