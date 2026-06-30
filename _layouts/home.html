@@ -28,22 +28,19 @@ document.write(
 " I hope you're having a great " + weekday[weekdayValue] + "!"
 )
 </script></h3>
-<p>
-My name is Carlos Rodrigo, I am a husband to Mar, a father to Lucas and Nico, and a human-friend to <a href="/2026/06/21/pancho/">Pancho</a>.</p>
-
+<p>My name is Carlos Rodrigo, I am a husband to Mar, a father to Lucas and Nico, and a human-friend to <a href="/2026/06/21/pancho/">Pancho</a>.</p>
 </article>
 
 {% assign all_posts = site.posts | sort: 'date' | reverse %}
 {% for post in all_posts %}
-<a href="{{ post.url }}">
+
 <article>
-<h3>{{ post.title }}</h3>
+<h3><a href="{{ post.url }}"></a>{{ post.title }}</a></h3>
 <p>{{ post.excerpt | truncate: 70 }}</p>
 <span class="meta">{{ post.tags | first }}</span>
 </article>
-</a>
-{% endfor %}
 
+{% endfor %}
 
 <article class="bsky">
 <h4>Bluesky</h4>
@@ -64,11 +61,11 @@ My name is Carlos Rodrigo, I am a husband to Mar, a father to Lucas and Nico, an
 </article>
 
 <article>
-  <p>Listening to <span id="lastfm-track">…</span></p>
-  </article>
+<p>Listening to <span id="lastfm-track">…</span></p>
+</article>
 
-  <article>
-  <p>The web is a big place with lots of things to see. Thank you for visiting my little corner of the internet. (<a href="https://dbco.online/">*</a>)</p>
+<article>
+<p>The web is a big place with lots of things to see. Thank you for visiting my little corner of the internet. (<a href="https://dbco.online/">*</a>)</p>
 <ul>
   <li><a href="/colophon">Colophon</a></li>
   <li><a href="/blogroll">Blogroll</a></li>
@@ -146,4 +143,3 @@ My name is Carlos Rodrigo, I am a husband to Mar, a father to Lucas and Nico, an
     .catch(function () { document.getElementById("books-list").innerHTML = ""; });
 })();
 </script>
-
