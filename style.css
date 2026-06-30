@@ -94,12 +94,13 @@ nav li a.current {
 /* MAIN CONTENT */
 section {
   width: var(--full-width);
-  margin: 20px 0 0 20px;
+  margin: 300px 0 0 20px;
   padding: 0;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-auto-rows: 250px;
   gap: 20px 16px;
+
 }
 
 /* Grid span utilities */
