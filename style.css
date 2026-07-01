@@ -98,7 +98,7 @@ nav li a.current, .filter-btn.is-checked,
 }
 .filter-btn{display:none;}
 
-.home.filter-btn{display:block}
+#home .filter-btn{display:block}
 
 /* MAIN CONTENT */
 section {
