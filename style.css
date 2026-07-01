@@ -91,7 +91,7 @@ nav li a.current {
 }
 /* MAIN CONTENT */
 section {
-  width: var(--full-width);
+  width: var(--site-width);
   margin: 150px 0 0 0px;
   padding: 0 20px;
   display: grid;
