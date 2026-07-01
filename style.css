@@ -104,6 +104,10 @@ section {
 
 }
 
+.single{padding:0 20px;
+  width: var(--site-width);
+  margin: 60px 0;
+}
 
 
 .fullwidth{width: var(--full-width);  display: grid;
