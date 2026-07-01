@@ -1,11 +1,6 @@
 ﻿{% include head.html %}
 {% include header.html %}
-<nav class="filter-nav">
-  <button class="filter-btn is-checked" data-filter="*">All</button>
-  {% for tag in site.tags %}
-  <button class="filter-btn" data-filter=".tag-{{ tag[0] | slugify }}">{{ tag[0] }}</button>
-  {% endfor %}
-</nav>
+
 <section class="fullwidth">
 <article class="hero widget">
 <h3>
@@ -83,10 +78,7 @@ document.write(
 <ul>
   <li><a href="/colophon">Colophon</a></li>
   <li><a href="/blogroll">Blogroll</a></li>
-  <li><a href="/ai">AI</a></li>
-  <li><a href="/tags/uses/">Uses</a></li>
-  <li><a href="/tags/now/">Now</a></li>
-</ul>
+ </ul>
 </article>
 
 <article class="widget">
