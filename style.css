@@ -10,7 +10,6 @@
 --color-border:#EEE;
 }
 
-
 *,
 *::before,
 *::after {
@@ -20,15 +19,14 @@
   list-style: none;
 }
 html {
-  min-height: 101%;
-
+min-height: 101%;
 }
+
 body {
   color: var(--color-text);
   font: 400 1rem / 1.7 "Schibsted Grotesk", sans-serif;
   background: var(--color-bg);
- 
-  margin: 0 auto;
+   margin: 0 auto;
   -webkit-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
 }
@@ -100,17 +98,12 @@ nav li a.current, .filter-btn.is-checked,
 }
 .filter-btn{display:none;}
 
-.home .filter-btn{display:block;}
-
-
+.home.filter-btn{display:block}
 
 /* MAIN CONTENT */
 section {
   width: var(--site-width);
     margin: 60px 0 0 0px;
-    
-
-
 }
 
 .single{padding:0 20px;
