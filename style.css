@@ -129,11 +129,7 @@ section > p {
 .bsky{background:#e3f2fdb8;}
 .contact{background:#ffc8004f;}
 
-#books-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0;
-}
+
 
 article {
   grid-column: span 1;
