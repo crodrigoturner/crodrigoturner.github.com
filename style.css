@@ -151,7 +151,7 @@ article {
 article.photo-card {
   padding: 0;
   overflow: hidden;
-  border-radius: 10px;
+
 }
 article.photo-card img {
   width: 100%;
