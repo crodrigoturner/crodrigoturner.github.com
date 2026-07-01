@@ -64,6 +64,8 @@ header {
     float: left;
         padding: 16px 32px;
 }
+
+.face{display: flex; align-items: center;}
    
 nav {
   display: flex;
