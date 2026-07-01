@@ -8,13 +8,10 @@
 <li><a href="/projects/"{% if page.url contains '/projects/' %} class="current"{% endif %}>Projects</a></li>
 <li><a href="/work/"{% if page.url contains '/work/' %} class="current"{% endif %}>Work</a></li>
 <li><a href="/contact/"{% if page.url contains '/contact/' %} class="current"{% endif %} >Contact</a></li>
-
-</ul>
-
-<ul class="filter-nav">
-    <button class="filter-btn is-checked" data-filter="*">All</button>
+<li>|</li>
+    <li class="filter-btn is-checked" data-filter="*">All</li>
   {% for tag in site.tags %}
-  <button class="filter-btn" data-filter=".tag-{{ tag[0] | slugify }}">{{ tag[0] }}</button>
+  <li class="filter-btn" data-filter=".tag-{{ tag[0] | slugify }}">{{ tag[0] }}</li>
   {% endfor %}
     </ul>
 
