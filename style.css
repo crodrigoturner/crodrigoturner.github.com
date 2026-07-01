@@ -94,14 +94,18 @@ section {
   width: var(--site-width);
   margin: 150px 0 0 0px;
   padding: 0 20px;
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-auto-rows: 250px;
-  gap: 20px 40px;
+
 
 }
 
-/* Grid span utilities */
+
+
+.fullwidth{width: var(--full-width);  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-auto-rows: 250px;
+  gap: 20px 40px;}
+
+  /* Grid span utilities */
 .col-1 { grid-column: span 1; }
 .col-2 { grid-column: span 2; }
 .col-3 { grid-column: span 3; }
@@ -115,8 +119,6 @@ section > hr,
 section > p {
   grid-column: span 8;
 }
-
-.fullwidth{width: var(--full-width);}
 
 .bsky, .contact {
   color: var(--color-text);
