@@ -104,8 +104,8 @@ section {
   grid-template-columns: repeat(8, 1fr);
   grid-auto-rows: 250px;
   gap: 20px 40px;
-column-rule: 1px solid #ccc;
-  row-rule: 1px solid #ccc;}
+column-rule: 1px solid #EEE;
+  row-rule: 1px solid #EEE;}
 
   /* Grid span utilities */
 .col-1 { grid-column: span 1; }
@@ -144,6 +144,7 @@ article {
   }
 
   .cs2{ grid-column: span 2;}
+  .rs2{ grid-row: span 2;}
 
 svg{margin-right:10px; 
   width:20px;
