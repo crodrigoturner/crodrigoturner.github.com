@@ -121,7 +121,7 @@ document.write(
       if (!items || !items.length) return;
       document.getElementById("raindrop-list").innerHTML = items.map(function (item) {
         return "<li><a href=\"" + item.link + "\" target=\"_blank\" class=\"archive-title\">" +
-          item.title + "</a><span class=\"archive-tag\">" + (item.domain || "") + "</span>" +
+          item.title + "</a>" +
           "<span class=\"meta\">" + (item.excerpt || "") + "</span></li>";
       }).join("");
     })
