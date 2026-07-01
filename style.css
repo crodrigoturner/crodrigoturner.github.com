@@ -33,7 +33,7 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-body::before, header::before {
+body::before {
     content: '';
   content: "";
   background-color: transparent;
