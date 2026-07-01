@@ -33,7 +33,7 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-body::before {
+body::before, header::before {
     content: '';
   content: "";
   background-color: transparent;
@@ -52,7 +52,8 @@ body::before {
 /* HEADER */
 header {
   display: flex;
-   
+   background: var(--color-bg);
+
     padding: 16px 32px;
     z-index: 100;
     position: fixed;
