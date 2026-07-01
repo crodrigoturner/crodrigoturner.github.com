@@ -158,7 +158,7 @@ article.photo-card img {
   height: 100%;
   object-fit: cover;
   display: block;
-  border-radius: 10px;
+
 }
 
 svg{margin-right:10px; 
@@ -477,9 +477,7 @@ img {
   height: auto;
   max-width: 100%;
 }
-article img {
-  border-radius: 10px;
-}
+
 img.alignright {
   float: right;
   margin: 0 0 20px 20px;
