@@ -283,7 +283,7 @@ h2 {
   width: 100%;
   float: left;
   color: var(--color-text);
-  margin: 0 0 40px;
+  margin: 20px 0 40px;
 }
 h3 {
   font: 600 1.1em/1.6 "Schibsted Grotesk", sans-serif;
