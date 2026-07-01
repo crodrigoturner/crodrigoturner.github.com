@@ -148,6 +148,19 @@ article {
   .cs2{ grid-column: span 2;}
   .rs2{ grid-row: span 2;}
 
+article.photo-card {
+  padding: 0;
+  overflow: hidden;
+  border-radius: 10px;
+}
+article.photo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+
 svg{margin-right:10px; 
   width:20px;
   height:20px;
