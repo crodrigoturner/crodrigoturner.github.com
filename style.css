@@ -51,17 +51,15 @@ body::before {
 
 /* HEADER */
 header {
-  display: flex; */
-    /* align-items: center; */
-    /* justify-content: space-between; */
+  display: flex;
+   
     padding: 16px 32px;
     z-index: 100;
     position: fixed;
     top: 0px;
     left: 0px;
     border-bottom: 1px solid #eeeeee;
-    /* border-radius: 20px; */
-    /* background: #FFF; */
+   
     width: 100%;
     float: left;
         padding: 16px 32px;
