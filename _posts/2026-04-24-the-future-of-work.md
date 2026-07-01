@@ -6,7 +6,7 @@ tags: - AI
 excerpt: What will our children do?
 ---
 
-![ graph of the labor market impact of ai](/images/labour-market.webp)
+
 
 It seems that, thanks to AI, the future of work has three paths to follow:
 
@@ -17,3 +17,4 @@ It seems that, thanks to AI, the future of work has three paths to follow:
 Whichever path you choose, adaptability appears to be the key skill. Consider Darwin’s Survival of the Fittest, where the fittest are those who best adapt to their immediate environment.
 
 In this new environment, there is no time to waste being a junior or intern, nor to dwell on coding skills lost to AI. 
+![ graph of the labor market impact of ai](/images/labour-market.webp)
