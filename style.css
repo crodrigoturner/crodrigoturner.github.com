@@ -81,7 +81,7 @@ nav ul {
   padding: 0;
   margin: 0;
 }
-nav ul li {
+nav ul li, .filter-btn{
   width: auto;
 }
 nav li a {
@@ -91,10 +91,17 @@ nav li a {
   letter-spacing: 0.01em;
 }
 nav li a:hover,
-nav li a.current {
-  color: #9f3109;
+nav li a.current, .filter-btn.is-checked,
+.filter-btn:hover{
+ 
   opacity: .7;
 }
+
+
+
+
+
+
 /* MAIN CONTENT */
 section {
   width: var(--site-width);
@@ -157,31 +164,6 @@ article.photo-card img {
 
 }
 
-/* FILTER NAV */
-.filter-nav {
-  padding: 56px 0 0;
-  display: flex;
-  gap: 6px;
-  flex-wrap: wrap;
-  border-bottom: 1px solid var(--color-border);
-}
-.filter-btn {
-  background: none;
-  border: 1px solid var(--color-border);
-  padding: 4px 14px;
-  border-radius: 20px;
-  font: 400 0.8em/1.6 "Schibsted Grotesk", sans-serif;
-  color: var(--color-muted);
-  cursor: pointer;
-  transition: background 0.15s, color 0.15s;
-  text-transform: capitalize;
-}
-.filter-btn.is-checked,
-.filter-btn:hover {
-  background: var(--color-text);
-  color: var(--color-bg);
-  border-color: var(--color-text);
-}
 
 svg{margin-right:10px;
   width:20px;
