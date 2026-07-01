@@ -10,5 +10,14 @@
 <li><a href="/contact/"{% if page.url contains '/contact/' %} class="current"{% endif %} >Contact</a></li>
 
 </ul>
+
+<ul class="filter-nav">
+    <button class="filter-btn is-checked" data-filter="*">All</button>
+  {% for tag in site.tags %}
+  <button class="filter-btn" data-filter=".tag-{{ tag[0] | slugify }}">{{ tag[0] }}</button>
+  {% endfor %}
+    </ul>
+
+
 </nav>
 </header>
