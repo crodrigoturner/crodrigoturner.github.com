@@ -65,7 +65,9 @@ header {
         padding: 16px 32px;
 }
 
-.face{display: flex; align-items: center;}
+.face{display: flex; align-items: center; }
+
+.face img{width:79px; height:98px;}
    
 nav {
   display: flex;
