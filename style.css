@@ -110,48 +110,39 @@ section {
 }
 
 
-.fullwidth{width: var(--full-width);  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-auto-rows: 250px;
+.fullwidth { width: var(--full-width); }
 
-column-rule: 1px solid #EEE;
-  row-rule: 1px solid #EEE;}
-
-  /* Grid span utilities */
-.col-1 { grid-column: span 1; }
-.col-2 { grid-column: span 2; }
-.col-3 { grid-column: span 3; }
-.col-4 { grid-column: span 4; }
-.col-5 { grid-column: span 5; }
-.col-6 { grid-column: span 6; }
-.col-7 { grid-column: span 7; }
-.col-8 { grid-column: span 8; }
+  /* Grid span utilities — percentage widths for Isotope fitRows */
+.col-1 { width: 12.5%; }
+.col-2 { width: 25%; }
+.col-3 { width: 37.5%; }
+.col-4 { width: 50%; }
+.col-5 { width: 62.5%; }
+.col-6 { width: 75%; }
+.col-7 { width: 87.5%; }
+.col-8 { width: 100%; }
 
 section > hr,
 section > p {
-  grid-column: span 8;
+  width: 100%;
 }
 
-
-.bsky{background:#e3f2fdb8;}
-.contact{background:#ffc8004f;}
-
-
+.bsky { background: #e3f2fdb8; }
+.contact { background: #ffc8004f; }
 
 article {
-  grid-column: span 1;
-  grid-row: span 1;
-  width: 100%;
-    padding: 20px 20px;
+  width: 12.5%;
+  height: 250px;
+  box-sizing: border-box;
+  padding: 20px;
   margin: 0;
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  overflow: hidden;
 }
-.hero{
-  grid-column: span 2;
-  grid-row: span 1;
-  }
-
-  .cs2{ grid-column: span 2;}
-  .rs2{ grid-row: span 2;}
+.hero { width: 25%; }
+.cs2  { width: 25%; }
+.rs2  { height: 500px; }
 
 article.photo-card {
   padding: 0;
@@ -166,7 +157,33 @@ article.photo-card img {
 
 }
 
-svg{margin-right:10px; 
+/* FILTER NAV */
+.filter-nav {
+  padding: 56px 0 0;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--color-border);
+}
+.filter-btn {
+  background: none;
+  border: 1px solid var(--color-border);
+  padding: 4px 14px;
+  border-radius: 20px;
+  font: 400 0.8em/1.6 "Schibsted Grotesk", sans-serif;
+  color: var(--color-muted);
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  text-transform: capitalize;
+}
+.filter-btn.is-checked,
+.filter-btn:hover {
+  background: var(--color-text);
+  color: var(--color-bg);
+  border-color: var(--color-text);
+}
+
+svg{margin-right:10px;
   width:20px;
   height:20px;
   fill:var(--color-text);
