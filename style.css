@@ -125,10 +125,7 @@ section > p {
   grid-column: span 8;
 }
 
-.bsky, .contact {
-  color: var(--color-text);
-  padding: 10px 20px;
-}  
+
 .bsky{background:#e3f2fdb8;}
 .contact{background:#ffc8004f;}
 
