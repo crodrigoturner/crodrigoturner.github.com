@@ -83,6 +83,8 @@ nav ul {
 }
 nav ul li, .filter-btn{
   width: auto;
+  cursor:pointer;
+  display:none;
 }
 nav li a {
   text-decoration: none;
@@ -98,7 +100,7 @@ nav li a.current, .filter-btn.is-checked,
 }
 
 
-
+.home .filter-btn{display:block;}
 
 
 
