@@ -97,7 +97,7 @@ section {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-auto-rows: 250px;
-  gap: 20px 32px;
+  gap: 20px 40px;
 
 }
 
@@ -124,10 +124,7 @@ section > p {
   padding: 10px 20px;
 }  
 .bsky{background:#e3f2fdb8;}
-.contact{background:#ffc8004f; display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;}
+.contact{background:#ffc8004f;}
 
 #books-list {
   display: grid;
