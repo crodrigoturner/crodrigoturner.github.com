@@ -64,6 +64,7 @@ header {
     /* background: #FFF; */
     width: 100%;
     float: left;
+        padding: 16px 32px;
 }
    
 nav {
