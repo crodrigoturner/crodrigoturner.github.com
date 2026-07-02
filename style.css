@@ -1,6 +1,14 @@
 @charset "UTF-8";
 
 @font-face {
+  font-family: "Berkeley Mono";
+  src: url("/fonts/BerkeleyMonoTrial-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "PP Hatton";
   src: url("/fonts/PPHatton-Medium.woff2") format("woff2");
   font-weight: 500;
@@ -32,7 +40,7 @@ min-height: 101%;
 
 body {
   color: var(--color-text);
-  font: 400 1rem / 1.7 "Schibsted Grotesk", sans-serif;
+  font: 400 1rem / 1.7 "Berkeley Mono", monospace;
   background: var(--color-bg);
    margin: 0 auto;
   -webkit-text-size-adjust: 100%;
