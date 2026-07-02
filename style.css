@@ -40,7 +40,7 @@ min-height: 101%;
 
 body {
   color: var(--color-text);
-  font: 400 1rem / 1.7 "Berkeley Mono", monospace;
+  font: 400 15px / 1.7 "Berkeley Mono", monospace;
   background: var(--color-bg);
    margin: 0 auto;
   -webkit-text-size-adjust: 100%;
