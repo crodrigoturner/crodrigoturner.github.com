@@ -152,3 +152,25 @@ document.write(
     .catch(function () { document.getElementById("books-list").innerHTML = ""; });
 })();
 </script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script>
+var iso = new Isotope(".fullwidth", {
+  layoutMode: "fitRows",
+  itemSelector: "article",
+  percentPosition: true
+});
+document.querySelectorAll(".filter-btn").forEach(function (btn) {
+  btn.addEventListener("click", function () {
+    document.querySelectorAll(".filter-btn").forEach(function (b) {
+      b.classList.remove("is-checked");
+    });
+    btn.classList.add("is-checked");
+    var f = btn.getAttribute("data-filter");
+    iso.arrange({
+      filter: f === "*" ? "*" : function (el) {
+        return el.classList.contains(f.slice(1)) || el.classList.contains("personal");
+      }
+    });
+  });
+});
+</script>
