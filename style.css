@@ -32,7 +32,7 @@ min-height: 101%;
 
 body {
   color: var(--color-text);
-  font: 400 .975rem / 1.7 "Schibsted Grotesk", sans-serif;
+  font: 400 1rem / 1.7 "Schibsted Grotesk", sans-serif;
   background: var(--color-bg);
    margin: 0 auto;
   -webkit-text-size-adjust: 100%;
@@ -332,7 +332,7 @@ h2 {
   margin: 20px 0 40px;
 }
 h3 {
-  font: 500 1.1em/1.6 "PP Hatton", serif;
+  font: 500 1.25em/1.6 "PP Hatton", serif;
   margin: 0;
   width: 100%;
   float: left;
