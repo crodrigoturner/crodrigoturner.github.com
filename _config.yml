@@ -22,7 +22,7 @@ title: The Homepage of Carlos Rodrigo
 email: rodrigoturner.carlos@gmail.com 
 description: >- # this means to ignore newlines until "baseurl:"
   This is where I write about what  I am working on and interested about.
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://carlosrodrigo.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: crodrigoturner
 github_username:  crodrigoturner
