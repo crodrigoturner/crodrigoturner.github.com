@@ -123,7 +123,11 @@ nav li a.current, .filter-btn.is-checked,
 }
 .filter{display:none;}
 
-#home .filter{display:block; border-left:1px solid var(--color-border); padding-left:20px; margin-left:20px; float:right; width:auto; gap:10px;}
+#home .filter{ border-left:1px solid var(--color-border); display: flex;
+  gap: 32px;
+  align-items: center;
+  padding: 0;
+  margin: 0;}
 
 
 
