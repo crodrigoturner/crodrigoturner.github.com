@@ -32,7 +32,7 @@ min-height: 101%;
 
 body {
   color: var(--color-text);
-  font: 400 1rem / 1.7 "Schibsted Grotesk", sans-serif;
+  font: 400 .975rem / 1.7 "Schibsted Grotesk", sans-serif;
   background: var(--color-bg);
    margin: 0 auto;
   -webkit-text-size-adjust: 100%;
