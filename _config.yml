@@ -28,7 +28,6 @@ twitter_username: crodrigoturner
 github_username:  crodrigoturner
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-paginate
 
