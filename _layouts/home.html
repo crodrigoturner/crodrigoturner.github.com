@@ -152,3 +152,18 @@ document.write(
     .catch(function () { document.getElementById("books-list").innerHTML = ""; });
 })();
 </script>
+<script>
+document.querySelectorAll(".filter-btn").forEach(function (btn) {
+  btn.addEventListener("click", function () {
+    document.querySelectorAll(".filter-btn").forEach(function (b) {
+      b.classList.remove("is-checked");
+    });
+    btn.classList.add("is-checked");
+    var f = btn.getAttribute("data-filter");
+    document.querySelectorAll(".fullwidth article").forEach(function (el) {
+      var show = f === "*" || el.classList.contains(f.slice(1)) || el.classList.contains("personal");
+      el.classList.toggle("is-hidden", !show);
+    });
+  });
+});
+</script>

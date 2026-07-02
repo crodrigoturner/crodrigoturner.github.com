@@ -151,29 +151,34 @@ section {
 }
 
 
-.fullwidth { width: var(--full-width); }
+.fullwidth {
+  width: var(--full-width);
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-auto-rows: 250px;
+}
 
-  /* Grid span utilities — percentage widths for Isotope fitRows */
-.col-1 { width: 12.5%; }
-.col-2 { width: 25%; }
-.col-3 { width: 37.5%; }
-.col-4 { width: 50%; }
-.col-5 { width: 62.5%; }
-.col-6 { width: 75%; }
-.col-7 { width: 87.5%; }
-.col-8 { width: 100%; }
+/* Grid span utilities */
+.col-1 { grid-column: span 1; }
+.col-2 { grid-column: span 2; }
+.col-3 { grid-column: span 3; }
+.col-4 { grid-column: span 4; }
+.col-5 { grid-column: span 5; }
+.col-6 { grid-column: span 6; }
+.col-7 { grid-column: span 7; }
+.col-8 { grid-column: span 8; }
 
 section > hr,
 section > p {
-  width: 100%;
+  grid-column: span 8;
 }
 
 .bsky { background: #e3f2fdb8; }
 .contact { background: #ffc8004f; }
 
 article {
-  width: 12.5%;
-  height: 250px;
+  grid-column: span 1;
+  grid-row: span 1;
   box-sizing: border-box;
   padding: 20px;
   margin: 0;
@@ -181,9 +186,10 @@ article {
   border-bottom: 1px solid var(--color-border);
   overflow: hidden;
 }
-.hero { width: 25%; }
-.cs2  { width: 25%; }
-.rs2  { height: 500px; }
+.hero { grid-column: span 2; }
+.cs2  { grid-column: span 2; }
+.rs2  { grid-row: span 2; }
+.fullwidth article.is-hidden { display: none; }
 
 article.photo-card {
   padding: 0;
