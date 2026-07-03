@@ -183,6 +183,8 @@ article {
   border-right: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 .hero { grid-column: span 2; }
 .cs2  { grid-column: span 2; }
@@ -291,7 +293,7 @@ pre code {
   color: var(--color-text);
   text-decoration: none;
 font-weight: 400;
-    margin: 20px 0;
+  margin-top: auto;
 }
 .cta::after {
   content: '->';
