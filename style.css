@@ -159,16 +159,16 @@ section {
 }
 
 @media (max-width: 1919px) {
-  .fullwidth { grid-template-columns: repeat(6, 1fr); }
+  #home section { grid-template-columns: repeat(6, 1fr); }
 }
 @media (max-width: 1479px) {
-  .fullwidth { grid-template-columns: repeat(4, 1fr); }
+  #home section { grid-template-columns: repeat(4, 1fr); }
 }
 @media (max-width: 1023px) {
-  .fullwidth { grid-template-columns: repeat(2, 1fr); }
+  #home section { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 767px) {
-  .fullwidth { grid-template-columns: 1fr; }
+  #home section { grid-template-columns: 1fr; }
 }
 
 /* Grid span utilities */
@@ -204,7 +204,7 @@ article {
 .hero { grid-column: span 2; }
 .cs2  { grid-column: span 2; }
 .rs2  { grid-row: span 2; }
-.fullwidth article.is-hidden { display: none; }
+#home section article.is-hidden { display: none; }
 
 article.photo-card {
   padding: 0;
