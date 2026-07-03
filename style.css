@@ -154,7 +154,7 @@ section {
 .fullwidth {
   width: var(--full-width);
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-auto-rows: 250px;
 }
 
@@ -165,12 +165,10 @@ section {
 .col-4 { grid-column: span 4; }
 .col-5 { grid-column: span 5; }
 .col-6 { grid-column: span 6; }
-.col-7 { grid-column: span 7; }
-.col-8 { grid-column: span 8; }
 
 section > hr,
 section > p {
-  grid-column: span 8;
+  grid-column: span 6;
 }
 
 .bsky { background: #e3f2fdb8; }
