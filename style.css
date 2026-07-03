@@ -110,7 +110,7 @@ nav ul {
   gap: 32px;
   align-items: center;
   padding: 0;
-  margin: 0;
+  margin: 0 32px 0 0;
 }
 nav ul li, .filter-btn{
   width: auto;
@@ -134,7 +134,7 @@ nav li a.current, .filter-btn.is-checked,
 #home .filter{ border-left:1px solid var(--color-border); display: flex;
   gap: 32px;
   align-items: center;
-  padding: 0;
+  padding: 0 0 0 32px;
   margin: 0;}
 
 
@@ -339,7 +339,7 @@ h1 {
   box-shadow: 0 0 0 4px #ffc10742;
 }
 h2 {
-  font: 600 2em/1.6 "Schibsted Grotesk", sans-serif;
+  font: 600 2em/1.6 "PP Hatton", serif;
   width: 100%;
   float: left;
   color: var(--color-text);
