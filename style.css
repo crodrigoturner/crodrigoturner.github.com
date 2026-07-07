@@ -163,8 +163,8 @@ section > p {
   width: 100%;
 }
 
-.bsky { background: #e3f2fdb8; }
-.contact { background: #ffc8004f; }
+.bsky { background: #e3f2fdb8; padding:20px;}
+.contact { background: #ffc8004f; padding:20px;}
 
 article {
   box-sizing: border-box;

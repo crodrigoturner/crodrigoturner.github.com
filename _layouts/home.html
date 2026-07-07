@@ -47,12 +47,15 @@ document.write(
 </article>
 {% endif %}
 {% if forloop.index == 2 %}
+<article>
+<h4>TOPICS</h4>
 <ul class="filter">
 <li class="filter-btn is-checked" data-filter="*">all <span class="tag-count">{{ site.posts | size }}</span></li>
 {% for tag in site.tags %}
 <li class="filter-btn" data-filter=".tag-{{ tag[0] | slugify }}">{{ tag[0] }} <span class="tag-count">{{ tag[1] | size }}</span></li>
 {% endfor %}
 </ul>
+</article>
 {% endif %}
 {% endfor %}
 
