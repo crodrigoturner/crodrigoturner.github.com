@@ -73,7 +73,7 @@ header {
   
   border-bottom: 1px solid #eeeeee;
 width:var(--site-width);
-margin:0 0 calc(50% - var(--site-width)/2);
+margin:0 calc(50% - var(--site-width)/2);
 }
 
 
