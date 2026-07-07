@@ -127,13 +127,20 @@ nav li a.current, .filter-btn.is-checked,
  
   opacity: .7;
 }
-.filter{display:none;}
+.filter { display: none; }
 
-#home .filter{ border-left:1px solid var(--color-border); display: flex;
-  gap: 32px;
-  align-items: center;
-  padding: 16px 0 16px 32px;
-  margin: 0;}
+#home .filter {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px 16px;
+  margin: 0 0 24px;
+}
+
+.tag-count {
+  color: var(--color-muted);
+  font-size: 0.8em;
+  margin-left: 4px;
+}
 
 
 

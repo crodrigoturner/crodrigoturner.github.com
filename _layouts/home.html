@@ -2,6 +2,15 @@
 {% include header.html %}
 
 <section class="fullwidth">
+
+    <ul class="filter">
+<li class="filter-btn is-checked" data-filter="*">all <span class="tag-count">{{ site.posts | size }}</span></li>
+{% for tag in site.tags %}
+<li class="filter-btn" data-filter=".tag-{{ tag[0] | slugify }}">{{ tag[0] }} <span class="tag-count">{{ tag[1] | size }}</span></li>
+{% endfor %}
+</ul>
+
+
 <article class="hero tag-personal">
 <h3>
 <script>
@@ -29,6 +38,8 @@ document.write(
 </script></h3>
 <p>My name is Carlos Rodrigo, I am a husband to Mar, a father to Lucas and Nico, and a human-friend to <a href="/2026/06/21/pancho/">Pancho</a>.</p>
 </article>
+
+
 
 {% assign all_posts = site.posts | sort: 'date' | reverse %}
 {% for post in all_posts %}
