@@ -163,8 +163,7 @@ article {
   box-sizing: border-box;
   padding: 20px;
   margin: 0;
-  border-right: 1px solid var(--color-border);
-  border-left: 1px solid var(--color-border);
+
   border-bottom: 1px solid var(--color-border);
   overflow: hidden;
   display: flex;
