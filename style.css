@@ -168,7 +168,7 @@ section > p {
 
 article {
   box-sizing: border-box;
-  padding: 20px;
+  padding: 20px 0;
   margin: 0;
 
   border-bottom: 1px solid var(--color-border);
@@ -282,13 +282,7 @@ pre code {
 font-weight: 400;
   margin-top: auto;
 }
-.cta::after {
-  content: '->';
-  font-family: "Schibsted Grotesk", sans-serif;
-  font-weight: 400;
-  display: inline-block;
-  transition: transform 0.2s ease;
-}
+
 .cta:hover {
   opacity: 1;
 }
