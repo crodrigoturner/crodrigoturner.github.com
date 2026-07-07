@@ -66,18 +66,15 @@ body::before {
 /* HEADER */
 header {
   display: flex;
-   background: var(--color-bg);
-
-    padding: 0px 32px;
-    z-index: 100;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    border-bottom: 1px solid #eeeeee;
-   
-    width: 100%;
-    float: left;
- 
+  justify-content: center;
+  background: var(--color-bg);
+  padding: 0;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid #eeeeee;
+  width: 100%;
 }
 
 header::before {
@@ -104,6 +101,7 @@ header::before {
 nav {
   display: flex;
   align-items: center;
+  width: 760px;
 }
 nav ul {
   display: flex;
@@ -152,8 +150,8 @@ section {
 
 
 #home section {
-  max-width: 760px;
-  width: 100%;
+  width: 760px;
+  margin: auto;
 }
 
 section > hr,
