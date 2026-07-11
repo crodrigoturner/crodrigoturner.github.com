@@ -18,7 +18,7 @@
 
 :root {
 --site-width: 680px;
---wide-width: 740px;
+--wide-width: 760px;
 --color-text: #444;
 --color-link: #095c9f;
 --color-muted: #607d8b;
@@ -77,7 +77,7 @@ margin:0 calc(50% - var(--wide-width)/2);
 }
 
 sidebar {
-  width: 60px;
+  width: 80px;
   float: right;
   margin-left: 20px;
 }
