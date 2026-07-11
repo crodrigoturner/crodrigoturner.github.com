@@ -18,7 +18,7 @@
 
 :root {
 --site-width: 680px;
---full-width: 100%;
+--wide-width: 740px;
 --color-text: #444;
 --color-link: #095c9f;
 --color-muted: #607d8b;
@@ -77,8 +77,8 @@ margin:0 calc(50% - var(--site-width)/2);
 }
 
 sidebar {
-  width: 200px;
-  float: left;
+  width: 60px;
+  float: right;
   margin-right: 20px;
 }
 
@@ -143,7 +143,7 @@ section {
 
 
 #home section {
- width: var(--site-width);
+ width: var(--wide-width);
   margin: 60px auto;
 }
 

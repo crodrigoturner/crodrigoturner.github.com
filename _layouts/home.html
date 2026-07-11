@@ -87,6 +87,5 @@ document.getElementById("lastfm-track").innerHTML =
 (now ? "&#9834; " : "") + "<i>" + track.name + "</i> by " + track.artist["#text"];
 })
 .catch(function () { document.getElementById("lastfm-track").textContent = "music"; });
-}
-
+})();
 </script>
