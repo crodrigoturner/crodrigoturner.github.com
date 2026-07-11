@@ -4,17 +4,19 @@
 <section>
   <h2>{{ page.title }}</h2>
 
+  <div class="books-grid">
   {% assign reading_posts = site.pages | where_exp: "p", "p.path contains 'reading'" | sort: "date" | reverse %}
   {% for post in reading_posts %}
   {% unless post.path == "reading/index.html" %}
-  <article>
+  <article class="book-card">
     {% if post.cover %}
-    <a href="{{ post.url }}"><img src="{{ post.cover }}" alt="{{ post.title }}" style="width:100%;display:block;margin-bottom:12px;"></a>
+    <a href="{{ post.url }}"><img src="{{ post.cover }}" alt="{{ post.title }}"></a>
     {% endif %}
     <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
     {% if post.excerpt %}<p>{{ post.excerpt }}</p>{% endif %}
   </article>
   {% endunless %}
   {% endfor %}
+  </div>
 
 </section>

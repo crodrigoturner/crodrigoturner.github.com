@@ -72,14 +72,14 @@ header {
   z-index: 100;
   
   border-bottom: 1px solid #eeeeee;
-width:var(--site-width);
-margin:0 calc(50% - var(--site-width)/2);
+width:var(--wide-width);
+margin:0 calc(50% - var(--wide-width)/2);
 }
 
 sidebar {
   width: 60px;
   float: right;
-  margin-right: 20px;
+  margin-left: 20px;
 }
 
 
@@ -119,9 +119,9 @@ nav li a.current, .filter-btn.is-checked,
 .filter { display: none; }
 
 #home .filter {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
   margin: 0 0 24px;
 }
 
@@ -189,6 +189,24 @@ svg{margin-right:10px;
 }
 
 .single h3{margin: 20px 0 10px; font-size:1.2em; color:var(--color-text);}
+
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  width: 100%;
+}
+.book-card img {
+  width: 100%;
+  display: block;
+  margin-bottom: 12px;
+}
+@media (max-width: 900px) {
+  .books-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+  .books-grid { grid-template-columns: 1fr; }
+}
 
 
 footer img{width:150px; display:block; margin: 0 auto;}
