@@ -121,7 +121,7 @@ nav li a.current, .filter-btn.is-checked,
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0 0 24px;
+  margin: 40px 0 24px;
 }
 
 .tag-count {

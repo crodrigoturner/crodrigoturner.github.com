@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Pending dot
-excerpt: An Obsidian plugin to mark notes with an orange pending indicator.
+excerpt: An Obsidian plugin.
 lang: en
 tags: projects
 ---
