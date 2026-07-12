@@ -2,16 +2,7 @@
 {% include header.html %}
 
 <section>
-    <sidebar>
-        
-<h4>TOPICS</h4>
-<ul class="filter">
-<li class="filter-btn is-checked" data-filter="*">all <span class="tag-count">{{ site.posts | size }}</span></li>
-{% for tag in site.tags %}
-<li class="filter-btn" data-filter=".tag-{{ tag[0] | slugify }}">{{ tag[0] }} <span class="tag-count">{{ tag[1] | size }}</span></li>
-{% endfor %}
-</ul>
-    </sidebar>
+
 
 <article class="hero tag-personal">
 <h3>
@@ -55,29 +46,17 @@ document.write(
 </article>
 {% endif %}
 {% endfor %}
-
+<h4>TOPICS</h4>
+<ul class="filter">
+<li class="filter-btn is-checked" data-filter="*">all <span class="tag-count">{{ site.posts | size }}</span></li>
+{% for tag in site.tags %}
+<li class="filter-btn" data-filter=".tag-{{ tag[0] | slugify }}">{{ tag[0] }} <span class="tag-count">{{ tag[1] | size }}</span></li>
+{% endfor %}
+</ul>
 
 {% include footer.html %}
 </section>
 
 
 
-<script>
-(function () {
-// Last.fm
-fetch(
-"https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks" +
-"&user=crodrigoturner&api_key=3c7221c1a33da2e9e202e546d4fc36f2&format=json&limit=1"
-)
-.then(function (r) { return r.json(); })
-.then(function (data) {
-var tracks = data.recenttracks.track;
-var track  = Array.isArray(tracks) ? tracks[0] : tracks;
-var now    = track["@attr"] && track["@attr"].nowplaying === "true";
-document.getElementById("lastfm-track").innerHTML =
-(now ? "&#9834; " : "") + "<i>" + track.name + "</i> by " + track.artist["#text"];
-})
-.catch(function () { document.getElementById("lastfm-track").textContent = "music"; });
-})();
-</script>
 
