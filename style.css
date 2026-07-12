@@ -119,8 +119,8 @@ nav li a.current, .filter-btn.is-checked,
 
 #home .filter {
   display: flex;
-  flex-direction: column;
-  gap: 4px;
+  flex-direction: row;
+  justify-content: space-between;
   margin: 0 0 24px;
 }
 
@@ -223,7 +223,7 @@ svg{margin-right:10px;
 }
 
 
-footer{padding:40px 0; font-size:.9em;}
+footer{padding:40px 0; margin:40px 0 0 0;font-size:.9em;}
 
 footer img{width:150px; display:block; margin: 0 auto;}
 
