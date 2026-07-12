@@ -71,8 +71,8 @@ header {
   z-index: 100;
   
   border-bottom: 1px solid #eeeeee;
-width:var(--wide-width);
-margin:0 calc(50% - var(--wide-width)/2);
+width:var(--site-width);
+margin:0 calc(50% - var(--site-width)/2);
 }
 
 sidebar {
@@ -142,7 +142,7 @@ section {
 
 
 #home section {
- width: var(--wide-width);
+ width: var(--site-width);
   margin: 60px auto;
 }
 
