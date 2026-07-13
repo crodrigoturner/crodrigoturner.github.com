@@ -46,16 +46,10 @@ document.write(
 </article>
 {% endif %}
 {% endfor %}
-
 <ul class="filter">
 {% for tag in site.tags %}
 <li class="filter-btn" data-filter=".tag-{{ tag[0] | slugify }}">{{ tag[0] }} <span class="tag-count">({{ tag[1] | size }})</span></li>
 {% endfor %}
 </ul>
-
 {% include footer.html %}
 </section>
-
-
-
-
