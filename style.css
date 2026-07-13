@@ -392,7 +392,7 @@ a:hover {
   border: none;
 }
 a[target="_blank"]::after {
-  content: '→';
+  content: '↗';
   margin-left: 2px;
   font-family: "Inter", sans-serif;
 }
