@@ -143,10 +143,7 @@ section {
 
 
 
-#home section {
- width: var(--site-width);
-  margin: 60px auto;
-}
+
 
 section > hr,
 section > p {
