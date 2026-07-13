@@ -136,6 +136,7 @@ nav li a.current, .filter-btn.is-checked,
 section {
   width: var(--site-width);
   margin: 60px auto;
+  padding:0 0 100px 0;
 }
 
 
