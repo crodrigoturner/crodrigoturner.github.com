@@ -239,6 +239,9 @@ small {
   float: left;
   width: 100%;
 }
+
+#home .meta{margin:0;}
+
 hr, ul.archive li::after{
   border: none;
   height: 0;
