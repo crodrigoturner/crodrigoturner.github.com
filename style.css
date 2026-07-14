@@ -235,7 +235,7 @@ footer img{width:150px; display:block; margin: 0 auto;}
 small {
   font-size: 0.8em !important;
   color: var(--color-muted);
-  margin: 0;
+  margin: 40px 0 20px;
   float: left;
   width: 100%;
 }
@@ -353,12 +353,12 @@ h2 {
 }
 h3 {
   font: 500 1.25em/1.6  "PP Hatton", serif;
-  margin: 0 0 10px;
+  margin: 20px 0;
   width: 100%;
   float: left;
 }
 
-.home h3{margin:0;}
+#home h3{margin:0;}
 
 h5 {
   font-family: "Schibsted Grotesk", sans-serif;
