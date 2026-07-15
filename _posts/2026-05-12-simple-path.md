@@ -2,7 +2,7 @@
 layout: post
 title: A simple path to a good life
 lang: en
-tags: betterment
+tags: life
 excerpt: Easy steps.
 ---
 
