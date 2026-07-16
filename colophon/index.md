@@ -1,0 +1,16 @@
+---
+layout: page
+title: Colophon
+lang: en
+---
+
+<ul class="bulleted">
+<li>Built with Jekyll.</li>
+<li>Hosted on Github Pages.</li>
+<li>This website emits just <a href="https://www.websitecarbon.com/website/carlosrodrigo-com/">0.12g of CO<sub>2</sub></a> every time someone visits this page.</li>
+<li>The font are PP Hatton from <a href="https://pangrampangram.com/products/hatton">Pangram Pangram</a> foundry and Berkeley Mono from <a href="https://usgraphics.com/products/berkeley-mono">U.S. Graphics Company</a>.</li>
+<li>The contact form is made with Web3forms.</li>
+<li>There is no tracking in this website.</li>
+<li>Icons are from <a href="https://phosphoricons.com/">Phosphor Icons</a>.</li>
+<li>Inspiration came from <a href="https://vhbelvadi.com/" target="_blank">VH Belvadi</a>, <a href="https://nazhamid.com/">Naz Hamid</a>, <a href="https://maggieappleton.com/" target="_blank">Maggie Appleton</a>, <a href="https://julianbleecker.com/" target="_blank">Julian Bleecker</a>, <a href="https://interconnected.org/home/" target="_blank">Matt Webb</a>...
+</ul>
