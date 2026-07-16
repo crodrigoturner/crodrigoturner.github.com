@@ -671,7 +671,7 @@ iframe {
 
 @media only screen and (max-width: 640px) {
   body {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   header {
@@ -730,74 +730,4 @@ iframe {
     flex-basis: 100%;
   }
 }
-
-/* CONTACT FORM */
-
-.contact-form {
-  margin-top: 32px;
-  float: left;
-  width: 100%;
-}
-
-.form-field {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-
-.form-field label, h4 {
-  font-size: 0.8em;
-  color: var(--color-muted);
-  margin: 20px 0;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  font-weight:400;
-}
-
-.form-field input,
-.form-field textarea {
-  font: 400 1em/1.6 "Schibsted Grotesk", sans-serif;
-  color: var(--color-text);
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid var(--color-border);
-  padding: 8px 0;
-  outline: none;
-  width: 100%;
-  resize: vertical;
-  transition: border-color 0.15s ease;
-}
-
-.form-field input:focus,
-.form-field textarea:focus {
-  border-bottom-color: var(--color-text);
-}
-
-.form-submit {
-  font: 400 1em/1 "Schibsted Grotesk", sans-serif;
-  color: var(--color-bg);
-  background: var(--color-text);
-  border: none;
-  padding: 12px 28px;
-  cursor: pointer;
-  border-radius: 2px;
-  transition: opacity 0.15s ease;
-}
-
-.form-submit:hover {
-  opacity: 0.75;
-}
-
-.form-submit:disabled {
-  opacity: 0.4;
-  cursor: default;
-}
-
-.form-status {
-  margin-top: 16px;
-  font-size: 0.85em;
-}
-
-.form-status--ok  { color: #2e7d32; }
-.form-status--err { color: #c62828; }
 
