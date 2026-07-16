@@ -1,7 +1,14 @@
 <header>
+<div class="brand">
+<h1><a href="/"><span class="logo"></span> Carlos Rodrigo</a></h1>
+</div>
+<button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+<span class="nav-toggle-bar"></span>
+<span class="nav-toggle-bar"></span>
+<span class="nav-toggle-bar"></span>
+</button>
 <nav>
-<ul>
-<li><h1><a href="/"><span class="logo"></span></a> Carlos Rodrigo</h1></li>
+<ul id="nav-links">
 <li><a href="/about/"{% if page.url contains '/about/' %} class="current"{% endif %}>About</a></li>
 <li><a href="/"{% if page.url =='/' %} class="current"{% endif %}>Notes</a></li>
 <li><a href="/reading/"{% if page.url contains '/reading/' %} class="current"{% endif %}>Reading</a></li>
@@ -9,6 +16,22 @@
 <li><a href="/contact/"{% if page.url contains '/contact/' %} class="current"{% endif %} >Contact</a></li>
 <li><a href="/more/"{% if page.url contains '/more/' %} class="current"{% endif %} >More</a></li>
 </ul>
-
 </nav>
 </header>
+
+<script>
+(function () {
+var toggle = document.getElementById('nav-toggle');
+var links = document.getElementById('nav-links');
+toggle.addEventListener('click', function () {
+var isOpen = links.classList.toggle('is-open');
+toggle.setAttribute('aria-expanded', isOpen);
+});
+links.querySelectorAll('a').forEach(function (a) {
+a.addEventListener('click', function () {
+links.classList.remove('is-open');
+toggle.setAttribute('aria-expanded', 'false');
+});
+});
+})();
+</script>
