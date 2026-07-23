@@ -548,9 +548,11 @@ ul.bulleted li::before {
 
 .posts li {
 float:left; width:100%;
-  padding: 6px 0;
+max-width:760px;
+margin:40px auto;
+  padding:0;
   color: var(--color-text);
-  width: 100%;
+
       border-bottom: 1px solid #ECEFF1;
 }
 .posts li a:hover {
