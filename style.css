@@ -83,10 +83,10 @@ header {
 
 
 
-header > *, article {    float: left;
+header > *{    float: left;
     width: 100%;
     max-width: 760px;
-    margin: 0px 0 40px;
+    margin: 0px calc(50% - 380px) 40px;
   }
 
 .brand h1 {
