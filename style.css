@@ -542,23 +542,12 @@ ul.bulleted li::before {
 .archive-title:hover {
   opacity: 0.7;
 }
-.archive-tag {
-font-size:.9em;
 
-  color: var(--color-muted);
-  float:left;
- width:40%;
-
-  text-align:right;
-
-}
 
 /* POSTS LIST */
 
 .posts li {
-  display: flex;
-  align-items: baseline;
-  gap: 16px;
+float:left; width:100%;
   padding: 6px 0;
   color: var(--color-text);
   width: 100%;
@@ -579,12 +568,7 @@ font-size:.9em;
 
   white-space: nowrap;
 }
-.posts li .post-date {
-  color: var(--color-text);
-  font-size: .8em;
-  font-family: "PP Fraktion Mono", monospace;
-  white-space: nowrap;
-}
+
 /* IMAGES */
 img {
   border-style: none;
