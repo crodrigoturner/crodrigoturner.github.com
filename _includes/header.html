@@ -17,6 +17,33 @@
 <li><a href="/more/"{% if page.url contains '/more/' %} class="current"{% endif %} >More</a></li>
 </ul>
 </nav>
+<h4>Who I am · What I do · Where I am</h4>
+<article class="hero tag-personal">
+<h3>
+<script>
+currentTime=new Date();
+//getHour() function will retrieve the hour from current time
+if(currentTime.getHours()<13)
+document.write("Good morning!");
+else if(currentTime.getHours()<17)
+document.write("Good afternoon!");
+else
+document.write("Good evening!");
+var weekday = new Array(7)
+weekday[0] = " Sunday"
+weekday[1] = " Monday"
+weekday[2] = " Tuesday"
+weekday[3] = " Wednesday"
+weekday[4] = " Thursday"
+weekday[5] = " Friday"
+weekday[6] = " Saturday"
+var currentDate = new Date()
+weekdayValue = currentDate.getDay()
+document.write(
+" I hope you're having a great " + weekday[weekdayValue] + "!"
+)
+</script></h3>
+<p>My name is Carlos Rodrigo, I am a husband to Mar, a father to Lucas and Nico, and a human-friend to <a href="/2026/06/21/pancho/">Pancho</a>.</p>
 
 {% include footer.html %}
 </header>
