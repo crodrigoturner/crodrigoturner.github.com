@@ -190,6 +190,7 @@ section {
     box-sizing: border-box;
     overflow-y: auto;
     float: none;
+    background:#FFF;
 }
 
 
