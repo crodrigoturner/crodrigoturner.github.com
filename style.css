@@ -33,9 +33,7 @@
   box-sizing: border-box;
   list-style: none;
 }
-html {
-min-height: 101%;
-}
+
 
 body {
   color: var(--color-text);
@@ -207,17 +205,7 @@ section > p {
 .bsky { background: #e3f2fdb8; padding:20px;}
 .contact { background: #ffc8004f; padding:20px;}
 
-article {
-  box-sizing: border-box;
-  padding: 16px 0;
-  margin: 0;
 
-  border-bottom: 1px solid var(--color-border);
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-#home section article.is-hidden { display: none; }
 
 article.photo-card {
   padding: 0;
