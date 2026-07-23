@@ -65,15 +65,26 @@ body::before {
 /* HEADER */
 header {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 32px;
-  padding: 0;
+  padding: 60px 40px;
   z-index: 100;
 
-  border-bottom: 1px solid #eeeeee;
-width:var(--site-width);
-margin:0 calc(50% - var(--site-width)/2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100vh;
+  box-sizing: border-box;
+  overflow-y: auto;
+  border-bottom: none;
+  border-right: 1px solid #eeeeee;
+}
+
+header footer {
+  margin-top: auto;
+  float: none;
 }
 
 .brand h1 {
@@ -168,10 +179,13 @@ nav li a.current, .filter-btn.is-checked,
 
 /* MAIN CONTENT */
 section {
-    width: var(--site-width);
-    margin: 60px calc(50% - var(--site-width) / 2);
-    padding: 0 0 100px 0;
-    float: left;
+    width: 50%;
+    height: 100vh;
+    margin: 0 0 0 50%;
+    padding: 60px 40px 100px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    float: none;
 }
 
 
@@ -684,11 +698,17 @@ iframe {
   }
 
   header {
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    position: static;
     width: 100%;
+    height: auto;
     margin: 0;
     padding: 12px 20px;
+    border-right: none;
+    border-bottom: 1px solid var(--color-border);
+    overflow-y: visible;
   }
 
   .nav-toggle {
@@ -698,6 +718,12 @@ iframe {
   nav {
     width: 100%;
     order: 3;
+  }
+
+  header footer {
+    order: 4;
+    margin-top: 0;
+    width: 100%;
   }
 
   nav ul#nav-links {
@@ -722,8 +748,10 @@ iframe {
 
   section {
     width: 100%;
+    height: auto;
     margin: 0;
     padding: 24px 20px 60px;
+    overflow-y: visible;
   }
 
   #home .filter {

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Preview</title>
+<link href="/style.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width">
+</head>
+<body id="home">
+
+<header>
+<div class="brand">
+<h1><a href="/"><span class="logo"></span> Carlos Rodrigo</a></h1>
+</div>
+<button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+<span class="nav-toggle-bar"></span>
+<span class="nav-toggle-bar"></span>
+<span class="nav-toggle-bar"></span>
+</button>
+<nav>
+<ul id="nav-links">
+<li><a href="/about/">About</a></li>
+<li><a href="/" class="current">Notes</a></li>
+<li><a href="/reading/">Reading</a></li>
+<li><a href="/work/">Work</a></li>
+<li><a href="/contact/">Contact</a></li>
+<li><a href="/more/">More</a></li>
+</ul>
+</nav>
+
+<footer>
+<p>rodrigoturner.carlos@gmail.com</p>
+<p>This too shall pass.</p>
+<p>The web is a big place. Thank you for visiting. (<a href="#">*</a>)</p>
+<p>Listening to <span id="lastfm-track">a song</span></p>
+<p><span id="current-datetime">20260723120000</span></p>
+<p>2026 Carlos Rodrigo Turner. All rights reserved.</p>
+<p><a href="/#top">Back to top</a></p>
+</footer>
+</header>
+
+<script>
+(function () {
+var toggle = document.getElementById('nav-toggle');
+var links = document.getElementById('nav-links');
+toggle.addEventListener('click', function () {
+var isOpen = links.classList.toggle('is-open');
+toggle.setAttribute('aria-expanded', isOpen);
+});
+})();
+</script>
+
+<section>
+<h4>Who I am · What I do · Where I am</h4>
+<article class="hero tag-personal">
+<h3>Good afternoon! I hope you're having a great Thursday!</h3>
+<p>My name is Carlos Rodrigo, I am a husband to Mar, a father to Lucas and Nico, and a human-friend to Pancho.</p>
+</article>
+<h4>Writing and thoughts</h4>
+<ul class="posts">
+<li><a href="#" class="post-title">Some post title number one</a><span class="tag">tag 20260701</span></li>
+<li><a href="#" class="post-title">Some post title number two</a><span class="tag">tag 20260630</span></li>
+<li><a href="#" class="post-title">Some post title number three</a><span class="tag">tag 20260629</span></li>
+<li><a href="#" class="post-title">Some post title number four</a><span class="tag">tag 20260628</span></li>
+<li><a href="#" class="post-title">Some post title number five</a><span class="tag">tag 20260627</span></li>
+<li><a href="#" class="post-title">Some post title number six</a><span class="tag">tag 20260626</span></li>
+<li><a href="#" class="post-title">Some post title number seven</a><span class="tag">tag 20260625</span></li>
+<li><a href="#" class="post-title">Some post title number eight</a><span class="tag">tag 20260624</span></li>
+<li><a href="#" class="post-title">Some post title number nine</a><span class="tag">tag 20260623</span></li>
+<li><a href="#" class="post-title">Some post title number ten</a><span class="tag">tag 20260622</span></li>
+<li><a href="#" class="post-title">Some post title number eleven</a><span class="tag">tag 20260621</span></li>
+<li><a href="#" class="post-title">Some post title number twelve</a><span class="tag">tag 20260620</span></li>
+<li><a href="#" class="post-title">Some post title number thirteen</a><span class="tag">tag 20260619</span></li>
+<li><a href="#" class="post-title">Some post title number fourteen</a><span class="tag">tag 20260618</span></li>
+<li><a href="#" class="post-title">Some post title number fifteen</a><span class="tag">tag 20260617</span></li>
+<li><a href="#" class="post-title">Some post title number sixteen</a><span class="tag">tag 20260616</span></li>
+<li><a href="#" class="post-title">Some post title number seventeen</a><span class="tag">tag 20260615</span></li>
+<li><a href="#" class="post-title">Some post title number eighteen</a><span class="tag">tag 20260614</span></li>
+<li><a href="#" class="post-title">Some post title number nineteen</a><span class="tag">tag 20260613</span></li>
+<li><a href="#" class="post-title">Some post title number twenty</a><span class="tag">tag 20260612</span></li>
+</ul>
+</section>
+
+</body>
+</html>
