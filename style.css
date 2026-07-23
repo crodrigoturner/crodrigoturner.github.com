@@ -80,15 +80,13 @@ header {
   border-right: 1px solid #eeeeee;
 }
 
-header footer {
-  margin-top: auto;
-  float: none;
-}
+
+
 
 header > *, article {    float: left;
     width: 100%;
     max-width: 760px;
-    margin: 0px calc(50% - 380px) 40px;
+    margin: 0px 0 40px;
   }
 
 .brand h1 {
@@ -125,11 +123,7 @@ header > *, article {    float: left;
   transform: translateY(-7px) rotate(-45deg);
 }
 
-sidebar {
-  width: 80px;
-  float: right;
-  margin-left: 20px;
-}
+
 
 
 .face{display: flex; align-items: center; justify-content: center;}
@@ -186,7 +180,7 @@ section {
     width: 50%;
     height: 100vh;
     margin: 0 0 0 50%;
-    padding: 60px 40px 100px;
+    padding: 60px calc(25% - 380px) 100px;
     box-sizing: border-box;
     overflow-y: auto;
     float: none;
