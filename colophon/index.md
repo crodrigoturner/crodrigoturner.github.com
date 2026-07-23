@@ -12,5 +12,5 @@ lang: en
 <li>The contact form is made with Web3forms.</li>
 <li>There is no tracking in this website.</li>
 <li>Icons are from <a href="https://phosphoricons.com/">Phosphor Icons</a>.</li>
-<li>Inspiration came from <a href="https://vhbelvadi.com/" target="_blank">VH Belvadi</a>, <a href="https://nazhamid.com/">Naz Hamid</a>, <a href="https://maggieappleton.com/" target="_blank">Maggie Appleton</a>, <a href="https://julianbleecker.com/" target="_blank">Julian Bleecker</a>, <a href="https://interconnected.org/home/" target="_blank">Matt Webb</a>...
+<li>Inspiration came from <a href="https://vhbelvadi.com/" target="_blank">VH Belvadi</a>, <a href="https://nazhamid.com/">Naz Hamid</a>, <a href="https://maggieappleton.com/" target="_blank">Maggie Appleton</a>, <a href="https://julianbleecker.com/" target="_blank">Julian Bleecker</a>, <a href="https://interconnected.org/home/" target="_blank">Matt Webb</a>...</li>
 </ul>
