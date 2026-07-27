@@ -1,8 +1,6 @@
 {% include head.html %}
-
 {% include header.html %}
 <section>
-
 {% assign all_items = site.posts | concat: site.photos | sort: 'date' | reverse %}
 {% for post in all_items %}
 <article class="post {{ post.tags | join: ' ' }}">
@@ -19,7 +17,4 @@
   <hr/>
 </article>
 {% endfor %}
-
-
-
 </section>

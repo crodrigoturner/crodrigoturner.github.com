@@ -1,6 +1,5 @@
 {% include head.html %}
 {% include header.html %}
-
 <section>
   <h2>Blog</h2>
 <ul class="archive">
@@ -9,9 +8,7 @@
 <li>
   <a href="{{ post.url }}" class="archive-title">{{ post.title }}</a>
   <span class="archive-tag">{{ post.tags | first }}</span>
-  
 </li>
 {% endfor %}
 </ul>
-
 </section>
