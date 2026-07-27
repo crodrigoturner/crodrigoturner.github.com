@@ -499,11 +499,10 @@ margin:0px calc(50% - 380px) 40px;
   flex: 1;
   min-width: 0;
 }
-.posts li .tag {
- font-size:.9em;
- line-height:1.6;
+.tag {
+ font-size:.8em;
+ line-height:2;
   text-transform: uppercase;
-
   white-space: nowrap;
 }
 
