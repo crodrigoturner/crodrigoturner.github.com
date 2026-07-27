@@ -1,7 +1,7 @@
 ﻿{% include head.html %}
 {% include header.html %}
 <section>
-    {% include nav.html %}
+   
     
 {% assign all_posts = site.posts | sort: 'date' | reverse %}
 {% for post in all_posts %}
@@ -11,4 +11,6 @@
 <span class="tag">{{ post.tags | first }} {{ post.date | date: "%Y%m%d" }}</span>
 </article>
 {% endfor %}
+
+ {% include footer.html %}
 </section>
