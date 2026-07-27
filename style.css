@@ -90,12 +90,12 @@ header>* {
   margin: 0;
 }
 
-nav {
+nav, tag-cloud {
   display: flex;
   align-items: center;
 }
 
-nav ul, .tag-cloud {
+nav ul, .tag-cloud a {
   display: flex;
   gap: 32px;
   align-items: center;
