@@ -95,7 +95,7 @@ nav{
   align-items: center;
 }
 
-nav ul, .tag-cloud {
+nav ul, #home .tag-cloud {
   display: flex;
   gap: 32px;
   align-items: center;
@@ -243,7 +243,9 @@ blockquote {
   width: 100%;
 }
 
-
+.tag-cloud {
+display:none;
+}
 
 footer blockquote {
   border: none;
