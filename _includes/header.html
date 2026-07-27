@@ -28,7 +28,7 @@ weekdayValue = currentDate.getDay()
 document.write(
 " I hope you're having a great " + weekday[weekdayValue] + "!"
 )
-</script>
+</script></p><p>
 My name is Carlos Rodrigo, I am a husband to Mar, a father to Lucas and Nico, a salesperson at Tecnica y Avance, and a human-friend to <a href="/2026/06/21/pancho/">Pancho</a>. I'm listening to <span id="lastfm-track">…</span></p>
 
  <div class="tag-cloud">
@@ -36,19 +36,5 @@ My name is Carlos Rodrigo, I am a husband to Mar, a father to Lucas and Nico, a 
 {% for tag in sorted_tags %}<a href="/tags/{{ tag[0] }}/">{{ tag[0] }}</a>
 {% endfor %}
 </div>
-<script>
-(function () {
-// Current date/time, live
-var el = document.getElementById("current-datetime");
-function pad(n) { return String(n).padStart(2, "0"); }
-function tick() {
-var d = new Date();
-el.textContent =
-d.getFullYear() + pad(d.getMonth() + 1) + pad(d.getDate()) +
-pad(d.getHours()) + pad(d.getMinutes()) + pad(d.getSeconds());
-}
-tick();
-setInterval(tick, 1000);
-})();
-</script>
+
 </header>
