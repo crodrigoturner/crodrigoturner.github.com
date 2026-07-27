@@ -3,11 +3,7 @@
 <h1><a href="/"><span class="logo"></span> Carlos Rodrigo</a></h1>
 </div>
  {% include nav.html %}
- <div class="tag-cloud">
-{% assign sorted_tags = site.tags | sort %}
-{% for tag in sorted_tags %}<a href="/tags/{{ tag[0] }}/">{{ tag[0] }}</a>
-{% endfor %}
-</div>
+
 <article>
 <p>
 <script>
@@ -35,7 +31,11 @@ document.write(
 </script>
 My name is Carlos Rodrigo, I am a husband to Mar, a father to Lucas and Nico, a salesperson at Tecnica y Avance, and a human-friend to <a href="/2026/06/21/pancho/">Pancho</a>. I'm listening to <span id="lastfm-track">…</span></p>
 
-
+ <div class="tag-cloud">
+{% assign sorted_tags = site.tags | sort %}
+{% for tag in sorted_tags %}<a href="/tags/{{ tag[0] }}/">{{ tag[0] }}</a>
+{% endfor %}
+</div>
 <script>
 (function () {
 // Current date/time, live
