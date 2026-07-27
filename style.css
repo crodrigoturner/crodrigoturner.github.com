@@ -148,7 +148,7 @@ section > hr,
 section > p {
   width: 100%;
 }
-.post{padding:0 0 100px;}
+.post{padding:0 0 100px;float:left; width:100%;}
 
 article.photo-card {
   padding: 0;
