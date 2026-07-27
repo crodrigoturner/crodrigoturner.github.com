@@ -95,7 +95,7 @@ nav {
   align-items: center;
 }
 
-nav ul {
+nav ul, .tag-cloud {
   display: flex;
   gap: 32px;
   align-items: center;
@@ -511,26 +511,6 @@ ul.bulleted li::before {
   background-image: url("/images/bullet.png");
   background-repeat: no-repeat;
   background-size: contain;
-}
-
-/* TAG CLOUD */
-.tag-cloud {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.tag-cloud a {
-  font-size: .9em;
-  color: var(--color-muted);
-  text-decoration: none;
-}
-
-.tag {
-  font-size: .8em;
-  line-height: 2;
-  text-transform: uppercase;
-  white-space: nowrap;
 }
 
 /* IMAGES */
