@@ -90,12 +90,12 @@ header>* {
   margin: 0;
 }
 
-nav, tag-cloud {
+nav{
   display: flex;
   align-items: center;
 }
 
-nav ul, .tag-cloud a {
+nav ul, .tag-cloud {
   display: flex;
   gap: 32px;
   align-items: center;
@@ -103,8 +103,7 @@ nav ul, .tag-cloud a {
   margin: 0 32px 0 0;
 }
 
-nav ul li,
-.filter-btn {
+nav ul li{
   width: auto;
   cursor: pointer;
 
@@ -185,24 +184,6 @@ svg {
   align-items: end;
 }
 
-.post-row {
-  flex-direction: row;
-  align-items: baseline;
-  gap: 16px;
-}
-
-.post-row h3 {
-  width: 40%;
-  flex-shrink: 0;
-  margin: 0;
-  float: none;
-}
-
-.post-row p {
-  width: 60%;
-  margin: 0;
-}
-
 .book-card img {
   width: 100%;
   display: block;
@@ -231,7 +212,6 @@ footer {
   opacity: .6;
 }
 
-/* MISC COMPONENTS */
 .meta,
 small {
   font-size: 0.8em !important;
@@ -414,8 +394,6 @@ header a {
   text-decoration: none;
 }
 
-
-
 p {
   margin: 0 0 12px;
 }
@@ -549,30 +527,6 @@ figcaption {
   font-size: 0.75rem;
   line-height: 1.5rem;
   color: var(--color-muted);
-}
-
-/* TABLE */
-table {
-  width: 100%;
-  border-top: 2px solid var(--color-border);
-  padding: 15px 0;
-}
-
-td,
-th {
-  text-align: left;
-  font-size: 0.9em;
-  padding: 5px 12px 5px 0;
-  border-bottom: 1px solid var(--color-border);
-  vertical-align: top;
-}
-
-th {
-  font-weight: 600;
-  color: var(--color-muted);
-  font-size: 0.75em;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
 }
 
 /* VIDA EN MESES */
