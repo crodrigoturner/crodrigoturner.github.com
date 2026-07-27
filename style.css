@@ -95,7 +95,7 @@ nav{
   align-items: center;
 }
 
-nav ul, #home .tag-cloud {
+nav ul, #home .tag-cloud, #tag .tag-cloud {
   display: flex;
   gap: 32px;
   align-items: center;
