@@ -17,7 +17,7 @@
 }
 
 :root {
-  --site-width: 680px;
+  --site-width: 640px;
   --color-text: #444;
   --color-link: #095c9f;
   --color-muted: #607d8b;
@@ -83,7 +83,7 @@ header>* {
   float: left;
   width: 100%;
   max-width: 760px;
-  margin: 0px calc(50% - 380px);
+  margin: 0px calc(50% - 320px);
 }
 
 .brand h1 {
@@ -129,7 +129,7 @@ section {
   width: 50%;
   height: 100vh;
   margin: 0 0 0 50%;
-  padding: 60px calc(25% - 380px) 100px;
+  padding: 60px calc(25% - 320px) 100px;
   box-sizing: border-box;
   overflow-y: auto;
   float: none;
