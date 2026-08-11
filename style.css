@@ -68,22 +68,16 @@ header {
   padding: 60px 40px;
   z-index: 100;
 
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100vh;
+  width: 100%;
   box-sizing: border-box;
-  overflow-y: auto;
-  border-bottom: none;
-  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
 }
 
 header>* {
   float: left;
   width: 100%;
-  max-width: 760px;
-  margin: 0px calc(50% - 320px);
+  max-width: var(--site-width);
+  margin: 0 auto;
 }
 
 .brand h1 {
@@ -126,12 +120,11 @@ nav li a.current,
 
 /* MAIN CONTENT */
 section {
-  width: 50%;
-  height: 100vh;
-  margin: 0 0 0 50%;
-  padding: 60px calc(25% - 320px) 100px;
+  width: 100%;
+  max-width: var(--site-width);
+  margin: 0 auto;
+  padding: 60px 40px 100px;
   box-sizing: border-box;
-  overflow-y: auto;
   float: none;
   background: var(--color-bg);
 }
