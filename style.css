@@ -144,6 +144,18 @@ article {
    border-radius: 4px;
    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.07), 0 1.5px 4px 0 rgba(0, 0, 0, 0.04);
 }
+   .hero{display:none;}
+
+#home .hero{  padding: 0px 0 40px;
+  
+  float: left;
+  width: 100%;
+   background: none;
+   border:none;
+display:block;
+   box-shadow:none;}
+
+
 
 article.photo-card {
   padding: 0;
