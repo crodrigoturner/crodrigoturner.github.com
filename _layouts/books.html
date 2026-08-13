@@ -9,11 +9,11 @@
   {% assign reading_posts = site.pages | where_exp: "p", "p.path contains 'reading'" | sort: "date" | reverse %}
   {% for post in reading_posts %}
   {% unless post.path == "reading/index.html" %}
-  <article class="book-card">
+  <span class="book-card">
     {% if post.cover %}
     <a href="{{ post.url }}"><img src="{{ post.cover }}" alt="{{ post.title }}"></a>
     {% endif %}
-    </article>
+  </span>
   {% endunless %}
   {% endfor %}
   </div>
