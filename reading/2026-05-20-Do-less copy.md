@@ -6,6 +6,7 @@ lang: en
 tags: reviews
 excerpt: A review on a book by Nicholas Bate
 cover: /images/do_less.jpg
+status: finished
 ---
 
 I recently finished reading “Do Less yet Achieve More” by [Nicholas Bate](https://huntergatherer21c.com/). 
