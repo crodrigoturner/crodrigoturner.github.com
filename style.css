@@ -229,6 +229,17 @@ svg {
   font: 400 15px / 1.7 "Berkeley Mono", monospace;
 }
 
+.books-grid span{font: 400 15px / 1.7 "Berkeley Mono", monospace;
+  color: var(--color-muted);
+  text-transform: capitalize;
+  font-size: .8em;
+  letter-spacing: .05em;
+}
+
+.finished{color:#a5d6a7; content:"finished";}
+.unfinished{color:hsl(0, 100%, 73%); content:"unfinished";}
+.reading{color:hsl(32, 100%, 66%); content:"reading";}
+
 #archive-search:focus {
   outline: none;
   border-color: var(--color-muted);
