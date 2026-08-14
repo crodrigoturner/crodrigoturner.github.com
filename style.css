@@ -97,6 +97,8 @@ nav ul, #home .tag-cloud, #tag .tag-cloud, #archive .tag-cloud {
   float:left; width:100%;
 }
 
+
+
 nav ul li{
   width: auto;
   cursor: pointer;
