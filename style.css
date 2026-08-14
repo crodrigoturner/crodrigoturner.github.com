@@ -94,6 +94,7 @@ nav ul, #home .tag-cloud, #tag .tag-cloud, #archive .tag-cloud {
   gap: 32px;
   align-items: center;
   padding: 0;
+  float:left; width:100%;
 }
 
 nav ul li{
@@ -236,9 +237,9 @@ svg {
   letter-spacing: .05em;
 }
 
-.finished{color:#a5d6a7; content:"finished";}
-.unfinished{color:hsl(0, 100%, 73%); content:"unfinished";}
-.reading{color:hsl(32, 100%, 66%); content:"reading";}
+.finished{color:#a5d6a7;}
+.unfinished{color:hsl(0, 100%, 73%);}
+.reading{color:hsl(32, 100%, 66%);}
 
 #archive-search:focus {
   outline: none;

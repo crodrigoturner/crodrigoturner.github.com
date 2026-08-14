@@ -13,7 +13,7 @@
     {% if post.cover %}
     <a href="{{ post.url }}"><img src="{{ post.cover }}" alt="{{ post.title }}"></a>
     {% endif %}
-    <span class="{{ post.status }}"></span>
+    <span class="{{ post.status }}">{{ post.status }}</span>
   </li>
   {% endunless %}
   {% endfor %}
