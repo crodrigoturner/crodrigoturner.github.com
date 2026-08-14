@@ -149,7 +149,7 @@ article {
 }
    .hero{display:none;}
 
-#home .hero{  padding: 0px 0 40px;
+#home .hero{  padding: 0px;
   
   float: left;
   width: 100%;
