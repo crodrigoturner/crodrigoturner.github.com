@@ -13,6 +13,7 @@
     {% if post.cover %}
     <a href="{{ post.url }}"><img src="{{ post.cover }}" alt="{{ post.title }}"></a>
     {% endif %}
+    <span class="meta">{{ post.status }}</span>
   </span>
   {% endunless %}
   {% endfor %}

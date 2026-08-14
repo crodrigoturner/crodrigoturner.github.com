@@ -89,7 +89,7 @@ nav{
   align-items: center;
 }
 
-nav ul, #home .tag-cloud, #tag .tag-cloud {
+nav ul, #home .tag-cloud, #tag .tag-cloud, #archive .tag-cloud {
   display: flex;
   gap: 32px;
   align-items: center;
@@ -211,6 +211,61 @@ svg {
   }
 }
 
+
+/* ARCHIVE */
+.search-box {
+  width: 100%;
+  float: left;
+  margin: 0 0 20px;
+}
+
+#archive-search {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font: 400 15px / 1.7 "Berkeley Mono", monospace;
+}
+
+#archive-search:focus {
+  outline: none;
+  border-color: var(--color-muted);
+}
+
+.archive {
+  width: 100%;
+  float: left;
+  margin: 0 0 20px;
+}
+
+.archive-item {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  width: 100%;
+  float: left;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.archive-title {
+  flex: 1 1 auto;
+}
+
+.archive-tag,
+.archive-date {
+  font-size: 0.8em;
+  color: var(--color-muted);
+  white-space: nowrap;
+}
+
+.archive-empty {
+  width: 100%;
+  float: left;
+  color: var(--color-muted);
+}
 
 footer {
   padding: 40px 0;
