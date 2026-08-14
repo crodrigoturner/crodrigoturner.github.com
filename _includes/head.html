@@ -11,19 +11,28 @@
 <script>
 (function () {
 // Last.fm
+var controller = new AbortController();
+var timeout = setTimeout(function () { controller.abort(); }, 5000);
 fetch(
 "https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks" +
-"&user=crodrigoturner&api_key=3c7221c1a33da2e9e202e546d4fc36f2&format=json&limit=1"
+"&user=crodrigoturner&api_key=3c7221c1a33da2e9e202e546d4fc36f2&format=json&limit=1",
+{ signal: controller.signal }
 )
 .then(function (r) { return r.json(); })
 .then(function (data) {
+var el = document.getElementById("lastfm-track");
+if (!el) return;
 var tracks = data.recenttracks.track;
 var track  = Array.isArray(tracks) ? tracks[0] : tracks;
 var now    = track["@attr"] && track["@attr"].nowplaying === "true";
-document.getElementById("lastfm-track").innerHTML =
+el.innerHTML =
 (now ? "&#9834; " : "") + "<i>" + track.name + "</i> by " + track.artist["#text"];
 })
-.catch(function () { document.getElementById("lastfm-track").textContent = "music"; });
+.catch(function () {
+var el = document.getElementById("lastfm-track");
+if (el) el.textContent = "music";
+})
+.finally(function () { clearTimeout(timeout); });
 })();
 </script>
 </head>

@@ -2,15 +2,16 @@
 {% include header.html %}
 <section>
 {% include tagcloud.html %}
-<article>
+
 <h2>{{ page.tag }}</h2>
-<ul>
+
 {% for post in site.tags[page.tag] %}
-<li class="post {{ post.tags }}">
+<article class="post {{ post.tags }}">
   <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
 {{post.content}}
 <span class="meta">{{post.tags}} · {{ post.date | date: '%Y%m%d' }} · <a href="mailto:rodrigoturner.carlos@gmail.com?subject={{ post.title }}">Reply by email</a></span>
-<hr/>
+</article>
+
 {% endfor %}
-</ul></article>
+
 </section>
