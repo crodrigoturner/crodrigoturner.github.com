@@ -730,6 +730,11 @@ iframe {
     overflow-y: visible;
   }
 
+  article {
+    padding: 20px;
+    margin: 0 0 40px;
+  }
+
   #home .filter {
     flex-wrap: wrap;
     gap: 8px 16px;
