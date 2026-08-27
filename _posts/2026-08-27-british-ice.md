@@ -9,7 +9,7 @@ type: comic
 status: finished
 ---
 
-(! cover)[/images/british_ice_cover_sm_lg.jpg]
+![cover](/images/british_ice_cover_sm_lg.jpg)
 
 This graphic novel by <a href="https://owenpomery.com/work">Owen Pomery</a> reminds me of True detective season 4 with Jodie Foster. 
 
