@@ -7,7 +7,7 @@ tags: log
 cover: /images/british_ice_cover_sm_lg.jpg
 type: comic
 status: finished
-score: "###"
+score: "####"
 ---
 
 ![cover](/images/british_ice_cover_sm_lg.jpg)

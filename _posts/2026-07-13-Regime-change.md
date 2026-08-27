@@ -8,6 +8,7 @@ excerpt: A review on a book by Maggie Haberman and Jonathan Swan.
 cover: /images/regime_change_cover.jpg
 status: unfinished
 type: book
+score: "#"
 ---
 
 I'm currently reading "Regime Change: Inside the Imperial Presidency of Donald Trump" by Maggie Haberman and Jonathan Swan.

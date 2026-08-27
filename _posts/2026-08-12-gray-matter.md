@@ -8,6 +8,7 @@ excerpt: Biography of Theodore H. Schwartz
 cover: /images/gray-matters-cover.jpg
 status: reading
 type: book
+score: "####"
 ---
 
 ![Gray matters cover](/images/gray-matters-cover.jpg)
