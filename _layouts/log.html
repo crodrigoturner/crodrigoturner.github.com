@@ -5,13 +5,16 @@
 
 <h2>{{ page.title }}</h2>
 
+<ul class="books-grid">
 {% assign log_posts = site.posts | where_exp: "post", "post.tags contains 'log'" | sort: 'date' | reverse %}
 {% for post in log_posts %}
-<article class="post {% for tag in post.tags %}tag-{{ tag | slugify }} {% endfor %}">
-<a href="{{ post.url }}" class="post-title"><h3>{{ post.title }}</h3></a>
-{{ post.content }}
-<span class="meta">{{ post.tags | join: ' · ' }} · {{ post.date | date: '%Y%m%d' }} · <a href="mailto:rodrigoturner.carlos@gmail.com?subject={{ post.title }}">Reply by email</a></span>
-</article>
+<li class="book-card">
+{% if post.cover %}
+<a href="{{ post.url }}"><img src="{{ post.cover }}" alt="{{ post.title }}"></a>
+{% endif %}
+<span class="{{ post.status }}">{{ post.status }}</span>
+</li>
 {% endfor %}
+</ul>
 
 </section>
