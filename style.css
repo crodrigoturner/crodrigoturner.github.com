@@ -138,7 +138,7 @@ section>p {
 }
 
 article {
-  padding: 0;
+  padding: 0 0 40px;
   margin:0 0 100px;
   float: left;
   width: 100%;
@@ -437,7 +437,7 @@ h2 {
 }
 
 h3 {
-  font: 500 1.25em/1.6 "PP Hatton", serif;
+  font: 500 1.75em/1.6 "PP Hatton", serif;
   margin: 0px 0 20px;
   width: 100%;
   float: left;
