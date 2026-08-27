@@ -138,14 +138,12 @@ section>p {
 }
 
 article {
-  padding: 40px;
+  padding: 0;
   margin:0 0 100px;
   float: left;
   width: 100%;
-   background: var(--color-bg);
-   border:var(--color-border) 1px solid;
-   border-radius: 4px;
-   box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.07), 0 1.5px 4px 0 rgba(0, 0, 0, 0.04);
+  border-bottom: 1px solid var(--color-border);
+  
 }
    .hero{display:none;}
 
@@ -194,6 +192,10 @@ svg {
   gap: 24px;
   width: 100%;
   align-items: end;
+}
+
+.log-grid {
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .book-card img {

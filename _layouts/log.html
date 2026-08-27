@@ -5,7 +5,7 @@
 
 <h2>{{ page.title }}</h2>
 
-<ul class="books-grid">
+<ul class="books-grid log-grid">
 {% assign log_posts = site.posts | where_exp: "post", "post.tags contains 'log'" | sort: 'date' | reverse %}
 {% for post in log_posts %}
 <li class="book-card">
