@@ -41,6 +41,7 @@ body {
   margin: 0 auto;
   -webkit-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
+  height:101%;
 }
 
 body::before {
