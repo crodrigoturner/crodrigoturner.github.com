@@ -195,7 +195,7 @@ svg {
 }
 
 .log-grid {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .book-card img {
@@ -204,15 +204,38 @@ svg {
   margin-bottom: 12px;
 }
 
+.book-card-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 2 / 3;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+}
+
+.book-card-more a {
+  font: 400 15px / 1.7 "Berkeley Mono", monospace;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
 @media (max-width: 900px) {
   .books-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .log-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (max-width: 480px) {
   .books-grid {
     grid-template-columns: 1fr;
+  }
+
+  .log-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
