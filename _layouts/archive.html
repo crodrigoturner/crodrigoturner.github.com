@@ -7,6 +7,18 @@
 <input type="search" id="archive-search" placeholder="Search posts and pages…" autocomplete="off">
 </div>
 
+<h4>Pages</h4>
+<ul class="archive" id="archive-pages">
+{% assign all_pages = site.pages | sort: 'title' %}
+{% for p in all_pages %}
+{% unless p.title == nil or p.url contains '/tags/' or p.url == '/404.html' or p.layout == 'archive' %}
+<li class="archive-item" data-search="{{ p.title | downcase | escape }}">
+<a href="{{ p.url }}" class="archive-title">{{ p.title }}</a>
+</li>
+{% endunless %}
+{% endfor %}
+</ul>
+
 {% include tagcloud.html %}
 
 <h4>Posts</h4>
@@ -21,17 +33,7 @@
 {% endfor %}
 </ul>
 
-<h4>Pages</h4>
-<ul class="archive" id="archive-pages">
-{% assign all_pages = site.pages | sort: 'title' %}
-{% for p in all_pages %}
-{% unless p.title == nil or p.url contains '/tags/' or p.url == '/404.html' or p.layout == 'archive' %}
-<li class="archive-item" data-search="{{ p.title | downcase | escape }}">
-<a href="{{ p.url }}" class="archive-title">{{ p.title }}</a>
-</li>
-{% endunless %}
-{% endfor %}
-</ul>
+
 
 <p id="archive-empty" class="archive-empty hidden">No results.</p>
 
