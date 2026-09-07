@@ -3,7 +3,10 @@ layout: post
 title: Regime Change
 category: post
 lang: en
-tags: log, book, non-fiction
+tags:
+- log
+- book
+- non-fiction
 excerpt: A review on a book by Maggie Haberman and Jonathan Swan.
 cover: /images/regime_change_cover.jpg
 status: unfinished

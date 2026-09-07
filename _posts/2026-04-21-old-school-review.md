@@ -3,7 +3,10 @@ layout: post
 title: Old School
 category: post
 lang: en
-tags: log, book, non-fiction
+tags:
+- log
+- book
+- non-fiction
 excerpt: A review on a book by Nicholas Bate
 cover: /images/img-8529.jpg
 status: finished

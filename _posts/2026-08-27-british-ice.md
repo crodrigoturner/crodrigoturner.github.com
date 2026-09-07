@@ -3,7 +3,9 @@ layout: post
 title: British ice
 excerpt: A graphic novel by Owen Pomery
 lang: en
-tags: log, graphic-novel
+tags: 
+- log
+- graphic-novel
 cover: /images/british_ice_cover_sm_lg.jpg
 type: comic
 status: finished
