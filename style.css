@@ -92,10 +92,13 @@ nav{
 
 nav ul, #home .tag-cloud, #tag .tag-cloud, #archive .tag-cloud {
   display: flex;
+  flex-wrap: wrap;
   gap: 32px;
   align-items: center;
   padding: 0;
   float:left; width:100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 
@@ -156,7 +159,10 @@ article {
    border:none;
 display:block;
    box-shadow:none;
-  font:400 1.5em/1.8 PP Hatton, serif;}
+  font:400 1.5em/1.8 PP Hatton, serif;
+text-align:center;
+  margin:0 0 40px;
+}
 
 
 
