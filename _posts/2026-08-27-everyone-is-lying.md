@@ -3,7 +3,7 @@ layout: post
 title: Everyone is lying to you for money
 excerpt: Everyone is lying to you for money
 lang: en
-tags: log
+tags: log, documentary
 cover: /images/everyoneislying.png
 type: documentary
 status: finished
