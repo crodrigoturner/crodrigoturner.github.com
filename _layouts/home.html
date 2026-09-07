@@ -48,7 +48,7 @@ document.write(
 
 <ul class="books-grid log-grid">
 {% assign log_posts = site.posts | where_exp: "post", "post.tags contains 'log'" | sort: 'date' | reverse %}
-{% for post in log_posts limit:4 %}
+{% for post in log_posts limit:5 %}
 <li class="book-card">
 {% if post.cover %}
 <a href="{{ post.url }}"><img src="{{ post.cover }}" alt="{{ post.title }}"></a>
@@ -56,10 +56,9 @@ document.write(
 
 </li>
 {% endfor %}
-<li class="book-card book-card-more">
-<a href="/log/">More →</a>
-</li>
+
 </ul>
+<a href="/log/">More →</a>
 
 <h4>WORK</h4><p>
 Over 10 years of experience transforming raw data into actionable insights. Currently at Tecnica y Avance, I specialize in fueling business growth through data-driven decision-making. 
