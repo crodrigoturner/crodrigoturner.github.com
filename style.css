@@ -110,6 +110,17 @@ nav ul, #home .tag-cloud, #tag .tag-cloud, #archive .tag-cloud {
   text-transform: capitalize;
   border:1px solid var(--color-border);
   border-radius:4px;
+  padding: 4px 8px;
+}
+.tag-cloud a:hover {
+  font: 400 15px / 1.7 "Berkeley Mono", monospace;
+  color: var(--color-muted);
+  text-decoration: none;
+  text-transform: capitalize;
+  border:none;
+  border-radius:4px;
+   padding: 5px 9px;
+  
 }
 
 nav ul li{

@@ -2,6 +2,6 @@
   
 {% assign sorted_tags = site.tags | sort %}
 
-{% for tag in sorted_tags %}<a href="/tags/{{ tag[0] }}/">{{ tag[0] }} ({{ tag[1].size }})</a>
+{% for tag in sorted_tags %}<a href="/tags/{{ tag[0] }}/">{{ tag[0] }} | {{ tag[1].size }}</a>
 {% endfor %}
 </div>
