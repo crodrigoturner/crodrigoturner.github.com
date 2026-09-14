@@ -62,15 +62,7 @@ lang: en
 <li>Web standards</li>
 </ul>
 <hr/>
-<h3>Tools</h3>
-<ul class="cloud">
-<li>English · Spanish · French</li>
-<li>Windows / MAC OS</li>
-<li>Office</li>
-<li>HTML</li>
-<li>CSS</li>
-<li>JS</li>
-</ul>
+
 
 <hr/>
 <h3>How I work</h3>
@@ -85,15 +77,8 @@ Clear communication and transparency are key to how I work. Here’s what you ca
 </ol>
 </p>
 
-<hr/>
-<h3>Projects</h3>
-<ul>
-{% assign project_posts = site.posts | where_exp: "post", "post.tags contains 'projects'" | sort: 'date' | reverse %}
-{% for post in project_posts %}
-<li><p><b><a href="{{ post.url }}">{{ post.title }}</a></b>{% if post.excerpt and post.excerpt != empty %}: {{ post.excerpt | strip_html | strip }}{% endif %}</p></li>
-{% endfor %}
-</ul>
+
 
 <hr/>
-<p>* Resume and references available on request.</p>
+<p># Resume and references available on request.</p>
 
