@@ -42,7 +42,7 @@ html{ height:101%;}
 body {
   color: var(--color-text);
   font: 400 15px / 1.7 "Berkeley Mono", monospace;
-  background: var(--color-bg);
+  background: #fff;
   margin: 0 auto;
   -webkit-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
@@ -66,16 +66,12 @@ body::before {
 }
 
  .hive-wrap{
-
-
-
-
     --s: 138px;
     --hex-w: calc(var(--s) * 1.7320508);
     --hex-h: calc(var(--s) * 2);
 
     font-family:"Berkeley Mono", monospace;
-    color: var(--ink);
+    color: var(--color-text);
     float: left;
     width: 100%;
     margin: 20px 0 40px;
@@ -127,7 +123,7 @@ body::before {
     padding:1em;
     box-sizing:border-box;
     clip-path: path("M14.34,60.72 L105.17,8.28 Q119.52,0 133.86,8.28 L224.69,60.72 Q239.03,69 239.03,85.56 L239.03,190.44 Q239.03,207 224.69,215.28 L133.86,267.72 Q119.52,276 105.17,267.72 L14.34,215.28 Q0,207 0,190.44 L0,85.56 Q0,69 14.34,60.72 Z");
-    background:var(--paper);
+    background:var(--color-bg);
     text-decoration:none;
     color:inherit;
   }
@@ -242,10 +238,6 @@ header>* {
   margin: 0 auto;
 }
 
-.brand h1 {
-  margin: 0;
-}
-
 nav{
   display: flex;
   align-items: center;
@@ -305,10 +297,7 @@ nav li a {
 }
 
 nav li a:hover,
-nav li a.current,
-.filter-btn.is-checked,
-.filter-btn:hover {
-
+nav li a.current {
   opacity: .7;
 }
 
@@ -321,7 +310,15 @@ section {
   padding: 0px 0px 100px;
   box-sizing: border-box;
   float: none;
- 
+
+}
+
+#home section {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 0;
 }
 
 section>hr,
@@ -337,49 +334,12 @@ article {
   border-bottom: 1px solid var(--color-border);
   
 }
-   .hero{display:none;}
-
-#home .hero{  padding: 0px;
-  
-  float: left;
-  width: 100%;
-   background: none;
-   border:none;
-display:block;
-   box-shadow:none;
-  font:400 1.5em/1.8 PP Hatton, serif;
-text-align:center;
-  margin:0 0 40px;
-}
-
-
-
-article.photo-card {
-  padding: 0;
-  overflow: hidden;
-
-}
-
-article.photo-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-
-}
-
 svg {
   margin-right: 10px;
   width: 20px;
   height: 20px;
   fill: var(--color-text);
   vertical-align: middle;
-}
-
-.single h3 {
-  margin: 20px 0 10px;
-  font-size: 1.2em;
-  color: var(--color-text);
 }
 
 .books-grid {
@@ -398,21 +358,6 @@ svg {
   width: 100%;
   display: block;
   margin-bottom: 12px;
-}
-
-.book-card-more {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  aspect-ratio: 2 / 3;
-  border: 1px solid var(--color-border);
-  border-radius: 4px;
-}
-
-.book-card-more a {
-  font: 400 15px / 1.7 "Berkeley Mono", monospace;
-  color: var(--color-text);
-  text-decoration: none;
 }
 
 @media (max-width: 900px) {
@@ -564,28 +509,8 @@ pre code {
   white-space: pre;
 }
 
-.text {
-  width: 100%;
-}
-
-.dn {
-  display: none;
-}
-
-.cp {
-  text-transform: capitalize;
-}
-
 .hidden {
   display: none;
-}
-
-.visible {
-  display: block;
-}
-
-.disabled {
-  visibility: hidden;
 }
 
 .arrow {
@@ -814,18 +739,6 @@ img.alignleft {
   box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.07), 0 1.5px 4px 0 rgba(0, 0, 0, 0.04);
 }
 
-.thumbnail {
-  max-width: 300px;
-  margin: 0 0 10px;
-  float: left;
-}
-
-figcaption {
-  font-size: 0.75rem;
-  line-height: 1.5rem;
-  color: var(--color-muted);
-}
-
 /* VIDA EN MESES */
 .vidagrid {
   margin: 20px 0;
@@ -874,11 +787,6 @@ figcaption {
   background: #444 !important;
 }
 
-.m {
-  background: #FFF !important;
-  text-align: center;
-}
-
 .alive {
   background-color: #a5d6a7;
   color: #444;
@@ -908,39 +816,9 @@ iframe {
     overflow-y: visible;
   }
 
-  .nav-toggle {
-    display: flex;
-  }
-
   nav {
     width: 100%;
     order: 3;
-  }
-
-  header footer {
-    order: 4;
-    margin-top: 0;
-    width: 100%;
-  }
-
-  nav ul#nav-links {
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0;
-    width: 100%;
-    padding: 8px 0 16px;
-    margin: 0;
-  }
-
-  nav ul#nav-links.is-open {
-    display: flex;
-  }
-
-  nav ul#nav-links li {
-    width: 100%;
-    padding: 12px 0;
-    border-bottom: 1px solid var(--color-border);
   }
 
   section {
@@ -954,18 +832,5 @@ iframe {
   article {
     padding: 20px;
     margin: 0 0 40px;
-  }
-
-  #home .filter {
-    flex-wrap: wrap;
-    gap: 8px 16px;
-  }
-
-  .posts li {
-    flex-wrap: wrap;
-  }
-
-  .posts li .post-title {
-    flex-basis: 100%;
   }
 }
