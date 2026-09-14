@@ -1,11 +1,14 @@
 {% include head.html %}
 {% include header.html %}
 <section>
-            {% for post in site.posts limit:15 %}
-              <article class="post {{ post.tags }}"><h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-                {{post.content}}
-                <span class="meta">{{ post.tags | join: ', ' }} · {{ post.date | date: '%Y%m%d' }} · <a href="mailto:rodrigoturner.carlos@gmail.com?subject={{ post.title }}">Reply by email</a></span>
-              </article>
-              <hr/>
-            {% endfor %}
+<ul class="archive" id="archive-posts">
+{% assign all_posts = site.posts | sort: 'date' | reverse %}
+{% for post in all_posts %}
+<li class="archive-item" data-search="{{ post.title | downcase | escape }} {{ post.tags | join: ' ' | downcase }}">
+<a href="{{ post.url }}" class="archive-title">{{ post.title }}</a>
+<span class="archive-tag">{{ post.tags | join: ', ' }}</span>
+<span class="archive-date">{{ post.date | date: '%Y-%m-%d' }}</span>
+</li>
+{% endfor %}
+</ul>
 </section>
