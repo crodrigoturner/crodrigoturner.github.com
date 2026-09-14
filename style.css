@@ -165,7 +165,7 @@ body::before {
     color:var(--color-muted);
   }
 
-
+.hive-wrap a:hover{opacity:.8;}
 
   .hive-wrap .hex-mark{ display:none; }
 
