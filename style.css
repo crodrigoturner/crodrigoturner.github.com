@@ -63,14 +63,15 @@ body::before {
 }
 
  .hive-wrap{
-    --paper:     #ffffff;
-    --ink:       #20261f;
-    --ink-soft:  #5b6259;
-    --accent:      #2e6f5c;
-    --accent-deep: #1c3f34;
-    --accent-soft: #e3eee7;
-    --line:        #e2ddcf;
-    --line-strong: #cec59f;
+    /* Flexoki — light theme */
+    --paper:     #FFFCF0;
+    --ink:       #100F0F;
+    --ink-soft:  #6F6E69;
+    --accent:      #879A39;
+    --accent-deep: #66800B;
+    --accent-soft: color-mix(in srgb, #66800B 12%, #FFFCF0);
+    --line:        #E6E4D9;
+    --line-strong: #B7B5AC;
 
     --s: 138px;
     --hex-w: calc(var(--s) * 1.7320508);
