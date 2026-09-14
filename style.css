@@ -23,6 +23,8 @@
   --color-muted: #607d8b;
   --color-bg: #fff;
   --color-border: #EEE;
+
+--bg: #e0e1ddff;
 }
 
 *,
@@ -63,15 +65,9 @@ body::before {
 }
 
  .hive-wrap{
-    /* Flexoki — light theme */
-    --paper:     #EEE;
-    --ink:       #100F0F;
-    --ink-soft:  #6F6E69;
-    --accent:      #CCC;
-    --accent-deep: #CCC;
-    --accent-soft: color-mix(in srgb, #66800B 12%, #FFFCF0);
-    --line:        #E6E4D9;
-    --line-strong: #B7B5AC;
+
+
+
 
     --s: 138px;
     --hex-w: calc(var(--s) * 1.7320508);
@@ -131,6 +127,8 @@ body::before {
     box-sizing:border-box;
     clip-path: path("M14.34,60.72 L105.17,8.28 Q119.52,0 133.86,8.28 L224.69,60.72 Q239.03,69 239.03,85.56 L239.03,190.44 Q239.03,207 224.69,215.28 L133.86,267.72 Q119.52,276 105.17,267.72 L14.34,215.28 Q0,207 0,190.44 L0,85.56 Q0,69 14.34,60.72 Z");
     background:var(--paper);
+    text-decoration:none;
+    color:inherit;
   }
 
   @media (max-width: 1000px){
@@ -141,17 +139,17 @@ body::before {
 
   .hive-wrap .cell:hover .face,
   .hive-wrap .cell:focus-within .face{
-    background:var(--accent-soft);
+    background:var(--bg);
     z-index:2;
   }
 
   .hive-wrap .cell--core .face{
-    background:var(--accent-deep);
+    background:var(--bg);
   }
 
   .hive-wrap .cell--core:hover .face,
   .hive-wrap .cell--core:focus-within .face{
-    background:var(--accent);
+    background:var(--bg);
   }
 
   .hive-wrap .face h3{
@@ -160,7 +158,7 @@ body::before {
     line-height:1.1;
     margin:0;
     max-width:64%;
-    color:var(--ink);
+    color:var(--color-text);
   }
 
   .hive-wrap .face p{
@@ -168,7 +166,7 @@ body::before {
     line-height:1.32;
     margin:0;
     max-width:66%;
-    color:var(--ink-soft);
+    color:var(--color-muted);
   }
 
   .hive-wrap .cell--core .face h3,
@@ -205,9 +203,9 @@ body::before {
       height:44px;
       margin-top:2px;
       clip-path: path("M2.28,9.68 L16.72,1.32 Q19,0 21.28,1.32 L35.72,9.68 Q38,11 38,13.64 L38,30.36 Q38,33 35.72,34.32 L21.28,42.68 Q19,44 16.72,42.68 L2.28,34.32 Q0,33 0,30.36 L0,13.64 Q0,11 2.28,9.68 Z");
-      background:var(--accent);
+      background:var(--bg);
     }
-    .hive-wrap .cell--core .hex-mark{ background:var(--accent-deep); }
+    .hive-wrap .cell--core .hex-mark{ background:var(--bg); }
 
     .hive-wrap .face{
       position:static;
