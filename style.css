@@ -133,11 +133,6 @@ body::before {
     }
   }
 
-  .hive-wrap .cell:hover .face,
-  .hive-wrap .cell:focus-within .face{
-    background:var(--bg-muted);
-    z-index:2;
-  }
 
   .hive-wrap .cell--core .face{
     background:var(--bg);
@@ -165,7 +160,7 @@ body::before {
     color:var(--color-muted);
   }
 
-.hive-wrap a:hover{opacity:.8;}
+.hive-wrap a:hover{opacity:.6;}
 
   .hive-wrap .hex-mark{ display:none; }
 
