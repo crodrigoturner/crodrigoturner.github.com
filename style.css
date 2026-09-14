@@ -64,11 +64,11 @@ body::before {
 
  .hive-wrap{
     /* Flexoki — light theme */
-    --paper:     #FFFCF0;
+    --paper:     #EEE;
     --ink:       #100F0F;
     --ink-soft:  #6F6E69;
-    --accent:      #879A39;
-    --accent-deep: #66800B;
+    --accent:      #CCC;
+    --accent-deep: #CCC;
     --accent-soft: color-mix(in srgb, #66800B 12%, #FFFCF0);
     --line:        #E6E4D9;
     --line-strong: #B7B5AC;
@@ -77,7 +77,7 @@ body::before {
     --hex-w: calc(var(--s) * 1.7320508);
     --hex-h: calc(var(--s) * 2);
 
-    font-family:"Public Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-family:"Berkeley Mono", monospace;
     color: var(--ink);
     float: left;
     width: 100%;
@@ -131,11 +131,6 @@ body::before {
     box-sizing:border-box;
     clip-path: path("M14.34,60.72 L105.17,8.28 Q119.52,0 133.86,8.28 L224.69,60.72 Q239.03,69 239.03,85.56 L239.03,190.44 Q239.03,207 224.69,215.28 L133.86,267.72 Q119.52,276 105.17,267.72 L14.34,215.28 Q0,207 0,190.44 L0,85.56 Q0,69 14.34,60.72 Z");
     background:var(--paper);
-    border:1px solid var(--line);
-    transition: transform .25s ease, background-color .25s ease, border-color .25s ease, box-shadow .25s ease;
-    opacity:0;
-    animation: hive-rise .6s ease forwards;
-    animation-delay: calc(var(--i) * 70ms + 120ms);
   }
 
   @media (max-width: 1000px){
@@ -146,26 +141,20 @@ body::before {
 
   .hive-wrap .cell:hover .face,
   .hive-wrap .cell:focus-within .face{
-    transform: scale(1.055);
     background:var(--accent-soft);
-    border-color:var(--line-strong);
-    box-shadow: 0 10px 24px -12px rgba(28,63,52,.35);
     z-index:2;
   }
 
   .hive-wrap .cell--core .face{
     background:var(--accent-deep);
-    border-color:var(--accent-deep);
   }
 
   .hive-wrap .cell--core:hover .face,
   .hive-wrap .cell--core:focus-within .face{
     background:var(--accent);
-    border-color:var(--accent);
   }
 
   .hive-wrap .face h3{
-    font-family:"Fraunces", Georgia, serif;
     font-weight:600;
     font-size:clamp(.92rem, 1.3vw, 1.12rem);
     line-height:1.1;
@@ -192,11 +181,6 @@ body::before {
 
   .hive-wrap .hex-mark{ display:none; }
 
-  @keyframes hive-rise{
-    from{ opacity:0; transform: translateY(8px) scale(.94); }
-    to{ opacity:1; transform: translateY(0) scale(1); }
-  }
-
   @media (max-width: 700px){
     .hive-wrap .hive{
       display:flex;
@@ -222,9 +206,6 @@ body::before {
       margin-top:2px;
       clip-path: path("M2.28,9.68 L16.72,1.32 Q19,0 21.28,1.32 L35.72,9.68 Q38,11 38,13.64 L38,30.36 Q38,33 35.72,34.32 L21.28,42.68 Q19,44 16.72,42.68 L2.28,34.32 Q0,33 0,30.36 L0,13.64 Q0,11 2.28,9.68 Z");
       background:var(--accent);
-      opacity:0;
-      animation: hive-rise .5s ease forwards;
-      animation-delay: calc(var(--i) * 60ms + 80ms);
     }
     .hive-wrap .cell--core .hex-mark{ background:var(--accent-deep); }
 
@@ -245,11 +226,6 @@ body::before {
       box-shadow:none;
       transform:none;
     }
-  }
-
-  @media (prefers-reduced-motion: reduce){
-    .hive-wrap .face, .hive-wrap .hex-mark{ animation:none !important; opacity:1 !important; transition:none !important; }
-    .hive-wrap .cell:hover .face, .hive-wrap .cell:focus-within .face{ transform:none; }
   }
 
 /* HEADER */
