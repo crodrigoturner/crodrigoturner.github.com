@@ -25,6 +25,7 @@
   --color-border: #EEE;
 
 --bg: #e0e1ddff;
+--bg-muted: #e0e1ddaa;
 }
 
 *,
@@ -139,7 +140,7 @@ body::before {
 
   .hive-wrap .cell:hover .face,
   .hive-wrap .cell:focus-within .face{
-    background:var(--bg);
+    background:var(--bg-muted);
     z-index:2;
   }
 
@@ -154,7 +155,7 @@ body::before {
 
   .hive-wrap .face h3{
     font-weight:600;
-    font-size:clamp(.92rem, 1.3vw, 1.12rem);
+    
     line-height:1.1;
     margin:0;
     max-width:64%;
@@ -162,20 +163,14 @@ body::before {
   }
 
   .hive-wrap .face p{
-    font-size:clamp(.66rem, 1vw, .78rem);
+   
     line-height:1.32;
     margin:0;
     max-width:66%;
     color:var(--color-muted);
   }
 
-  .hive-wrap .cell--core .face h3,
-  .hive-wrap .cell--core .face p{
-    color:#fff;
-  }
-  .hive-wrap .cell--core .face p{
-    color:rgba(255,255,255,.8);
-  }
+
 
   .hive-wrap .hex-mark{ display:none; }
 
