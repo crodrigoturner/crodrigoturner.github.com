@@ -155,7 +155,7 @@ body::before {
 
   .hive-wrap .face h3{
     font-weight:600;
-    
+    font-size:1em;
     line-height:1.1;
     margin:0;
     max-width:64%;
@@ -163,7 +163,7 @@ body::before {
   }
 
   .hive-wrap .face p{
-   
+   font-size:.9em;
     line-height:1.32;
     margin:0;
     max-width:66%;
