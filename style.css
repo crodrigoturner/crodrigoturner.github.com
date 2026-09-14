@@ -73,7 +73,7 @@ body::before {
     color: var(--color-text);
     float: left;
     width: 100%;
-    margin: 20px 0 40px;
+    margin: 0px 0 40px;
   }
 
   @media (max-width: 1000px){
@@ -318,7 +318,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 40px 0;
+  padding:0;
 }
 
 section>hr,
