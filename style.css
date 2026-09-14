@@ -283,7 +283,7 @@ nav ul li{
 
 }
 
-nav li a {
+nav a {
   text-decoration: none;
 padding:4px 8px; border-radius:4px;
 background: var(--color-bg);
@@ -291,8 +291,8 @@ background: var(--color-bg);
   letter-spacing: 0.01em;
 }
 
-nav li a:hover,
-nav li a.current {
+nav a:hover,
+nav a.current {
   opacity: .7;
 }
 
