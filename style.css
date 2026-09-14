@@ -587,7 +587,8 @@ h2 {
   width: 100%;
   float: left;
   color: var(--color-text);
-  margin: 0px 0 20px;
+  margin: 0px;
+  text-align: center;
 }
 
 h3 {
