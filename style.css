@@ -562,11 +562,28 @@ h1 {
 .logo {
   display: inline-block;
   flex-shrink: 0;
-  background: #FFB511;
+  background: #205EA6;
   height: 20px;
   width: 20px;
-  border-radius: 50%;
-  box-shadow: 0 0 0 4px #ffc10742;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  box-shadow: 0 0 0 4px #205ea642;
+}
+
+.home-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+}
+
+.home-btn:hover {
+  border-color: var(--color-muted);
+}
+
+.home-btn .arrow {
+  font: 400 14px/1 "Inter", sans-serif !important;
 }
 
 h2 {
