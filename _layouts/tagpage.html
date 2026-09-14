@@ -1,9 +1,8 @@
 {% include head.html %}
 {% include header.html %}
 <section>
-{% include tagcloud.html %}
 
-<h2>{{ page.tag }}</h2>
+
 
 {% for post in site.tags[page.tag] %}
 <article class="post {{ post.tags }}">
