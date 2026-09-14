@@ -29,6 +29,253 @@ document.write(
 </script> <br/>I'm Carlos Rodrigo; A husband to Mar, a father to Lucas and Nico, a salesperson at Tecnica y Avance, and a human-friend to <a href="/2026/06/21/pancho/">Pancho</a>. </p>
 </span>
 
+<h4>SEVENFOLD</h4>
+
+<div class="hive-wrap">
+<ul class="hive">
+  <li class="cell cell--core" style="--dx:0; --dy:0; --i:0;">
+    <span class="hex-mark" aria-hidden="true"></span>
+    <div class="face">
+      <h3>Core</h3>
+      <p>The idea everything else orbits.</p>
+    </div>
+  </li>
+  <li class="cell" style="--dx:calc(var(--s) * 0.8660254 + 5px); --dy:calc(var(--s) * -1.5 - 8.6603px); --i:1;">
+    <span class="hex-mark" aria-hidden="true"></span>
+    <div class="face">
+      <h3>Structure</h3>
+      <p>The scaffolding that holds its shape.</p>
+    </div>
+  </li>
+  <li class="cell" style="--dx:calc(var(--s) * 1.7320508 + 10px); --dy:0; --i:2;">
+    <span class="hex-mark" aria-hidden="true"></span>
+    <div class="face">
+      <h3>Signal</h3>
+      <p>What cuts through the noise.</p>
+    </div>
+  </li>
+  <li class="cell" style="--dx:calc(var(--s) * 0.8660254 + 5px); --dy:calc(var(--s) * 1.5 + 8.6603px); --i:3;">
+    <span class="hex-mark" aria-hidden="true"></span>
+    <div class="face">
+      <h3>Craft</h3>
+      <p>Care in details no one asked for.</p>
+    </div>
+  </li>
+  <li class="cell" style="--dx:calc(var(--s) * -0.8660254 - 5px); --dy:calc(var(--s) * 1.5 + 8.6603px); --i:4;">
+    <span class="hex-mark" aria-hidden="true"></span>
+    <div class="face">
+      <h3>Rhythm</h3>
+      <p>A cadence that outlasts the sprint.</p>
+    </div>
+  </li>
+  <li class="cell" style="--dx:calc(var(--s) * -1.7320508 - 10px); --dy:0; --i:5;">
+    <span class="hex-mark" aria-hidden="true"></span>
+    <div class="face">
+      <h3>Reach</h3>
+      <p>How far the work travels alone.</p>
+    </div>
+  </li>
+  <li class="cell" style="--dx:calc(var(--s) * -0.8660254 - 5px); --dy:calc(var(--s) * -1.5 - 8.6603px); --i:6;">
+    <span class="hex-mark" aria-hidden="true"></span>
+    <div class="face">
+      <h3>Repair</h3>
+      <p>What you fix before it breaks.</p>
+    </div>
+  </li>
+</ul>
+</div>
+
+<style>
+  .hive-wrap{
+    --paper:     #ffffff;
+    --ink:       #20261f;
+    --ink-soft:  #5b6259;
+    --accent:      #2e6f5c;
+    --accent-deep: #1c3f34;
+    --accent-soft: #e3eee7;
+    --line:        #e2ddcf;
+    --line-strong: #cec59f;
+
+    --s: 138px;
+    --hex-w: calc(var(--s) * 1.7320508);
+    --hex-h: calc(var(--s) * 2);
+
+    font-family:"Public Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    color: var(--ink);
+    float: left;
+    width: 100%;
+    margin: 20px 0 40px;
+  }
+
+  @media (max-width: 1000px){
+    .hive-wrap{ --s: 114px; }
+  }
+
+  .hive-wrap .sr-only{
+    position:absolute;
+    width:1px; height:1px;
+    padding:0; margin:-1px;
+    overflow:hidden;
+    clip:rect(0,0,0,0);
+    white-space:nowrap;
+    border:0;
+  }
+
+  .hive-wrap .hive{
+    list-style:none;
+    margin:0 auto;
+    padding:0;
+    position:relative;
+    width:calc(var(--s) * 5.3 + 24px);
+    height:calc(var(--s) * 5.1 + 22px);
+    max-width:100%;
+  }
+
+  .hive-wrap .cell{
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:var(--hex-w);
+    height:var(--hex-h);
+    transform: translate(-50%, -50%) translate(var(--dx), var(--dy));
+    box-sizing:border-box;
+  }
+
+  .hive-wrap .face{
+    position:absolute;
+    inset:0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    gap:.4em;
+    padding:1em;
+    box-sizing:border-box;
+    clip-path: path("M14.34,60.72 L105.17,8.28 Q119.52,0 133.86,8.28 L224.69,60.72 Q239.03,69 239.03,85.56 L239.03,190.44 Q239.03,207 224.69,215.28 L133.86,267.72 Q119.52,276 105.17,267.72 L14.34,215.28 Q0,207 0,190.44 L0,85.56 Q0,69 14.34,60.72 Z");
+    background:var(--paper);
+    border:1px solid var(--line);
+    transition: transform .25s ease, background-color .25s ease, border-color .25s ease, box-shadow .25s ease;
+    opacity:0;
+    animation: hive-rise .6s ease forwards;
+    animation-delay: calc(var(--i) * 70ms + 120ms);
+  }
+
+  @media (max-width: 1000px){
+    .hive-wrap .face{
+      clip-path: path("M11.85,50.16 L86.88,6.84 Q98.73,0 110.58,6.84 L185.61,50.16 Q197.46,57 197.46,70.68 L197.46,157.32 Q197.46,171 185.61,177.84 L110.58,221.16 Q98.73,228 86.88,221.16 L11.85,177.84 Q0,171 0,157.32 L0,70.68 Q0,57 11.85,50.16 Z");
+    }
+  }
+
+  .hive-wrap .cell:hover .face,
+  .hive-wrap .cell:focus-within .face{
+    transform: scale(1.055);
+    background:var(--accent-soft);
+    border-color:var(--line-strong);
+    box-shadow: 0 10px 24px -12px rgba(28,63,52,.35);
+    z-index:2;
+  }
+
+  .hive-wrap .cell--core .face{
+    background:var(--accent-deep);
+    border-color:var(--accent-deep);
+  }
+
+  .hive-wrap .cell--core:hover .face,
+  .hive-wrap .cell--core:focus-within .face{
+    background:var(--accent);
+    border-color:var(--accent);
+  }
+
+  .hive-wrap .face h3{
+    font-family:"Fraunces", Georgia, serif;
+    font-weight:600;
+    font-size:clamp(.92rem, 1.3vw, 1.12rem);
+    line-height:1.1;
+    margin:0;
+    max-width:64%;
+    color:var(--ink);
+  }
+
+  .hive-wrap .face p{
+    font-size:clamp(.66rem, 1vw, .78rem);
+    line-height:1.32;
+    margin:0;
+    max-width:66%;
+    color:var(--ink-soft);
+  }
+
+  .hive-wrap .cell--core .face h3,
+  .hive-wrap .cell--core .face p{
+    color:#fff;
+  }
+  .hive-wrap .cell--core .face p{
+    color:rgba(255,255,255,.8);
+  }
+
+  .hive-wrap .hex-mark{ display:none; }
+
+  @keyframes hive-rise{
+    from{ opacity:0; transform: translateY(8px) scale(.94); }
+    to{ opacity:1; transform: translateY(0) scale(1); }
+  }
+
+  @media (max-width: 700px){
+    .hive-wrap .hive{
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+      width:100%;
+      height:auto;
+    }
+    .hive-wrap .cell{
+      position:static;
+      width:100%;
+      height:auto;
+      transform:none;
+      display:flex;
+      align-items:flex-start;
+      gap:14px;
+    }
+    .hive-wrap .hex-mark{
+      display:block;
+      flex:none;
+      width:38px;
+      height:44px;
+      margin-top:2px;
+      clip-path: path("M2.28,9.68 L16.72,1.32 Q19,0 21.28,1.32 L35.72,9.68 Q38,11 38,13.64 L38,30.36 Q38,33 35.72,34.32 L21.28,42.68 Q19,44 16.72,42.68 L2.28,34.32 Q0,33 0,30.36 L0,13.64 Q0,11 2.28,9.68 Z");
+      background:var(--accent);
+      opacity:0;
+      animation: hive-rise .5s ease forwards;
+      animation-delay: calc(var(--i) * 60ms + 80ms);
+    }
+    .hive-wrap .cell--core .hex-mark{ background:var(--accent-deep); }
+
+    .hive-wrap .face{
+      position:static;
+      inset:auto;
+      flex:1;
+      clip-path:none;
+      align-items:flex-start;
+      text-align:left;
+      gap:.3em;
+      padding:16px 18px;
+      border-radius:8px;
+      transform:none !important;
+    }
+    .hive-wrap .face h3, .hive-wrap .face p{ max-width:100%; }
+    .hive-wrap .cell:hover .face, .hive-wrap .cell:focus-within .face{
+      box-shadow:none;
+      transform:none;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    .hive-wrap .face, .hive-wrap .hex-mark{ animation:none !important; opacity:1 !important; transition:none !important; }
+    .hive-wrap .cell:hover .face, .hive-wrap .cell:focus-within .face{ transform:none; }
+  }
+</style>
+
 <h4>NOTES</h4>
 
 
