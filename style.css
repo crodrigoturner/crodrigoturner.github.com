@@ -21,11 +21,10 @@
   --color-text: #444;
   --color-link: #095c9f;
   --color-muted: #607d8b;
-  --color-bg: #fff;
-  --color-border: #EEE;
+  --color-bg: #01579b14;
 
---bg: #e0e1ddff;
---bg-muted: #e0e1ddaa;
+--bg: #eceff1;
+
 }
 
 *,
