@@ -14,7 +14,7 @@
   --color-link: #095c9f;
   --color-muted: #607d8b;
   --color-bg: #01579b14;
---color-border:#4c70b19c;
+--color-border:#eee;
 --bg: #eceff1;
 
 }
@@ -130,8 +130,8 @@ body::before {
 
 
   .hive-wrap .cell--core .face{
-    background:none;
-     border:2px solid var(--color-bg);
+    background:var(--color-bg);
+   
   }
 
   .hive-wrap .cell--core:hover .face,
@@ -492,7 +492,7 @@ pre code {
 }
 
 .arrow {
-  font: 400 16px/1.6 "Berkeley Mono", monospace !important;
+  font: 400 16px/1.6 "Inter", sans-serif !important;
 }
 
 .cta {
@@ -556,7 +556,7 @@ float:left;
 }
 
 .home-btn .arrow {
-  font: 400 14px/1 "Berkeley Mono", monospace !important;
+  font: 400 14px/1 "Inter", sans-serif !important;
       float: left;
     padding: 4px 10px 0 0;
 
@@ -569,6 +569,7 @@ h2 {
   color: var(--color-text);
   margin: 0px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 h3 {

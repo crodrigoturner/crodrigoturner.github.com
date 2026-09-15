@@ -61,7 +61,7 @@ lang: en
 <li>Web development</li>
 <li>Web standards</li>
 </ul>
-<hr/>
+
 
 
 <hr/>
