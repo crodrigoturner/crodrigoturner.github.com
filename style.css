@@ -108,7 +108,7 @@ body::before {
     height:var(--hex-h);
     transform: translate(-50%, -50%) translate(var(--dx), var(--dy));
     box-sizing:border-box;
-        border: 2px solid var(--color-border);
+        
   }
 
   .hive-wrap .face{
@@ -124,9 +124,10 @@ body::before {
     box-sizing:border-box;
     clip-path: path("M14.34,60.72 L105.17,8.28 Q119.52,0 133.86,8.28 L224.69,60.72 Q239.03,69 239.03,85.56 L239.03,190.44 Q239.03,207 224.69,215.28 L133.86,267.72 Q119.52,276 105.17,267.72 L14.34,215.28 Q0,207 0,190.44 L0,85.56 Q0,69 14.34,60.72 Z");
     background:none;
+    border: 2px solid var(--color-border);
     text-decoration:none;
     color:inherit;
-    
+
   }
 
   @media (max-width: 1000px){
