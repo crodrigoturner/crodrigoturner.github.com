@@ -548,22 +548,14 @@ pre code {
 
 /* TYPOGRAPHY */
 h1 {
-  font: 500 .0001em/1.7 "Schibsted Grotesk", sans-serif;
+  font: 600 1em/1.7 "Berkeley Mono", sans-serif;
   margin: 0;
   display: flex;
   align-items: center;
-  line-height: 1;
+ 
 }
 
-.logo {
-  display: inline-block;
-  flex-shrink: 0;
-  background: #205EA6;
-  height: 20px;
-  width: 20px;
-  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-  box-shadow: 0 0 0 4px #205ea642;
-}
+
 
 .home-btn {
 float:left; 
