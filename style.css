@@ -22,7 +22,7 @@
   --color-link: #095c9f;
   --color-muted: #607d8b;
   --color-bg: #01579b14;
---color-border:#EEE;
+--color-border:#4c70b19c;
 --bg: #eceff1;
 
 }
@@ -122,9 +122,10 @@ body::before {
     padding:1em;
     box-sizing:border-box;
     clip-path: path("M14.34,60.72 L105.17,8.28 Q119.52,0 133.86,8.28 L224.69,60.72 Q239.03,69 239.03,85.56 L239.03,190.44 Q239.03,207 224.69,215.28 L133.86,267.72 Q119.52,276 105.17,267.72 L14.34,215.28 Q0,207 0,190.44 L0,85.56 Q0,69 14.34,60.72 Z");
-    background:var(--color-bg);
+    background:none;
     text-decoration:none;
     color:inherit;
+    border:2px solid var(--color-border);
   }
 
   @media (max-width: 1000px){
@@ -135,7 +136,8 @@ body::before {
 
 
   .hive-wrap .cell--core .face{
-    background:var(--bg);
+    background:none;
+     border:2px solid var(--color-bg);
   }
 
   .hive-wrap .cell--core:hover .face,
