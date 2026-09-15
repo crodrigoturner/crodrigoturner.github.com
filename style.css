@@ -233,20 +233,11 @@ header>* {
 }
 
 nav{
-  display: flex;
-  align-items: center;
+float:left;
+width:150px;
 }
 
-nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  align-items: center;
-  padding: 0;
-  float:left; 
-  max-width: 100%;
-  box-sizing: border-box;
-}
+
 
 #home .tag-cloud, #tag .tag-cloud, #archive .tag-cloud {
   display: flex;
@@ -277,18 +268,14 @@ nav ul {
   
 }
 
-nav ul li{
-  width: auto;
-  cursor: pointer;
 
-}
 
 nav a {
   text-decoration: none;
 padding:4px 8px; border-radius:4px;
 background: var(--color-bg);
   color: var(--color-text);
-  letter-spacing: 0.01em;
+
 }
 
 nav a:hover,
@@ -574,12 +561,15 @@ float:left;
 
 .home-btn .arrow {
   font: 400 14px/1 "Inter", sans-serif !important;
+      float: left;
+    padding: 4px 10px 0 0;
+
 }
 
 h2 {
   font: 600 1.5em/1.6 "PP Hatton", serif;
-  width: 100%;
-  float: left;
+  width: calc(100% - 150px);
+  float: right;
   color: var(--color-text);
   margin: 0px;
   text-align: center;
