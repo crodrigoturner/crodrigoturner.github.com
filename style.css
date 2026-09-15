@@ -108,6 +108,7 @@ body::before {
     height:var(--hex-h);
     transform: translate(-50%, -50%) translate(var(--dx), var(--dy));
     box-sizing:border-box;
+        border: 2px solid var(--color-border);
   }
 
   .hive-wrap .face{
@@ -125,7 +126,7 @@ body::before {
     background:none;
     text-decoration:none;
     color:inherit;
-    border:2px solid var(--color-border);
+    
   }
 
   @media (max-width: 1000px){
