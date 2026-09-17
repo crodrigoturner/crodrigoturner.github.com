@@ -1,65 +1,85 @@
 {% include head.html %}
 
 <section>
-<div class="hive-wrap">
-<ul class="hive">
-  <li class="cell cell--core" style="--dx:0; --dy:0; --i:0;">
-    <span class="hex-mark " aria-hidden="true"></span>
-   <span class="face" aria-hidden="true">
+
+<article class="hero">
       <h1>Carlos Rodrigo</h1>
       <p>Husband & Father</p>
-</span>
-  </li>
-  <li class="cell" style="--dx:calc(var(--s) * 0.8660254 + 5px); --dy:calc(var(--s) * -1.5 - 8.6603px); --i:1;">
-    <span class="hex-mark" aria-hidden="true"></span>
-    <a class="face" href="/contact/">
-      <h3>Contact</h3>
-      <p>Get in touch</p>
-    </a>
-  </li>
 
-  <li class="cell" style="--dx:calc(var(--s) * 0.8660254 + 5px); --dy:calc(var(--s) * 1.5 + 8.6603px); --i:3;">
-    <span class="hex-mark" aria-hidden="true"></span>
-    <a class="face" href="/tags/projects/">
-      <h3>Projects</h3>
-      <p>Side projects and experiments</p>
+      <span class="hero"><h4>FATHER, HUSBAND, INTERNET ENTHUSIAST</h4>
+<p>
+<script>
+currentTime=new Date();
+//getHour() function will retrieve the hour from current time
+if(currentTime.getHours()<13)
+document.write("Good morning!");
+else if(currentTime.getHours()<17)
+document.write("Good afternoon!");
+else
+document.write("Good evening!");
+var weekday = new Array(7)
+weekday[0] = " Sunday"
+weekday[1] = " Monday"
+weekday[2] = " Tuesday"
+weekday[3] = " Wednesday"
+weekday[4] = " Thursday"
+weekday[5] = " Friday"
+weekday[6] = " Saturday"
+var currentDate = new Date()
+weekdayValue = currentDate.getDay()
+document.write(
+" I hope you're having a great " + weekday[weekdayValue] + "!"
+)
+</script> <br/>I'm Carlos Rodrigo; A husband to Mar, a father to Lucas and Nico, a salesperson at Tecnica y Avance, and a human-friend to <a href="/2026/06/21/pancho/">Pancho</a>. </p>
+</span>
+</article>
+
+   <article>
+    <a href="/about/">
+      <h3>Bio</h3>
+      <p>Who I am</p>
     </a>
-  </li>
-  <li class="cell" style="--dx:calc(var(--s) * -0.8660254 - 5px); --dy:calc(var(--s) * 1.5 + 8.6603px); --i:4;">
-    <span class="hex-mark" aria-hidden="true"></span>
-    <a class="face" href="/more/">
-      <h3>More</h3>
-      <p>Miscellaneous, search and archive</p>
-    </a>
-  </li>
-  <li class="cell" style="--dx:calc(var(--s) * -1.7320508 - 10px); --dy:0; --i:5;">
-    <span class="hex-mark" aria-hidden="true"></span>
-    <a class="face" href="/notes/">
+  </article>
+
+
+
+  <article>
+    <a href="/notes/">
       <h3>Notes</h3>
       <p>Thoughts & reflections</p>
     </a>
-  </li>
-  <li class="cell" style="--dx:calc(var(--s) * -0.8660254 - 5px); --dy:calc(var(--s) * -1.5 - 8.6603px); --i:6;">
-    <span class="hex-mark" aria-hidden="true"></span>
-    <a class="face" href="/work/">
+  </article>
+  <article>
+    <a href="/work/">
  <h3>Work</h3><p>
  What I do </p>
 
     </a>
-  </li>
-   <li class="cell" style="--dx:calc(var(--s) * 1.7320508 + 10px); --dy:0; --i:2;">
-    <span class="hex-mark" aria-hidden="true"></span>
-    <a class="face" href="/about/">
-      <h3>Bio</h3>
-      <p>Who I am</p>
+  </article>
+  <article >
+    <a href="/tags/projects/">
+      <h3>Projects</h3>
+      <p>Side projects and experiments</p>
     </a>
-  </li>
-</ul>
-</div>
+  </article>
 
-<style>
- 
-</style>
+  <article>
+    <a href="/more/">
+      <h3>More</h3>
+      <p>Miscellaneous, search and archive</p>
+    </a>
+  </article>
+
+
+<article>
+  <p>Always happy to talk — about work, ideas, or anything in between. </p>
+<p>Drop me a line <span class="arrow">-></span> <a href="mailto:rodrigoturner.carlos@gmail.com">rodrigoturner.carlos@gmail.com</a>
+<ul class="bulleted">
+<li><a href="https://www.linkedin.com/in/crodrigoturner/" target="_blank">Linkedin</a></li>
+<li><a href="https://github.com/crodrigoturner" target="_blank">Github</a></li>
+<li><a href="https://bsky.app/profile/crodrigoturner.bsky.social" target="_blank">Bluesky</a></li>
+</ul> 
+</article>
 
 
 
