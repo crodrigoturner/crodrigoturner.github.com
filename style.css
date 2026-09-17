@@ -301,7 +301,7 @@ section {
 
 #home section article{
   margin:0 0 20px 0;
-  padding:20px 0;
+  padding:10px 0;
   float:left; width:100%;
   border-bottom:1px solid var(--color-border);
 }
@@ -313,7 +313,7 @@ section {
   
 }
 
-#home article a:hover::after{}
+
 
 section>hr,
 section>p {
