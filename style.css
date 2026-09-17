@@ -310,6 +310,7 @@ section {
   content: '→';
   float: right;
   font-family: "Inter", sans-serif;
+  
 }
 
 #home article a:hover::after{}
