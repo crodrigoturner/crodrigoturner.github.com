@@ -291,13 +291,7 @@ section {
 
 }
 
-#home section {
-  min-height: 100dvh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding:0;
-}
+
 
 #home section article{
   margin:0;
@@ -553,7 +547,7 @@ pre code {
 
 /* TYPOGRAPHY */
 h1 {
-  font: 600 1em/1.7 "Berkeley Mono", monospace;
+  font: 600 2em/1 "Berkeley Mono", monospace;
   margin: 0;
   display: flex;
   align-items: center;
