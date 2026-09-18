@@ -548,7 +548,7 @@ pre code {
 /* TYPOGRAPHY */
 h1 {
   font: 600 2em/1 "Berkeley Mono", monospace;
-  margin: 0;
+  margin: 40px 0 0 0;
   display: flex;
   align-items: center;
  
