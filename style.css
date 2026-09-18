@@ -313,7 +313,13 @@ section {
   
 }
 
-
+.excerpt {
+  font-size: 0.8em;
+  color: var(--color-muted);
+  text-transform: capitalize;
+  font-weight: 400;
+  letter-spacing: .05em;
+}
 
 section>hr,
 section>p {
