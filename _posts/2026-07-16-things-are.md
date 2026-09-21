@@ -4,6 +4,7 @@ title: Things are...
 excerpt: We have chosen this world
 lang: en
 tags: life
+type: flow
 ---
 
 Things are the way they are because we have consistently made the choices that have led to this outcome.

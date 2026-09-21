@@ -7,7 +7,9 @@ tags:
 - log
 - documentary
 cover: /images/everyoneislying.png
-type: documentary
+type: 
+- documentary
+- flow
 status: finished
 score: "###"
 ---

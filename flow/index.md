@@ -1,0 +1,4 @@
+---
+layout: stock
+title: Stock
+---
