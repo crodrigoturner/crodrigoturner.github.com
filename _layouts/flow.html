@@ -1,12 +1,11 @@
 {% include head.html %}
 {% include header.html %}
 <section>
-<ul class="archive" id="archive-posts">
+<ul >
 {% assign all_posts = site.posts | where: "type", "flow" | sort: 'date' | reverse %}
 {% for post in all_posts %}
 <li class="archive-item" data-search="{{ post.title | downcase | escape }} {{ post.tags | join: ' ' | downcase }}">
 {{ post.content }}
-
 </li>
 {% endfor %}
 </ul>
