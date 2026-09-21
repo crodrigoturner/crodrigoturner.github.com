@@ -7,7 +7,9 @@ tags:
 - log
 - graphic-novel
 cover: /images/british_ice_cover_sm_lg.jpg
-type: comic
+type:  
+- flow
+- comic
 status: finished
 score: "####"
 ---
