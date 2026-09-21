@@ -8,8 +8,7 @@ tags:
 - Bertrand Russell
 - quote
 - inspiration
-type: 
-- stock
+type: stock
 ---
 
 
