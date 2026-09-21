@@ -1,4 +1,4 @@
 ---
-layout: flow
-title: flow
+layout: Stock
+title: Stock
 ---
