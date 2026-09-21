@@ -1,4 +1,4 @@
 ---
-layout: Stock
+layout: stock
 title: Stock
 ---
