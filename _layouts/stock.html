@@ -2,7 +2,7 @@
 {% include header.html %}
 <section>
 <ul class="archive" id="archive-posts">
-{% assign all_posts = site.posts | where_exp: "post", "post.type = 'stock'" | sort: 'date' | reverse %}
+{% assign all_posts = site.posts | where: "type", "stock" | sort: 'date' | reverse %}
 {% for post in all_posts %}
 <li class="archive-item" data-search="{{ post.title | downcase | escape }} {{ post.tags | join: ' ' | downcase }}">
 <a href="{{ post.url }}" class="archive-title">{{ post.title }}</a>
