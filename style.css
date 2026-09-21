@@ -412,7 +412,7 @@ h1 {
 
 
 .home-btn {
-float:left; 
+float:right; 
   padding: 6px 12px;
   border: 1px solid var(--color-border);
   border-radius: 4px;
@@ -437,10 +437,10 @@ float:left;
 h2 {
   font: 600 1.5em/1.6 "Berkeley Mono", monospace;
   width: calc(100% - 150px);
-  float: right;
+  float: left;
   color: var(--color-text);
   margin: 0px;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
 }
 
