@@ -10,7 +10,9 @@ tags:
 excerpt: A review on a book by Nicholas Bate
 cover: /images/img-8529.jpg
 status: finished
-type: book
+type: 
+- flow
+- book
 score: "####"
 ---
 

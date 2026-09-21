@@ -4,6 +4,7 @@ title: Pending dot
 excerpt: An Obsidian plugin.
 lang: en
 tags: projects
+type:stock
 ---
 
 With the help of Claude code and based on another plugin, I've created a plugin for Obsidian.    

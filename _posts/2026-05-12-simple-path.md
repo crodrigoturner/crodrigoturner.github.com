@@ -3,7 +3,8 @@ layout: post
 title: A simple path to a good life
 lang: en
 tags: life
-excerpt: Easy steps.
+excerpt: Easy ste
+type: stock
 ---
 
 1. Stay in great shape

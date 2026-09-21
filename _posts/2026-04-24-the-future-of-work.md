@@ -4,6 +4,7 @@ category: post
 title: The future of work
 tags: ai
 excerpt: What will our children do?
+type:flow
 ---
 
 
