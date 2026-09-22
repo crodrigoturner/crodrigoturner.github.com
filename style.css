@@ -9,7 +9,7 @@
 }
 
 @font-face {
-  font-family: "Alegreya Sans";
+  font-family: "Berkeley Mono";
   src: url("/fonts/AlegreyaSans-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
@@ -17,7 +17,7 @@
 }
 
 @font-face {
-  font-family: "Alegreya Sans";
+  font-family: "Berkeley Mono";
   src: url("/fonts/AlegreyaSans-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
@@ -25,7 +25,7 @@
 }
 
 @font-face {
-  font-family: "Work Sans";
+  font-family: "Berkeley Mono";
   src: url("/fonts/WorkSans-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
@@ -33,8 +33,8 @@
 }
 
 @font-face {
-  font-family: "Work Sans";
-  src: url("/fonts/WorkSans-Bold.woff2") format("woff2");
+  font-family: "GT Sectra";
+  src: url("/fonts/GT-Sectra-Regular-Trial.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -66,7 +66,7 @@ html{ height:101%;}
 
 body {
   color: var(--color-text);
-  font: 400 18px / 1.7 "Alegreya Sans", sans-serif;
+  font: 400 15px / 1.7 "GT Sectra", sans-serif;
   background: #fff;
   margin: 0 auto;
   -webkit-text-size-adjust: 100%;
@@ -132,7 +132,7 @@ width:100%;
 
 
 .tag-cloud a {
-  font: 400 14px / 1.7 "Alegreya Sans", sans-serif;
+  font: 400 14px / 1.7 "Berkeley Mono", sans-serif;
   color: var(--color-muted);
   text-decoration: none;
   text-transform: capitalize;
@@ -278,10 +278,10 @@ svg {
   border-radius: 4px;
   background:#FFF;
   color: var(--color-text);
-  font: 400 15px / 1.7 "Alegreya Sans", sans-serif;
+  font: 400 15px / 1.7 "Berkeley Mono", sans-serif;
 }
 
-.books-grid span{font: 400 15px / 1.7 "Alegreya Sans", sans-serif;
+.books-grid span{font: 400 15px / 1.7 "Berkeley Mono", sans-serif;
   color: var(--color-muted);
   text-transform: capitalize;
   font-size: .8em;
@@ -341,7 +341,7 @@ footer {
 
 .meta,
 small {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Berkeley Mono", sans-serif;
   font-size: 0.8em !important;
   color: var(--color-muted);
   margin: 40px 0 20px;
@@ -380,7 +380,7 @@ footer blockquote {
 
 code {
   background-color: #f4f4f2;
-  font-family: "Alegreya Sans", sans-serif;
+  font-family: "Berkeley Mono", sans-serif;
   font-size: 0.85em;
   padding: 2px 6px;
   border-radius: 4px;
@@ -437,7 +437,7 @@ pre code {
 
 /* TYPOGRAPHY */
 h1 {
-  font: 600 2em/1 "Work Sans", sans-serif;
+  font: 600 2em/1 "Berkeley Mono", sans-serif;
   margin: 40px 0 0 0;
   display: flex;
   align-items: center;
@@ -470,7 +470,7 @@ float:right;
 }
 
 h2 {
-  font: 600 1.5em/1.6 "Work Sans", sans-serif;
+  font: 600 1.5em/1.6 "Berkeley Mono", sans-serif;
   width: calc(100% - 150px);
   float: left;
   color: var(--color-text);
@@ -480,7 +480,7 @@ h2 {
 }
 
 h3 {
-  font: 500 1.75em/1.6 "Work Sans", sans-serif;
+  font: 500 1.75em/1.6 "Berkeley Mono", sans-serif;
   margin: 0px 0 20px;
   width: 100%;
   float: left;
@@ -488,7 +488,7 @@ h3 {
 
 
 h4 {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Berkeley Mono", sans-serif;
   font-size: 0.8em;
   color: var(--color-muted);
   margin: 40px 0;
@@ -500,14 +500,14 @@ h4 {
 }
 
 h5 {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Berkeley Mono", sans-serif;
   font-size: 0.9em;
   font-weight: 500;
   margin: 16px 0 8px;
 }
 
 h6 {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Berkeley Mono", sans-serif;
   font-size: 0.8em;
   font-weight: 500;
   color: var(--color-muted);
@@ -536,7 +536,7 @@ a:hover {
 a[target="_blank"]::after {
   content: '↗';
   margin-left: 2px;
-  font-family: "Alegreya Sans", sans-serif;
+  font-family: "Berkeley Mono", sans-serif;
 }
 
 h1 a,
