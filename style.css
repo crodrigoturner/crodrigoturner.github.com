@@ -177,11 +177,11 @@ z-index:-1;
 }
 
 .excerpt {
-  font-size: 0.9em;
+
   color: var(--color-muted);
-  text-transform: capitalize;
+
   font-weight: 400;
-  letter-spacing: .05em;
+
 }
 
 section>hr,
