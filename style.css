@@ -299,9 +299,10 @@ svg {
 
 .archive-tag,
 .archive-date {
-  font-size: 0.8em;
+  
   color: var(--color-muted);
   white-space: nowrap;
+  font: 400 13px / 1.7 "Berkeley Mono", sans-serif;
 }
 
 .archive-empty {
@@ -432,7 +433,7 @@ float:right;
   border: 1px solid var(--color-border);
   border-radius: 4px;
   position:relative; left:0;
-    font-family: "Berkeley Mono", sans-serif;
+font: 400 15px / 1.7 "Berkeley Mono", sans-serif;
 }
 
 .home-btn:hover {
