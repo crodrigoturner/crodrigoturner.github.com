@@ -52,6 +52,8 @@ body {
   height:101%;
 }
 
+#work{  font: 400 15px / 1.7 "Berkeley Mono", sans-serif;}
+
 body::before {
   content: '';
   content: "";

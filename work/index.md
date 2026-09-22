@@ -2,6 +2,7 @@
 layout: page
 title: Work
 lang: en
+id: work
 ---
 <ul>
 <li><a href="https://www.linkedin.com/in/crodrigoturner/" target="_blank">Linkedin</a></li>
