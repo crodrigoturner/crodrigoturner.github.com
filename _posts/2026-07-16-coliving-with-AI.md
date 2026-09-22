@@ -4,7 +4,7 @@ title: Coliving with AI
 excerpt: Sharing life with AI
 lang: en
 tags: life
-type:flow
+type: flow
 ---
 
 It's great what AI can do, but is it necessary that it takes our jobs?    

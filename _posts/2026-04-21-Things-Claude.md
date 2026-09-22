@@ -5,7 +5,7 @@ category: post
 lang: en
 tags: ai
 excerpt: Some of the experiments I've tried with AI.
-type:flow
+type: flow
 ---
 
 
