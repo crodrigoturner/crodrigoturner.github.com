@@ -12,7 +12,7 @@
 
 @font-face {
   font-family: "GT Sectra";
-  src: url("/fonts/GT-Sectra-Fine-Regular-Trial.woff2") format("woff2");
+  src: url("/fonts/GT-Sectra-Fine-Book-Trial.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -44,7 +44,7 @@ html{ height:101%;}
 
 body {
   color: var(--color-text);
-  font: 400 15px / 1.7 "GT Sectra", sans-serif;
+  font: 400 17px / 1.7 "GT Sectra", sans-serif;
   background: #fff;
   margin: 0 auto;
   -webkit-text-size-adjust: 100%;
