@@ -186,7 +186,7 @@ z-index:-1;
 
 .excerpt::before {
   content: "▪";
-  margin-right: 6px;
+  margin:0 6px;
 }
 
 section>hr,
