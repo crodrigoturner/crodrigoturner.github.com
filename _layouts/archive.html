@@ -2,10 +2,9 @@
 {% include header.html %}
 <section>
 
-
-<div class="search-box">
-<input type="search" id="archive-search" placeholder="Search posts and pages…" autocomplete="off">
-</div>
+<script async src="https://cse.google.com/cse.js?cx=e7f33aa98c2fd4211">
+</script>
+<div class="gcse-search"></div>
 
 <h4>Pages</h4>
 <ul class="archive" id="archive-pages">
@@ -25,25 +24,7 @@
 
 
 
-<p id="archive-empty" class="archive-empty hidden">No results.</p>
 
 </section>
 
-<script>
-(function () {
-var input = document.getElementById('archive-search');
-var empty = document.getElementById('archive-empty');
-if (!input || !empty) return;
-var items = document.querySelectorAll('.archive-item');
-input.addEventListener('input', function () {
-var q = input.value.trim().toLowerCase();
-var visible = 0;
-items.forEach(function (item) {
-var match = item.dataset.search.indexOf(q) !== -1;
-item.style.display = match ? '' : 'none';
-if (match) visible++;
-});
-empty.classList.toggle('hidden', visible !== 0);
-});
-})();
-</script>
+
