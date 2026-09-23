@@ -184,6 +184,11 @@ z-index:-1;
 
 }
 
+.excerpt::before {
+  content: "▪";
+  margin-right: 6px;
+}
+
 section>hr,
 section>p {
   width: 100%;
