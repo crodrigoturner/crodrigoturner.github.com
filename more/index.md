@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: Archive
+title: More
 id: archive
 lang: en
 ---
