@@ -10,13 +10,7 @@
 
 
 
-@font-face {
-  font-family: "GT Sectra";
-  src: url("/fonts/GT-Sectra-Fine-Book-Trial.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
+
 
 
 
@@ -186,7 +180,7 @@ z-index:-1;
 
 .excerpt::before {
   content: "▪";
-  margin:0 6px 0 3px;
+  margin:0 6px 0 0px;
 }
 
 section>hr,
