@@ -4,8 +4,7 @@ title: Everyone is lying to you for money
 excerpt: Everyone is lying to you for money
 lang: en
 tags: 
-- log
-- documentary
+- reviews
 cover: /images/everyoneislying.png
 type: 
 - documentary

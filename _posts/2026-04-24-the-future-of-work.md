@@ -2,7 +2,7 @@
 layout: post
 category: post
 title: The future of work
-tags: ai
+tags: thoughts
 excerpt: What will our children do?
 type: flow
 ---

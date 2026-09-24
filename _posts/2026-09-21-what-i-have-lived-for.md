@@ -4,9 +4,7 @@ title: What I Have Lived For
 excerpt: The Prologue to Bertrand Russell's Autobiography
 lang: en
 tags: 
-- Bertrand Russell
-- quote
-- inspiration
+- personal
 type: stock
 ---
 

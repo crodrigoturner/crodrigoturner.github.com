@@ -4,9 +4,7 @@ title: Gray Matter
 category: post
 lang: en
 tags:
-- log
-- book
-- non-fiction
+- reviews
 excerpt: Biography of Theodore H. Schwartz
 cover: /images/gray-matters-cover.jpg
 status: reading

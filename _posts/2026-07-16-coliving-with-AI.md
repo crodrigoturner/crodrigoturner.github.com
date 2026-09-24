@@ -3,7 +3,7 @@ layout: post
 title: Coliving with AI
 excerpt: Sharing life with AI
 lang: en
-tags: life
+tags: thoughts
 type: flow
 ---
 

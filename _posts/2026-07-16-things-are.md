@@ -3,7 +3,7 @@ layout: post
 title: Things are...
 excerpt: We have chosen this world
 lang: en
-tags: life
+tags: thoughts
 type: flow
 ---
 

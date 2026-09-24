@@ -3,7 +3,7 @@ layout: post
 title: Things I've used Claude for
 category: post
 lang: en
-tags: ai
+tags: systems
 excerpt: Some of the experiments I've tried with AI.
 type: flow
 ---
