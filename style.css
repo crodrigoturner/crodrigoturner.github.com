@@ -44,7 +44,7 @@ html{ height:101%;}
 
 body {
   color: var(--color-text);
-  font: 400 19px / 1.7 "GT Sectra", sans-serif;
+  font: 400 15px / 1.7 "Berkeley Mono", sans-serif;
   background: #fff;
   margin: 0 auto;
   -webkit-text-size-adjust: 100%;
