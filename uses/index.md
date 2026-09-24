@@ -1,0 +1,71 @@
+---
+layout: page
+title: What I use
+lang: en
+tags: uses
+excerpt: These are the tools I use as of May 2026.
+type: flow
+---
+
+Updated as of May 2026.
+
+- 📨 Mail Client: Gmail.com / Gmail app + EM client for work
+- 📮 Mail Server: Google  
+- 📝 Notes: Keep + Obsidian 
+- ✅ To-Do: Todoist
+- 📷 Photo Shooting: Android phone  
+- 🎨 Photo Editing: Google Gemini / Nano Banana
+- 📆 Calendar: Google Calendar  
+- 📁 Cloud File Storage: Google Drive  
+- 📖 RSS: Feedly  
+- 🙍🏻‍♂️ Contacts: Google Contacts  
+- 🌐 Browser: Chrome   
+- 💬 Chat: Whatsapp  
+- 🔖 Bookmarks: Raindrop  
+- 📑 Read It Later: Raindrop  
+- 📜 Word Processing: Google Docs / Word / Obsidian
+- 📈 Spreadsheets: Google Sheets / Excel    
+- 📊 Presentations: Google Slides / Powerpoint  
+- 🛒 Shopping Lists: Google keep  
+- 📰 News: Twitter  
+- 🎵 Music: Spotify  
+- 🎤 Podcasts: Pocketcasts  
+- 🎧Audiobooks: Audible + Smart audiobook Player  
+- 🔐 Password Management: Bitwarden
+- 🧑‍💻 Code Editor: VS Code  
+- ✈️ VPN: Windscribe
+- 🧠 AI: Claude
+- 📝 Blog: Jekyll + github pages
+- 🎤 Speech to text: Vowen
+- 🎧 Text to speech: Elevenlabs
+
+
+### Obsidian Plugins (community)
+
+- Hider
+- Multiproperties
+- Unread Dot
+- Table of Contents
+
+
+### VS extensions
+
+- Claude Code for VS
+- Rainbow CSV
+- Night Owl (theme)
+- Code spell Checker
+- Harper Grammar
+
+### Chrome extensions
+
+- Bitwarden
+- Feedly
+- Grammarly
+- Windscribe
+- Raindrop
+- Todoist
+- Obsidian web clipper
+- Clear cache
+- What font
+- Claude
+- Google Keep
