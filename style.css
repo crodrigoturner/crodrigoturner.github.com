@@ -91,6 +91,8 @@ float:left;
 width:100%;
 }
 
+ul.nav{margin:20px 0;}
+
 ul.nav li { 
   display:inline-block;
   margin-right:10px;
