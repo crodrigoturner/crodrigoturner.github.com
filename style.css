@@ -146,8 +146,8 @@ background: var(--color-bg);
 
 }
 
-nav a:hover,
-nav a.current {
+a:hover,
+a.current {
   opacity: .7;
 }
 
@@ -508,9 +508,9 @@ a:hover {
 }
 
 a[target="_blank"]::after {
-  content: '↗';
+  content: 'U+2197';
   margin-left: 2px;
-  font-family: "Berkeley Mono", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 h1 a,
