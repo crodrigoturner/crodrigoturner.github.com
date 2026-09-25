@@ -91,7 +91,7 @@ float:left;
 width:100%;
 }
 
-ul.nav{margin:20px 0;}
+ul.nav{margin:20px 0; float:left; width:100%; padding:0; list-style:none; display:flex; flex-wrap:wrap; gap:10px;}
 
 ul.nav li { 
   display:inline-block;
