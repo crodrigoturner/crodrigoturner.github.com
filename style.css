@@ -508,7 +508,7 @@ a:hover {
 }
 
 a[target="_blank"]::after {
-  content: 'U+2197';
+  content: '↗';
   margin-left: 2px;
   font-family: "Inter", sans-serif;
 }
