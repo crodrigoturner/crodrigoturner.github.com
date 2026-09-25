@@ -160,8 +160,7 @@ section {
 
 
 
-#home section article,
-#home section li{
+#home section article{
   margin:0;
   padding:10px 0;
   float:left; width:100%;
