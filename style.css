@@ -91,7 +91,11 @@ float:left;
 width:100%;
 }
 
-
+ul.nav li { 
+  display:inline-block;
+  margin-right:10px;
+  float:left;
+}
 
 #home .tag-cloud, #tag .tag-cloud, #archive .tag-cloud {
   display: flex;
@@ -156,18 +160,21 @@ section {
 
 
 
-#home section article{
+#home section article,
+#home section li{
   margin:0;
   padding:10px 0;
   float:left; width:100%;
   border-bottom:1px solid var(--color-border);
 }
 
-#home article a{ text-decoration:none;
+#home article a,
+#home li a{ text-decoration:none;
 z-index:999;
 }
 
-#home article a:hover::after {
+#home article a:hover::after,
+#home li a:hover::after {
   content: '→';
   float: right;
   font-family: "Inter", sans-serif;
