@@ -126,13 +126,7 @@ nav ul li{float:right; width:100%;}
 
 
 
-nav a {
-  text-decoration: none;
-padding:4px 8px; border-radius:4px;
-background: var(--color-bg);
-  color: var(--color-text);
 
-}
 
 a:hover,
 a.current {
