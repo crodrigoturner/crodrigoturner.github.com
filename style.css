@@ -66,24 +66,11 @@ body::before {
 
 /* HEADER */
 header {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 32px;
-  padding: 60px 40px;
-  z-index: 100;
-width: var(--site-width);
-  width: 100%;
-  box-sizing: border-box;
-  
+float:left; 
+  width: calc(100% - 150px);
 }
 
-header>* {
-  float: left;
-  width: 100%;
-  max-width: var(--site-width);
-  margin: 0 auto;
-}
+
 
 nav{position:fixed; right:20px; top:20px; width:150px; text-align:right; float:right;}
 nav ul{float:right; width:100%; display:block;}
@@ -100,38 +87,10 @@ nav ul li{float:right; width:100%;}
   box-sizing: border-box;
 }
 
-
-.tag-cloud a {
-  font: 400 14px / 1.7 "Berkeley Mono", sans-serif;
-  color: var(--color-muted);
-  text-decoration: none;
-   border:1px solid var(--color-border);
-  border-radius:4px;
-  padding: 3px 6px;
-
-}
-
-.tag-clouda a::after {
-  content: '';
-  display:none;
-}
-.tag-cloud a:hover {
-
-  border:none;
-  border-radius:4px;
-   padding: 4px 7px;
-  
-}
-
-
-
-
-
 a:hover,
 a.current {
   opacity: .7;
 }
-
 
 /* MAIN CONTENT */
 section {
@@ -170,31 +129,7 @@ article {
   border-bottom: 1px solid var(--color-border);
   
 }
-svg {
-  margin-right: 10px;
-  width: 20px;
-  height: 20px;
-  fill: var(--color-text);
-  vertical-align: middle;
-}
 
-.books-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  width: 100%;
-  align-items: end;
-}
-
-.log-grid {
-  grid-template-columns: repeat(5, 1fr);
-}
-
-.book-card img {
-  width: 100%;
-  display: block;
-  margin-bottom: 12px;
-}
 
 @media (max-width: 900px) {
   .books-grid {
