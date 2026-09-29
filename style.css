@@ -232,7 +232,7 @@ font: 400 15px / 1.7 "Berkeley Mono", sans-serif;
 
 h2 {
   font: 600 1.5em/1.6 "Berkeley Mono", sans-serif;
-  width: calc(100% - 150px);
+  width: 100%;
   float: left;
   color: var(--color-text);
   margin: 0px;
