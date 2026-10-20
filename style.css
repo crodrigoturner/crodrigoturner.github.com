@@ -69,7 +69,13 @@ nav{
 nav ul{float:left; width:100%; display:block;margin:0;}
 nav ul li{float:left;margin:0 20px 0px 0;}
 
-.contact{float:right; width:30%; margin:5px; text-align:center; height:calc(100% - 10px); border-left:1px solid var(--color-border); background:#F7F6D7;}
+.contact{    float: right;
+    width: 20%;
+    margin: 5px;
+    text-align: center;
+    height: calc(100% - 10px);
+    /* border-left: 1px solid var(--color-border); */
+    background: #ffe500;}
 
 /* MAIN CONTENT */
 section {
@@ -106,13 +112,14 @@ article {
 }
 
 footer {
-  padding: 40px 0;
-  margin: 40px 0 0 0;
+  padding: 0;
+  margin: 10px 0;
  
   float: left;
   width: 100%;
   opacity: .6;
-
+border:1px solid var(--color-border);
+border-top:none;
   text-align: center;
   font: 600 3em / 2 "Berkeley Mono", sans-serif;
 
@@ -195,7 +202,7 @@ pre code {
 h1 {
         text-transform: lowercase;
         font-size: 1em;
-width:20%; float:left;
+ float:left;
 font-weight:400;
 padding:5px 20px;
 }
@@ -433,6 +440,38 @@ img.alignleft {
 iframe {
   max-width: 100%;
   display: block;
+}
+
+/* WIDTHS */
+.full-width {
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+  clear: both;
+}
+
+.half-width {
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.half-width:nth-of-type(odd) {
+  clear: left;
+  padding-right: 20px;
+}
+
+.half-width:nth-of-type(even) {
+  padding-left: 20px;
+}
+
+@media only screen and (max-width: 640px) {
+  .half-width,
+  .half-width:nth-of-type(odd),
+  .half-width:nth-of-type(even) {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 @media only screen and (max-width: 640px) {
