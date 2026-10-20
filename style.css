@@ -114,7 +114,7 @@ footer {
   opacity: .6;
 
   text-align: center;
-  font: 600 6em / 2 "Berkeley Mono", sans-serif;
+  font: 600 3em / 2 "Berkeley Mono", sans-serif;
 
 
 
@@ -153,9 +153,6 @@ blockquote {
 
 
 
-footer blockquote {
-  border: none;
-}
 
 code {
   background-color: #f4f4f2;
