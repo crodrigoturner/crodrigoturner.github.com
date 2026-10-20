@@ -58,7 +58,7 @@ padding:0;
  }
 
 nav{
-    width: 85%;
+    width: 80%;
     text-align: left;
     float: right;
  
@@ -79,7 +79,7 @@ section {
   width: 100%;
   max-width: var(--site-width);
     margin: 0px calc(50% - (var(--site-width) / 2)) 0px;
-  padding: 100px 40px 100px;
+  padding: 40px 40px 100px;
   
   float: left;
   border:1px solid var(--color-border);
@@ -104,7 +104,7 @@ article {
   margin:0 0 100px;
   float: left;
   width: 100%;
-  border-bottom: 1px solid var(--color-border);
+
   
 }
 
@@ -117,7 +117,7 @@ footer {
   opacity: .6;
 
   text-align: center;
-  font: 600 12em / 2 "Berkeley Mono", sans-serif;
+  font: 600 6em / 2 "Berkeley Mono", sans-serif;
 
 
 
@@ -201,7 +201,7 @@ pre code {
 h1 {
         text-transform: lowercase;
         font-size: 1em;
-width:15%; float:left;
+width:20%; float:left;
 font-weight:400;
 padding:5px 20px;
 }
