@@ -152,9 +152,8 @@ small {
 hr{
   border: none;
   height: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.08);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.75);
-  margin: 8px 0 20px;
+  border-top: 1px solid var(--color-border);
+  margin: 10px 0;
   background: transparent;
   float: left;
   width: 100%;
