@@ -1,17 +1,12 @@
 <header>
-
 <h1><a href="/" class="logo">Carlos Rodrigo</a></h1>
-
 <nav>
-    
 <ul>
 {% for item in site.data.navigation %}
 {% assign item_link_slash = item.link | append: '/' %}
 <li><a href="{{ item.link }}"{% if page.url == item.link or page.url == item_link_slash %} class="active"{% endif %}>{{ item.name }}</a></li>
 {% endfor %}
 </ul>
-
-
-</nav><a class="contact" href="mailto:rodrigoturner.carlos@gmail.com">Get in touch <span class="arrow">-></span></a>
-
+</nav>
+<a class="contact" href="mailto:rodrigoturner.carlos@gmail.com">Get in touch <span class="arrow">-></span></a>
 </header>
