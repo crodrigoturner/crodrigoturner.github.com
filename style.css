@@ -15,7 +15,7 @@
 
 
 :root {
-  --site-width: 640px;
+  --site-width: 960px;
   --color-text: #444;
   --color-link: #095c9f;
   --color-muted: #607d8b;
@@ -78,6 +78,7 @@ nav{
     width: var(--site-width);
     text-align: left;
     float: left;
+    margin:20px calc(50% - (var(--site-width) / 2));
  
     
     }
@@ -93,9 +94,9 @@ a.current {
 section {
   width: 100%;
   max-width: var(--site-width);
-    margin: 40px calc(50% - (var(--site-width) / 2)) 100px;
-  padding: 0px 0px 100px;
-  box-sizing: border-box;
+    margin: 0px calc(50% - (var(--site-width) / 2)) 0px;
+  padding: 100px 40px 100px;
+  
   float: left;
   border:1px solid #EEE;
 
