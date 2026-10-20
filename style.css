@@ -57,11 +57,7 @@ width: var(--site-width);
 border-bottom:1px solid #EEE;
 padding:10px 2%;
  margin:0px calc(50% - (var(--site-width) / 2));
- 
-
-}
-
-
+ }
 
 nav{
     width: 90%;
