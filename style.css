@@ -15,7 +15,7 @@
 
 
 :root {
-  --site-width: 960px;
+  --site-width: 880px;
   --color-text: #444;
   --color-link: #095c9f;
   --color-muted: #607d8b;
@@ -38,8 +38,8 @@ html{ height:101%;}
 
 body {
   color: var(--color-text);
-  font: 400 15px / 1.7 "Berkeley Mono", sans-serif;
-  background: #fff;
+  font: 400 14px / 1.7 "Berkeley Mono", sans-serif;
+
   margin: 0 auto;
   -webkit-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
@@ -51,18 +51,19 @@ header {
 float:left; 
 width: var(--site-width);
 border-bottom:1px solid #EEE;
-padding:10px 40px;
+padding:0;
  margin:0px calc(50% - (var(--site-width) / 2));
  border-right:1px solid #EEE;
   border-left:1px solid #EEE;
  }
 
 nav{
-    width: 90%;
+    width: 85%;
     text-align: left;
     float: right;
-   border-right:1px solid #EEE;
+ 
    border-left:1px solid #EEE;
+   padding:5px 20px;
     
     }
 nav ul{float:left; width:100%; display:block;margin:0;}
@@ -192,9 +193,11 @@ pre code {
 
 /* TYPOGRAPHY */
 h1 {
-        text-transform: uppercase;
+        text-transform: lowercase;
         font-size: 1em;
-width:10%; float:left;
+width:15%; float:left;
+font-weight:400;
+padding:5px 20px;
 }
 
 
