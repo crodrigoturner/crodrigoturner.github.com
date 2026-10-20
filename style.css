@@ -52,20 +52,23 @@ body {
 
 /* HEADER */
 header {
-float:left; width:100%;
+float:left; 
+width: var(--site-width);
 border-bottom:1px solid #EEE;
 padding:10px 2%;
+ margin:0px calc(50% - (var(--site-width) / 2));
+ 
 
 }
 
 
 
 nav{
-    width: var(--site-width);
+    width: 90%;
     text-align: left;
-    float: left;
-    margin:0px calc(50% - (var(--site-width) / 2));
- 
+    float: right;
+   border-right:1px solid #EEE;
+   border-left:1px solid #EEE;
     
     }
 nav ul{float:left; width:100%; display:block;margin:0;}
@@ -196,9 +199,7 @@ pre code {
 h1 {
         text-transform: uppercase;
         font-size: 1em;
-        position: fixed;
-        left: 20px;
-        top: 20px;
+width:10%; float:left;
 }
 
 
