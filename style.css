@@ -46,16 +46,12 @@ body {
   height:101%;
 }
 
-
-
-
-
 /* HEADER */
 header {
 float:left; 
 width: var(--site-width);
 border-bottom:1px solid #EEE;
-padding:10px 2%;
+padding:10px 40px;
  margin:0px calc(50% - (var(--site-width) / 2));
  border-right:1px solid #EEE;
   border-left:1px solid #EEE;
