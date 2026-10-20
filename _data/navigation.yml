@@ -1,0 +1,8 @@
+- name: About
+  link: https://carlosrodrigo.com/
+- name: Blog
+  link: https://carlosrodrigo.blog/
+- name: Work
+  link: /work
+- name: Now
+  link: /work
