@@ -111,10 +111,16 @@ article {
 footer {
   padding: 40px 0;
   margin: 40px 0 0 0;
-  font-size: .9em;
+ 
   float: left;
   width: 100%;
   opacity: .6;
+
+  text-align: center;
+  font: 600 12em / 2 "Berkeley Mono", sans-serif;
+
+
+
 }
 
 .meta,
