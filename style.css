@@ -69,10 +69,7 @@ nav{
 nav ul{float:left; width:100%; display:block;margin:0;}
 nav ul li{float:left;margin:0 20px 0px 0;}
 
-a:hover,
-a.current {
-  opacity: .7;
-}
+
 
 /* MAIN CONTENT */
 section {
@@ -263,15 +260,16 @@ p {
 }
 
 a {
-  color: var(--color-link);
-  text-decoration: none;
+  color: var(--color-text);
+  
 }
 
-a:hover {
+a:hover, a.current {
   opacity: 0.7;
   text-decoration: none;
   border: none;
 }
+
 
 a[target="_blank"]::after {
   content: '↗';
