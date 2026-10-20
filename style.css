@@ -90,11 +90,7 @@ section {
 
 }
 
-#home section article{
-  margin:0;
-  padding:10px 0;
-  float:left; width:100%;
-  
+
 }
 
 section>hr,
@@ -114,7 +110,7 @@ article {
 footer {
   padding: 20px 0;
  
-   max-width: var(--site-width);
+  width: var(--site-width);
     margin: 0px calc(50% - (var(--site-width) / 2)) 0px;
   float: left;
 
