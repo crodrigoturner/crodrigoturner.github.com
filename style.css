@@ -153,7 +153,7 @@ hr{
   border: none;
   height: 0;
   border-top: 1px solid var(--color-border);
-  margin: 10px 0;
+  margin: 8px 0 20px;
   background: transparent;
   float: left;
   width: 100%;
