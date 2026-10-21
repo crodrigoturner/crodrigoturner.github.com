@@ -115,7 +115,7 @@ width: 100%;
 
 }
 
-.sizebar{background: #bee1dd; border-left:1px solid var(--color-border); border-bottom:1px solid var(--color-border);}
+.sidebar{background: #bee1dd; border-left:1px solid var(--color-border); border-bottom:1px solid var(--color-border);}
 
 footer {
 padding:  0 20px;
