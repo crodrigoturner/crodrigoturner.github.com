@@ -57,7 +57,9 @@ z-index: -9999;
 /* HEADER */
 header {
 float:left;
-display: flex;
+display: grid;
+grid-template-columns: repeat(12, 1fr);
+gap: 1px;
 width: var(--site-width);
 padding:0;
 margin:0px calc(50% - (var(--site-width) / 2));
@@ -65,8 +67,15 @@ border-right:1px solid var(--color-border);
 border-left:1px solid var(--color-border);
 }
 
+/* same 12-col grid as .home-grid: 3 (20%) / 6 / 3 (20%) */
+header > h1 {
+grid-column: span 3;
+margin: 0;
+}
+
 nav{
-width: 40%;
+grid-column: span 6;
+width: auto;
 text-align: left;
 float: left;
 
@@ -79,8 +88,8 @@ nav ul{float:left; width:100%; display:block;margin:0;}
 nav ul li{float:left;margin:0 20px 0px 0;}
 
 .contact{    float: right;
-width: 20%;
-margin: 0 5px 0 auto;
+grid-column: span 3;
+margin: 0 5px;
 align-self: center;
 text-align: center;
 
@@ -532,6 +541,7 @@ font-size: 1.1rem;
 }
 
 header {
+display: flex;
 flex-direction: row;
 flex-wrap: wrap;
 justify-content: space-between;
