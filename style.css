@@ -128,7 +128,7 @@ text-align:left;
 font: 400 1em / 2 "Berkeley Mono", sans-serif;
 }
 
-
+.posts li{width:100%; float:left; margin:0 0 10px; border-bottom:1px solid var(--color-muted); padding:3px 0 3px 0;}
 
 footer img{height:150px; margin:20px 0 20px 0; float:left;object-fit: cover; width:100%;
 /* sepia gives a single tint, hue-rotate turns it toward the site blue */

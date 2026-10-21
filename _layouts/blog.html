@@ -1,7 +1,8 @@
 {% include head.html %}
 {% include header.html %}
 <section>
-<ul class="archive" id="archive-posts">
+    <article class="full-width">
+<ul class="posts" id="archive-posts">
 {% assign all_posts = site.posts | sort: 'date' | reverse %}
 {% for post in all_posts %}
 <li class="archive-item" data-search="{{ post.title | downcase | escape }} {{ post.tags | join: ' ' | downcase }}">
@@ -10,5 +11,5 @@
 <span class="archive-date">{{ post.date | date: '%Y-%m-%d' }}</span>
 </li>
 {% endfor %}
-</ul>
+</ul></article>
 </section>
