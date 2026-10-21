@@ -24,7 +24,7 @@
       var link = document.createElement("a");
       link.href = "https://bsky.app/profile/" + handle + "/post/" + id;
       link.target = "_blank";
-      link.textContent = date.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" }) + " ->";
+      link.textContent = date.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
 
       var meta = document.createElement("p");
       meta.className = "bluesky-date";
