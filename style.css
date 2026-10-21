@@ -388,11 +388,12 @@ img.alignleft {
 }
 
 .profile {
-  width: 20%;
-  height: auto;
-float:left;
+    width: 20%;
+  
+    float: right;
+    margin: 0 0px 0px 20px;
 
-  margin: 0 auto 40px;
+    height: stretch;
 
 }
 
