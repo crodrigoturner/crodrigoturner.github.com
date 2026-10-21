@@ -26,6 +26,8 @@ baseurl: "/notes" # the subpath of your site, e.g. /blog
 url: "https://carlosrodrigo.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: crodrigoturner
 github_username:  crodrigoturner
+lastfm_username: crodrigoturner
+lastfm_api_key: # get one at https://www.last.fm/api/account/create
 
 # Build settings
 plugins:

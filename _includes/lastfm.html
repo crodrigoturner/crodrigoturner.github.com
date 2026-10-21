@@ -1,0 +1,37 @@
+<div class="lastfm" id="lastfm-latest">
+<p><a href="https://www.last.fm/user/{{ site.lastfm_username }}" target="_blank">Listening on Last.fm</a></p>
+</div>
+{% if site.lastfm_api_key %}
+<script>
+(function () {
+  var user = "{{ site.lastfm_username }}";
+  var box = document.getElementById("lastfm-latest");
+  var api = "https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=" + user + "&api_key={{ site.lastfm_api_key }}&format=json&limit=1";
+
+  fetch(api)
+    .then(function (res) { return res.json(); })
+    .then(function (data) {
+      var track = data.recenttracks && data.recenttracks.track && data.recenttracks.track[0];
+      if (!track) return;
+
+      // @attr.nowplaying is only set while a track is scrobbling
+      var playing = track["@attr"] && track["@attr"].nowplaying === "true";
+
+      var label = document.createElement("p");
+      label.className = "lastfm-status";
+      label.textContent = playing ? "Listening to" : "Last listened to";
+
+      var link = document.createElement("a");
+      link.href = track.url;
+      link.target = "_blank";
+      link.textContent = track.name + " — " + track.artist["#text"];
+
+      var song = document.createElement("p");
+      song.appendChild(link);
+
+      box.replaceChildren(label, song);
+    })
+    .catch(function () {});
+})();
+</script>
+{% endif %}
