@@ -389,10 +389,10 @@ img.alignleft {
 .profile {
   width: 20%;
   height: auto;
-  display: block;
+float:left;
+
   margin: 0 auto 40px;
-  border-radius: 87% 67% 87% 75%;
-  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.07), 0 1.5px 4px 0 rgba(0, 0, 0, 0.04);
+
 }
 
 /* VIDA EN MESES */
@@ -457,12 +457,17 @@ iframe {
 .home-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--color-border);
+  border: 1px solid var(--color-border);
 }
 
 .home-grid > article {
   float: none;
   width: auto;
   margin: 0;
+  background: #d7e8f7;
+  border: none;
 }
 
 .home-grid > .full-width {
