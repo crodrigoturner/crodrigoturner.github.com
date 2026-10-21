@@ -15,7 +15,7 @@
 
 
 :root {
-  --site-width: 760px;
+  --site-width: 880px;
   --color-text: #00356b;
   --color-link: #095c9f;
   --color-muted: #607d8b;
@@ -210,7 +210,7 @@ pre code {
 /* TYPOGRAPHY */
 h1 {
         text-transform: lowercase;
-        font-size: 1.5em;
+        font-size: 2.5em;
  float:left;
 font-weight:400;
 padding:5px 20px;
