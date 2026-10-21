@@ -3,7 +3,7 @@
 <section class="home-grid">
 
 <!-- Row 1 -->
-<article class="hero full-width">
+<article class="hero col-50">
 <p><img src="/images/profile.jpeg" class="profile" alt="Carlos Rodrigo">
 <script>
 currentTime=new Date();
@@ -31,14 +31,21 @@ document.write(
 <p>
 I <a href="/work/">work</a> with data. Currently at Tecnica y Avance, managing customers and suppliers across multiple countries, building tools, and turning messy inputs into decisions people can actually act on.
 </p>
-</article><!--
-<article class="full-width">
-Every layout already pulls in header.html, so the new nav shows up on all pages without other changes.
+</article>
+<article class="col-30">
+<h4>About me</h4>
 
-Your original header had "Now" linking to /work, and I kept that. There's no /now page in the site yet, so if that link is a mistake, change it in navigation.yml once the page exists.
-</article>-->
+</article>
+<article class="col-20">
+<h4>Topics</h4>
+<p></p>
+<h4>Now</h4>
+<p></p>
+<h4>Projects</h4>
+<p></p>
+</article>
 <!-- Row 2 -->
-<article class="half-width">
+<article class="half-width col-50">
 <h4>Projects</h4>    
 <ul class="projects">
 <li><a href="/life">A life in squares</a></li>
@@ -47,7 +54,7 @@ Your original header had "Now" linking to /work, and I kept that. There's no /no
 <li><a href="/100-books">100 books</a></li>
 </ul>
 </article>
-<article class="half-width">
+<article class="half-width col-50">
 <h4>Now</h4>    
 Every layout already pulls in header.html, so the new nav shows up on all pages without other changes.
 Your original header had "Now" linking to /work, and I kept that. There's no /now page in the site yet, so if that link is a mistake, change it in navigation.yml once the page exists.
