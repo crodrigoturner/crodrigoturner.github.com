@@ -4,7 +4,7 @@ title: About
 nav_order: 1
 lang: en
 ---
-<img src="/images/profile.jpeg"  class="profile" width="450" height="450" alt=" A person wearing a white collared shirt stands outdoors with trees and greenery in the background.">
+
 
 <ul class="bulleted">
 <li>I'm Carlos Roberto Rodrigo Turner.</li>    
