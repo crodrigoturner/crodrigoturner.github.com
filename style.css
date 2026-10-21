@@ -9,7 +9,7 @@ font-display: swap;
 }
 
 :root {
---site-width: 960px;
+--site-width: 1200px;
 --color-text: #00356b;
 --color-link: #095c9f;
 --color-muted: #607d8b;
@@ -115,14 +115,14 @@ width: 100%;
 }
 
 footer {
-padding:  10px 40px 0;
+padding:  0 20px;
 width: var(--site-width);
 margin: 0px calc(50% - (var(--site-width) / 2)) 0px;
 float: left; 
 border:1px solid var(--color-border);
 border-top:none;
 text-align:left;
-font: 400 1em / 1 "Berkeley Mono", sans-serif;
+font: 400 1em / 2 "Berkeley Mono", sans-serif;
 }
 
 .meta,
@@ -376,12 +376,10 @@ margin: 0 20px 20px 0;
 }
 
 .profile {
-width: 20%;
 
 float: right;
 margin: 0 0px 0px 20px;
 
-height: stretch;
 
 }
 
