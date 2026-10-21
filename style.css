@@ -291,7 +291,7 @@ a[target="_blank"]::after {
   font-family: "Inter", sans-serif;
 }
 
-.projects li a{border:1px solid var(--color-border); padding:3px 10px; float:left; margin:0 0 10px; text-decoration:none; color:var(--color-text);}
+.projects li a{border:1px solid var(--color-border); width:100%; padding:3px 10px; float:left; margin:0 0 10px; text-decoration:none; color:var(--color-text);}
 
 h1 a,
 h1 a:visited {
