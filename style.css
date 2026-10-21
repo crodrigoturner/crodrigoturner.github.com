@@ -9,7 +9,7 @@ font-display: swap;
 }
 
 :root {
---site-width: 880px;
+--site-width: 960px;
 --color-text: #00356b;
 --color-link: #095c9f;
 --color-muted: #607d8b;
@@ -71,7 +71,7 @@ float: left;
 
 border-left:1px solid var(--color-border);
 padding:5px 20px;
-line-height:2.6;
+line-height:3;
 
 }
 nav ul{float:left; width:100%; display:block;margin:0;}
@@ -203,7 +203,6 @@ float:left;
 font-weight:400;
 padding:5px 20px;
 font-family: "Coral Pixels", cursive;
-background:#EEE;
 }
 
 
