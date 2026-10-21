@@ -2,7 +2,7 @@
   
   <img src="/images/deepwander.png" class="deepwander" alt="Deepwander logo">
   
- <p> <span id="random-quote"></span> · Made with care from Madrid · 2026 → Carlos Rodrigo Turner </p>
+ <p> <span id="random-quote"></span> · Made with care from Madrid · <span id="current-datetime"></span> · Carlos Rodrigo Turner </p>
 
 
 <script>
@@ -14,7 +14,24 @@
     var el = document.getElementById("random-quote");
     if (el) el.textContent = quotes[Math.floor(Math.random() * quotes.length)];
   })();
-</script></footer>
+</script>
+<script>
+(function () {
+// Current date/time, live
+var el = document.getElementById("current-datetime");
+function pad(n) { return String(n).padStart(2, "0"); }
+function tick() {
+var d = new Date();
+el.textContent =
+d.getFullYear() + pad(d.getMonth() + 1) + pad(d.getDate()) +
+pad(d.getHours()) + pad(d.getMinutes()) + pad(d.getSeconds());
+}
+tick();
+setInterval(tick, 1000);
+})();
+</script>
+
+</footer>
 
 </body>
 </html>
