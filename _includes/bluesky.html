@@ -1,0 +1,37 @@
+<div class="bluesky" id="bluesky-latest">
+<p><a href="https://bsky.app/profile/crodrigoturner.bsky.social" target="_blank">Find me on Bluesky <span class="arrow">-></span></a></p>
+</div>
+<script>
+(function () {
+  var handle = "crodrigoturner.bsky.social";
+  var box = document.getElementById("bluesky-latest");
+  var api = "https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=" + handle + "&filter=posts_no_replies&limit=5";
+
+  fetch(api)
+    .then(function (res) { return res.json(); })
+    .then(function (data) {
+      // skip reposts so we show something written by me
+      var item = (data.feed || []).find(function (f) { return !f.reason; });
+      if (!item) return;
+
+      var post = item.post;
+      var id = post.uri.split("/").pop();
+      var date = new Date(post.record.createdAt);
+
+      var text = document.createElement("p");
+      text.textContent = post.record.text;
+
+      var link = document.createElement("a");
+      link.href = "https://bsky.app/profile/" + handle + "/post/" + id;
+      link.target = "_blank";
+      link.textContent = date.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" }) + " ->";
+
+      var meta = document.createElement("p");
+      meta.className = "bluesky-date";
+      meta.appendChild(link);
+
+      box.replaceChildren(text, meta);
+    })
+    .catch(function () {});
+})();
+</script>

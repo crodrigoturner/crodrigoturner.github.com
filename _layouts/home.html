@@ -38,7 +38,7 @@ I <a href="/work/">work</a> with data. Currently at Tecnica y Avance, managing c
 </article>
 <article class="col-20">
 <h4>Topics</h4>
-<p></p>
+{% include tagcloud.html %}
 <h4>Now</h4>
 <p></p>
 <h4>Projects</h4>
@@ -55,9 +55,8 @@ I <a href="/work/">work</a> with data. Currently at Tecnica y Avance, managing c
 </ul>
 </article>
 <article class="half-width col-50">
-<h4>Now</h4>    
-Every layout already pulls in header.html, so the new nav shows up on all pages without other changes.
-Your original header had "Now" linking to /work, and I kept that. There's no /now page in the site yet, so if that link is a mistake, change it in navigation.yml once the page exists.
+<h4>Latest on Bluesky</h4>
+{% include bluesky.html %}
 </article>
 <!-- 
 <article class="full-width">
