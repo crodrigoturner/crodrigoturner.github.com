@@ -137,29 +137,34 @@ text-align:left;
 font: 400 1em / 2 "Berkeley Mono", sans-serif;
 }
 
-footer p{
-  margin: 0 auto;
+footer p.marquee {
+  clear: both;
+  margin: 0;
   white-space: nowrap;
   overflow: hidden;
-  position: absolute;
 }
 
-footer p span {
+/* padding-left starts the text off the right edge, then it scrolls out the left */
+footer .marquee-track {
   display: inline-block;
   padding-left: 100%;
-  animation: marquee 5s linear infinite;
+  animation: marquee 20s linear infinite;
 }
 
-
-
-@keyframes footer p {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(-100%, 0);
-  }
+footer p.marquee:hover .marquee-track {
+  animation-play-state: paused;
 }
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  footer .marquee-track {
+    animation: none;
+    padding-left: 0;
+  }
 }
 
 .posts li{width:100%; float:left; margin:0 0 10px; border-bottom:1px solid var(--color-muted); padding:3px 0 3px 0;}
