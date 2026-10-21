@@ -6,9 +6,6 @@
 {% for p in nav_pages %}
 <li><a href="{{ p.url }}"{% if page.url == p.url %} class="active"{% endif %}>{{ p.title }}</a></li>
 {% endfor %}
-{% for item in site.data.navigation %}
-<li><a href="{{ item.link }}">{{ item.name }}</a></li>
-{% endfor %}
 </ul>
 </nav>
 <a class="contact" href="mailto:rodrigoturner.carlos@gmail.com">Get in touch <span class="arrow">-></span></a>
