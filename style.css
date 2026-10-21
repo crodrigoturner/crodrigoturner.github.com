@@ -449,7 +449,7 @@ display: block;
 /* HOME GRID */
 .home-grid {
 display: grid;
-grid-template-columns: repeat(10, 1fr);
+grid-template-columns: repeat(11, 1fr);
 gap: 1px;
 
 border: 1px solid var(--color-border);
@@ -472,11 +472,11 @@ grid-column: span 5;
 }
 
 .home-grid > .col-30 {
-grid-column: span 3;
+grid-column: span 4;
 }
 
 .home-grid > .col-20 {
-grid-column: span 2;
+grid-column: span 3;
 }
 
 @media only screen and (max-width: 640px) {
