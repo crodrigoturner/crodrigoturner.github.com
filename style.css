@@ -128,7 +128,7 @@ font: 400 1em / 2 "Berkeley Mono", sans-serif;
 
 footer p{margin:0;}
 
-footer img{height:150px; margin:20px 0 20px 0; float:left;}
+footer img{height:150px; margin:20px 0 20px 0; float:left;object-fit: contain; width:100%;}
 
 .meta,
 small {
@@ -465,6 +465,10 @@ border: none;
 
 .home-grid > .full-width {
 grid-column: 1 / -1;
+}
+
+.home-grid > .col-60 {
+grid-column: span 5;
 }
 
 .home-grid > .col-50 {
