@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Blogroll
+nav_order: 7
 lang: en
 ---
 

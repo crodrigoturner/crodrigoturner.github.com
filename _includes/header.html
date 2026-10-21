@@ -2,9 +2,12 @@
 <h1><a href="/" class="logo">Carlos Rodrigo</a></h1>
 <nav>
 <ul>
+{% assign nav_pages = site.pages | where_exp: "p", "p.nav_order" | sort: "nav_order" %}
+{% for p in nav_pages %}
+<li><a href="{{ p.url }}"{% if page.url == p.url %} class="active"{% endif %}>{{ p.title }}</a></li>
+{% endfor %}
 {% for item in site.data.navigation %}
-{% assign item_link_slash = item.link | append: '/' %}
-<li><a href="{{ item.link }}"{% if page.url == item.link or page.url == item_link_slash %} class="active"{% endif %}>{{ item.name }}</a></li>
+<li><a href="{{ item.link }}">{{ item.name }}</a></li>
 {% endfor %}
 </ul>
 </nav>

@@ -1,8 +1,3 @@
-- name: About
-  link: https://carlosrodrigo.com/
+# External links, shown after the pages that set nav_order in their front matter
 - name: Blog
   link: https://carlosrodrigo.blog/
-- name: Work
-  link: /work
-- name: Now
-  link: /work
