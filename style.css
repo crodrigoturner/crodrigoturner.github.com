@@ -126,9 +126,9 @@ text-align:left;
 font: 400 1em / 2 "Berkeley Mono", sans-serif;
 }
 
-footer p{margin:0;}
 
-footer img{height:150px; margin:20px 0 20px 0; float:left;object-fit: contain; width:100%;}
+
+footer img{height:150px; margin:20px 0 20px 0; float:left;object-fit: cover; width:100%;}
 
 .meta,
 small {
