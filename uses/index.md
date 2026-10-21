@@ -1,7 +1,6 @@
 ---
 layout: page
 title: What I use
-nav_order: 4
 lang: en
 tags: uses
 excerpt: These are the tools I use as of May 2026.
