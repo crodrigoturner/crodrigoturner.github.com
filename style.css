@@ -64,7 +64,6 @@ body::before {
 header {
 float:left; 
 width: var(--site-width);
-border-bottom:1px solid var(--color-border);
 padding:0;
  margin:0px calc(50% - (var(--site-width) / 2));
  border-right:1px solid var(--color-border);
@@ -96,11 +95,10 @@ section {
   width: 100%;
   max-width: var(--site-width);
     margin: 0px calc(50% - (var(--site-width) / 2)) 0px;
-  padding: 40px 0px 0px;
+  padding: 0px 0px 0px;
   
   float: left;
-  border:1px solid var(--color-border);
-  border-top:none;
+
 
 }
 
@@ -113,7 +111,7 @@ section>p {
 }
 
 article {
-  padding: 0 40px 40px;
+  padding: 40px;
   margin:0;
   float: left;
   width: 100%;
