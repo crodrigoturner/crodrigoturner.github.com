@@ -45,17 +45,25 @@ I <a href="/work/">work</a> at Tecnica y Avance, managing customers and supplier
 <ul class="projects">
 <li><a href="/life">A life in squares</a></li>
 <li><a href="https://open.spotify.com/show/6XfekLlcM3Fsd04oAeaauO?si=1208bb2647bb4c33">AI stories</a></li>
-<li><a href="https://tboti.link">The best of the internet [TBOTI]</a></li>
+<li><a href="https://tboti.link">The best of the internet</a></li>
 <li><a href="/100-books">100 books</a></li>
 </ul>
 </article>
-<!-- Row 2 -->
-<article class="half-width col-60">
+
+<article class="half-width col-30">
 <h4>Latest writing</h4>    
 <ul class="posts">
 {% for post in site.posts limit:5 %}
 <li><a href="{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
+</ul>
+</article>
+<article class="half-width col-30">
+<h4>/ Pages</h4>    
+<ul>
+<li><a href="/blogroll">Blogroll</a></li>
+<li><a href="/uses">Uses</a></li>
+
 </ul>
 </article>
 <article class="half-width col-60">

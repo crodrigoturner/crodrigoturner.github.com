@@ -135,38 +135,15 @@ border:1px solid var(--color-border);
 border-top:none;
 text-align:left;
 font: 400 1em / 2 "Berkeley Mono", sans-serif;
-text-transform: uppercase;
 }
 
-footer p.marquee {
-  clear: both;
-  margin: 0;
-  white-space: nowrap;
-  overflow: hidden;
-}
 
-/* padding-left starts the text off the right edge, then it scrolls out the left */
-footer .marquee-track {
-  display: inline-block;
-  padding-left: 100%;
-  animation: marquee 20s linear infinite;
-}
 
-footer p.marquee:hover .marquee-track {
-  animation-play-state: paused;
-}
 
-@keyframes marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-100%); }
-}
 
-@media (prefers-reduced-motion: reduce) {
-  footer .marquee-track {
-    animation: none;
-    padding-left: 0;
-  }
-}
+
+
+
 
 .posts li{width:100%; float:left; margin:0 0 10px; border-bottom:1px solid var(--color-muted); padding:3px 0 3px 0;}
 

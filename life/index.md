@@ -1,9 +1,9 @@
 ---
-layout: post
+layout: page
 title: Life in months
 tags: projects
 excerpt: Every month of my life in a grid.
-type: stock
+
 ---
 
 
