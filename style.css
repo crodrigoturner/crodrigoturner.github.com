@@ -96,7 +96,7 @@ section {
   width: 100%;
   max-width: var(--site-width);
     margin: 0px calc(50% - (var(--site-width) / 2)) 0px;
-  padding: 40px 0px 100px;
+  padding: 40px 0px 0px;
   
   float: left;
   border:1px solid var(--color-border);
@@ -243,7 +243,7 @@ h4 {
   font-family: "Berkeley Mono", sans-serif;
   font-size: 0.8em;
   color: var(--color-muted);
-  margin: 40px 0;
+  margin: 10px 0;
   text-transform: uppercase;
 
   font-weight: 400;
@@ -387,8 +387,8 @@ img.alignleft {
 }
 
 .profile {
-  height: 180px;
-  width: 180px;
+  width: 20%;
+  height: auto;
   display: block;
   margin: 0 auto 40px;
   border-radius: 87% 67% 87% 75%;
@@ -451,6 +451,28 @@ img.alignleft {
 iframe {
   max-width: 100%;
   display: block;
+}
+
+/* HOME GRID */
+.home-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.home-grid > article {
+  float: none;
+  width: auto;
+  margin: 0;
+}
+
+.home-grid > .full-width {
+  grid-column: 1 / -1;
+}
+
+@media only screen and (max-width: 640px) {
+  .home-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* WIDTHS */

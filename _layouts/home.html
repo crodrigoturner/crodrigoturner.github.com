@@ -1,8 +1,9 @@
 {% include head.html %}
 {% include header.html %}
-<section>
+<section class="home-grid">
 
-<article class="hero">
+<!-- Row 1 -->
+<article class="hero full-width">
 <p>
 <script>
 currentTime=new Date();
@@ -26,7 +27,7 @@ weekdayValue = currentDate.getDay()
 document.write(
 " I hope you're having a great " + weekday[weekdayValue] + "!"
 )
-</script></p> <p>I'm Carlos Rodrigo; A husband to Mar, a father to Lucas and Nico, and a human-friend to Pancho. </p>
+</script></p><img src="/images/profile.jpeg" class="profile" alt="Carlos Rodrigo"> <p>I'm Carlos Rodrigo; A husband to Mar, a father to Lucas and Nico, and a human-friend to Pancho. </p>
 <p>
 I <a href="/work/">work</a> with data. Currently at Tecnica y Avance, managing customers and suppliers across multiple countries, building tools, and turning messy inputs into decisions people can actually act on.
 </p>
@@ -36,6 +37,7 @@ Every layout already pulls in header.html, so the new nav shows up on all pages 
 
 Your original header had "Now" linking to /work, and I kept that. There's no /now page in the site yet, so if that link is a mistake, change it in navigation.yml once the page exists.
 </article>-->
+<!-- Row 2 -->
 <article class="half-width">
 <h4>Projects</h4>    
 <ul>
@@ -49,6 +51,14 @@ Your original header had "Now" linking to /work, and I kept that. There's no /no
 <h4>Now</h4>    
 Every layout already pulls in header.html, so the new nav shows up on all pages without other changes.
 Your original header had "Now" linking to /work, and I kept that. There's no /now page in the site yet, so if that link is a mistake, change it in navigation.yml once the page exists.
+</article>
+<!-- Row 3 -->
+<article class="full-width">
+<h4>Row 3</h4>
+</article>
+<!-- Row 4 -->
+<article class="full-width">
+<h4>Row 4</h4>
 </article>
 
 </section>
