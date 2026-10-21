@@ -448,7 +448,7 @@ display: block;
 /* HOME GRID */
 .home-grid {
 display: grid;
-grid-template-columns: repeat(11, 1fr);
+grid-template-columns: repeat(12, 1fr);
 gap: 1px;
 
 }
