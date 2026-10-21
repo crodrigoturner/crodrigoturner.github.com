@@ -465,16 +465,11 @@ iframe {
   float: left;
   width: 50%;
   box-sizing: border-box;
+  padding:40px;
+  border:.5px solid var(--color-border);
 }
 
-.half-width:nth-of-type(odd) {
-  clear: left;
-  padding-right: 20px;
-}
 
-.half-width:nth-of-type(even) {
-  padding-left: 20px;
-}
 
 @media only screen and (max-width: 640px) {
   .half-width,
