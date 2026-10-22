@@ -6,7 +6,7 @@ lang: en
 tags: 
 - projects
 type: stock
-cover:/images/20200422podcast.png
+cover: /images/20200422podcast.png
 ---
 
 My first attempt at podcasting. 
