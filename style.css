@@ -550,18 +550,32 @@ grid-column: span 6;
 border-bottom:1px solid var(--color-border); 
 }
 
+.home-grid > .col-10 {
+grid-column: span 1;
+border-bottom:1px solid var(--color-border); 
+}
+
+.home-grid > .col-70 {
+grid-column: span 7;
+border-bottom:1px solid var(--color-border); 
+}
+
 .home-grid > .col-50 {
 grid-column: span 5;
 border-bottom:1px solid var(--color-border); 
 }
 
-.home-grid > .col-30  {
+.home-grid > .col-40  {
 grid-column: span 4;
 border-bottom:1px solid var(--color-border); 
 }
 
-.home-grid > .col-20, .col-30 {
+.home-grid > .col-30 {
 grid-column: span 3;
+border-bottom:1px solid var(--color-border); 
+}
+.home-grid > .col-20 {
+grid-column: span 2;
 border-bottom:1px solid var(--color-border); 
 }
 
