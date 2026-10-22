@@ -1,5 +1,0 @@
----
-layout: stock
-title: Stock
-
----
