@@ -1,8 +1,7 @@
 {% assign project_posts = site.tags.projects | sort: 'date' | reverse %}
 
 {% for post in project_posts %}
-<a class="project half-width col-30" href="{{ post.url }}">
-  
+<a class="project col-30" href="{{ post.url }}">
 {% if post.cover %}<img src="{{ post.cover }}" alt="{{ post.title }}" loading="lazy">{% endif %}
 <h3>{{ post.title }}</h3>
 <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
