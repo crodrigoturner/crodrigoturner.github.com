@@ -68,9 +68,9 @@ float:left;
 display: grid;
 grid-template-columns: repeat(12, 1fr);
 gap: 1px;
-width: var(--site-width);
+width: min(var(--site-width), 100%);
 padding:0;
-margin:0px calc(50% - (var(--site-width) / 2));
+margin:0px calc(50% - min(var(--site-width), 100%) / 2);
 border-right:1px solid var(--color-border);
 border-left:1px solid var(--color-border);
 }
@@ -107,7 +107,7 @@ background: #ffe500;}
 section {
 width: 100%;
 max-width: var(--site-width);
-margin: 0px calc(50% - (var(--site-width) / 2)) 0px;
+margin: 0px calc(50% - min(var(--site-width), 100%) / 2) 0px;
 padding: 0px 0px 0px;
 border: 1px solid var(--color-border);
 float: left;
@@ -115,7 +115,11 @@ border-bottom: none;
 
 }
 
-
+mark {
+  background: linear-gradient(transparent 55%, #ffe066 55%);
+  color: inherit;
+  padding: 0 0.1em;
+}
 
 
 section>hr,
@@ -136,8 +140,8 @@ width: 100%;
 
 footer {
 padding:  10px 20px 0;
-width: var(--site-width);
-margin: 0px calc(50% - (var(--site-width) / 2)) 0px;
+width: min(var(--site-width), 100%);
+margin: 0px calc(50% - min(var(--site-width), 100%) / 2) 0px;
 float: left; 
 border:1px solid var(--color-border);
 
@@ -519,7 +523,7 @@ margin: 0 0 10px;
 
 
 @media only screen and (max-width: 640px) {
-.masonry {
+.projects {
 column-count: 1;
 }
 }
