@@ -27,7 +27,7 @@ url: "https://carlosrodrigo.com" # the base hostname & protocol for your site, e
 twitter_username: crodrigoturner
 github_username:  crodrigoturner
 lastfm_username: crodrigoturner
-lastfm_api_key: # get one at https://www.last.fm/api/account/create
+lastfm_api_key: 0e1b0519b845c44111c52efae52ceb72
 
 # Build settings
 plugins:
