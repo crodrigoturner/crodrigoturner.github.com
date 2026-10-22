@@ -479,6 +479,49 @@ max-width: 100%;
 display: block;
 }
 
+/* MASONRY */
+/* CSS columns fill top to bottom, so cards of different heights pack without gaps */
+.masonry {
+column-count: 4;
+column-gap: 20px;
+}
+
+.masonry-item {
+display: block;
+break-inside: avoid;
+margin: 0 0 20px;
+padding: 15px;
+border: 1px solid var(--color-border);
+color: var(--color-text);
+text-decoration: none;
+}
+
+.masonry-item img {
+display: block;
+width: 100%;
+height: auto;
+margin: 0 0 10px;
+}
+
+.masonry-item h3 {
+margin: 0 0 10px;
+}
+
+.masonry-item p {
+margin: 0 0 10px;
+}
+
+.masonry-item .more {
+font-family: "Berkeley Mono", sans-serif;
+font-size: 0.8em;
+}
+
+@media only screen and (max-width: 640px) {
+.masonry {
+column-count: 1;
+}
+}
+
 /* HOME GRID */
 .home-grid {
 display: grid;
