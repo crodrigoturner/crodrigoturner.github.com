@@ -522,7 +522,7 @@ column-count: 1;
 }
 
 /* HOME GRID */
-.home-grid {
+.home-grid, .projects {
 display: grid;
 grid-template-columns: repeat(12, 1fr);
 gap: 1px;
