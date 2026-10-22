@@ -503,7 +503,13 @@ height: auto;
 margin: 0 0 10px;
 }
 
+/* the card is a link, so undo the global a:hover border: none */
+.masonry-item:hover {
+border: 1px solid var(--color-border);
+}
+
 .masonry-item h3 {
+float: none;
 margin: 0 0 10px;
 }
 
