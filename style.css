@@ -482,7 +482,7 @@ display: block;
 
 
 
-.project {
+.projects a{
     float: left;
     break-inside: avoid;
     margin: 0 0 20px;
@@ -494,7 +494,7 @@ display: block;
     box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.1);
 }
 
-.project img {
+.projects a img {
 display: block;
 width: 100%;
 height: auto;
@@ -503,18 +503,16 @@ margin: 0 0 10px;
 
 
 
-.project h3 {
+.projects a h3 {
 float: none;
 margin: 0 0 10px;
 }
 
-.project p {
+.projects a p {
 margin: 0 0 10px;
 }
 
-.project .more {
-font-family: "Berkeley Mono", sans-serif;
-}
+
 
 @media only screen and (max-width: 640px) {
 .masonry {
@@ -529,6 +527,8 @@ grid-template-columns: repeat(12, 1fr);
 gap: 1px;
 
 }
+
+.projects{float:left;}
 
 .home-grid > article {
 float: none;
@@ -551,12 +551,12 @@ grid-column: span 5;
 border-bottom:1px solid var(--color-border); 
 }
 
-.home-grid > .col-30, .col-30 {
+.home-grid > .col-30  {
 grid-column: span 4;
 border-bottom:1px solid var(--color-border); 
 }
 
-.home-grid > .col-20 {
+.home-grid > .col-20, .col-30 {
 grid-column: span 3;
 border-bottom:1px solid var(--color-border); 
 }
