@@ -550,7 +550,7 @@ grid-column: span 5;
 border-bottom:1px solid var(--color-border); 
 }
 
-.home-grid > .col-30, .project .col-30 {
+.home-grid > .col-30, .col-30 {
 grid-column: span 4;
 border-bottom:1px solid var(--color-border); 
 }
