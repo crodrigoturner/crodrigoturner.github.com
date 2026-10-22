@@ -135,14 +135,14 @@ width: 100%;
 .sidebar{background: #bee1dd; border-left:1px solid var(--color-border); border-bottom:1px solid var(--color-border);}
 
 footer {
-padding:  0 20px;
+padding:  10px 20px 0;
 width: var(--site-width);
 margin: 0px calc(50% - (var(--site-width) / 2)) 0px;
 float: left; 
 border:1px solid var(--color-border);
 
 text-align:left;
-font: 400 .8em / 2 "Berkeley Mono", sans-serif;
+font: 400 .9em / 2 "Berkeley Mono", sans-serif;
 color:var(--color-muted);
 }
 
@@ -492,6 +492,7 @@ display: block;
     text-decoration: none;
     background: #FFF;
     box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.1);
+    border-radius: 4px;
 }
 
 .projects a img {

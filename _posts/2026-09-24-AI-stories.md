@@ -6,6 +6,7 @@ lang: en
 tags: 
 - projects
 type: stock
+cover: /images/aistories_cover.jpg
 ---
 
 Short stories written by Claude and read out loud by Eleven labs. I'm in charge of the prompts.
