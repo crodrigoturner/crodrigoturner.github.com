@@ -7,8 +7,10 @@
 {% if post.cover %}
 <img src="{{ post.cover }}" alt="{{ post.title }}" loading="lazy">
 {% else %}
+<span class="description">
 <h3>{{ post.title }}</h3>
 <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+</span>
 {% endif %}
 </a>
 {% endfor %}
