@@ -487,7 +487,7 @@ display: block;
     break-inside: avoid;
     margin: 0 0 20px;
     padding: 15px;
-   
+  width:100%;
     color: var(--color-text);
     text-decoration: none;
     background: #FFF;
@@ -521,14 +521,14 @@ column-count: 1;
 }
 
 /* HOME GRID */
-.home-grid, .projects {
+.home-grid {
 display: grid;
 grid-template-columns: repeat(12, 1fr);
 gap: 1px;
 
 }
 
-.projects{float:left;}
+.projects{float:left; width:100%; column-count: 4; column-gap: 20px; margin:0; padding:0;}
 
 .home-grid > article {
 float: none;
