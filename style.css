@@ -112,6 +112,9 @@ padding: 0px 0px 0px;
 border: 1px solid var(--color-border);
 float: left;
 border-bottom: none;
+display: grid;
+grid-template-columns: repeat(12, 1fr);
+gap: 1px;
 
 }
 
@@ -528,9 +531,7 @@ column-count: 1;
 
 /* HOME GRID */
 .home-grid {
-display: grid;
-grid-template-columns: repeat(12, 1fr);
-gap: 1px;
+
 
 }
 
