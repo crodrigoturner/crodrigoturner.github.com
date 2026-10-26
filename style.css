@@ -557,6 +557,11 @@ grid-column: span 1;
 border-bottom:1px solid var(--color-border); 
 }
 
+
+.home-grid > .col-100 {
+grid-column: span 10;
+border-bottom:1px solid var(--color-border); 
+}
 .home-grid > .col-70 {
 grid-column: span 7;
 border-bottom:1px solid var(--color-border); 
