@@ -114,8 +114,6 @@ float: left;
 border-bottom: none;
 display: grid;
 grid-template-columns: repeat(12, 1fr);
-gap: 1px;
-
 }
 
 mark {
@@ -529,13 +527,8 @@ column-count: 1;
 }
 }
 
-/* HOME GRID */
-.home-grid {
 
 
-}
-
-.projects{float:left; width:100%; column-count: 4; column-gap: 20px; margin:0; padding:0;}
 
 .home-grid > article {
 float: none;
