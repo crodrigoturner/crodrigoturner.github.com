@@ -545,6 +545,7 @@ margin: 0;
 
 .home-grid > .full-width {
 grid-column: 1 / -1;
+border-bottom:1px solid var(--color-border); 
 }
 
 .home-grid > .col-60 {
@@ -588,6 +589,11 @@ border-bottom:1px solid var(--color-border);
 .home-grid > .col-20 {
 grid-column: span 2;
 border-bottom:1px solid var(--color-border); 
+}
+
+.single-width {grid-column: span 6;
+border-bottom:1px solid var(--color-border); 
+margin:0 auto;
 }
 
 @media only screen and (max-width: 640px) {
