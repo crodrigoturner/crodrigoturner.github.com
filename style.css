@@ -571,6 +571,10 @@ border-bottom:1px solid var(--color-border);
 grid-column: span 5;
 border-bottom:1px solid var(--color-border); 
 }
+.home-grid > .col-80 {
+grid-column: span 8;
+border-bottom:1px solid var(--color-border); 
+}
 
 .home-grid > .col-40  {
 grid-column: span 4;
