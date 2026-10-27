@@ -95,7 +95,7 @@ gap: 1px;
 width: min(var(--site-width), 100%);
 padding:0;
 margin:0px calc(50% - min(var(--site-width), 100%) / 2);
-font-family: "Berkeley Mono", sans-serif;
+
 }
 
 /* same 12-col grid as .home-grid: 3 (20%) / 6 / 3 (20%) */
@@ -118,11 +118,11 @@ nav ul{float:left; width:100%; display:block;margin:0;}
 nav ul li{float:left;margin:0 20px 0px 0;}
 
 .contact{    float: right;
-grid-column: span 3;
+grid-column: span 2;
 margin: 0 5px;
 align-self: center;
 text-align: center;
-
+border-radius:10px;
 background: #ffe066;}
 
 /* MAIN CONTENT */
@@ -155,9 +155,8 @@ padding: 20px;
 margin:0;
 float: left;
 width: 100%;
-
-
 }
+
 
 
 footer {
@@ -335,7 +334,7 @@ background: #fef4ad;
 /* TYPOGRAPHY */
 h1 {
 text-transform: lowercase;
-font-size: 2.5em;
+font-size: 2em;
 float:left;
 font-weight:400;
 padding:5px 20px;
@@ -416,7 +415,7 @@ margin-left: 2px;
 font-family: "Inter", sans-serif;
 }
 
-.projects li a{border:1px solid var(--color-border); width:100%; padding:3px 10px; float:left; margin:0 0 10px; text-decoration:none; color:var(--color-text);}
+.projects li a{ width:100%; padding:3px 10px; float:left; margin:0 0 10px; text-decoration:none; color:var(--color-text);}
 
 h1 a,
 h1 a:visited {
@@ -688,41 +687,41 @@ margin: 0;
 
 .full-width {
 grid-column: 1 / -1;
-border-bottom:1px solid var(--color-border); 
+
 }
 
 .col-60 {
 grid-column: span 6;
-border-bottom:1px solid var(--color-border); 
+
 }
 
 .col-10 {
 grid-column: span 1;
-border-bottom:1px solid var(--color-border); 
+
 }
 
 
 .col-100 {
 grid-column: span 10;
-border-bottom:1px solid var(--color-border); 
+
 }
 .col-70 {
 grid-column: span 7;
-border-bottom:1px solid var(--color-border); 
+
 }
 
 .col-50 {
 grid-column: span 5;
-border-bottom:1px solid var(--color-border); 
+
 }
 .col-80 {
 grid-column: span 8;
-border-bottom:1px solid var(--color-border); 
+
 }
 
 .col-40  {
 grid-column: span 4;
-border-bottom:1px solid var(--color-border); 
+
 }
 .col-30 {
 grid-column: span 3;
@@ -731,11 +730,11 @@ border-bottom:1px solid var(--color-border);
 
 .col-20 {
 grid-column: span 2;
-border-bottom:1px solid var(--color-border); 
+
 }
 
 .single-width {float:left; width:100%;
-border-bottom:1px solid var(--color-border); 
+
 margin:0 auto;
 padding:0 50% 0 0;
 }
@@ -818,7 +817,4 @@ article {
 padding: 20px;
 margin: 0 0 40px;
 }
-}
-.sidebar {
-font-family: "Berkeley Mono", sans-serif;
 }

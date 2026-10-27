@@ -14,13 +14,6 @@
       var track = data.recenttracks && data.recenttracks.track && data.recenttracks.track[0];
       if (!track) return;
 
-      // @attr.nowplaying is only set while a track is scrobbling
-      var playing = track["@attr"] && track["@attr"].nowplaying === "true";
-
-      var label = document.createElement("p");
-      label.className = "lastfm-status";
-      label.textContent = playing ? "Listening to" : "Last listened to";
-
       var link = document.createElement("a");
       link.href = track.url;
       link.target = "_blank";
@@ -29,7 +22,7 @@
       var song = document.createElement("p");
       song.appendChild(link);
 
-      box.replaceChildren(label, song);
+      box.replaceChildren(song);
     })
     .catch(function () {});
 })();
