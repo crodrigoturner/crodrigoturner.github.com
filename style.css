@@ -101,7 +101,7 @@ margin: 0 5px;
 align-self: center;
 text-align: center;
 
-background: #fabd2f;}
+background: #ffe066;}
 
 /* MAIN CONTENT */
 section {
@@ -129,7 +129,7 @@ width: 100%;
 }
 
 article {
-padding: 20px;
+padding: 10px 20px 20px 20px;
 margin:0;
 float: left;
 width: 100%;
@@ -137,7 +137,7 @@ width: 100%;
 
 }
 
-.sidebar{background: #458588; border-left:1px solid var(--color-border); border-bottom:1px solid var(--color-border);}
+.sidebar{background: #5a9b9e; border-left:1px solid var(--color-border); border-bottom:1px solid var(--color-border);}
 
 footer {
 padding:  10px 20px 0;
