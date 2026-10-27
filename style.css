@@ -528,7 +528,10 @@ column-count: 1;
 }
 
 
-
+.books{display: grid;
+grid-template-columns: repeat(12, 1fr);
+float:left;
+width:100%;}
 
 .home-grid > article {
 float: none;
