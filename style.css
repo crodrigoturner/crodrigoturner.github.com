@@ -226,6 +226,7 @@ margin-top: auto;
 font-size: 0.75em;
 color: var(--color-muted);
 text-transform: capitalize;
+font: 400 13px/1.7 "berkeley mono", sans-serif;
 }
 
 /* the card is a link, so undo the global a:hover opacity/border */
