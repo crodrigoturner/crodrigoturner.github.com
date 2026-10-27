@@ -162,7 +162,7 @@ padding:  10px 20px 0;
 width: min(var(--site-width), 100%);
 margin: 0px calc(50% - min(var(--site-width), 100%) / 2) 0px;
 float: left; 
-text-align:left;
+text-align:center;
 font: 400 14px/1.7 "berkeley mono", sans-serif;
 opacity: .8;
 }
@@ -665,7 +665,7 @@ grid-column: 1 / -1;
 
 
 .books a{
-   grid-column: span 1;}
+   grid-column: span 2;}
   
 .projects a{
      grid-column: span 3;}
