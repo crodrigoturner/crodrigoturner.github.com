@@ -1,4 +1,4 @@
-{% assign project_posts = site.tags.projects | sort: 'date' | reverse %}
+{% assign project_posts = site.projects | sort: 'date' | reverse %}
 
 {% for post in project_posts %}
 <a  href="{{ post.url }}">

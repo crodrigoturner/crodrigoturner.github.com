@@ -3,7 +3,8 @@
 <section class="single-width">
 
 <ul class="archive" id="archive-posts">
-{% for post in site.tags[page.tag] %}
+{% assign tag_docs = site.documents | where_exp: "d", "d.tags contains page.tag" | sort: 'date' | reverse %}
+{% for post in tag_docs %}
 <li class="archive-item" data-search="{{ post.title | downcase | escape }} {{ post.tags | join: ' ' | downcase }}">
 <a href="{{ post.url }}" class="archive-title">{{ post.title }}</a>
 

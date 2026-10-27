@@ -1,4 +1,4 @@
-{% assign book_posts = site.tags.reviews | sort: 'date' | reverse %}
+{% assign book_posts = site.books | sort: 'date' | reverse %}
 
 {% for post in book_posts %}
 <a href="{{ post.url }}">

@@ -1,7 +1,9 @@
    <div class="tag-cloud">
-  
-{% assign sorted_tags = site.tags | sort %}
 
-{% for tag in sorted_tags %}<a href="/tags/{{ tag[0] }}/">{{ tag[0] }} ({{ tag[1].size }})</a>
+{% comment %}site.tags only covers _posts, so collect tags from posts and collections{% endcomment %}
+{% assign tagged_docs = site.documents | where_exp: "d", "d.tags.size > 0" %}
+{% assign sorted_tags = tagged_docs | map: 'tags' | join: ',' | split: ',' | uniq | sort %}
+
+{% for tag in sorted_tags %}{% assign tag_docs = tagged_docs | where_exp: "d", "d.tags contains tag" %}<a href="/tags/{{ tag }}/">{{ tag }} ({{ tag_docs.size }})</a>
 {% endfor %}
 </div>
