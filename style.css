@@ -41,14 +41,14 @@ html{ height:101%;}
 body {
 color: var(--color-text);
 font: 400 14px / 1.7 "Berkeley Mono", sans-serif;
-/* mesh gradient after githubnext.com's .blob-1: soft colour pools fading out from each corner over the base blue */
+/* mesh gradient after githubnext.com's .blob-1: soft white and blue pools fading out over the base blue */
 background-color: #d7e8f7;
 background-image:
-radial-gradient(at 90% 0%, #ffec45, transparent 50%),
-radial-gradient(at 0% 80%, #41d1b7, transparent 50%),
-radial-gradient(at 10% 50%, #8263db, transparent 50%),
-radial-gradient(at 60% 100%, #58ccdc, transparent 50%),
-radial-gradient(at 60% 0%, #ff557e, transparent 50%);
+radial-gradient(at 90% 0%, #ffffff, transparent 55%),
+radial-gradient(at 0% 80%, #c4dcf2, transparent 55%),
+radial-gradient(at 10% 30%, #f5faff, transparent 50%),
+radial-gradient(at 60% 100%, #b9d6f0, transparent 55%),
+radial-gradient(at 50% 0%, #e8f2fc, transparent 50%);
 background-attachment: fixed;
 margin: 0 auto;
 -webkit-text-size-adjust: 100%;
