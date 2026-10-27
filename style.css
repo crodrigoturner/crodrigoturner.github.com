@@ -45,9 +45,9 @@ font: 400 14px / 1.7 "Berkeley Mono", sans-serif;
 background-color: #d7e8f7;
 background-image:
 radial-gradient(at 90% 0%, #ffffff, transparent 55%),
-radial-gradient(at 0% 80%, #c4dcf2, transparent 55%),
+radial-gradient(at 0% 80%, #f0f7fd, transparent 55%),
 radial-gradient(at 10% 30%, #f5faff, transparent 50%),
-radial-gradient(at 60% 100%, #b9d6f0, transparent 55%),
+radial-gradient(at 60% 100%, #ffffff, transparent 55%),
 radial-gradient(at 50% 0%, #e8f2fc, transparent 50%);
 background-attachment: fixed;
 margin: 0 auto;
