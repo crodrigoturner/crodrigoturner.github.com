@@ -145,7 +145,7 @@ width: min(var(--site-width), 100%);
 margin: 0px calc(50% - min(var(--site-width), 100%) / 2) 0px;
 float: left; 
 border:1px solid var(--color-border);
-
+border-top:none;
 text-align:left;
 font: 400 .9em / 2 "Berkeley Mono", sans-serif;
 color:var(--color-muted);
@@ -547,11 +547,7 @@ border-bottom:1px solid var(--color-border);
 grid-column: 1 / -1;
 }
 
-/* block removes the inline baseline gap so covers sit flush on the bottom line */
-.books a img {
-display: block;
-width: 100%;
-}
+
 
 .books a{
     float: left;
@@ -565,8 +561,14 @@ width: 100%;
    
 }
 
-.books img{    border-radius: 0 10px 10px 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);}
+.books img{
+      display: block;
+      width: 100%;
+    border-top-left-radius: 0.125rem;
+    border-bottom-left-radius: 0.125rem;
+    border-top-right-radius: 0.375rem;
+    border-bottom-right-radius: 0.375rem;
+    box-shadow: 3px 3px 8px -2px #000;}
 
 .home-grid > article {
 float: none;
