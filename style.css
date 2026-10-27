@@ -132,7 +132,7 @@ float: left;
 
 }
 
-.home section{border-bottom: none;
+#home section{border-bottom: none;
 display: grid;
 grid-template-columns: repeat(12, 1fr)}
 
