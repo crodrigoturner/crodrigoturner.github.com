@@ -18,19 +18,13 @@ font-display: swap;
 }
 
 @font-face {
-font-family: "Atkinson Hyperlegible Soft";
+font-family: "Atkinson Hyperlegible Soft Bold";
 src: url("/fonts/AtkinsonHyperlegibleSoft-Bold.woff2") format("woff2");
 font-weight: 700;
 font-style: normal;
 font-display: swap;
 }
-@font-face {
-font-family: "GT Sectra Fine Book";
-src: url("/fonts/GT-Sectra-Fine-Book-Trial.woff2") format("woff2");
-font-weight: 400;
-font-style: normal;
-font-display: swap;
-}
+
 
 :root {
 --site-width: 1200px;
@@ -347,7 +341,7 @@ font-family: "Coral Pixels", cursive;
 
 
 h2 {
-font: 400 1.5em/1.6 "Atkinson Hyperlegible Soft", sans-serif;
+font: 600 1.5em/1.6 "Atkinson Hyperlegible Soft Bold", sans-serif;
 width: 100%;
 float: left;
 color: var(--color-text);
