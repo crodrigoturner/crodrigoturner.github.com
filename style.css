@@ -186,7 +186,8 @@ text-decoration: none;
 
 .garden-card {
 display: flex;
-gap: 10px;
+flex-direction: column;
+gap: 4px;
 padding: 12px;
 height: 100%;
 background: #fff;
@@ -219,7 +220,7 @@ display: flex;
 flex-wrap: wrap;
 align-items: center;
 gap: 6px;
-margin-top: 4px;
+margin-top: auto;
 font-size: 0.75em;
 color: var(--color-muted);
 text-transform: capitalize;
