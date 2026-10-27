@@ -110,7 +110,6 @@ width: auto;
 text-align: left;
 float: left;
 
-border-left:1px solid var(--color-border);
 padding:5px 0px;
 line-height:4.3;
 
@@ -160,14 +159,12 @@ width: 100%;
 
 }
 
-.sidebar{ border-left:1px solid var(--color-border); border-bottom:1px solid var(--color-border);}
 
 footer {
-padding:  10px 20px 0;
+padding:  10px 0px 0;
 width: min(var(--site-width), 100%);
 margin: 0px calc(50% - min(var(--site-width), 100%) / 2) 0px;
 float: left; 
-border:1px solid var(--color-border);
 border-top:none;
 text-align:left;
 font: 400 .9em / 2 "Atkinson Hyperlegible Soft", sans-serif;
@@ -175,7 +172,7 @@ opacity: .8;
 }
 
 
-.posts li{width:100%; float:left; margin:0 0 10px; border-bottom:1px solid var(--color-muted); padding:3px 0 3px 0;}
+.posts li{width:100%; float:left; margin:0 0 10px;  padding:3px 0 3px 0;}
 
 
 .garden {
