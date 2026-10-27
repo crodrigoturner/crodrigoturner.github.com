@@ -1,7 +1,7 @@
 {% assign book_posts = site.tags.reviews | sort: 'date' | reverse %}
 
 {% for post in book_posts %}
-<a class="col-10" href="{{ post.url }}">
+<a href="{{ post.url }}">
 {% if post.cover %}
 <img src="{{ post.cover }}" alt="{{ post.title }}" loading="lazy">
 {% else %}
