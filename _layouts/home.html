@@ -47,12 +47,8 @@ I <a href="/work/">work</a> at Tecnica y Avance, managing customers and supplier
 
 <article class="full-width col-100">
     <h4>writing</h4>
-{% include tagcloud.html %}</article>
-<ul class="posts">
-{% for post in site.posts limit:5 %}
-<li><a href="{{ post.url }}">{{ post.title }}</a></li>
-{% endfor %}
-</ul>
+{% include tagcloud.html %}
+{% include garden.html limit=10 %}
 </article>
 
 <article class="books half-width col-60">

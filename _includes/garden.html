@@ -1,0 +1,37 @@
+{% assign garden_limit = include.limit | default: site.posts.size %}
+<div class="garden">
+{% for post in site.posts limit: garden_limit %}
+<a class="garden-item" href="{{ post.url }}">
+<div class="garden-card">
+<svg class="garden-icon" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 18V9M10 9C10 5 7 3 3 3c0 4 3 6 7 6zm0 0c0-4 3-6 7-6 0 4-3 6-7 6z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<div>
+<h3>{{ post.title }}</h3>
+{% if post.excerpt %}<p class="garden-description">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>{% endif %}
+<div class="garden-meta">
+<span>{{ post.tags | first | default: 'note' }}</span>
+<svg width="4" height="4" aria-hidden="true"><circle r="2" cx="2" cy="2" fill="currentColor"/></svg>
+<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b %Y' }}</time>
+</div>
+</div>
+</div>
+</a>
+{% endfor %}
+</div>
+
+<script>
+// swap the printed date for "3 months ago", like the garden does
+(function () {
+  if (!window.Intl || !Intl.RelativeTimeFormat) return;
+  var rtf = new Intl.RelativeTimeFormat("en", { numeric: "auto" });
+  var units = [["year", 31536000], ["month", 2592000], ["week", 604800], ["day", 86400]];
+  document.querySelectorAll(".garden-meta time").forEach(function (el) {
+    var seconds = (new Date(el.getAttribute("datetime")) - new Date()) / 1000;
+    for (var i = 0; i < units.length; i++) {
+      if (Math.abs(seconds) >= units[i][1] || units[i][0] === "day") {
+        el.textContent = rtf.format(Math.round(seconds / units[i][1]), units[i][0]);
+        break;
+      }
+    }
+  });
+})();
+</script>

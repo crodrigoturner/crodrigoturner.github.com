@@ -162,6 +162,89 @@ opacity: .8;
 
 .posts li{width:100%; float:left; margin:0 0 10px; border-bottom:1px solid var(--color-muted); padding:3px 0 3px 0;}
 
+/* GARDEN — post cards after maggieappleton.com/garden: 3-col masonry, serif title, small meta line */
+.garden {
+float: left;
+width: 100%;
+column-count: 3;
+column-gap: 8px;
+margin: 20px 0 0;
+}
+
+.garden-item {
+display: block;
+break-inside: avoid;
+color: var(--color-text);
+text-decoration: none;
+}
+
+.garden-card {
+display: flex;
+gap: 10px;
+padding: 12px;
+margin: 0 0 8px;
+border: 1px solid rgba(0, 53, 107, 0.15);
+border-radius: 6px;
+transition: transform .24s cubic-bezier(.34, 1.36, .64, 1), background-color .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+
+.garden-icon {
+flex-shrink: 0;
+margin-top: 3px;
+color: var(--color-link);
+}
+
+.garden-card h3 {
+float: none;
+width: auto;
+margin: 0;
+font: 400 1.2em/1.3 "GT Sectra Fine Book", serif;
+transition: color .18s ease;
+}
+
+.garden-description {
+margin: 4px 0 0;
+font-size: 0.85em;
+color: var(--color-muted);
+}
+
+.garden-meta {
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+gap: 6px;
+margin-top: 4px;
+font-size: 0.75em;
+color: var(--color-muted);
+text-transform: capitalize;
+}
+
+/* the card is a link, so undo the global a:hover opacity/border */
+a.garden-item:hover {
+opacity: 1;
+}
+
+@media (hover: hover) and (pointer: fine) {
+a.garden-item:hover .garden-card {
+transform: scale(1.02);
+background: rgba(255, 255, 255, 0.6);
+border-color: rgba(0, 53, 107, 0.3);
+box-shadow: 6px 6px 30px -10px rgba(0, 30, 60, 0.15);
+}
+
+a.garden-item:hover h3 {
+color: var(--color-link);
+}
+}
+
+@media only screen and (max-width: 1100px) {
+.garden { column-count: 2; }
+}
+
+@media only screen and (max-width: 700px) {
+.garden { column-count: 1; }
+}
+
 footer img{height:200px; margin:20px 0 20px 0; float:left;object-fit: cover; width:100%;
 /* sepia gives a single tint, hue-rotate turns it toward the site blue */
 filter: grayscale(100%) sepia(100%) hue-rotate(175deg) saturate(250%) brightness(0.85);display:none;}
