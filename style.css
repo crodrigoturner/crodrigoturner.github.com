@@ -641,7 +641,7 @@ width:100%;}
 /* projects fills its own row; books and films take half each via col-60. Headings span the whole box */
 .home-grid > .projects {
 grid-column: 1 / -1;
-border-bottom:1px solid var(--color-border);
+
 }
 
 .books > h4, .projects > h4 {
@@ -725,7 +725,7 @@ grid-column: span 4;
 }
 .col-30 {
 grid-column: span 3;
-border-bottom:1px solid var(--color-border);
+
 }
 
 .col-20 {
@@ -796,7 +796,7 @@ height: auto;
 margin: 0;
 padding: 12px 20px;
 border-right: none;
-border-bottom: 1px solid var(--color-border);
+
 overflow-y: visible;
 }
 
