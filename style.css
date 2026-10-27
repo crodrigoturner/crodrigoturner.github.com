@@ -101,7 +101,7 @@ margin: 0 5px;
 align-self: center;
 text-align: center;
 
-background: #ffe500;}
+background: #fabd2f;}
 
 /* MAIN CONTENT */
 section {
@@ -137,7 +137,7 @@ width: 100%;
 
 }
 
-.sidebar{background: #bee1dd; border-left:1px solid var(--color-border); border-bottom:1px solid var(--color-border);}
+.sidebar{background: #458588; border-left:1px solid var(--color-border); border-bottom:1px solid var(--color-border);}
 
 footer {
 padding:  10px 20px 0;
