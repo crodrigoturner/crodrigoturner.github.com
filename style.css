@@ -95,7 +95,7 @@ gap: 1px;
 width: min(var(--site-width), 100%);
 padding:0;
 margin:0px calc(50% - min(var(--site-width), 100%) / 2);
-
+font-family: "Berkeley Mono", sans-serif;
 }
 
 /* same 12-col grid as .home-grid: 3 (20%) / 6 / 3 (20%) */
@@ -166,7 +166,7 @@ margin: 0px calc(50% - min(var(--site-width), 100%) / 2) 0px;
 float: left; 
 border-top:none;
 text-align:left;
-font: 400 .9em / 2 "Atkinson Hyperlegible Soft", sans-serif;
+font: 400 .9em / 2 "Berkeley Mono", sans-serif;
 opacity: .8;
 }
 
@@ -817,4 +817,7 @@ article {
 padding: 20px;
 margin: 0 0 40px;
 }
+}
+.sidebar {
+font-family: "Berkeley Mono", sans-serif;
 }
