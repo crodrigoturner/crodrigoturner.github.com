@@ -530,7 +530,7 @@ column-count: 1;
 
 .lastfm p{margin:0;}
 
-.books{display: grid;
+.books, .projects{display: grid;
 grid-template-columns: repeat(12, 1fr);
 gap: 10px;
 align-items: end;
@@ -538,18 +538,18 @@ float:left;
 width:100%;}
 
 /* the books article fills its own row; its heading spans all 12 cols */
-.home-grid > .books {
+.home-grid > .books, .home-grid > .projects {
 grid-column: 1 / -1;
 border-bottom:1px solid var(--color-border);
 }
 
-.books > h4 {
+.books > h4, .projects > h4 {
 grid-column: 1 / -1;
 }
 
 
 
-.books a{
+.books a, .projects a{
     float: left;
     break-inside: avoid;
    grid-column: span 1;
@@ -560,6 +560,13 @@ grid-column: 1 / -1;
 
    
 }
+
+
+.books a{
+   grid-column: span 1;}
+  
+.projects a{
+     grid-column: span 3;}
 
 .books img{
       display: block;
