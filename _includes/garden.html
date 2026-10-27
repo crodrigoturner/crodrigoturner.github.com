@@ -2,9 +2,7 @@
 <div class="garden">
 {% for post in site.posts limit: garden_limit %}
 <a class="garden-item" href="{{ post.url }}">
-<div class="garden-card">
-<svg class="garden-icon" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 18V9M10 9C10 5 7 3 3 3c0 4 3 6 7 6zm0 0c0-4 3-6 7-6 0 4-3 6-7 6z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-<div>
+
 <h3>{{ post.title }}</h3>
 {% if post.excerpt %}<p class="garden-description">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>{% endif %}
 <div class="garden-meta">
