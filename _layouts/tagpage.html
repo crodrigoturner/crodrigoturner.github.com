@@ -1,8 +1,6 @@
 {% include head.html %}
 {% include header.html %}
-<section>
-
-
+<section class="single-width">
 
 <ul class="archive" id="archive-posts">
 {% for post in site.tags[page.tag] %}
@@ -15,3 +13,4 @@
 </ul>
 
 </section>
+{% include footer.html %}
