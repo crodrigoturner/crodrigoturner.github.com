@@ -724,9 +724,10 @@ grid-column: span 2;
 border-bottom:1px solid var(--color-border); 
 }
 
-.single-width {grid-column: span 6;
+.single-width {float:left; width:100%;
 border-bottom:1px solid var(--color-border); 
 margin:0 auto;
+padding:0 50% 0 0;
 }
 
 @media only screen and (max-width: 640px) {
