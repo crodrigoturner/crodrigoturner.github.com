@@ -683,6 +683,11 @@ margin: 0;
 
 }
 
+/* dividers between home rows run the full 12 columns */
+.home-grid > hr {
+grid-column: 1 / -1;
+}
+
 .full-width {
 grid-column: 1 / -1;
 
