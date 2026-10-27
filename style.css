@@ -555,10 +555,12 @@ grid-column: 1 / -1;
 
     color: var(--color-text);
     text-decoration: none;
-    border-radius: 0 10px 10px 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
    
 }
+
+.books img{    border-radius: 0 10px 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);}
 
 .home-grid > article {
 float: none;
