@@ -145,7 +145,7 @@ width: 100%;
 
 }
 
-.sidebar{background: #9ad1d4; border-left:1px solid var(--color-border); border-bottom:1px solid var(--color-border);}
+.sidebar{ border-left:1px solid var(--color-border); border-bottom:1px solid var(--color-border);}
 
 footer {
 padding:  10px 20px 0;
@@ -156,15 +156,8 @@ border:1px solid var(--color-border);
 border-top:none;
 text-align:left;
 font: 400 .9em / 2 "Berkeley Mono", sans-serif;
-color:var(--color-muted);
+opacity: .8;
 }
-
-
-
-
-
-
-
 
 
 .posts li{width:100%; float:left; margin:0 0 10px; border-bottom:1px solid var(--color-muted); padding:3px 0 3px 0;}
@@ -553,8 +546,8 @@ float:left;
 width:100%;}
 
 
-/* the books article fills its own row; its heading spans all 12 cols */
-.home-grid > .books, .home-grid > .projects {
+/* projects fills its own row; books and films take half each via col-60. Headings span the whole box */
+.home-grid > .projects {
 grid-column: 1 / -1;
 border-bottom:1px solid var(--color-border);
 }
