@@ -105,7 +105,7 @@ margin: 0;
 }
 
 nav{
-grid-column: span 6;
+grid-column: span 7;
 width: auto;
 text-align: left;
 float: left;
@@ -119,10 +119,11 @@ nav ul li{float:left;margin:0 20px 0px 0;}
 
 .contact{    float: right;
 grid-column: span 2;
-margin: 0 5px;
+margin: 0;
 align-self: center;
 text-align: center;
 border-radius:10px;
+padding:10px 0;
 background: #ffe066;}
 
 /* MAIN CONTENT */

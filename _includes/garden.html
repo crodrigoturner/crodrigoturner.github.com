@@ -1,7 +1,7 @@
 {% assign garden_limit = include.limit | default: site.posts.size %}
 <div class="garden">
 {% for post in site.posts limit: garden_limit %}
-<a class="garden-item" href="{{ post.url }}">
+<a class="garden-card" href="{{ post.url }}">
 
 <h3>{{ post.title }}</h3>
 {% if post.excerpt %}<p class="garden-description">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>{% endif %}
