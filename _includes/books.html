@@ -14,7 +14,7 @@
 {% for status in status_order %}
 {% assign group = book_groups | where: "name", status | first %}
 {% if group %}
-<h5 class="books-status">{{ status | default: "other" | capitalize }}</h5>
+<h4 class="books-status">{{ status | default: "other" | capitalize }}</h4>
 {% for post in group.items %}
 {% include book-item.html post=post %}
 {% endfor %}
