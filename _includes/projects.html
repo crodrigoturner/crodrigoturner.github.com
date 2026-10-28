@@ -1,14 +1,13 @@
 {% assign project_posts = site.projects | sort: 'date' | reverse %}
 
 {% for post in project_posts %}
-<a  href="{{ post.url }}">
+<a class="project-card" href="{{ post.url }}">
 {% if post.cover %}
-<img src="{{ post.cover }}" alt="{{ post.title }}" loading="lazy">
-{% else %}
+<img src="{{ post.cover }}" alt="" loading="lazy">
+{% endif %}
 <span class="description">
 <h3>{{ post.title }}</h3>
-<p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+<p>{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
 </span>
-{% endif %}
 </a>
 {% endfor %}
