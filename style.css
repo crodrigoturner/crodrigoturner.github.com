@@ -909,3 +909,9 @@ color: var(--color-muted);
 @media only screen and (max-width: 640px) {
 .projects a.project-card { grid-column: 1 / -1; }
 }
+
+/* each book status heading starts a new row in the books grid */
+.books > .books-status {
+grid-column: 1 / -1;
+margin: 10px 0 0;
+}
