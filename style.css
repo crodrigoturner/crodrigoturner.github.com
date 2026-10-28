@@ -337,7 +337,7 @@ font-family: "Coral Pixels", cursive;
 
 
 h2 {
-font: 600 1.5em/1.6 "Atkinson Hyperlegible Soft Bold", sans-serif;
+font: 600 4em/1.6 "Atkinson Hyperlegible Soft Bold", sans-serif;
 width: 100%;
 float: left;
 color: var(--color-text);
@@ -863,7 +863,7 @@ grid-column: span 4;
 display: flex;
 gap: 12px;
 padding: 12px;
-background: #fff;
+background: #285b6117;
 border-radius: 6px;
 }
 
