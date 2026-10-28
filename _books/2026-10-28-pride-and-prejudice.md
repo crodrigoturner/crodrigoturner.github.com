@@ -7,5 +7,5 @@ tags:
 - books
 excerpt: "First impressions, class and money, in the sharpest comedy of manners."
 cover: https://covers.openlibrary.org/b/id/14348537-L.jpg
-status: To read
+status: Finished
 ---
