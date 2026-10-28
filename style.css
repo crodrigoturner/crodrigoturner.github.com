@@ -417,6 +417,8 @@ margin-left: 2px;
 font-family: "Inter", sans-serif;
 }
 
+.social::after{content:none;}
+
 .projects li a{ width:100%; padding:3px 10px; float:left; margin:0 0 10px; text-decoration:none; color:var(--color-text);}
 
 h1 a,
