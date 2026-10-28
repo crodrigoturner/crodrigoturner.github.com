@@ -1,7 +1,14 @@
 {% assign book_posts = site.books | sort: 'date' | reverse %}
 
-{% if include.flat %}
-{% comment %} one list, newest first, status ignored (home page) {% endcomment %}
+{% if include.status %}
+{% comment %} only books with this status, newest first, no headings (home page) {% endcomment %}
+{% assign status_posts = book_posts | where: "status", include.status %}
+{% assign status_limit = include.limit | default: status_posts.size %}
+{% for post in status_posts limit: status_limit %}
+{% include book-item.html post=post %}
+{% endfor %}
+{% elsif include.flat %}
+{% comment %} one list, newest first, status ignored {% endcomment %}
 {% for post in book_posts %}
 {% include book-item.html post=post %}
 {% endfor %}
