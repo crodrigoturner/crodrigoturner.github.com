@@ -7,7 +7,7 @@ tags:
 - reviews
 excerpt: Biography of Theodore H. Schwartz
 cover: /images/gray-matters-cover.jpg
-status: reading
+status: unfinished
 type: 
 - book
 - flow

@@ -1,0 +1,8 @@
+<a href="{{ include.post.url }}">
+{% if include.post.cover %}
+<img src="{{ include.post.cover }}" alt="{{ include.post.title }}" loading="lazy">
+{% else %}
+<h3>{{ include.post.title }}</h3>
+<p>{{ include.post.excerpt | strip_html | truncatewords: 30 }}</p>
+{% endif %}
+</a>

@@ -1,4 +1,11 @@
 {% assign book_posts = site.books | sort: 'date' | reverse %}
+
+{% if include.flat %}
+{% comment %} one list, newest first, status ignored (home page) {% endcomment %}
+{% for post in book_posts %}
+{% include book-item.html post=post %}
+{% endfor %}
+{% else %}
 {% assign book_groups = book_posts | group_by: 'status' %}
 {% comment %} reading first, then finished, then any other status in the order it first appears {% endcomment %}
 {% assign status_order = "reading,finished" | split: "," %}
@@ -9,14 +16,8 @@
 {% if group %}
 <h5 class="books-status">{{ status | default: "other" | capitalize }}</h5>
 {% for post in group.items %}
-<a href="{{ post.url }}">
-{% if post.cover %}
-<img src="{{ post.cover }}" alt="{{ post.title }}" loading="lazy">
-{% else %}
-<h3>{{ post.title }}</h3>
-<p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-{% endif %}
-</a>
+{% include book-item.html post=post %}
 {% endfor %}
 {% endif %}
 {% endfor %}
+{% endif %}
