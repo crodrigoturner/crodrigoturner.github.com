@@ -262,10 +262,10 @@ width: 100%;
 }
 
 .back-link{font-family: "berkeley mono", sans-serif;
-font-size: 0.7em !important;
+font-size: 0.8em !important;
 text-decoration:none;
 color: var(--color-muted);
-margin: 10px 0;
+margin: 10px 0 0;
 float: left;
 width: 100%;
 border:none;
@@ -411,11 +411,11 @@ border: none;
 }
 
 
-a[target="_blank"]::after {
+/*a[target="_blank"]::after {
 content: '↗';
 margin-left: 2px;
 font-family: "Inter", sans-serif;
-}
+}*/
 
 .social::after{content:none;}
 
