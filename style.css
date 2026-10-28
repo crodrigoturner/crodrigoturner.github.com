@@ -358,7 +358,7 @@ text-align: left;
 
 h3 {
 font: 700 1.25em/1.6 "Atkinson Hyperlegible Soft", sans-serif;
-margin: 0px 0 20px;
+margin: 20px 0;
 width: 100%;
 float: left;
 }
@@ -660,7 +660,7 @@ grid-column: 1 / -1;
    grid-column: span 1;
     padding: 0;
 
-    color: var(--color-text);
+
     text-decoration: none;
 
    
@@ -852,4 +852,15 @@ text-decoration: none;
 /* the icon already says it's external */
 .social a::after {
 content: none;
+}
+
+/* ARCHIVE — tag and date sit in right-hand columns (date first in the markup so it floats furthest right) */
+.archive-tag {
+float: right;
+width: 20%;
+}
+
+.archive-date {
+float: right;
+width: 10%;
 }

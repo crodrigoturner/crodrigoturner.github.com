@@ -7,10 +7,9 @@
 {% for post in all_posts %}
 <li class="archive-item" data-search="{{ post.title | downcase | escape }} {{ post.tags | join: ' ' | downcase }}">
 <a href="{{ post.url }}" class="archive-title">{{ post.title }}</a>
-<span class="archive-tag">{{ post.tags | join: ', ' }}</span>
 <span class="archive-date">{{ post.date | date: '%Y-%m-%d' }}</span>
+<span class="archive-tag">{{ post.tags | join: ', ' }}</span>
 </li>
 {% endfor %}
 </ul></article>
 </section>
-{% include footer.html %}
