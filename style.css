@@ -868,12 +868,12 @@ align-items: stretch;
 }
 
 .projects a.project-card {
-grid-column: span 4;
-display: flex;
-gap: 12px;
-padding: 12px;
-background: #285b6117;
-border-radius: 6px;
+    grid-column: span 4;
+    display: flex;
+    gap: 12px;
+    padding: 12px 12px 12px 0;
+    /* background: #285b6117; */
+    border-radius: 6px;
 }
 
 .projects a.project-card img {

@@ -5,9 +5,7 @@
 <div class="garden-card">
 <h3>{{ post.title }}</h3>
 {% if post.excerpt %}<p class="garden-description">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>{% endif %}
-<div class="meta">
-<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b %Y' }}</time>
-</div>
+
 </div>
 </a>
 {% endfor %}
