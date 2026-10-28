@@ -678,7 +678,7 @@ grid-column: 1 / -1;
     border-bottom-left-radius: 0.125rem;
     border-top-right-radius: 0.375rem;
     border-bottom-right-radius: 0.375rem;
-    box-shadow: 3px 3px 8px -2px #000;}
+        box-shadow: 3px 3px 6px -2px #BDBDBD;}
 
 .home-grid > article {
 float: none;
@@ -686,6 +686,8 @@ width: auto;
 margin: 0;
 
 }
+
+h4 a{border:none; text-decoration:none; color:#bf360c;}
 
 /* dividers between home rows run the full 12 columns */
 .home-grid > hr {
@@ -826,4 +828,26 @@ margin: 0 0 40px;
 }
 .sidebar {
 font: 400 14px/1.7 "berkeley mono", sans-serif;
+}
+
+/* SOCIAL — icon links in the about me card */
+.social {
+display: flex;
+flex-wrap: wrap;
+gap: 16px;
+list-style: none;
+margin: 8px 0 0;
+padding: 0;
+}
+
+.social a {
+display: inline-flex;
+align-items: center;
+gap: 6px;
+text-decoration: none;
+}
+
+/* the icon already says it's external */
+.social a::after {
+content: none;
 }
