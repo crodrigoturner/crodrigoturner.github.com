@@ -679,7 +679,7 @@ margin: 0;
 
 }
 
-h4 a{border:none; text-decoration:none; color:#bf360c;}
+h4 a, .projects h4 a{border:none; text-decoration:none; color:#bf360c;}
 
 /* dividers between home rows run the full 12 columns */
 .home-grid > hr {
