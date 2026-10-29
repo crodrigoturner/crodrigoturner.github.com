@@ -1,0 +1,61 @@
+<div class="steps" id="github-calendar">
+<div class="steps-scroll">
+<div class="steps-months" id="github-months"></div>
+<div class="steps-grid" id="github-grid"></div>
+</div>
+<div class="steps-foot">
+<span id="github-total"><a href="https://github.com/{{ site.github_username | default: 'crodrigoturner' }}" target="_blank">Contributions on GitHub</a></span>
+<span class="steps-legend">Less <i class="l0"></i><i class="l1"></i><i class="l2"></i><i class="l3"></i><i class="l4"></i> More</span>
+</div>
+</div>
+
+<script>
+// live GitHub contributions (commits, PRs, issues) for the last year, same layout as the steps calendar
+(function () {
+  var user = "{{ site.github_username | default: 'crodrigoturner' }}";
+  fetch("https://github-contributions-api.jogruber.de/v4/" + user + "?y=last")
+    .then(function (res) { return res.json(); })
+    .then(function (data) {
+      var days = data.contributions || [];
+      if (!days.length) return;
+      var grid = document.getElementById("github-grid");
+      var months = document.getElementById("github-months");
+
+      // pad the first week so columns start on Monday, like the steps calendar
+      var first = new Date(days[0].date + "T00:00:00");
+      for (var p = 0; p < (first.getDay() + 6) % 7; p++) {
+        days.unshift(null);
+      }
+
+      var lastMonth = -1;
+      days.forEach(function (day, i) {
+        if (i % 7 === 0) {
+          var label = document.createElement("span");
+          // first real day of this week (the first week starts with padding)
+          var weekStart = days.slice(i, i + 7).filter(Boolean)[0];
+          var d = new Date(weekStart.date + "T00:00:00");
+          if (d.getMonth() !== lastMonth) {
+            label.textContent = d.toLocaleDateString("en", { month: "short" });
+            lastMonth = d.getMonth();
+          }
+          months.appendChild(label);
+        }
+        var cell = document.createElement("i");
+        if (day) {
+          cell.className = "l" + day.level;
+          cell.title = (day.count ? day.count + (day.count === 1 ? " contribution" : " contributions") : "No contributions") + " on " +
+            new Date(day.date + "T00:00:00").toLocaleDateString("en", { day: "numeric", month: "short", year: "numeric" });
+        } else {
+          cell.style.visibility = "hidden";
+        }
+        grid.appendChild(cell);
+      });
+
+      var total = data.total && data.total.lastYear;
+      if (total != null) {
+        document.getElementById("github-total").firstChild.textContent = total.toLocaleString("en") + " contributions on GitHub in the last year";
+      }
+    })
+    .catch(function () {});
+})();
+</script>
