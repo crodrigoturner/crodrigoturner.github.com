@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Blogroll
+title: About
 lang: en
 nav_order: 1 
 ---
