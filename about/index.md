@@ -1,4 +1,9 @@
-
+---
+layout: page
+title: Blogroll
+lang: en
+nav_order: 1 
+---
 
 <ul class="bulleted">
 <li>I'm Carlos Roberto Rodrigo Turner.</li>    
