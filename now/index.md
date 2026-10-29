@@ -5,10 +5,6 @@ nav_order: 4
 lang: en
 ---
 
-
-
-
-
 ### Steps
 
 {% include steps.html %}
