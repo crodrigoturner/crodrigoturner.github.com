@@ -89,7 +89,6 @@ gap: 1px;
 width: min(var(--site-width), 100%);
 padding:0;
 margin:0px calc(50% - min(var(--site-width), 100%) / 2);
-font: 400 14px/1.7 "berkeley mono", sans-serif;
 
 }
 
@@ -164,7 +163,6 @@ width: min(var(--site-width), 100%);
 margin: 0px calc(50% - min(var(--site-width), 100%) / 2) 0px;
 float: left; 
 text-align:center;
-font: 400 14px/1.7 "berkeley mono", sans-serif;
 opacity: .8;
 }
 
