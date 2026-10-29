@@ -1,0 +1,60 @@
+<div class="steps">
+<div class="steps-scroll">
+<div class="steps-months" id="steps-months"></div>
+<div class="steps-grid" id="steps-grid"></div>
+</div>
+<div class="steps-foot">
+<span id="steps-total"></span>
+<span class="steps-legend">Less <i class="l0"></i><i class="l1"></i><i class="l2"></i><i class="l3"></i><i class="l4"></i> More</span>
+</div>
+</div>
+
+<script>
+// daily steps from intervals.icu, fetched at build time into _data/steps.json
+(function () {
+  var rows = {{ site.data.steps | default: "[]" | jsonify }};
+  if (typeof rows === "string") rows = [];
+  var byDate = {};
+  rows.forEach(function (r) { byDate[r.date] = r.steps; });
+
+  function key(d) {
+    return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
+  }
+  function level(n) {
+    if (!n) return 0;
+    if (n < 5000) return 1;
+    if (n < 8000) return 2;
+    if (n < 10000) return 3;
+    return 4;
+  }
+
+  // 53 weeks ending today, each column a week starting on Monday
+  var today = new Date(); today.setHours(0, 0, 0, 0);
+  var start = new Date(today);
+  start.setDate(start.getDate() - 52 * 7 - ((today.getDay() + 6) % 7));
+
+  var grid = document.getElementById("steps-grid");
+  var months = document.getElementById("steps-months");
+  var total = 0, lastMonth = -1;
+
+  for (var d = new Date(start), i = 0; d <= today; d.setDate(d.getDate() + 1), i++) {
+    if (i % 7 === 0) {
+      var label = document.createElement("span");
+      if (d.getMonth() !== lastMonth) {
+        label.textContent = d.toLocaleDateString("en", { month: "short" });
+        lastMonth = d.getMonth();
+      }
+      months.appendChild(label);
+    }
+    var steps = byDate[key(d)] || 0;
+    total += steps;
+    var cell = document.createElement("i");
+    cell.className = "l" + level(steps);
+    cell.title = (steps ? steps.toLocaleString("en") + " steps" : "No steps") + " on " +
+      d.toLocaleDateString("en", { day: "numeric", month: "short", year: "numeric" });
+    grid.appendChild(cell);
+  }
+
+  document.getElementById("steps-total").textContent = total.toLocaleString("en") + " steps in the last year";
+})();
+</script>

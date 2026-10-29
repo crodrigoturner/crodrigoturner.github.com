@@ -32,6 +32,22 @@ jobs:
           bundle lock --add-platform x86_64-linux
           bundle install --jobs 4 --retry 3
 
+      # the API key has full account access, so it stays in a secret and only the step counts reach the site
+      - name: Fetch intervals.icu steps
+        env:
+          INTERVALS_ATHLETE_ID: ${{ secrets.INTERVALS_ATHLETE_ID }}
+          INTERVALS_API_KEY: ${{ secrets.INTERVALS_API_KEY }}
+        run: |
+          mkdir -p _data
+          echo '[]' > _data/steps.json
+          if [ -n "$INTERVALS_API_KEY" ]; then
+            curl -sf -u "API_KEY:$INTERVALS_API_KEY" \
+              "https://intervals.icu/api/v1/athlete/${INTERVALS_ATHLETE_ID:-0}/wellness?oldest=$(date -u -d '371 days ago' +%F)&newest=$(date -u +%F)" \
+              | jq '[.[] | select(.steps != null) | {date: .id, steps: .steps}]' > _data/steps.tmp \
+              && mv _data/steps.tmp _data/steps.json \
+              || echo "Could not fetch steps, building without them"
+          fi
+
       - name: Build Jekyll
         run: bundle exec jekyll build
         env:
