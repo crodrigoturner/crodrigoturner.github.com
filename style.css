@@ -798,9 +798,9 @@ h4 a,
 
 .single-width {
     float: left;
-    width: min(var(--site-width), 100%);
+    width: calc(var(--site-width) - 300px);
     padding: 0;
-    margin: 0px calc(50% - min(var(--site-width), 100%) / 2);
+    margin: 0px calc(50% - var(--site-width) / 2) 0px calc(50% - (var(--site-width) + 300px) / 2);
 }
 
 /* WIDTHS */
