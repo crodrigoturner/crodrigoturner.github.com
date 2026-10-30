@@ -800,7 +800,7 @@ h4 a,
     float: left;
     width: calc(var(--site-width) - 300px);
     padding: 0;
-    margin: 0px calc(50% - var(--site-width) / 2) 0px calc(50% - (var(--site-width) + 300px) / 2);
+    margin:0px calc(50% - (var(--site-width) + 300px) / 2) 0px calc(50% - var(--site-width) / 2) ;
 }
 
 /* WIDTHS */
