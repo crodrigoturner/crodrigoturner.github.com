@@ -1,14 +1,6 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: "Berkeley Mono";
-    src: url("/fonts/BerkeleyMonoTrial-Regular.otf") format("opentype");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
     font-family: "Atkinson Hyperlegible Soft";
     src: url("/fonts/AtkinsonHyperlegibleSoft-Regular.woff2") format("woff2");
     font-weight: 400;
