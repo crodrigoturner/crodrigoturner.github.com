@@ -6,6 +6,6 @@ lang: en
 tags:
 - books
 excerpt: "How to want to see things as they really are, not as you wish them to be."
-cover: 
+cover: /images/The_Scout_Mindset_cover.jpg
 status: To read
 ---
