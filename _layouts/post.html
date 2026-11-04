@@ -4,7 +4,18 @@
 <article >
   <a href="/" class="back-link"><span class="arrow">←</span> Back to home</a>
 <h2>{{page.title}}</h2>
+<p class="reading-time" id="reading-time"></p>
 {{content}}
 <span class="meta"><a href="mailto:rodrigoturner.carlos@gmail.com?subject={{ page.title }}">Reply by email</a></span>
 </article>
 </section>
+<script>
+// reading time from the article text at 200 words a minute, leaving out the page furniture
+(function () {
+  var el = document.getElementById("reading-time");
+  var copy = el.closest("article").cloneNode(true);
+  copy.querySelectorAll(".back-link, h2, .reading-time, .meta, script, style").forEach(function (n) { n.remove(); });
+  var words = copy.textContent.trim().split(/\s+/).filter(Boolean).length;
+  if (words) el.textContent = Math.max(1, Math.round(words / 200)) + " min read";
+})();
+</script>

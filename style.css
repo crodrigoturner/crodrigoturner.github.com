@@ -1069,6 +1069,14 @@ h4 a,
 }
 
 
+.reading-time {
+    float: left;
+    width: 100%;
+    margin: 0 0 20px;
+    font-size: 0.8em;
+    color: var(--color-muted);
+}
+
 /* MEDIA QUERIES — all breakpoints live here, widest first so narrower screens win */
 
 @media (hover: hover) and (pointer: fine) {
