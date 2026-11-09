@@ -15,6 +15,6 @@ nav_order: 1
 </ul>
 
 <article class="projects">
-<h4><a href="/projects/">Projects <span class="arrow">→</span></a></h4>
+<h4>Projects</h4>
 {% include projects.html %}
 </article>

@@ -177,7 +177,7 @@ nav ul {
 
 nav ul li {
     float: left;
-    margin: 0 20px 0px 0;
+    margin: 0 40px 0px 0;
 }
 
 .contact {
@@ -407,7 +407,7 @@ h1 {
 }
 
 h2 {
-    font: 600 4em/1.6 "Atkinson Hyperlegible Soft Bold", sans-serif;
+    font: 600 2em/1.6 "Atkinson Hyperlegible Soft Bold", sans-serif;
     width: 100%;
     float: left;
     color: var(--color-text);
@@ -416,14 +416,8 @@ h2 {
 
 }
 
-h3 {
-    font: 700 1.25em/1.6 "Andada Pro", serif;
-    margin: 20px 0;
-    width: 100%;
-    float: left;
-}
 
-h4 {
+h3, h4 {
     font-family: "Berkeley Mono", sans-serif;
     font-size: 0.8em;
     color: var(--color-accent);
