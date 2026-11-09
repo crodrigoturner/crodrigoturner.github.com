@@ -230,12 +230,14 @@ article {
 footer {
     padding: 10px 20px 0;
     width: min(var(--site-width), 100%);
-    margin: 0px calc(50% - min(var(--site-width), 100%) / 2) 0px;
+    margin: 40px calc(50% - min(var(--site-width), 100%) / 2) 0px;
     float: left;
     text-align: left;
     opacity: .8;
     font-family: "Berkeley Mono", sans-serif;
-    font-size: 16px;
+    font-size: 14px;
+    color: var(--color-muted);
+
 }
 
 .posts li {
