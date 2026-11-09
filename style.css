@@ -25,7 +25,7 @@
 }
 
 :root {
-    --site-width: 1200px;
+    --site-width: 960px;
     --color-text: #00356b;
     --color-link: #095c9f;
     --color-muted: #607d8b;
