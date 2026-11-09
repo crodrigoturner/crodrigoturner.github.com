@@ -77,6 +77,19 @@
     --cf-button-text: #fff;
     --cf-ok: #2e7d32;
     --cf-error: #c62828;
+
+    /* 3D book hover, after minchi.co/books */
+    --book-back: linear-gradient(90deg, #6e6a64 0%, #8a857e 55%, #7a756e 100%);
+    --book-back-shadow: rgba(0, 0, 0, 0.18);
+    --book-page: #f7f4ee;
+    --book-page-edge: rgba(0, 0, 0, 0.12);
+    --book-page-shadow: rgba(0, 0, 0, 0.08);
+    --book-spine-edge: rgba(0, 0, 0, 0.06);
+    --book-spine: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    --book-light: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5));
+    --book-rest-shadow: 0 2px 6px rgba(0, 0, 0, 0.08), 0 8px 14px rgba(0, 0, 0, 0.06);
+    --book-open-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25), 20px 20px 40px rgba(0, 0, 0, 0.2), 40px 40px 60px rgba(0, 0, 0, 0.15);
+    --book-ease: cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 *,
@@ -1087,6 +1100,112 @@ h4 a,
     grid-template-columns: repeat(12, 1fr);
 }
 
+/* 3D BOOKS — cover swings open on hover, pages slide out (after minchi.co/books) */
+.books a.book-cell:hover {
+    opacity: 1;
+}
+
+.book-scene {
+    position: relative;
+    display: block;
+    width: 100%;
+    aspect-ratio: 2 / 3;
+}
+
+.book-3d {
+    position: absolute;
+    inset: 0;
+}
+
+.b-back-cover {
+    position: absolute;
+    width: 96%;
+    height: 96%;
+    top: 2%;
+    left: 2%;
+    z-index: 1;
+    background: var(--book-back);
+    border-radius: 0 6px 6px 0;
+    box-shadow: 1px 1px 4px var(--book-back-shadow);
+}
+
+.b-inside {
+    position: absolute;
+    width: 90%;
+    height: 94%;
+    top: 3%;
+    left: 5%;
+    z-index: 2;
+}
+
+.b-page {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 98%;
+    height: 100%;
+    background: var(--book-page);
+    border: 1px solid var(--book-page-edge);
+    border-radius: 0 6px 6px 0;
+    box-shadow: 0 1px 2px var(--book-page-shadow);
+    transition: transform 700ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.b-image {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    border-radius: 2px 6px 6px 2px;
+    box-shadow: var(--book-rest-shadow);
+    transform: perspective(2000px) translateX(0) rotateY(0deg) scaleX(1);
+    transform-origin: left center;
+    transition: transform 700ms var(--book-ease), box-shadow 700ms var(--book-ease);
+}
+
+/* undo the flat-cover look from .books img */
+.books .b-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    box-shadow: none;
+}
+
+.b-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 9%;
+    height: 100%;
+    margin-left: 7.3%;
+    z-index: 4;
+    border-left: 2px solid var(--book-spine-edge);
+    background: var(--book-spine);
+    pointer-events: none;
+    transition: margin-left 700ms var(--book-ease);
+}
+
+.b-light {
+    position: absolute;
+    inset: 0;
+    z-index: 5;
+    border-radius: 2px 6px 6px 2px;
+    background: var(--book-light);
+    opacity: 0.08;
+    transform: perspective(2000px) rotateY(0deg);
+    transform-origin: left center;
+    pointer-events: none;
+    transition: opacity 700ms var(--book-ease), transform 700ms var(--book-ease);
+}
+
+.book-cell {
+    transition: scale 160ms ease-out;
+}
+
+.book-cell:active {
+    scale: 0.98;
+}
+
 /* MEDIA QUERIES — all breakpoints live here, widest first so narrower screens win */
 
 @media (hover: hover) and (pointer: fine) {
@@ -1097,6 +1216,33 @@ h4 a,
 
     a.garden-item:hover h3 {
         color: var(--color-link);
+    }
+
+    .book-cell:hover .b-image,
+    .book-cell:focus-visible .b-image {
+        transform: perspective(2000px) translateX(-2.7%) rotateY(-12deg) scaleX(0.96);
+        box-shadow: var(--book-open-shadow);
+    }
+
+    .book-cell:hover .b-light,
+    .book-cell:focus-visible .b-light {
+        opacity: 0.1;
+        transform: perspective(2000px) rotateY(-12deg);
+    }
+
+    .book-cell:hover .b-effect,
+    .book-cell:focus-visible .b-effect {
+        margin-left: 4.5%;
+    }
+
+    .book-cell:hover .b-page:nth-child(1),
+    .book-cell:focus-visible .b-page:nth-child(1) {
+        transform: translateX(1.8%);
+    }
+
+    .book-cell:hover .b-page:nth-child(2),
+    .book-cell:focus-visible .b-page:nth-child(2) {
+        transform: translateX(0.9%);
     }
 }
 
@@ -1189,5 +1335,15 @@ h4 a,
         --cf-focus-ring: rgba(255, 255, 255, .1);
         --cf-button-bg: #eee;
         --cf-button-text: #111;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .b-image,
+    .b-page,
+    .b-effect,
+    .b-light,
+    .book-cell {
+        transition: none;
     }
 }

@@ -1,6 +1,15 @@
-<a href="{{ include.post.url }}">
+<a href="{{ include.post.url }}"{% if include.post.cover %} class="book-cell"{% endif %}>
 {% if include.post.cover %}
-<img src="{{ include.post.cover }}" alt="{{ include.post.title }}" loading="lazy">
+{% comment %} 3D book after minchi.co/books (CodePen filipz/VYwqwXN): back cover, 3 pages, cover, spine shine, light {% endcomment %}
+<span class="book-scene">
+<span class="book-3d">
+<span class="b-back-cover"></span>
+<span class="b-inside"><span class="b-page"></span><span class="b-page"></span><span class="b-page"></span></span>
+<span class="b-image"><img src="{{ include.post.cover }}" alt="{{ include.post.title }}" loading="lazy"></span>
+<span class="b-effect"></span>
+<span class="b-light"></span>
+</span>
+</span>
 {% else %}
 <h3>{{ include.post.title }}</h3>
 <p>{{ include.post.excerpt | strip_html | truncatewords: 30 }}</p>
