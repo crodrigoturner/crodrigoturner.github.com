@@ -6,6 +6,7 @@ lang: en
 tags:
 - books
 excerpt: "Notes on Rich Dad Poor Dad by Robert T. Kiyosaki"
+cover: https://covers.openlibrary.org/b/id/8315603-L.jpg
 status: finished
 ---
 

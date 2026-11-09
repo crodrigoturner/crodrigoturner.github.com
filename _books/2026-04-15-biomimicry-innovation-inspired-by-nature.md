@@ -6,6 +6,7 @@ lang: en
 tags:
 - books
 excerpt: "Notes on Biomimicry Innovation Inspired By Nature by Janine M. Benyus"
+cover: https://covers.openlibrary.org/b/id/8598259-L.jpg
 status: finished
 ---
 

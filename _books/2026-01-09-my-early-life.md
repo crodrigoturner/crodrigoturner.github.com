@@ -6,6 +6,7 @@ lang: en
 tags:
 - books
 excerpt: "Notes on My Early Life by Winston S. Churchill"
+cover: https://covers.openlibrary.org/b/id/12661313-L.jpg
 status: finished
 ---
 

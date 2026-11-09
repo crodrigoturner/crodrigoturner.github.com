@@ -6,6 +6,7 @@ lang: en
 tags:
 - books
 excerpt: "Notes on On The Shortness Of Life by Seneca"
+cover: https://covers.openlibrary.org/b/id/9199824-L.jpg
 status: finished
 ---
 

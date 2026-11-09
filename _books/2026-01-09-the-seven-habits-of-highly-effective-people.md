@@ -6,6 +6,7 @@ lang: en
 tags:
 - books
 excerpt: "Notes on The Seven Habits Of Highly Effective People by Stephen Covey"
+cover: https://covers.openlibrary.org/b/id/10079937-L.jpg
 status: finished
 ---
 

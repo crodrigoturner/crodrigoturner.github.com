@@ -6,6 +6,7 @@ lang: en
 tags:
 - books
 excerpt: "Notes on A Pale Blue Dot by Carl Sagan"
+cover: https://covers.openlibrary.org/b/id/14417175-L.jpg
 status: finished
 ---
 

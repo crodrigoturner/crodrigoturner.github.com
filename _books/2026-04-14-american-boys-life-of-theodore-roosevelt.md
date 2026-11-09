@@ -6,6 +6,7 @@ lang: en
 tags:
 - books
 excerpt: "Notes on American Boys - Life of Theodore Roosevelt by Edward Stratemayer & Charles Copeland"
+cover: https://covers.openlibrary.org/b/id/2896054-L.jpg
 status: finished
 ---
 

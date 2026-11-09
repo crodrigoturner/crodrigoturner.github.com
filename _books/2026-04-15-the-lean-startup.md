@@ -6,6 +6,7 @@ lang: en
 tags:
 - books
 excerpt: "Notes on The Lean Startup by Eric Ries"
+cover: https://covers.openlibrary.org/b/id/7104760-L.jpg
 status: finished
 ---
 

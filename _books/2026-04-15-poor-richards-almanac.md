@@ -6,6 +6,7 @@ lang: en
 tags:
 - books
 excerpt: "Notes on Poor Richards Almanac by Benjamin Franklin"
+cover: https://covers.openlibrary.org/b/id/419606-L.jpg
 status: finished
 ---
 

@@ -6,6 +6,7 @@ lang: en
 tags:
 - books
 excerpt: "Notes on Outlandish Proverbs by George Herbert"
+cover: https://covers.openlibrary.org/b/id/11217669-L.jpg
 status: finished
 ---
 

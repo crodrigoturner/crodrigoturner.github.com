@@ -6,6 +6,7 @@ lang: en
 tags:
 - books
 excerpt: "Notes on The comfort book by Matt Haig"
+cover: https://covers.openlibrary.org/b/id/11343826-L.jpg
 status: finished
 ---
 

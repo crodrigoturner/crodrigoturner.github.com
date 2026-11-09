@@ -6,6 +6,7 @@ lang: en
 tags:
 - books
 excerpt: "Notes on The Midnight Library by Matt Haig"
+cover: https://covers.openlibrary.org/b/id/10313767-L.jpg
 status: finished
 ---
 

@@ -6,6 +6,7 @@ lang: en
 tags:
 - books
 excerpt: "Notes on How to Win Friends & influence people by Dale Carnegie"
+cover: https://covers.openlibrary.org/b/id/13314878-L.jpg
 status: finished
 ---
 

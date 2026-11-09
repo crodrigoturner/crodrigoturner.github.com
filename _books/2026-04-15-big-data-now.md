@@ -6,6 +6,7 @@ lang: en
 tags:
 - books
 excerpt: "Notes on Big Data Now"
+cover: https://covers.openlibrary.org/b/id/8623178-L.jpg
 status: finished
 ---
 

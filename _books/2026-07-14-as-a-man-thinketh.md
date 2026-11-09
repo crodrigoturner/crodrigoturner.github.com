@@ -6,6 +6,7 @@ lang: en
 tags:
 - books
 excerpt: "Notes on As a Man Thinketh by James Allen"
+cover: https://covers.openlibrary.org/b/id/6268048-L.jpg
 status: finished
 ---
 

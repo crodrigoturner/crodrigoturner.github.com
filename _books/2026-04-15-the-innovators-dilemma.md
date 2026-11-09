@@ -6,6 +6,7 @@ lang: en
 tags:
 - books
 excerpt: "Notes on The Innovators Dilemma by Clayton Christensen"
+cover: https://covers.openlibrary.org/b/id/9274687-L.jpg
 status: finished
 ---
 

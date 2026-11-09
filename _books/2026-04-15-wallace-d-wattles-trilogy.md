@@ -6,6 +6,7 @@ lang: en
 tags:
 - books
 excerpt: "Notes on Wallace D. Wattles Trilogy by Wallace D. Wattles"
+cover: https://covers.openlibrary.org/b/id/854989-L.jpg
 status: finished
 ---
 

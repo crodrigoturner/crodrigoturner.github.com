@@ -6,6 +6,7 @@ lang: en
 tags:
 - books
 excerpt: "Notes on What the Most Successful People Do Before Breakfast by Laura Vanderkam"
+cover: https://covers.openlibrary.org/b/id/7629490-L.jpg
 status: finished
 ---
 

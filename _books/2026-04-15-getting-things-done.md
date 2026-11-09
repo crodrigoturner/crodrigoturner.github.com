@@ -6,6 +6,7 @@ lang: en
 tags:
 - books
 excerpt: "Notes on Getting Things Done by David Allen"
+cover: https://covers.openlibrary.org/b/id/109288-L.jpg
 status: finished
 ---
 

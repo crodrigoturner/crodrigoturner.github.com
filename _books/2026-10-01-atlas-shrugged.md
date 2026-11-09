@@ -6,6 +6,7 @@ lang: en
 tags:
 - books
 excerpt: "Notes on Atlas Shrugged by Ayn Rand"
+cover: https://covers.openlibrary.org/b/id/362277-L.jpg
 status: finished
 ---
 

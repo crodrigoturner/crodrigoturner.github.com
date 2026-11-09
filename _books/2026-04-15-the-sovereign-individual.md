@@ -6,6 +6,7 @@ lang: en
 tags:
 - books
 excerpt: "Notes on The Sovereign Individual by Lord William Rees-Mogg & James Dale Davidson"
+cover: https://covers.openlibrary.org/b/id/425227-L.jpg
 status: finished
 ---
 

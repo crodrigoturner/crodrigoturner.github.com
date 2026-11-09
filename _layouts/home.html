@@ -50,9 +50,13 @@ I <a href="/work/">work</a> at Técnica y Avance. I also write about technology,
 {% endfor %}
 </ul>
 </article>
+<article class="full-width">
+   <h4><a href="/books/">Reading <span class="arrow">→</span></a></h4>
+<div class="books">
+{% include books.html status="reading" limit=8 %}
+</div>
 
-
-
+</article>
 
 </section>
 {% include footer.html %}
