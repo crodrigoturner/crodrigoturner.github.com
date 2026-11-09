@@ -146,7 +146,7 @@ header {
     gap: 1px;
     width: min(var(--site-width), 100%);
     padding: 0;
-    margin: 40px calc(50% - min(var(--site-width), 100%) / 2);
+    margin: 40px calc(50% - min(var(--site-width), 100%) / 2) 20px;
     font: 400 16px/1.7 "Berkeley Mono", sans-serif;
 }
 
@@ -196,7 +196,7 @@ section {
     width: 100%;
     max-width: var(--site-width);
     margin: 0px calc(50% - min(var(--site-width), 100%) / 2) 0px;
-    padding: 0px 0px 0px;
+    padding: 0px;
 
     float: left;
 

@@ -1,10 +1,13 @@
 {% include head.html %}
 {% include header.html %}
-<section class="single-width">
+<section>
   <article>
-       <a href="/" class="back-link"><span class="arrow">←</span> Back to home<a>
+       <a href="/" class="back-link"><span class="arrow">←</span> Back to home</a>
     <h2>{{page.title}}</h2>
 
+<div class="archive-columns">
+
+<div class="archive-column">
 <h4>Pages</h4>
 <ul class="archive" id="archive-pages">
 {% assign all_pages = site.pages | sort: 'title' %}
@@ -16,13 +19,25 @@
 {% endunless %}
 {% endfor %}
 </ul>
+</div>
 
+<div class="archive-column">
+<h4>Projects</h4>
+<ul class="archive" id="archive-projects">
+{% assign all_projects = site.projects | sort: 'title' %}
+{% for p in all_projects %}
+<li class="archive-item" data-search="{{ p.title | downcase | escape }}">
+<a href="{{ p.url }}" class="archive-title">{{ p.title }}</a>
+</li>
+{% endfor %}
+</ul>
+</div>
 
+<div class="archive-column"></div>
 
+<div class="archive-column"></div>
 
-
-
-
+</div>
+  </article>
 </section>
-
-
+{% include footer.html %}
