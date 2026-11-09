@@ -320,7 +320,7 @@ footer img {
 small {
     font: 400 0.8em/1.7 "Berkeley Mono", sans-serif !important;
     color: var(--color-muted);
-    margin: 5px 0;
+    margin: 20px 0;
     float: left;
     width: 100%;
 }
