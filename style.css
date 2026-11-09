@@ -146,7 +146,7 @@ header {
     gap: 1px;
     width: min(var(--site-width), 100%);
     padding: 0;
-    margin: 0px calc(50% - min(var(--site-width), 100%) / 2) 40px;
+    margin: 40px calc(50% - min(var(--site-width), 100%) / 2);
     font: 400 16px/1.7 "Berkeley Mono", sans-serif;
 }
 
@@ -503,14 +503,25 @@ ul {
     margin-bottom: 20px;
 }
 
+/* numbers drawn by a counter so they sit on the text's left edge, with wrapped lines indented after them */
 ol {
-    padding-left: 20px;
+    padding-left: 0;
     width: 100%;
+    counter-reset: ol-item;
 }
 
 ol>li {
-    list-style: decimal;
-    padding: 3px 0;
+    position: relative;
+    padding: 3px 0 3px 2em;
+    counter-increment: ol-item;
+}
+
+ol>li::before {
+    content: counter(ol-item) ".";
+    position: absolute;
+    left: 0;
+    font-family: "Berkeley Mono", sans-serif;
+    color: var(--color-muted);
 }
 
 article ul li,
