@@ -7,7 +7,7 @@
 <img src="/images/profile.jpg" class="profile" alt="Carlos Rodrigo">
 
 </article>
-<article class="col-40">
+<article class="col-70">
 <h4>About me</h4>
 <p><script>
 currentTime=new Date();
@@ -43,7 +43,11 @@ I <a href="/work/">work</a> at Técnica y Avance. I also write about <a href="/b
 
 <article class="full-width">
     <h4><a href="/blog/">Writing <span class="arrow">→</span></a></h4>
-{% include garden.html limit=10 %}
+<ul class="posts">
+{% for post in site.posts limit: 10 %}
+<li><a href="{{ post.url }}">{{ post.title }}</a> <span class="archive-date">{{ post.date | date: '%Y-%m-%d' }}</span></li>
+{% endfor %}
+</ul>
 </article>
 <hr/>
 

@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Work
-nav_order: 2
 lang: en
 id: work
 ---

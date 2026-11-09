@@ -152,12 +152,12 @@ header {
 
 /* same 12-col grid as .home-grid: 3 (20%) / 6 / 3 (20%) */
 header>h1 {
-    grid-column: span 3;
+    grid-column: span 4;
     margin: 0;
 }
 
 nav {
-    grid-column: span 7;
+    grid-column: span 6;
     width: auto;
     text-align: left;
     float: left;
