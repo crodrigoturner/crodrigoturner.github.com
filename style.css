@@ -1070,16 +1070,11 @@ h4 a,
 
 .reading-time {
     float: left;
-    width: 100%;
-    margin: 0 0 20px;
-    font-size: 0.8em;
+       margin: 0 20px 0 0;
+   
     color: var(--color-muted);
 }
 
-/* books on /now: 12 narrow columns, one cover each */
-.books-12 {
-    grid-template-columns: repeat(12, 1fr);
-}
 
 /* 3D BOOKS — cover swings open on hover, pages slide out (after minchi.co/books) */
 .books a.book-cell:hover {
