@@ -1,6 +1,14 @@
 @charset "UTF-8";
 
 @font-face {
+    font-family: "Andada Pro";
+    src: url("/fonts/AndadaPro%5Bwght%5D.woff2") format("woff2");
+    font-weight: 400 840;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
     font-family: "Berkeley Mono";
     src: url("/fonts/BerkeleyMonoTrial-Regular.otf") format("opentype");
     font-weight: 400;
@@ -99,7 +107,7 @@ html {
 
 body {
     color: var(--color-text);
-    font: 400 16px / 1.7 "Atkinson Hyperlegible Soft", sans-serif;
+    font: 400 16px / 1.7 "Andada Pro", serif;
     /* mesh gradient after githubnext.com's .blob-1: soft white and blue pools fading out over the base blue */
     background-color: var(--bg-base);
     background-image:
@@ -270,7 +278,7 @@ footer {
     float: none;
     width: auto;
     margin: 0;
-    font: 700 1.1em/1.3 "Atkinson Hyperlegible Soft", sans-serif;
+    font: 700 1.1em/1.3 "Andada Pro", serif;
     transition: color .18s ease;
 }
 
@@ -399,7 +407,7 @@ h2 {
 }
 
 h3 {
-    font: 700 1.25em/1.6 "Atkinson Hyperlegible Soft", sans-serif;
+    font: 700 1.25em/1.6 "Andada Pro", serif;
     margin: 20px 0;
     width: 100%;
     float: left;
@@ -418,14 +426,14 @@ h4 {
 }
 
 h5 {
-    font-family: "Atkinson Hyperlegible Soft", sans-serif;
+    font-family: "Andada Pro", serif;
     font-size: 0.9em;
     font-weight: 500;
     margin: 16px 0 8px;
 }
 
 h6 {
-    font-family: "Atkinson Hyperlegible Soft", sans-serif;
+    font-family: "Andada Pro", serif;
     font-size: 0.8em;
     font-weight: 500;
     color: var(--color-muted);
