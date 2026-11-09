@@ -25,7 +25,7 @@
     --color-link: #095c9f;
     --color-muted: #607d8b;
     --color-bg: #01579b14;
-    --color-border: #00356b;
+    --color-border: #cfd8dc;
     --bg: #eceff1;
 
     /* background mesh */
@@ -241,9 +241,9 @@ footer {
 .posts li {
     width: 100%;
     float: left;
-    margin: 0 0 10px;
+    margin: 0;
     padding: 3px 0 3px 0;
-    border-bottom: 1px solid #EEE;
+    border-bottom: 1px solid var(--color-border);
 }
 
 .posts li a {
