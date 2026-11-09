@@ -107,7 +107,7 @@ html {
 
 body {
     color: var(--color-text);
-    font: 400 16px / 1.7 "Andada Pro", serif;
+    font: 400 17px / 1.7 "Andada Pro", serif;
     /* mesh gradient after githubnext.com's .blob-1: soft white and blue pools fading out over the base blue */
     background-color: var(--bg-base);
     background-image:
@@ -240,6 +240,11 @@ footer {
     float: left;
     margin: 0 0 10px;
     padding: 3px 0 3px 0;
+    border-bottom: 1px solid var(--color-muted);
+}
+
+.posts li a {
+    text-decoration: none;
 }
 
 .garden {
