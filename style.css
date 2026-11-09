@@ -147,7 +147,7 @@ header {
     width: min(var(--site-width), 100%);
     padding: 0;
     margin: 0px calc(50% - min(var(--site-width), 100%) / 2);
-
+    font-family: "Berkeley Mono", sans-serif;
 }
 
 /* same 12-col grid as .home-grid: 3 (20%) / 6 / 3 (20%) */
@@ -231,8 +231,9 @@ footer {
     width: min(var(--site-width), 100%);
     margin: 0px calc(50% - min(var(--site-width), 100%) / 2) 0px;
     float: left;
-    text-align: center;
+    text-align: left;
     opacity: .8;
+    font-family: "Berkeley Mono", sans-serif;
 }
 
 .posts li {
@@ -315,7 +316,7 @@ footer img {
 
 .meta,
 small {
-    font-family: "berkeley mono", sans-serif;
+    font-family: "Berkeley Mono", sans-serif;
     font-size: 0.8em !important;
     color: var(--color-muted);
     margin: 5px 0;
@@ -863,6 +864,7 @@ h4 a,
 .archive-date {
     float: right;
     width: 10%;
+    font-family: "Berkeley Mono", sans-serif;
 }
 
 /* PROJECT CARDS — square cover on the left, title and excerpt on the right */
@@ -1088,6 +1090,11 @@ h4 a,
     margin: 0 0 20px;
     font-size: 0.8em;
     color: var(--color-muted);
+}
+
+/* books on /now: 12 narrow columns, one cover each */
+.books-12 {
+    grid-template-columns: repeat(12, 1fr);
 }
 
 /* MEDIA QUERIES — all breakpoints live here, widest first so narrower screens win */
