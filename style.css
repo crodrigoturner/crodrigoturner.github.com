@@ -148,6 +148,7 @@ header {
     padding: 0;
     margin: 0px calc(50% - min(var(--site-width), 100%) / 2);
     font-family: "Berkeley Mono", sans-serif;
+    font-size: 16px;
 }
 
 /* same 12-col grid as .home-grid: 3 (20%) / 6 / 3 (20%) */
@@ -234,6 +235,7 @@ footer {
     text-align: left;
     opacity: .8;
     font-family: "Berkeley Mono", sans-serif;
+    font-size: 16px;
 }
 
 .posts li {
@@ -865,6 +867,7 @@ h4 a,
     float: right;
     width: 10%;
     font-family: "Berkeley Mono", sans-serif;
+    font-size: 16px;
 }
 
 /* PROJECT CARDS — square cover on the left, title and excerpt on the right */
