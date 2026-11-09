@@ -16,21 +16,8 @@
     font-display: swap;
 }
 
-@font-face {
-    font-family: "Atkinson Hyperlegible Soft";
-    src: url("/fonts/AtkinsonHyperlegibleSoft-Regular.woff2") format("woff2");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
 
-@font-face {
-    font-family: "Atkinson Hyperlegible Soft Bold";
-    src: url("/fonts/AtkinsonHyperlegibleSoft-Bold.woff2") format("woff2");
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
+
 
 :root {
     --site-width: 960px;
@@ -243,7 +230,7 @@ footer {
     float: left;
     margin: 0 0 10px;
     padding: 3px 0 3px 0;
-    border-bottom: 1px solid var(--color-muted);
+    border-bottom: 1px solid #EEE;
 }
 
 .posts li a {
@@ -867,7 +854,7 @@ h4 a,
     float: right;
     width: 10%;
     font-family: "Berkeley Mono", sans-serif;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 /* PROJECT CARDS — square cover on the left, title and excerpt on the right */
