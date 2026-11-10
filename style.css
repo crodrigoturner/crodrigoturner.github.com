@@ -156,6 +156,8 @@ header>h1 {
     margin: 0;
 }
 
+.hero{margin:0 20px 0 0;}
+
 nav {
     grid-column: span 6;
     width: auto;
@@ -227,13 +229,13 @@ article {
 }
 
 footer {
-    padding: 10px 20px 0;
+    padding: 10px 0px 0;
     width: min(var(--site-width), 100%);
     margin: 40px calc(50% - min(var(--site-width), 100%) / 2) 0px;
     float: left;
     text-align: left;
     opacity: .8;
-    font: 400 14px/1.7 "Berkeley Mono", sans-serif;
+    font: 400 0.7em/1.7 "Berkeley Mono", sans-serif;
     color: var(--color-muted);
 
 }
@@ -396,7 +398,7 @@ h1 {
     text-transform: lowercase;
     font: 400 2.2em/1.7 "Coral Pixels", cursive;
     float: left;
-    padding: 5px 20px;
+    padding: 5px 0px;
 }
 
 h2 {
