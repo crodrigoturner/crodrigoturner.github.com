@@ -24,6 +24,7 @@
 <h4 class="books-status">{{ status | default: "other" | capitalize }}</h4>
 {% for post in group.items %}
 {% include book-item.html post=post %}
+<hr/>
 {% endfor %}
 {% endif %}
 {% endfor %}
