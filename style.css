@@ -579,7 +579,7 @@ img.alignleft {
 }
 
 .profile {
-
+border-radius:10px;
     float: right;
     margin: 0 0px 0px 20px;
     filter: grayscale(100%);
