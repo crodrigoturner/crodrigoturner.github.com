@@ -125,7 +125,10 @@ body {
     margin: 0 auto;
     -webkit-text-size-adjust: 100%;
     text-rendering: optimizeLegibility;
-    height: 101%;
+    /* full-height column so the footer sits at the bottom on short pages */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 body::before {
@@ -150,6 +153,8 @@ header {
 
     width: 100%;
     padding: 0;
+    /* room for the fixed nav */
+    min-height: 70px;
     margin: 40px 0;
     font: 400 16px/1.7 "Berkeley Mono", sans-serif;
 }
@@ -165,7 +170,12 @@ header>h1 {
 nav {
     width: fit-content;
     text-align: left;
-    margin: 0 auto;
+    position: fixed;
+    top: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    margin: 0;
     padding: 10px 0px;
         background: var(--nav-glass);
     backdrop-filter: blur(9px);
@@ -189,6 +199,8 @@ nav ul {
     padding: 0 20px;
     gap:20px;
 }
+
+.w-full > div{float:left; width:100%; margin:0; padding:0;}
 
 .contact {
     float: right;
@@ -241,7 +253,7 @@ footer {
     padding: 10px 0px 0;
     width: 100%;
     padding: 40px calc(50% - min(var(--site-width), 100%) / 2) 0px;
-    float: left;
+    margin-top: auto;
     text-align: left;
         font: 400 0.85em/1.7 "Berkeley Mono", sans-serif;
     color: var(--color-muted);
