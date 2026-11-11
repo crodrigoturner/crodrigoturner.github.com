@@ -276,7 +276,7 @@ footer {
 }
 
 footer p{text-align: left;
-    padding: 40px calc(50% - min(var(--site-width), 100%) / 2);
+    padding: 40px calc(50% - min(var(--site-width), 100%) / 2) 34px;
         font: 400 0.85em/2 "Berkeley Mono", sans-serif;
     color: var(--color-muted);}
 
