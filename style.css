@@ -107,7 +107,7 @@ html {
 
 body {
     color: var(--color-text);
-    font: 400 17px / 1.7 "Andada Pro", serif;
+    font: 400 17px / 1.7 "Berkeley Mono", sans-serif;
     /* mesh gradient after githubnext.com's .blob-1: soft white and blue pools fading out over the base blue */
     background-color: var(--bg-base);
     background-image:
@@ -141,31 +141,30 @@ body::before {
 /* HEADER */
 header {
     float: left;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 1px;
-    width: min(var(--site-width), 100%);
+   
+
+    width: 100%;
     padding: 0;
-    margin: 40px calc(50% - min(var(--site-width), 100%) / 2) 20px;
+    margin: 40px 0;
     font: 400 16px/1.7 "Berkeley Mono", sans-serif;
 }
 
 /* same 12-col grid as .home-grid: 3 (20%) / 6 / 3 (20%) */
 header>h1 {
-    grid-column: span 4;
-    margin: 0;
+    float:left; position: fixed; left:40px;
 }
 
 .hero{padding:0 20px 0 0;}
 
 nav {
-    grid-column: span 6;
+    
     width: auto;
     text-align: left;
     float: left;
-
+margin: 0 calc(50% - min(var(--site-width), 100%) / 2) 0px;
     padding: 5px 0px;
-    line-height: 4.3;
+    background:var(--color-bg);
+    border-radius:20px; height:40px;
 
 }
 
@@ -288,7 +287,7 @@ footer {
     float: none;
     width: auto;
     margin: 0;
-    font: 700 1.1em/1.3 "Andada Pro", serif;
+    font: 700 1.1em/1.3 "Berkeley Mono", sans-serif;
     transition: color .18s ease;
 }
 
@@ -423,12 +422,12 @@ h3, h4 {
 }
 
 h5 {
-    font: 500 0.9em/1.7 "Andada Pro", serif;
+    font: 500 0.9em/1.7 "Berkeley Mono", sans-serif;
     margin: 16px 0 8px;
 }
 
 h6 {
-    font: 500 0.8em/1.7 "Andada Pro", serif;
+    font: 500 0.8em/1.7 "Berkeley Mono", sans-serif;
     color: var(--color-muted);
     margin: 16px 0 8px;
 }
