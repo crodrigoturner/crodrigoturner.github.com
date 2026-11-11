@@ -174,7 +174,7 @@ nav {
     border-radius: 20px;
     height: 50px;
     box-shadow: 0 2px 6px 0 var(--nav-glass-shadow);
-    text-transform:uppercase;
+   
 }
 
 /* one link per column, each centered in its third */
@@ -239,12 +239,11 @@ article {
 
 footer {
     padding: 10px 0px 0;
-    width: min(var(--site-width), 100%);
-    margin: 40px calc(50% - min(var(--site-width), 100%) / 2) 0px;
+    width: 100%;
+    padding: 40px calc(50% - min(var(--site-width), 100%) / 2) 0px;
     float: left;
     text-align: left;
-    opacity: .8;
-    font: 400 0.7em/1.7 "Berkeley Mono", sans-serif;
+        font: 400 0.85em/1.7 "Berkeley Mono", sans-serif;
     color: var(--color-muted);
     background:#FFF;
 
