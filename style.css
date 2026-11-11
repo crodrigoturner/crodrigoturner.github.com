@@ -216,7 +216,7 @@ nav ul {
     gap:20px;
 }
 
-.w-full > div{float:left; width:100%; margin:0; padding:0; height:6px;border-bottom:2px solid #FFF;}
+.w-full > div{float:left; width:100%; margin:0; padding:0; height:6px;border-bottom:1px solid #F5f5f5;}
 
 .contact {
     float: right;
@@ -1312,11 +1312,11 @@ a.news-row:hover {
 /* home link in the nav: a yellow dot instead of a label */
 .nav-home {
     display: block;
-    width: 14px;
-    height: 14px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     background: var(--color-highlight);
-    box-shadow: 0 1px 3px var(--shadow-soft);
+  
 }
 
 /* MEDIA QUERIES — all breakpoints live here, widest first so narrower screens win */
