@@ -4,7 +4,7 @@
 <ul>
 {% assign nav_pages = site.pages | where_exp: "p", "p.nav_order" | sort: "nav_order" %}
 {% for p in nav_pages %}
-<li><a href="{{ p.url }}"{% if page.url == p.url %} class="active"{% endif %}>{{ p.title }}</a></li>
+<li><a href="{{ p.url }}"{% if page.url == p.url %} class="active"{% endif %}{% if p.title == "More" %} aria-label="More" title="More"{% endif %}>{% if p.title == "More" %}<svg class="nav-more" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="12" r="2" fill="currentColor"/><circle cx="12" cy="12" r="2" fill="currentColor"/><circle cx="19" cy="12" r="2" fill="currentColor"/></svg>{% else %}{{ p.title }}{% endif %}</a></li>
 {% endfor %}
 {% for item in site.data.navigation %}
 <li><a href="{{ item.link }}">{{ item.name }}</a></li>

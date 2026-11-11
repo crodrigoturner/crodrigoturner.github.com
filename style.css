@@ -95,6 +95,10 @@
     --nav-glass: linear-gradient(to right, rgba(249, 250, 247, 0.12), rgba(249, 250, 247, 0.18));
     --nav-glass-border: rgba(255, 255, 255, 0.2);
     --nav-glass-shadow: rgba(0, 0, 0, 0.15);
+
+    /* blog table, after anthropic.com/news */
+    --news-line: rgba(0, 53, 107, 0.15);
+    --news-hover: rgba(255, 255, 255, 0.6);
 }
 
 *,
@@ -1224,6 +1228,71 @@ h4 a,
     text-decoration: none;
 }
 
+/* NEWS TABLE — blog list after anthropic.com/news: one row per post, title / description / category / date */
+.news-table {
+    float: left;
+    width: 100%;
+    margin: 20px 0 0;
+}
+
+.news-head,
+.news-row {
+    display: grid;
+    grid-template-columns: 2.4fr 2.2fr 1.4fr 1fr;
+    gap: 24px;
+    align-items: center;
+    padding: 14px 16px;
+}
+
+.news-head {
+    padding-top: 0;
+    font: 400 0.7em/1.7 "Berkeley Mono", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    border-bottom: 1px solid var(--news-line);
+}
+
+.news-row {
+    color: var(--color-text);
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-bottom-color: var(--news-line);
+    border-radius: 0;
+    transition: background-color .15s ease, border-color .15s ease, border-radius .15s ease;
+}
+
+/* the row is a link, so undo the global a:hover fade and border reset */
+a.news-row:hover {
+    opacity: 1;
+    background: var(--news-hover);
+    border: 1px solid var(--news-line);
+    border-radius: 6px;
+}
+
+.news-title {
+    font-weight: 600;
+}
+
+/* one line, fading out instead of an ellipsis */
+.news-description {
+    white-space: nowrap;
+    overflow: hidden;
+    color: var(--color-muted);
+    font-size: 0.9em;
+    -webkit-mask-image: linear-gradient(to right, #000 85%, transparent);
+    mask-image: linear-gradient(to right, #000 85%, transparent);
+}
+
+.news-category,
+.news-date {
+    font-size: 0.9em;
+}
+
+/* "More" in the nav is a meatballs icon; block keeps it centred in its grid cell without a stray line gap */
+.nav-more {
+    display: block;
+}
+
 /* MEDIA QUERIES — all breakpoints live here, widest first so narrower screens win */
 
 @media (hover: hover) and (pointer: fine) {
@@ -1285,6 +1354,19 @@ h4 a,
 }
 
 @media only screen and (max-width: 640px) {
+    /* phones: title and date only */
+    .news-head,
+    .news-row {
+        grid-template-columns: 1fr auto;
+    }
+
+    .news-head span:nth-child(2),
+    .news-head span:nth-child(3),
+    .news-description,
+    .news-category {
+        display: none;
+    }
+
     .archive-columns {
         grid-template-columns: 1fr;
     }
