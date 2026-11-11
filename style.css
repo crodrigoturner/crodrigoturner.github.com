@@ -112,7 +112,7 @@ html {
 
 body {
     color: var(--color-text);
-    font: 400 16px / 1.7 "Berkeley Mono", sans-serif;
+    font: 400 15px / 1.7 "Berkeley Mono", sans-serif;
     /* mesh gradient after githubnext.com's .blob-1: soft white and blue pools fading out over the base blue */
     background-color: var(--bg-base);
     background-image:
@@ -245,6 +245,7 @@ footer {
     opacity: .8;
     font: 400 0.7em/1.7 "Berkeley Mono", sans-serif;
     color: var(--color-muted);
+    background:#FFF;
 
 }
 
@@ -311,20 +312,9 @@ a.garden-item:hover {
     opacity: 1;
 }
 
-footer img {
-    height: 200px;
-    margin: 20px 0 20px 0;
-    float: left;
-    object-fit: cover;
-    width: 100%;
-    /* sepia gives a single tint, hue-rotate turns it toward the site blue */
-    filter: grayscale(100%) sepia(100%) hue-rotate(175deg) saturate(250%) brightness(0.85);
-    display: none;
-}
 
-#home footer img {
-    display: block;
-}
+
+
 
 .meta,
 small {
