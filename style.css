@@ -90,6 +90,11 @@
     --book-rest-shadow: 0 2px 6px rgba(0, 0, 0, 0.08), 0 8px 14px rgba(0, 0, 0, 0.06);
     --book-open-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25), 20px 20px 40px rgba(0, 0, 0, 0.2), 40px 40px 60px rgba(0, 0, 0, 0.15);
     --book-ease: cubic-bezier(0.25, 1, 0.5, 1);
+
+    /* nav glass, after generalintelligencecompany.com */
+    --nav-glass: linear-gradient(to right, rgba(249, 250, 247, 0.12), rgba(249, 250, 247, 0.18));
+    --nav-glass-border: rgba(255, 255, 255, 0.2);
+    --nav-glass-shadow: rgba(0, 0, 0, 0.15);
 }
 
 *,
@@ -156,17 +161,20 @@ header>h1 {
 
 .hero{padding:0 20px 0 0;}
 
+/* shrink to its links and sit in the middle of the screen */
 nav {
-    
-    width: auto;
+    width: fit-content;
     text-align: left;
-    float: left;
-margin: 0 ;
+    margin: 0 auto;
     padding: 10px 0px;
-    background: transparent;
+    /* frosted glass after generalintelligencecompany.com: faint white gradient, blur behind, hairline border */
+    background: var(--nav-glass);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    border: 1px solid var(--nav-glass-border);
     border-radius: 38px;
     height: 50px;
-    box-shadow: 0 5px 10px -2px var(--shadow-soft);
+    box-shadow: 0 2px 6px 0 var(--nav-glass-shadow);
 }
 
 /* one link per column, each centered in its third */
