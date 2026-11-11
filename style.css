@@ -164,8 +164,17 @@ header {
 }
 
 /* same 12-col grid as .home-grid: 3 (20%) / 6 / 3 (20%) */
+/* the site title only shows on the home page, centred under the fixed nav */
 header>h1 {
-    float:left; position: fixed; left:40px;
+    display: none;
+}
+
+#home header>h1 {
+    display: block;
+    float: none;
+    width: 100%;
+    margin: 40px 0 0;
+    text-align: center;
 }
 
 .hero{padding:0 20px 0 0;}
@@ -188,6 +197,7 @@ nav {
     border-radius: 20px;
     height: 50px;
     box-shadow: 0 2px 6px 0 var(--nav-glass-shadow);
+    font-size:.9em;
    
 }
 
@@ -196,7 +206,9 @@ nav ul {
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    /* one equal column per link, however many there are */
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
     align-items: center;
     justify-items: center;
     margin: 0;
@@ -254,12 +266,12 @@ article {
 }
 
 footer {
-    padding: 10px 0px 0;
+    
     width: 100%;
-    padding: 40px calc(50% - min(var(--site-width), 100%) / 2) 0px;
+    padding: 40px calc(50% - min(var(--site-width), 100%) / 2);
     margin-top: auto;
     text-align: left;
-        font: 400 0.85em/1.7 "Berkeley Mono", sans-serif;
+        font: 400 0.85em/2 "Berkeley Mono", sans-serif;
     color: var(--color-muted);
     background:#FFF;
 
@@ -1292,6 +1304,16 @@ a.news-row:hover {
 /* "More" in the nav is a meatballs icon; block keeps it centred in its grid cell without a stray line gap */
 .nav-more {
     display: block;
+}
+
+/* home link in the nav: a yellow dot instead of a label */
+.nav-home {
+    display: block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--color-highlight);
+    box-shadow: 0 1px 3px var(--shadow-soft);
 }
 
 /* MEDIA QUERIES — all breakpoints live here, widest first so narrower screens win */
