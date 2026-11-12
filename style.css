@@ -116,7 +116,7 @@ html {
 
 body {
     color: var(--color-text);
-    font: 400 15px / 1.7 "Berkeley Mono", sans-serif;
+    font: 400 14px / 1.7 "Berkeley Mono", sans-serif;
     /* mesh gradient after githubnext.com's .blob-1: soft white and blue pools fading out over the base blue */
     background-color: var(--bg-base);
     background-image:
