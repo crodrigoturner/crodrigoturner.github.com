@@ -863,11 +863,9 @@ h4 a,
 
 /* SOCIAL — icon links in the about me card */
 .social {
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-    gap: 16px;
+    
     list-style: none;
-    margin: 10px 15px 0 0;
+    margin: 10px 10px 0 0;
     padding: 0;
 }
 
@@ -1285,9 +1283,7 @@ a.news-row:hover {
     border-radius: 6px;
 }
 
-.news-title {
-    font-weight: 600;
-}
+
 
 /* one line, fading out instead of an ellipsis */
 .news-description {
