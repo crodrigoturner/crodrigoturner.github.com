@@ -16,17 +16,12 @@
     font-display: swap;
 }
 
-
-
-
 :root {
     --site-width: 960px;
     --color-text: #00356b;
     --color-link: #095c9f;
     --color-muted: #607d8b;
-    --color-bg: #01579b14;
     --color-border: #cfd8dc;
-    --bg: #eceff1;
 
     /* background mesh */
     --bg-base: #d7e8f7;
@@ -46,19 +41,19 @@
     --color-card: #fff;
     --shadow-soft: rgb(0 0 0 / 10%);
     --shadow-card: rgba(0, 30, 60, 0.15);
-    --book-shadow: #BDBDBD;
+    --book-shadow: #bdbdbd;
     --hr-dark: rgba(0, 53, 107, 0.25);
     --hr-light: rgba(255, 255, 255, 0.9);
 
     /* life calendar */
     --life-now: #ef5350;
-    --life-now-text: #FFF;
+    --life-now-text: #fff;
     --life-text: #444;
-    --life-casa: #D7CCC8;
+    --life-casa: #d7ccc8;
     --life-mar: #ffcdd2;
-    --life-familia: #FFECB3;
-    --life-trabajo: #CFD8DC;
-    --life-viaje: #BBDEFB;
+    --life-familia: #ffecb3;
+    --life-trabajo: #cfd8dc;
+    --life-viaje: #bbdefb;
     --life-muerte: #444;
     --life-alive: #a5d6a7;
 
@@ -70,9 +65,9 @@
     --steps-4: #00356b;
 
     /* contact form */
-    --cf-border: rgba(0, 0, 0, .2);
+    --cf-border: rgba(0, 0, 0, 0.2);
     --cf-focus: #222;
-    --cf-focus-ring: rgba(0, 0, 0, .08);
+    --cf-focus-ring: rgba(0, 0, 0, 0.08);
     --cf-button-bg: #222;
     --cf-button-text: #fff;
     --cf-ok: #2e7d32;
@@ -86,9 +81,9 @@
     --book-page-shadow: rgba(0, 0, 0, 0.08);
     --book-spine-edge: rgba(0, 0, 0, 0.06);
     --book-spine: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
-    --book-light: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5));
     --book-rest-shadow: 0 2px 6px rgba(0, 0, 0, 0.08), 0 8px 14px rgba(0, 0, 0, 0.06);
-    --book-open-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25), 20px 20px 40px rgba(0, 0, 0, 0.2), 40px 40px 60px rgba(0, 0, 0, 0.15);
+    --book-open-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25), 20px 20px 40px rgba(0, 0, 0, 0.2),
+        40px 40px 60px rgba(0, 0, 0, 0.15);
     --book-ease: cubic-bezier(0.25, 1, 0.5, 1);
 
     /* nav glass, after generalintelligencecompany.com */
@@ -119,8 +114,7 @@ body {
     font: 400 14px / 1.7 "Berkeley Mono", sans-serif;
     /* mesh gradient after githubnext.com's .blob-1: soft white and blue pools fading out over the base blue */
     background-color: var(--bg-base);
-    background-image:
-        radial-gradient(at 90% 0%, var(--bg-glow-white), transparent 55%),
+    background-image: radial-gradient(at 90% 0%, var(--bg-glow-white), transparent 55%),
         radial-gradient(at 0% 80%, var(--bg-glow-1), transparent 55%),
         radial-gradient(at 10% 30%, var(--bg-glow-2), transparent 50%),
         radial-gradient(at 60% 100%, var(--bg-glow-white), transparent 55%),
@@ -153,7 +147,6 @@ body::before {
 /* HEADER */
 header {
     float: left;
-   
 
     width: 100%;
     padding: 0;
@@ -163,13 +156,12 @@ header {
     font: 400 16px/1.7 "Berkeley Mono", sans-serif;
 }
 
-/* same 12-col grid as .home-grid: 3 (20%) / 6 / 3 (20%) */
 /* the site title only shows on the home page, centred under the fixed nav */
-header>h1 {
+header > h1 {
     display: none;
 }
 
-#home header>h1 {
+#home header > h1 {
     display: block;
     float: none;
     width: 100%;
@@ -177,7 +169,9 @@ header>h1 {
     text-align: center;
 }
 
-.hero{padding:0 20px 0 0;}
+.hero {
+    padding: 0 20px 0 0;
+}
 
 /* shrink to its links and sit in the middle of the screen */
 nav {
@@ -190,33 +184,38 @@ nav {
     z-index: 100;
     margin: 0;
     padding: 10px 0px;
-        background: var(--nav-glass);
+    background: var(--nav-glass);
     backdrop-filter: blur(9px);
     -webkit-backdrop-filter: blur(9px);
     border: 1px solid var(--nav-glass-border);
     border-radius: 20px;
     height: 50px;
     box-shadow: 0 2px 6px 0 var(--nav-glass-shadow);
-    font-size:.9em;
-   
+    font-size: 0.9em;
 }
-
 
 nav ul {
     width: 100%;
     height: 100%;
     display: grid;
-  
+
     grid-auto-flow: column;
-   
+
     align-items: center;
     justify-items: center;
     margin: 0;
     padding: 0 20px;
-    gap:40px;
+    gap: 40px;
 }
 
-.w-full > div{float:left; width:100%; margin:0; padding:0; height:6px;border-bottom:1px solid #F5f5f5;}
+.w-full > div {
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 6px;
+    border-bottom: 1px solid #f5f5f5;
+}
 
 .contact {
     float: right;
@@ -238,13 +237,12 @@ section {
     padding: 0px 0 100px;
 
     float: left;
-
 }
 
 #home section {
     border-bottom: none;
     display: grid;
-    grid-template-columns: repeat(12, 1fr)
+    grid-template-columns: repeat(12, 1fr);
 }
 
 mark {
@@ -253,8 +251,8 @@ mark {
     padding: 0 0.1em;
 }
 
-section>hr,
-section>p {
+section > hr,
+section > p {
     width: 100%;
 }
 
@@ -266,19 +264,19 @@ article {
 }
 
 footer {
-    
     width: 100%;
-    
-    margin-top: auto;
-    
-    background:#FFF;
 
+    margin-top: auto;
+
+    background: #fff;
 }
 
-footer p{text-align: left;
+footer p {
+    text-align: left;
     padding: 40px calc(50% - min(var(--site-width), 100%) / 2) 34px;
-        font: 400 0.85em/2 "Berkeley Mono", sans-serif;
-    color: var(--color-muted);}
+    font: 400 0.85em/2 "Berkeley Mono", sans-serif;
+    color: var(--color-muted);
+}
 
 .posts li {
     width: 100%;
@@ -316,13 +314,10 @@ footer p{text-align: left;
     height: 100%;
     background: var(--color-card);
     border-radius: 6px;
-    transition: transform .24s cubic-bezier(.34, 1.36, .64, 1), background-color .18s ease, box-shadow .18s ease;
-}
-
-.garden-icon {
-    flex-shrink: 0;
-    margin-top: 3px;
-    color: var(--color-link);
+    transition:
+        transform 0.24s cubic-bezier(0.34, 1.36, 0.64, 1),
+        background-color 0.18s ease,
+        box-shadow 0.18s ease;
 }
 
 .garden-card h3 {
@@ -330,7 +325,7 @@ footer p{text-align: left;
     width: auto;
     margin: 0;
     font: 700 1.1em/1.3 "Berkeley Mono", sans-serif;
-    transition: color .18s ease;
+    transition: color 0.18s ease;
 }
 
 .garden-description {
@@ -343,10 +338,6 @@ footer p{text-align: left;
 a.garden-item:hover {
     opacity: 1;
 }
-
-
-
-
 
 .meta,
 small {
@@ -407,14 +398,6 @@ pre code {
     font: 400 16px/1.6 "Inter", sans-serif !important;
 }
 
-.alignright {
-    float: right;
-}
-
-.alignleft {
-    float: left;
-}
-
 ::-moz-selection {
     background: var(--selection-bg);
 }
@@ -438,11 +421,10 @@ h2 {
     color: var(--color-text);
     margin: 20px 0;
     text-align: left;
-
 }
 
-
-h3, h4 {
+h3,
+h4 {
     font: 400 0.8em/1.7 "Berkeley Mono", sans-serif;
     color: var(--color-accent);
     margin: 10px 0;
@@ -473,7 +455,6 @@ p {
 
 a {
     color: var(--color-text);
-
 }
 
 a:hover,
@@ -508,7 +489,6 @@ h1 a:visited {
     color: var(--color-text);
     text-decoration: none;
     width: 100%;
-
 }
 
 b,
@@ -542,13 +522,13 @@ ol {
     counter-reset: ol-item;
 }
 
-ol>li {
+ol > li {
     position: relative;
     padding: 3px 0 3px 2em;
     counter-increment: ol-item;
 }
 
-ol>li::before {
+ol > li::before {
     content: counter(ol-item) ".";
     position: absolute;
     left: 0;
@@ -598,22 +578,11 @@ img {
     max-width: 100%;
 }
 
-img.alignright {
-    float: right;
-    margin: 0 0 20px 20px;
-}
-
-img.alignleft {
-    float: left;
-    margin: 0 20px 20px 0;
-}
-
 .profile {
-border-radius:10px;
+    border-radius: 10px;
     float: right;
     margin: 0 0px 0px 20px;
     filter: grayscale(100%);
-
 }
 
 /* VIDA EN MESES */
@@ -682,14 +651,12 @@ iframe {
     width: 100%;
     color: var(--color-text);
     text-decoration: none;
-
 }
 
 .projects a img {
     display: block;
     width: 100%;
     height: auto;
-
 }
 
 .projects a .description {
@@ -730,13 +697,12 @@ iframe {
 }
 
 /* projects fills its own row; books and films take half each via col-60. Headings span the whole box */
-.home-grid>.projects {
+.home-grid > .projects {
     grid-column: 1 / -1;
-
 }
 
-.books>h4,
-.projects>h4 {
+.books > h4,
+.projects > h4 {
     grid-column: 1 / -1;
 }
 
@@ -748,7 +714,6 @@ iframe {
     padding: 0;
 
     text-decoration: none;
-
 }
 
 .books a {
@@ -769,11 +734,10 @@ iframe {
     box-shadow: 3px 3px 6px -2px var(--book-shadow);
 }
 
-.home-grid>article {
+.home-grid > article {
     float: none;
     width: auto;
     margin: 0;
-
 }
 
 h4 a,
@@ -784,65 +748,27 @@ h4 a,
 }
 
 /* dividers between home rows run the full 12 columns */
-.home-grid>hr {
+.home-grid > hr {
     grid-column: 1 / -1;
 }
 
 .full-width {
     grid-column: 1 / -1;
-
-}
-
-.col-60 {
-    grid-column: span 6;
-
-}
-
-.col-10 {
-    grid-column: span 1;
-
-}
-
-.col-100 {
-    grid-column: span 10;
-
 }
 
 .col-70 {
     grid-column: span 7;
-
 }
 
 .col-50 {
     grid-column: span 5;
-
-}
-
-.col-80 {
-    grid-column: span 8;
-
-}
-
-.col-40 {
-    grid-column: span 4;
-
-}
-
-.col-30 {
-    grid-column: span 3;
-
-}
-
-.col-20 {
-    grid-column: span 2;
-
 }
 
 .single-width {
     float: left;
     width: calc(var(--site-width) - 300px);
     padding: 0;
-    margin:0px calc(50% - (var(--site-width) + 300px) / 2) 0px calc(50% - var(--site-width) / 2) ;
+    margin: 0px calc(50% - (var(--site-width) + 300px) / 2) 0px calc(50% - var(--site-width) / 2);
 }
 
 /* WIDTHS */
@@ -853,17 +779,8 @@ h4 a,
     clear: both;
 }
 
-.half-width {
-    float: left;
-    width: 50%;
-    box-sizing: border-box;
-    padding: 40px 20px;
-
-}
-
 /* SOCIAL — icon links in the about me card */
 .social {
-    
     list-style: none;
     margin: 10px 10px 0 0;
     padding: 0;
@@ -922,8 +839,6 @@ h4 a,
 
 .projects a.project-card h3 {
     margin: 0 0 4px;
-  
-
 }
 
 .projects a.project-card p {
@@ -933,7 +848,7 @@ h4 a,
 }
 
 /* each book status heading starts a new row in the books grid */
-.books>.books-status {
+.books > .books-status {
     grid-column: 1 / -1;
     margin: 10px 0 0;
 }
@@ -1028,29 +943,31 @@ h4 a,
 
 .cf-field label {
     display: block;
-    margin-bottom: .35rem;
-    font-size: .9rem;
+    margin-bottom: 0.35rem;
+    font-size: 0.9rem;
     font-weight: 600;
-    letter-spacing: .01em;
+    letter-spacing: 0.01em;
 }
 
 .cf-optional {
     font-weight: 400;
-    opacity: .6;
+    opacity: 0.6;
 }
 
 .contact-form input,
 .contact-form textarea {
     width: 100%;
     box-sizing: border-box;
-    padding: .7rem .8rem;
+    padding: 0.7rem 0.8rem;
     font: inherit;
     font-size: 1rem;
     color: inherit;
     background: transparent;
     border: 1px solid var(--cf-border);
     border-radius: 4px;
-    transition: border-color .15s, box-shadow .15s;
+    transition:
+        border-color 0.15s,
+        box-shadow 0.15s;
 }
 
 .contact-form textarea {
@@ -1075,7 +992,7 @@ h4 a,
 }
 
 .cf-button {
-    padding: .75rem 1.5rem;
+    padding: 0.75rem 1.5rem;
     font: inherit;
     font-weight: 600;
     cursor: pointer;
@@ -1083,15 +1000,15 @@ h4 a,
     background: var(--cf-button-bg);
     border: 0;
     border-radius: 4px;
-    transition: opacity .15s;
+    transition: opacity 0.15s;
 }
 
 .cf-button:hover {
-    opacity: .85;
+    opacity: 0.85;
 }
 
 .cf-button:disabled {
-    opacity: .5;
+    opacity: 0.5;
     cursor: wait;
 }
 
@@ -1108,14 +1025,12 @@ h4 a,
     color: var(--cf-error);
 }
 
-
 .reading-time {
     float: left;
-       margin: 0 20px 0 0;
-   
+    margin: 0 20px 0 0;
+
     color: var(--color-muted);
 }
-
 
 /* 3D BOOKS — cover swings open on hover, pages slide out (after minchi.co/books) */
 .books a.book-cell:hover {
@@ -1176,7 +1091,9 @@ h4 a,
     box-shadow: var(--book-rest-shadow);
     transform: perspective(2000px) translateX(0) rotateY(0deg) scaleX(1);
     transform-origin: left center;
-    transition: transform 700ms var(--book-ease), box-shadow 700ms var(--book-ease);
+    transition:
+        transform 700ms var(--book-ease),
+        box-shadow 700ms var(--book-ease);
 }
 
 /* undo the flat-cover look from .books img */
@@ -1200,19 +1117,6 @@ h4 a,
     background: var(--book-spine);
     pointer-events: none;
     transition: margin-left 700ms var(--book-ease);
-}
-
-.b-light {
-    position: absolute;
-    inset: 0;
-    z-index: 5;
-    border-radius: 2px 6px 6px 2px;
-    background: var(--book-light);
-    opacity: 0.08;
-    transform: perspective(2000px) rotateY(0deg);
-    transform-origin: left center;
-    pointer-events: none;
-    transition: opacity 700ms var(--book-ease), transform 700ms var(--book-ease);
 }
 
 .book-cell {
@@ -1272,7 +1176,10 @@ h4 a,
     border: 1px solid transparent;
     border-bottom-color: var(--news-line);
     border-radius: 0;
-    transition: background-color .15s ease, border-color .15s ease, border-radius .15s ease;
+    transition:
+        background-color 0.15s ease,
+        border-color 0.15s ease,
+        border-radius 0.15s ease;
 }
 
 /* the row is a link, so undo the global a:hover fade and border reset */
@@ -1282,8 +1189,6 @@ a.news-row:hover {
     border: 1px solid var(--news-line);
     border-radius: 6px;
 }
-
-
 
 /* one line, fading out instead of an ellipsis */
 .news-description {
@@ -1312,11 +1217,8 @@ a.news-row:hover {
     height: 20px;
     border-radius: 50%;
     background: var(--color-highlight);
-  
 }
-
 /* MEDIA QUERIES — all breakpoints live here, widest first so narrower screens win */
-
 @media (hover: hover) and (pointer: fine) {
     a.garden-item:hover .garden-card {
         transform: scale(1.02);
@@ -1331,12 +1233,6 @@ a.news-row:hover {
     .book-cell:focus-visible .b-image {
         transform: perspective(2000px) translateX(-2.7%) rotateY(-12deg) scaleX(0.96);
         box-shadow: var(--book-open-shadow);
-    }
-
-    .book-cell:hover .b-light,
-    .book-cell:focus-visible .b-light {
-        opacity: 0.1;
-        transform: perspective(2000px) rotateY(-12deg);
     }
 
     .book-cell:hover .b-effect,
@@ -1354,7 +1250,6 @@ a.news-row:hover {
         transform: translateX(0.9%);
     }
 }
-
 @media only screen and (max-width: 1100px) {
     .archive-columns {
         grid-template-columns: repeat(2, 1fr);
@@ -1368,13 +1263,11 @@ a.news-row:hover {
         grid-column: span 6;
     }
 }
-
 @media only screen and (max-width: 700px) {
     .garden {
         grid-template-columns: 1fr;
     }
 }
-
 @media only screen and (max-width: 640px) {
     /* phones: title and date only */
     .news-head,
@@ -1405,19 +1298,12 @@ a.news-row:hover {
         grid-template-columns: 1fr;
     }
 
-    .home-grid>article[class] {
+    .home-grid > article[class] {
         grid-column: 1 / -1;
     }
 
     .books {
         grid-template-columns: repeat(4, 1fr);
-    }
-
-    .half-width,
-    .half-width:nth-of-type(odd),
-    .half-width:nth-of-type(even) {
-        width: 100%;
-        padding: 0;
     }
 
     body {
@@ -1461,22 +1347,19 @@ a.news-row:hover {
         grid-column: 1 / -1;
     }
 }
-
 @media (prefers-color-scheme: dark) {
     :root {
-        --cf-border: rgba(255, 255, 255, .25);
+        --cf-border: rgba(255, 255, 255, 0.25);
         --cf-focus: #eee;
-        --cf-focus-ring: rgba(255, 255, 255, .1);
+        --cf-focus-ring: rgba(255, 255, 255, 0.1);
         --cf-button-bg: #eee;
         --cf-button-text: #111;
     }
 }
-
 @media (prefers-reduced-motion: reduce) {
     .b-image,
     .b-page,
     .b-effect,
-    .b-light,
     .book-cell {
         transition: none;
     }
