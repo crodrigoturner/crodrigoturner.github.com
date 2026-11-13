@@ -105,7 +105,7 @@ body {
     color: var(--color-text);
     font: 400 14px / 1.7 "Berkeley Mono", sans-serif;
     /* mesh gradient after githubnext.com's .blob-1: soft white and blue pools fading out over the base blue */
-    background-color: var(--bg-base);
+ 
     background-image: radial-gradient(at 90% 0%, var(--bg-glow-white), transparent 55%),
         radial-gradient(at 0% 80%, var(--bg-glow-1), transparent 55%),
         radial-gradient(at 10% 30%, var(--bg-glow-2), transparent 50%),

@@ -14,7 +14,3 @@ nav_order: 1
 <li>What I changed my mind about recently: that the right way to look at life is as a realist. Not optimist, not pessimist. Just see things as they are, then decide what to do.</li>
 </ul>
 
-<article class="projects">
-<h4>Projects</h4>
-{% include projects.html %}
-</article>
