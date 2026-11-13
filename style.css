@@ -64,14 +64,6 @@
     --steps-3: #2b78bf;
     --steps-4: #00356b;
 
-    /* contact form */
-    --cf-border: rgba(0, 0, 0, 0.2);
-    --cf-focus: #222;
-    --cf-focus-ring: rgba(0, 0, 0, 0.08);
-    --cf-button-bg: #222;
-    --cf-button-text: #fff;
-    --cf-ok: #2e7d32;
-    --cf-error: #c62828;
 
     /* 3D book hover, after minchi.co/books */
     --book-back: linear-gradient(90deg, #6e6a64 0%, #8a857e 55%, #7a756e 100%);
@@ -157,11 +149,11 @@ header {
 }
 
 /* the site title only shows on the home page, centred under the fixed nav */
-header > h1 {
+header>h1 {
     display: none;
 }
 
-#home header > h1 {
+#home header>h1 {
     display: block;
     float: none;
     width: 100%;
@@ -208,27 +200,6 @@ nav ul {
     gap: 40px;
 }
 
-.w-full > div {
-    float: left;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    height: 6px;
-    border-bottom: 1px solid #f5f5f5;
-}
-
-.contact {
-    float: right;
-    grid-column: span 2;
-    margin: 0;
-    align-self: center;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    background: var(--color-highlight);
-    box-shadow: 0 5px 10px -2px var(--shadow-soft);
-}
-
 /* MAIN CONTENT */
 section {
     width: 100%;
@@ -251,8 +222,8 @@ mark {
     padding: 0 0.1em;
 }
 
-section > hr,
-section > p {
+section>hr,
+section>p {
     width: 100%;
 }
 
@@ -291,53 +262,6 @@ footer p {
     text-decoration: none;
 }
 
-.garden {
-    float: left;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 8px;
-    margin: 20px 0 0;
-}
-
-.garden-item {
-    display: block;
-    color: var(--color-text);
-    text-decoration: none;
-}
-
-.garden-card {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    padding: 12px;
-    height: 100%;
-    background: var(--color-card);
-    border-radius: 6px;
-    transition:
-        transform 0.24s cubic-bezier(0.34, 1.36, 0.64, 1),
-        background-color 0.18s ease,
-        box-shadow 0.18s ease;
-}
-
-.garden-card h3 {
-    float: none;
-    width: auto;
-    margin: 0;
-    font: 700 1.1em/1.3 "Berkeley Mono", sans-serif;
-    transition: color 0.18s ease;
-}
-
-.garden-description {
-    margin: 4px 0 0;
-    font-size: 0.9em;
-    color: var(--color-muted);
-}
-
-/* the card is a link, so undo the global a:hover opacity/border */
-a.garden-item:hover {
-    opacity: 1;
-}
 
 .meta,
 small {
@@ -465,11 +389,7 @@ a.current,
     border: none;
 }
 
-/*a[target="_blank"]::after {
-content: '↗';
-margin-left: 2px;
-font-family: "Inter", sans-serif;
-}*/
+
 
 .social::after {
     content: none;
@@ -522,13 +442,13 @@ ol {
     counter-reset: ol-item;
 }
 
-ol > li {
+ol>li {
     position: relative;
     padding: 3px 0 3px 2em;
     counter-increment: ol-item;
 }
 
-ol > li::before {
+ol>li::before {
     content: counter(ol-item) ".";
     position: absolute;
     left: 0;
@@ -687,22 +607,10 @@ iframe {
     width: 100%;
 }
 
-.projects {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 10px;
-    align-items: end;
-    float: left;
-    width: 100%;
-}
 
-/* projects fills its own row; books and films take half each via col-60. Headings span the whole box */
-.home-grid > .projects {
-    grid-column: 1 / -1;
-}
 
-.books > h4,
-.projects > h4 {
+
+.books>h4 {
     grid-column: 1 / -1;
 }
 
@@ -720,9 +628,7 @@ iframe {
     grid-column: span 1;
 }
 
-.projects a {
-    grid-column: span 3;
-}
+
 
 .books img {
     display: block;
@@ -734,7 +640,7 @@ iframe {
     box-shadow: 3px 3px 6px -2px var(--book-shadow);
 }
 
-.home-grid > article {
+.home-grid>article {
     float: none;
     width: auto;
     margin: 0;
@@ -747,10 +653,7 @@ h4 a,
     color: var(--color-accent);
 }
 
-/* dividers between home rows run the full 12 columns */
-.home-grid > hr {
-    grid-column: 1 / -1;
-}
+
 
 .full-width {
     grid-column: 1 / -1;
@@ -764,20 +667,7 @@ h4 a,
     grid-column: span 5;
 }
 
-.single-width {
-    float: left;
-    width: calc(var(--site-width) - 300px);
-    padding: 0;
-    margin: 0px calc(50% - (var(--site-width) + 300px) / 2) 0px calc(50% - var(--site-width) / 2);
-}
 
-/* WIDTHS */
-.full-width {
-    float: left;
-    width: 100%;
-    box-sizing: border-box;
-    clear: both;
-}
 
 /* SOCIAL — icon links in the about me card */
 .social {
@@ -848,7 +738,7 @@ h4 a,
 }
 
 /* each book status heading starts a new row in the books grid */
-.books > .books-status {
+.books>.books-status {
     grid-column: 1 / -1;
     margin: 10px 0 0;
 }
@@ -930,100 +820,6 @@ h4 a,
     gap: 3px;
 }
 
-/* Contact form — minimal, editorial. Uses your site's fonts via `inherit`. */
-.contact-form {
-    max-width: 34rem;
-    margin: 2rem 0;
-    font-family: inherit;
-}
-
-.cf-field {
-    margin-bottom: 1.25rem;
-}
-
-.cf-field label {
-    display: block;
-    margin-bottom: 0.35rem;
-    font-size: 0.9rem;
-    font-weight: 600;
-    letter-spacing: 0.01em;
-}
-
-.cf-optional {
-    font-weight: 400;
-    opacity: 0.6;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 0.7rem 0.8rem;
-    font: inherit;
-    font-size: 1rem;
-    color: inherit;
-    background: transparent;
-    border: 1px solid var(--cf-border);
-    border-radius: 4px;
-    transition:
-        border-color 0.15s,
-        box-shadow 0.15s;
-}
-
-.contact-form textarea {
-    resize: vertical;
-    min-height: 9rem;
-    line-height: 1.5;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-    outline: none;
-    border-color: var(--cf-focus);
-    box-shadow: 0 0 0 3px var(--cf-focus-ring);
-}
-
-.cf-hp {
-    position: absolute !important;
-    left: -9999px !important;
-    width: 1px;
-    height: 1px;
-    opacity: 0;
-}
-
-.cf-button {
-    padding: 0.75rem 1.5rem;
-    font: inherit;
-    font-weight: 600;
-    cursor: pointer;
-    color: var(--cf-button-text);
-    background: var(--cf-button-bg);
-    border: 0;
-    border-radius: 4px;
-    transition: opacity 0.15s;
-}
-
-.cf-button:hover {
-    opacity: 0.85;
-}
-
-.cf-button:disabled {
-    opacity: 0.5;
-    cursor: wait;
-}
-
-.cf-status {
-    margin-top: 1rem;
-    min-height: 1.5em;
-}
-
-.cf-ok {
-    color: var(--cf-ok);
-}
-
-.cf-error {
-    color: var(--cf-error);
-}
 
 .reading-time {
     float: left;
@@ -1186,8 +982,8 @@ h4 a,
 a.news-row:hover {
     opacity: 1;
     background: var(--news-hover);
-    border: 1px solid var(--news-line);
-    border-radius: 6px;
+     border: 1px solid transparent;
+  
 }
 
 /* one line, fading out instead of an ellipsis */
@@ -1195,7 +991,7 @@ a.news-row:hover {
     white-space: nowrap;
     overflow: hidden;
     color: var(--color-muted);
-    font-size: 0.9em;
+    font-size: 1em;
     -webkit-mask-image: linear-gradient(to right, #000 85%, transparent);
     mask-image: linear-gradient(to right, #000 85%, transparent);
 }
@@ -1218,6 +1014,7 @@ a.news-row:hover {
     border-radius: 50%;
     background: var(--color-highlight);
 }
+
 /* MEDIA QUERIES — all breakpoints live here, widest first so narrower screens win */
 @media (hover: hover) and (pointer: fine) {
     a.garden-item:hover .garden-card {
@@ -1250,25 +1047,23 @@ a.news-row:hover {
         transform: translateX(0.9%);
     }
 }
+
 @media only screen and (max-width: 1100px) {
     .archive-columns {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .garden {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  
 
     .projects a.project-card {
         grid-column: span 6;
     }
 }
-@media only screen and (max-width: 700px) {
-    .garden {
-        grid-template-columns: 1fr;
-    }
-}
+
+
+
 @media only screen and (max-width: 640px) {
+
     /* phones: title and date only */
     .news-head,
     .news-row {
@@ -1298,7 +1093,7 @@ a.news-row:hover {
         grid-template-columns: 1fr;
     }
 
-    .home-grid > article[class] {
+    .home-grid>article[class] {
         grid-column: 1 / -1;
     }
 
@@ -1307,7 +1102,7 @@ a.news-row:hover {
     }
 
     body {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     header {
@@ -1345,22 +1140,5 @@ a.news-row:hover {
 
     .projects a.project-card {
         grid-column: 1 / -1;
-    }
-}
-@media (prefers-color-scheme: dark) {
-    :root {
-        --cf-border: rgba(255, 255, 255, 0.25);
-        --cf-focus: #eee;
-        --cf-focus-ring: rgba(255, 255, 255, 0.1);
-        --cf-button-bg: #eee;
-        --cf-button-text: #111;
-    }
-}
-@media (prefers-reduced-motion: reduce) {
-    .b-image,
-    .b-page,
-    .b-effect,
-    .book-cell {
-        transition: none;
     }
 }
