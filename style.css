@@ -232,6 +232,9 @@ article {
     margin: 0;
     float: left;
     width: 100%;
+    /* in a grid, span every column unless a col-* class says otherwise */
+    grid-column: 1 / -1;
+    grid-column-count: 12;
 }
 
 footer {

@@ -1,11 +1,8 @@
 {% include head.html %}
 {% include header.html %}
 <section class="home-grid">
-
-<!-- Row 1 -->
 <article class="hero col-50">
 <img src="/images/profile.jpg" class="profile" alt="Carlos Rodrigo">
-
 </article>
 <article class="col-70">
 <h4><a href="/about/">About me <span class="arrow">-></span></a></h4>
@@ -35,15 +32,12 @@ document.write(
 <ul class="bulleted">
 <li>I'm a husband to Mar, a father to Lucas and Nico, and a human-friend to Pancho. </li>
 <li>I <a href="/work/">work</a> at Técnica y Avance.</li>
-    <li> I also write about technology, software, and life, and I share what I'm <a href="/books/">reading</a>.</li>
-</li>
-<li>Get in touch at <a href="#" onclick="this.href='mailto:'+'rodrigoturner.carlos'+'@'+'gmail.com'">rodrigoturner.carlos[@]gmail[.]com <span class="arrow">-></span></a></li>
+<li> I also write about technology, software, and life, and I share what I'm <a href="/books/">reading</a>.</li>
+<li>Get in touch <span class="arrow">-></span> <a href="#" onclick="this.href='mailto:'+'rodrigoturner.carlos'+'@'+'gmail.com'">rodrigoturner.carlos[@]gmail[.]com</a></li>
 </ul>
-
 </article>
-
 <article>
-    <h4><a href="/writing/">Writing <span class="arrow">→</span></a></h4>
+<h4><a href="/writing/">Writing <span class="arrow">→</span></a></h4>
 {% comment %} table of posts after anthropic.com/news: title, description, category, date; the whole row is the link {% endcomment %}
 <div class="news-table" id="archive-posts">
 <div class="news-head" aria-hidden="true">
@@ -63,8 +57,5 @@ document.write(
 {% endfor %}
 </div>
 </article>
-
-
-
 </section>
 {% include footer.html %}
