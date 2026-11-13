@@ -236,10 +236,7 @@ article {
 
 footer {
     width: 100%;
-
     margin-top: auto;
-
-    background: #fff;
 }
 
 footer p {
@@ -261,7 +258,6 @@ footer p {
 .posts li a {
     text-decoration: none;
 }
-
 
 .meta,
 small {
