@@ -115,10 +115,6 @@ body {
     margin: 0 auto;
     -webkit-text-size-adjust: 100%;
     text-rendering: optimizeLegibility;
-    /* full-height column so the footer sits at the bottom on short pages */
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 
 body::before {
@@ -138,12 +134,10 @@ body::before {
 
 /* HEADER */
 header {
-    float: left;
-
-    width: 100%;
+    /* narrow sidebar on the right */
+    float: right;
+    width: 10%;
     padding: 0;
-    /* room for the fixed nav */
-    min-height: 70px;
     margin: 40px 0;
     font: 400 16px/1.7 "Berkeley Mono", sans-serif;
 }
@@ -202,12 +196,11 @@ nav ul {
 
 /* MAIN CONTENT */
 section {
-    width: 100%;
-    max-width: var(--site-width);
-    margin: 0px calc(50% - min(var(--site-width), 100%) / 2) 0px;
+    /* centred reading column */
+    width: 40%;
+    margin: 0 auto;
     padding: 0px 0 100px;
 
-    float: left;
 }
 
 #home section {
