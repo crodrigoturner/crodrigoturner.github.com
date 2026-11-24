@@ -1,9 +1,10 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: "Andada Pro";
-    src: url("/fonts/AndadaPro%5Bwght%5D.woff2") format("woff2");
-    font-weight: 400 840;
+    font-family: "Bricolage Grotesque";
+    src: url("/fonts/BricolageGrotesque-VariableFont_opsz%2Cwdth%2Cwght.ttf") format("truetype");
+    font-weight: 200 800;
+    font-stretch: 75% 100%;
     font-style: normal;
     font-display: swap;
 }
@@ -303,7 +304,7 @@ pre code {
 /* TYPOGRAPHY */
 h1 {
     text-transform: lowercase;
-    font: 600 2em/1.6 "Berkeley Mono", sans-serif;
+    font: 600 2em/1.6 "Bricolage Grotesque", sans-serif;
     float: left;
     padding: 0px;
     width:100%;
