@@ -13,7 +13,7 @@
 <a class="news-row archive-item" href="{{ post.url }}" data-search="{{ post.title | downcase | escape }} {{ post.tags | join: ' ' | downcase }}">
 <span class="news-title">{{ post.title }}</span>
 <span class="news-category">{{ post.tags | first | default: 'Note' | capitalize }}</span>
-<time class="news-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b %-d, %Y' }}</time>
+<time class="news-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: 'YYYYMMDD' }}</time>
 </a>
 {% endfor %}
 </div>
