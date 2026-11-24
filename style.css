@@ -574,11 +574,6 @@ iframe {
     box-shadow: 3px 3px 6px -2px var(--book-shadow);
 }
 
-.home-grid>article {
-    float: none;
-    width: auto;
-    margin: 0;
-}
 
 h4 a,
 .projects h4 a {
