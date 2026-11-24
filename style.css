@@ -348,10 +348,6 @@ h6 {
     margin: 16px 0 8px;
 }
 
-header a {
-    text-decoration: none;
-}
-
 p {
     margin: 0 0 12px;
 }
@@ -961,9 +957,9 @@ h4 a,
 
 /* the row is a link, so undo the global a:hover fade and border reset */
 a.news-row:hover {
-    opacity: 1;
-    background: var(--news-hover);
-     border: 1px solid transparent;
+    opacity: .7;
+   
+     border: 1px solid var(--news-line);
   
 }
 
