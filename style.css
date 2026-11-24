@@ -867,7 +867,7 @@ h4 a,
     padding: 3px 0;
 }
 
-.archive-columns .archive-title {
+.archive-columns a {
     text-decoration: none;
 }
 
