@@ -199,7 +199,7 @@ section {
     /* 30% content column; the left margin matches the sidebar's right margin */
     width: 30%;
     margin: 0 0 0 30%;
-    padding: 0px 0 100px;
+    padding: 0px 20px 100px;
 }
 
 #home section {
