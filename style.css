@@ -60,10 +60,8 @@
     --steps-2: #6aa8dc;
     --steps-3: #2b78bf;
     --steps-4: #00356b;
-}
 
 
-    /* 3D book hover, after minchi.co/books */
     --book-back: linear-gradient(90deg, #6e6a64 0%, #8a857e 55%, #7a756e 100%);
     --book-back-shadow: rgba(0, 0, 0, 0.18);
     --book-page: #f7f4ee;
@@ -76,12 +74,12 @@
         40px 40px 60px rgba(0, 0, 0, 0.15);
     --book-ease: cubic-bezier(0.25, 1, 0.5, 1);
 
-    /* nav glass, after generalintelligencecompany.com */
+
     --nav-glass: linear-gradient(to right, rgba(249, 250, 247, 0.12), rgba(249, 250, 247, 0.18));
     --nav-glass-border: rgba(255, 255, 255, 0.2);
     --nav-glass-shadow: rgba(0, 0, 0, 0.15);
 
-    /* blog table, after anthropic.com/news */
+
     --news-line: rgba(0, 53, 107, 0.15);
     --news-hover: rgba(255, 255, 255, 0.6);
 }
@@ -132,7 +130,7 @@ body::before {
 header {
     /* 10% sidebar right after the 30% content column; together they sit centred, 30% in from each edge */
     float: right;
-    width: 10%;
+    width: calc(10% - 21px);
     padding: 0 0 0 20px;
     margin: 40px 30% 0 0;
 border-left:1px solid var(--color-border);
@@ -940,7 +938,7 @@ h4 a,
     color: var(--color-text);
     text-decoration: none;
     border: 1px solid transparent;
-    border-bottom-color: var(--news-line);
+    border-bottom-color: var(--color-border);
     border-radius: 0;
     transition:
         background-color 0.15s ease,
@@ -952,7 +950,7 @@ h4 a,
 a.news-row:hover {
     opacity: .7;
    
-     border: 1px solid var(--news-line);
+     border: 1px solid var(--color-border);
   
 }
 
