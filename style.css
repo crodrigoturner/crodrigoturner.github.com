@@ -436,6 +436,7 @@ img {
     height: auto;
     margin: 10px 50% 0px;
     filter: grayscale(100%);
+    float:left;
 }
 
 /* VIDA EN MESES */
