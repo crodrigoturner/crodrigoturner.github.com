@@ -134,11 +134,11 @@ body::before {
 
 /* HEADER */
 header {
-    /* narrow sidebar on the right */
+    /* 10% sidebar right after the 30% content column; together they sit centred, 30% in from each edge */
     float: right;
     width: 10%;
     padding: 0;
-    margin: 40px 0;
+    margin: 40px 30% 0 0;
     font: 400 16px/1.7 "Berkeley Mono", sans-serif;
 }
 
@@ -196,9 +196,9 @@ nav ul {
 
 /* MAIN CONTENT */
 section {
-    /* centred reading column */
-    width: 40%;
-    margin: 0 auto;
+    /* 30% content column; the left margin matches the sidebar's right margin */
+    width: 30%;
+    margin: 0 0 0 30%;
     padding: 0px 0 100px;
 }
 
