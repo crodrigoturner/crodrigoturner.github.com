@@ -311,9 +311,10 @@ pre code {
 /* TYPOGRAPHY */
 h1 {
     text-transform: lowercase;
-    font: 400 2.2em/1.7 "Coral Pixels", cursive;
+    font: 600 2em/1.6 "Berkeley Mono", sans-serif;
     float: left;
-    padding: 5px 0px;
+    padding: 0px;
+    width:100%;
 }
 
 h2 {
@@ -481,6 +482,7 @@ img {
     float: right;
     margin: 0 0px 0px 20px;
     filter: grayscale(100%);
+
 }
 
 /* VIDA EN MESES */
