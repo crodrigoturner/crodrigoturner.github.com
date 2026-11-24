@@ -104,8 +104,6 @@ html {
 body {
     color: var(--color-text);
     font: 400 14px / 1.7 "Berkeley Mono", sans-serif;
-    /* mesh gradient after githubnext.com's .blob-1: soft white and blue pools fading out over the base blue */
- 
     background-image: radial-gradient(at 90% 0%, var(--bg-glow-white), transparent 55%),
         radial-gradient(at 0% 80%, var(--bg-glow-1), transparent 55%),
         radial-gradient(at 10% 30%, var(--bg-glow-2), transparent 50%),
@@ -139,21 +137,10 @@ header {
     width: 10%;
     padding: 0;
     margin: 40px 30% 0 0;
-    font: 400 16px/1.7 "Berkeley Mono", sans-serif;
+
 }
 
-/* the site title only shows on the home page, centred under the fixed nav */
-header>h1 {
-    display: none;
-}
 
-#home header>h1 {
-    display: block;
-    float: none;
-    width: 100%;
-    margin: 40px 0 0;
-    text-align: center;
-}
 
 .hero {
     padding: 0 20px 0 0;
