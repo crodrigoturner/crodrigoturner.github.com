@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Live Daylight Earth</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #000; overflow: hidden;
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: #e8eef7; }
+  canvas { display: block; }
+  #hud {
+    position: absolute; top: 20px; left: 20px; padding: 16px 18px; min-width: 230px;
+    background: rgba(8, 14, 28, 0.55); border: 1px solid rgba(140, 180, 255, 0.18);
+    border-radius: 12px; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+    font-size: 13px; line-height: 1.5; user-select: none;
+  }
+  #hud h1 { margin: 0 0 6px; font-size: 15px; font-weight: 600; letter-spacing: .02em; }
+  #hud .muted { color: #8fa3c2; font-size: 12px; }
+  #hud .row { display: flex; justify-content: space-between; gap: 14px; }
+  #cities { margin-top: 10px; border-top: 1px solid rgba(140,180,255,.15); padding-top: 8px; }
+  .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 7px; vertical-align: 1px; }
+  .day   { background: #ffd34d; box-shadow: 0 0 6px #ffd34d; }
+  .night { background: #4d7dff; box-shadow: 0 0 6px #4d7dff; }
+  #hint { position: absolute; bottom: 16px; left: 50%; transform: translateX(-50%);
+    font-size: 12px; color: #6f83a3; user-select: none; }
+  #error { position: absolute; inset: 0; display: none; align-items: center; justify-content: center;
+    text-align: center; padding: 30px; color: #ffb4b4; }
+</style>
+</head>
+<body>
+<div id="hud">
+  <h1>🌍 Live Daylight Earth</h1>
+  <div class="row"><span class="muted">UTC</span><span id="utc">—</span></div>
+  <div class="row"><span class="muted">Local</span><span id="local">—</span></div>
+  <div class="row"><span class="muted">Sun overhead</span><span id="subsolar">—</span></div>
+  <div id="cities"></div>
+</div>
+<div id="hint">Drag to rotate · scroll to zoom · double-click to pause spin</div>
+<div id="error">Couldn't load the 3D library or Earth images.<br>This page needs an internet connection the first time it opens.</div>
+
+<script type="importmap">
+{ "imports": {
+  "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+  "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+} }
+</script>
+
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+const IMG = 'https://unpkg.com/three-globe@2.31.0/example/img/';
+const DEG = Math.PI / 180;
+
+// ---------- Sun position (NOAA approximation) ----------
+function subsolarPoint(date) {
+  const start = Date.UTC(date.getUTCFullYear(), 0, 1);
+  const dayOfYear = Math.floor((date.getTime() - start) / 86400000) + 1;
+  const hours = date.getUTCHours() + date.getUTCMinutes() / 60 + date.getUTCSeconds() / 3600;
+  const g = 2 * Math.PI / 365 * (dayOfYear - 1 + (hours - 12) / 24);
+  const decl = 0.006918 - 0.399912 * Math.cos(g) + 0.070257 * Math.sin(g)
+             - 0.006758 * Math.cos(2 * g) + 0.000907 * Math.sin(2 * g)
+             - 0.002697 * Math.cos(3 * g) + 0.00148 * Math.sin(3 * g);
+  const eqTime = 229.18 * (0.000075 + 0.001868 * Math.cos(g) - 0.032077 * Math.sin(g)
+             - 0.014615 * Math.cos(2 * g) - 0.040849 * Math.sin(2 * g)); // minutes
+  let lon = -15 * (hours - 12 + eqTime / 60);
+  lon = ((lon + 540) % 360) - 180;
+  return { lat: decl / DEG, lon };
+}
+
+// Same lat/lon → 3D mapping three.js SphereGeometry uses for an equirectangular texture
+function latLonToVec3(lat, lon, r) {
+  const phi = (lon + 180) * DEG;
+  const theta = (90 - lat) * DEG;
+  return new THREE.Vector3(-r * Math.cos(phi) * Math.sin(theta), r * Math.cos(theta), r * Math.sin(phi) * Math.sin(theta));
+}
+
+function sunAltitude(lat, lon, sun) {
+  const a = lat * DEG, b = lon * DEG, c = sun.lat * DEG, d = sun.lon * DEG;
+  return Math.asin(Math.sin(a) * Math.sin(c) + Math.cos(a) * Math.cos(c) * Math.cos(b - d)) / DEG;
+}
+
+// ---------- Scene ----------
+const renderer = new THREE.WebGLRenderer({ antialias: true });
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+renderer.setSize(window.innerWidth, window.innerHeight);
+document.body.appendChild(renderer.domElement);
+
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(40, window.innerWidth / window.innerHeight, 0.1, 1000);
+camera.position.set(0, 0.8, 4.2);
+
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableDamping = true;
+controls.enablePan = false;
+controls.minDistance = 1.6;
+controls.maxDistance = 10;
+
+// Stars
+{
+  const N = 6000, pos = new Float32Array(N * 3), col = new Float32Array(N * 3);
+  for (let i = 0; i < N; i++) {
+    const v = new THREE.Vector3().randomDirection().multiplyScalar(200 + Math.random() * 300);
+    pos.set([v.x, v.y, v.z], i * 3);
+    const t = Math.random();
+    const c = new THREE.Color().setHSL(0.58 + (t - 0.5) * 0.15, 0.4 * t, 0.65 + 0.35 * Math.random());
+    col.set([c.r, c.g, c.b], i * 3);
+  }
+  const geo = new THREE.BufferGeometry();
+  geo.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+  geo.setAttribute('color', new THREE.BufferAttribute(col, 3));
+  scene.add(new THREE.Points(geo, new THREE.PointsMaterial({ size: 0.9, vertexColors: true, sizeAttenuation: true, transparent: true, opacity: 0.9 })));
+}
+
+// Earth with day/night shader (computed in geographic coordinates, so it's always correct)
+const loader = new THREE.TextureLoader();
+let failed = false;
+const onErr = () => { if (!failed) { failed = true; document.getElementById('error').style.display = 'flex'; } };
+const dayTex = loader.load(IMG + 'earth-blue-marble.jpg', undefined, undefined, onErr);
+const nightTex = loader.load(IMG + 'earth-night.jpg', undefined, undefined, onErr);
+dayTex.colorSpace = nightTex.colorSpace = THREE.SRGBColorSpace;
+dayTex.anisotropy = nightTex.anisotropy = renderer.capabilities.getMaxAnisotropy();
+
+const uniforms = {
+  dayMap: { value: dayTex },
+  nightMap: { value: nightTex },
+  sunLatLon: { value: new THREE.Vector2() },
+};
+
+const earthMat = new THREE.ShaderMaterial({
+  uniforms,
+  vertexShader: /* glsl */`
+    varying vec2 vUv;
+    varying vec3 vNormalV;
+    varying vec3 vViewPos;
+    void main() {
+      vUv = uv;
+      vNormalV = normalize(normalMatrix * normal);
+      vec4 mv = modelViewMatrix * vec4(position, 1.0);
+      vViewPos = mv.xyz;
+      gl_Position = projectionMatrix * mv;
+    }`,
+  fragmentShader: /* glsl */`
+    uniform sampler2D dayMap;
+    uniform sampler2D nightMap;
+    uniform vec2 sunLatLon; // radians
+    varying vec2 vUv;
+    varying vec3 vNormalV;
+    varying vec3 vViewPos;
+    vec3 geo(float lat, float lon) { return vec3(cos(lat) * cos(lon), cos(lat) * sin(lon), sin(lat)); }
+    void main() {
+      float lon = vUv.x * 6.2831853 - 3.1415927;
+      float lat = (vUv.y - 0.5) * 3.1415927;
+      float s = dot(geo(lat, lon), geo(sunLatLon.x, sunLatLon.y)); // sin(sun altitude)
+
+      vec3 day = texture2D(dayMap, vUv).rgb;
+      vec3 night = texture2D(nightMap, vUv).rgb;
+
+      float light = smoothstep(-0.10, 0.12, s);           // includes twilight band
+      vec3 dayLit = day * (0.35 + 0.85 * clamp(s, 0.0, 1.0) + 0.25);
+      vec3 nightLit = night * 1.4 + day * 0.04;
+      vec3 color = mix(nightLit, dayLit, light);
+
+      // warm sunset tint along the terminator
+      float dusk = exp(-pow(s / 0.07, 2.0));
+      color += vec3(0.9, 0.35, 0.1) * dusk * 0.18;
+
+      // rim light on the edge of the globe
+      float rim = pow(1.0 - max(dot(normalize(-vViewPos), normalize(vNormalV)), 0.0), 3.0);
+      color += vec3(0.25, 0.5, 1.0) * rim * (0.25 + 0.6 * light);
+
+      gl_FragColor = vec4(color, 1.0);
+      #include <colorspace_fragment>
+    }`,
+});
+
+const earth = new THREE.Mesh(new THREE.SphereGeometry(1, 128, 128), earthMat);
+earth.rotation.z = 23.44 * DEG; // axial tilt, for looks
+const spin = new THREE.Group();
+earth.add(spin);
+scene.add(earth);
+
+// Atmosphere glow
+const atmosphere = new THREE.Mesh(
+  new THREE.SphereGeometry(1.12, 64, 64),
+  new THREE.ShaderMaterial({
+    side: THREE.BackSide, transparent: true, blending: THREE.AdditiveBlending, depthWrite: false,
+    vertexShader: `varying vec3 vN; void main(){ vN = normalize(normalMatrix * normal); gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.0); }`,
+    fragmentShader: `varying vec3 vN; void main(){ float i = pow(0.72 - dot(vN, vec3(0.0,0.0,1.0)), 3.0); gl_FragColor = vec4(0.3, 0.6, 1.0, 1.0) * i; }`,
+  })
+);
+scene.add(atmosphere);
+
+// Sun marker (point on the globe where the sun is directly overhead)
+const sunMarker = new THREE.Mesh(new THREE.SphereGeometry(0.018, 16, 16), new THREE.MeshBasicMaterial({ color: 0xffe27a }));
+const sunHalo = new THREE.Mesh(new THREE.SphereGeometry(0.04, 16, 16),
+  new THREE.MeshBasicMaterial({ color: 0xffc940, transparent: true, opacity: 0.35, blending: THREE.AdditiveBlending, depthWrite: false }));
+sunMarker.add(sunHalo);
+earth.add(sunMarker);
+
+// Cities
+const CITIES = [
+  ['Madrid', 40.42, -3.70], ['London', 51.51, -0.13], ['New York', 40.71, -74.01],
+  ['Los Angeles', 34.05, -118.24], ['São Paulo', -23.55, -46.63], ['Lagos', 6.52, 3.38],
+  ['Dubai', 25.20, 55.27], ['Mumbai', 19.08, 72.88], ['Beijing', 39.90, 116.40],
+  ['Tokyo', 35.68, 139.69], ['Sydney', -33.87, 151.21], ['Mexico City', 19.43, -99.13],
+];
+const cityMeshes = CITIES.map(([name, lat, lon]) => {
+  const m = new THREE.Mesh(new THREE.SphereGeometry(0.011, 12, 12), new THREE.MeshBasicMaterial({ color: 0xffffff }));
+  m.position.copy(latLonToVec3(lat, lon, 1.004));
+  earth.add(m);
+  return { name, lat, lon, mesh: m };
+});
+
+// ---------- HUD ----------
+const $ = id => document.getElementById(id);
+const fmt = (v, pos, neg) => `${Math.abs(v).toFixed(1)}°${v >= 0 ? pos : neg}`;
+
+function updateSun() {
+  const now = new Date();
+  const sun = subsolarPoint(now);
+  uniforms.sunLatLon.value.set(sun.lat * DEG, sun.lon * DEG);
+  sunMarker.position.copy(latLonToVec3(sun.lat, sun.lon, 1.01));
+
+  $('utc').textContent = now.toISOString().slice(11, 19);
+  $('local').textContent = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+  $('subsolar').textContent = `${fmt(sun.lat, 'N', 'S')} ${fmt(sun.lon, 'E', 'W')}`;
+
+  $('cities').innerHTML = cityMeshes.map(c => {
+    const alt = sunAltitude(c.lat, c.lon, sun);
+    const isDay = alt > -0.833; // sunrise/sunset threshold incl. refraction
+    c.mesh.material.color.set(isDay ? 0xffd34d : 0x6f97ff);
+    return `<div class="row"><span><span class="dot ${isDay ? 'day' : 'night'}"></span>${c.name}</span>` +
+           `<span class="muted">${isDay ? 'Day' : 'Night'} · ${alt >= 0 ? '+' : ''}${alt.toFixed(0)}°</span></div>`;
+  }).join('');
+}
+updateSun();
+setInterval(updateSun, 1000);
+
+// ---------- Animate ----------
+let spinning = true;
+renderer.domElement.addEventListener('dblclick', () => { spinning = !spinning; });
+
+// start with the daylit side facing the camera
+{
+  const sun = subsolarPoint(new Date());
+  earth.rotation.y = -((sun.lon + 90) * DEG);
+}
+
+const clock = new THREE.Clock();
+renderer.setAnimationLoop(() => {
+  const dt = clock.getDelta();
+  if (spinning) earth.rotation.y += dt * 0.08;
+  sunHalo.scale.setScalar(1 + 0.15 * Math.sin(performance.now() / 400));
+  controls.update();
+  renderer.render(scene, camera);
+});
+
+addEventListener('resize', () => {
+  camera.aspect = innerWidth / innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(innerWidth, innerHeight);
+});
+</script>
+</body>
+</html>
