@@ -18,5 +18,50 @@
 {% endfor %}
 </div>
 </article>
+
+ <article>
+<div class="archive-columns">
+
+<div class="archive-column">
+<h4>Pages</h4>
+<ul class="archive" id="archive-pages">
+{% assign all_pages = site.pages | sort: 'title' %}
+{% for p in all_pages %}
+{% unless p.title == nil or p.url contains '/tags/' or p.url == '/404.html' or p.layout == 'archive' %}
+<li class="archive-item" data-search="{{ p.title | downcase | escape }}">
+<a href="{{ p.url }}" class="archive-title">{{ p.title }}</a>
+</li>
+{% endunless %}
+{% endfor %}
+</ul>
+</div>
+
+<div class="archive-column">
+<h4>Projects</h4>
+<ul class="archive" id="archive-projects">
+{% assign all_projects = site.projects | sort: 'title' %}
+{% for p in all_projects %}
+<li class="archive-item" data-search="{{ p.title | downcase | escape }}">
+<a href="{{ p.url }}" class="archive-title">{{ p.title }}</a>
+</li>
+{% endfor %}
+</ul>
+</div>
+
+<div class="archive-column">
+  <h4>Lists</h4>
+<ul class="archive">
+
+<li class="archive-item"><a href="https://crodrigoturner.raindrop.page/cool-sites-69850228" target="_blank">Cool sites (Raindrop)</a></li>
+<li class="archive-item"><a href="https://crodrigoturner.raindrop.page/the-best-of-the-internet-62384300" target="_blank">The best of the internet (Raindrop)</a></li>
+<li class="archive-item"><a href="https://crodrigoturner.raindrop.page/tools-70533624" target="_blank">Tools</a></li>
+</ul>
+</div>
+
+<div class="archive-column"></div>
+
+</div>
+  </article>
+
 </section>
 {% include footer.html %}
