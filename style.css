@@ -180,7 +180,7 @@ nav ul {
 /* MAIN CONTENT */
 section {
     /* 30% content column; the left margin matches the sidebar's right margin */
-    width: calc(30% - 40px);
+    width: 30%;
     margin: 0 0 0 30%;
     padding: 0px 20px 100px;
 }
@@ -950,29 +950,18 @@ h4 a,
 a.news-row:hover {
     opacity: .7;
    
-     border: 1px solid var(--color-border);
+     border-bottom: 1px solid var(--color-border);
   
 }
 
-/* one line, fading out instead of an ellipsis */
-.news-description {
-    white-space: nowrap;
-    overflow: hidden;
-    color: var(--color-muted);
-    font-size: 1em;
-    -webkit-mask-image: linear-gradient(to right, #000 85%, transparent);
-    mask-image: linear-gradient(to right, #000 85%, transparent);
-}
+
 
 .news-category,
 .news-date {
     font-size: 0.9em;
 }
 
-/* "More" in the nav is a meatballs icon; block keeps it centred in its grid cell without a stray line gap */
-.nav-more {
-    display: block;
-}
+
 
 /* home link in the nav: a yellow dot instead of a label */
 .nav-home {
