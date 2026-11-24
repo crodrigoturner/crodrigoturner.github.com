@@ -181,16 +181,11 @@ nav ul {
 /* MAIN CONTENT */
 section {
     /* 30% content column; the left margin matches the sidebar's right margin */
-    width: 30%;
+    width: calc(30% - 40px);
     margin: 0 0 0 30%;
     padding: 0px 20px 100px;
 }
 
-#home section {
-    border-bottom: none;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-}
 
 mark {
     background: linear-gradient(transparent 55%, var(--color-highlight) 55%);
