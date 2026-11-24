@@ -19,50 +19,47 @@
 :root {
     --site-width: 960px;
     --color-text: #00356b;
-    --color-link: #095c9f;
-    --color-muted: #607d8b;
-    --color-border: #cfd8dc;
+    --color-link: #b23a0e;
+    --color-link-hover: #862b0a;
+    --color-muted: #4a6478;
+    --color-border: #d5e0ea;
 
-    /* background mesh */
-    --bg-base: #d7e8f7;
+    --bg-base: #eef4fa;
     --bg-glow-white: #ffffff;
-    --bg-glow-1: #f0f7fd;
-    --bg-glow-2: #f5faff;
-    --bg-glow-3: #e8f2fc;
+    --bg-glow-1: #f6f9fc;
+    --bg-glow-2: #fafcfe;
+    --bg-glow-3: #e9f1f8;
 
-    /* accents and highlights */
-    --color-accent: #bf360c;
-    --color-highlight: #ffe066;
-    --selection-bg: #fef4ad;
-    --em-bg: #ffff6687;
-    --code-bg: #f4f4f2;
+    --color-accent: #b23a0e;
+    --color-highlight: #ffe680;
+    --selection-bg: #fff1a8;
+    --em-bg: #fff1a8;
+    --code-bg: #f3f5f7;
 
-    /* cards, shadows and rules */
     --color-card: #fff;
-    --shadow-soft: rgb(0 0 0 / 10%);
-    --shadow-card: rgba(0, 30, 60, 0.15);
-    --book-shadow: #bdbdbd;
-    --hr-dark: rgba(0, 53, 107, 0.25);
+    --shadow-soft: rgb(0 30 60 / 8%);
+    --shadow-card: rgb(0 30 60 / 12%);
+    --book-shadow: #c3ccd4;
+    --hr-dark: rgba(0, 53, 107, 0.18);
     --hr-light: rgba(255, 255, 255, 0.9);
 
-    /* life calendar */
-    --life-now: #ef5350;
+    --life-now: #b23a0e;
     --life-now-text: #fff;
-    --life-text: #444;
-    --life-casa: #d7ccc8;
-    --life-mar: #ffcdd2;
-    --life-familia: #ffecb3;
-    --life-trabajo: #cfd8dc;
-    --life-viaje: #bbdefb;
-    --life-muerte: #444;
-    --life-alive: #a5d6a7;
+    --life-text: #3a4a57;
+    --life-casa: #e3d9d3;
+    --life-mar: #f6d4d6;
+    --life-familia: #f8e7b8;
+    --life-trabajo: #d5e0ea;
+    --life-viaje: #c6ddf2;
+    --life-muerte: #3a4a57;
+    --life-alive: #bcdcc0;
 
-    /* steps and GitHub calendars, light to dark */
     --steps-0: rgba(0, 53, 107, 0.08);
     --steps-1: #b3d4f0;
     --steps-2: #6aa8dc;
     --steps-3: #2b78bf;
     --steps-4: #00356b;
+}
 
 
     /* 3D book hover, after minchi.co/books */
@@ -135,9 +132,9 @@ header {
     /* 10% sidebar right after the 30% content column; together they sit centred, 30% in from each edge */
     float: right;
     width: 10%;
-    padding: 0;
+    padding: 0 0 0 20px;
     margin: 40px 30% 0 0;
-
+border-left:1px solid var(--color-border);
 }
 
 
