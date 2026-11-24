@@ -20,7 +20,7 @@ lang: en
 {% include github-calendar.html %}
 
 
-#### <a href="/books/">Reading <span class="arrow">→</span></a>
+#### <a href="/reading">Reading <span class="arrow">→</span></a>
 <div class="books">
 {% include books.html status="reading" limit=8 %}
 </div>
