@@ -27,7 +27,7 @@
 <ul class="archive" id="archive-pages">
 {% assign all_pages = site.pages | sort: 'title' %}
 {% for p in all_pages %}
-{% unless p.title == nil or p.url contains '/tags/' or p.url == '/404.html' or p.layout == 'archive' %}
+{% unless p.title == nil or p.url contains '/tags/' or p.url == '/404.html' or p.layout == 'archive' or p.url == '/' %}
 <li class="archive-item" data-search="{{ p.title | downcase | escape }}">
 <a href="{{ p.url }}" class="archive-title">{{ p.title }}</a>
 </li>

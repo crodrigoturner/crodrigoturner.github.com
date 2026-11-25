@@ -128,12 +128,17 @@ body::before {
 
 /* HEADER */
 header {
-float: right;
-    width: calc(10% - 21px);
+    /* fixed sidebar: stays put while the page scrolls, 30% in from the right edge */
+    position: fixed;
+    top: 0;
+    right: 30%;
+    width: 10%;
     padding: 40px 0 0 20px;
-    margin: 0px 30% 0 0;
+    margin: 0;
     border-left: 1px solid var(--color-border);
     height: 100vh;
+    box-sizing: border-box;
+    overflow-y: auto;
 }
 
 
@@ -884,7 +889,8 @@ h4 a,
     grid-template-columns: 4.6fr 1.4fr 1fr;
     gap: 24px;
     align-items: center;
-    padding: 8px 0px;
+    padding: 10px 0px;
+    line-height:1;
 }
 
 .news-head {
@@ -963,8 +969,8 @@ a.news-row:hover {
 @media only screen and (max-width: 1919px) {
     /* 15% sidebar + 35% content = 50%, so each outer margin drops to 25% to stay centred */
     header {
-        width: calc(15% - 21px);
-        margin: 0 25% 0 0;
+        width: 15%;
+        right: 25%;
     }
 
     section {
