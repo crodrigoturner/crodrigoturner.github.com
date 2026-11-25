@@ -859,11 +859,12 @@ h4 a,
 
 /* ARCHIVE COLUMNS — pages, projects, then two spare columns */
 .archive-columns {
-    float: left;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+display: grid;
+    grid-template-columns: 4.6fr 1.4fr 1fr;
+    gap: 24px;
+    align-items: center;
+    padding: 10px 0px;
+    line-height:1;
 }
 
 .archive-columns .archive-item {
