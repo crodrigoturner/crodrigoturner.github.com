@@ -858,40 +858,31 @@ h4 a,
 }
 
 /* ARCHIVE COLUMNS — pages, projects, then two spare columns */
-.archive-columns {
-display: grid;
-    grid-template-columns: 4fr 1.5fr 1.5fr;
+
+.news-head,
+.news-row, .archive-columns {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
     gap: 24px;
     align-items: center;
-    padding: 10px 0px;
-
+   
+    line-height:1;
 }
 
 .archive-columns .archive-item {
     float: left;
     width: 100%;
-    padding: 3px 0;
+   
+     padding: 10px 0px;
 }
 
 .archive-columns a {
     text-decoration: none;
 }
-
-
 .news-table {
     float: left;
     width: 100%;
-    margin: 20px 0 0;
-}
-
-.news-head,
-.news-row {
-    display: grid;
-    grid-template-columns: 4fr 1.5fr 1.5fr;
-    gap: 24px;
-    align-items: center;
-    padding: 10px 0px;
-    line-height:1;
+    margin: 0;
 }
 
 .news-head {
@@ -900,12 +891,14 @@ display: grid;
     text-transform: uppercase;
     letter-spacing: 0.04em;
     border-bottom: 1px solid var(--news-line);
+     padding: 10px 0px;
 }
 
 .news-row {
     color: var(--color-text);
     text-decoration: none;
     border-bottom: 1px solid var(--color-border);
+     padding: 10px 0px;
  }
 
 
