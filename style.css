@@ -131,7 +131,7 @@ header {
     /* fixed sidebar: stays put while the page scrolls, 30% in from the right edge */
     position: fixed;
     top: 0;
-    right: 30%;
+    right: 32.5%;
     width: 10%;
     padding: 40px 0 0 20px;
     margin: 0;
@@ -150,8 +150,9 @@ header {
 /* MAIN CONTENT */
 section {
   
-    width: 30%;
-    margin: 0 0 0 30%;
+    /* 25% content + 10% sidebar = 35%, so 32.5% either side keeps the pair centred */
+    width: 25%;
+    margin: 0 0 0 32.5%;
     padding: 0px 0px 100px;
 }
 
@@ -861,12 +862,11 @@ h4 a,
 
 .news-head,
 .news-row, .archive-columns {
-    display: grid;
+display: grid;
     grid-template-columns: 2fr 2fr 2fr;
     gap: 24px;
-    align-items: center;
-   
-    line-height:1;
+    align-items: self-start;
+    line-height: 1;
 }
 
 .archive-columns .archive-item {
@@ -964,12 +964,13 @@ a.news-row:hover {
     /* 15% sidebar + 35% content = 50%, so each outer margin drops to 25% to stay centred */
     header {
         width: 15%;
-        right: 25%;
+        right: 30%;
     }
 
+    /* 25% content + 15% sidebar = 40%, so 30% either side */
     section {
-        width: 35%;
-        margin: 0 0 0 25%;
+        width: 25%;
+        margin: 0 0 0 30%;
     }
 }
 
